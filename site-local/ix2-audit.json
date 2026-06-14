@@ -1,0 +1,5555 @@
+{
+  "generated": "2026-06-12T12:50:51.502Z",
+  "totals": {
+    "events": 417,
+    "actionLists": 20,
+    "uniqueHoverPatterns": 7,
+    "pages": 12
+  },
+  "byPage": {
+    "shared/global": {
+      "events": [
+        {
+          "event": "e-9",
+          "type": "MOUSE_OVER",
+          "typeLabel": "hover → in",
+          "actionList": "a-6",
+          "actionTitle": "Button_hover_IN",
+          "target": "class:.button_secondary",
+          "selector": ".button_secondary",
+          "classHint": ".button_secondary",
+          "effects": [
+            "scale 500ms scale(1)",
+            "scale 300ms ease:inOutQuad scale(1.075)"
+          ]
+        },
+        {
+          "event": "e-10",
+          "type": "MOUSE_OUT",
+          "typeLabel": "hover → out",
+          "actionList": "a-7",
+          "actionTitle": "Button_hover_OUT",
+          "target": "class:.button_secondary",
+          "selector": ".button_secondary",
+          "classHint": ".button_secondary",
+          "effects": [
+            "scale 300ms ease:inOutQuad scale(1)"
+          ]
+        },
+        {
+          "event": "e-23",
+          "type": "MOUSE_CLICK",
+          "typeLabel": "click",
+          "actionList": "rubberBand",
+          "target": "class:.logo-block",
+          "selector": ".logo-block",
+          "classHint": ".logo-block",
+          "effects": [
+            "scale 250ms ease:outQuart scale(1.25)",
+            "scale 1000ms ease:outElastic scale(1)"
+          ]
+        },
+        {
+          "event": "e-40",
+          "type": "MOUSE_OVER",
+          "typeLabel": "hover → in",
+          "actionList": "a-6",
+          "actionTitle": "Button_hover_IN",
+          "target": "e9e2f683-610a-9b5b-09f1-bb2743380a04",
+          "classHint": "",
+          "effects": [
+            "scale 500ms scale(1)",
+            "scale 300ms ease:inOutQuad scale(1.075)"
+          ]
+        },
+        {
+          "event": "e-41",
+          "type": "MOUSE_OUT",
+          "typeLabel": "hover → out",
+          "actionList": "a-7",
+          "actionTitle": "Button_hover_OUT",
+          "target": "e9e2f683-610a-9b5b-09f1-bb2743380a04",
+          "classHint": "",
+          "effects": [
+            "scale 300ms ease:inOutQuad scale(1)"
+          ]
+        },
+        {
+          "event": "e-42",
+          "type": "MOUSE_OVER",
+          "typeLabel": "hover → in",
+          "actionList": "a-36",
+          "actionTitle": "Button_ghost_hover_IN",
+          "target": "ca9b229a-c035-ab71-3585-ff1bd8187fe6",
+          "classHint": "",
+          "effects": [
+            "scale 500ms scale(1)",
+            "scale 300ms ease:inOutQuad scale(1.075)"
+          ]
+        },
+        {
+          "event": "e-43",
+          "type": "MOUSE_OUT",
+          "typeLabel": "hover → out",
+          "actionList": "a-7",
+          "actionTitle": "Button_hover_OUT",
+          "target": "ca9b229a-c035-ab71-3585-ff1bd8187fe6",
+          "classHint": "",
+          "effects": [
+            "scale 300ms ease:inOutQuad scale(1)"
+          ]
+        },
+        {
+          "event": "e-44",
+          "type": "MOUSE_OVER",
+          "typeLabel": "hover → in",
+          "actionList": "a-6",
+          "actionTitle": "Button_hover_IN",
+          "target": "f25de4e4-9d73-e457-0239-93cf359a55c5",
+          "classHint": "",
+          "effects": [
+            "scale 500ms scale(1)",
+            "scale 300ms ease:inOutQuad scale(1.075)"
+          ]
+        },
+        {
+          "event": "e-45",
+          "type": "MOUSE_OUT",
+          "typeLabel": "hover → out",
+          "actionList": "a-7",
+          "actionTitle": "Button_hover_OUT",
+          "target": "f25de4e4-9d73-e457-0239-93cf359a55c5",
+          "classHint": "",
+          "effects": [
+            "scale 300ms ease:inOutQuad scale(1)"
+          ]
+        },
+        {
+          "event": "e-48",
+          "type": "MOUSE_OVER",
+          "typeLabel": "hover → in",
+          "actionList": "a-6",
+          "actionTitle": "Button_hover_IN",
+          "target": "b6fe050d-1be2-9070-41c6-88ec67d68e68",
+          "classHint": "",
+          "effects": [
+            "scale 500ms scale(1)",
+            "scale 300ms ease:inOutQuad scale(1.075)"
+          ]
+        },
+        {
+          "event": "e-49",
+          "type": "MOUSE_OUT",
+          "typeLabel": "hover → out",
+          "actionList": "a-7",
+          "actionTitle": "Button_hover_OUT",
+          "target": "b6fe050d-1be2-9070-41c6-88ec67d68e68",
+          "classHint": "",
+          "effects": [
+            "scale 300ms ease:inOutQuad scale(1)"
+          ]
+        },
+        {
+          "event": "e-50",
+          "type": "MOUSE_OVER",
+          "typeLabel": "hover → in",
+          "actionList": "a-14",
+          "actionTitle": "Button_primary_hover_IN",
+          "target": "8ec48309-7ea1-f914-cde0-5e425b62444b",
+          "classHint": "",
+          "effects": [
+            "bg color 500ms",
+            "scale 500ms scale(1)",
+            "scale 300ms ease:inOutQuad scale(1.075)"
+          ]
+        },
+        {
+          "event": "e-51",
+          "type": "MOUSE_OUT",
+          "typeLabel": "hover → out",
+          "actionList": "a-15",
+          "actionTitle": "Button_primary_hover_OUT",
+          "target": "8ec48309-7ea1-f914-cde0-5e425b62444b",
+          "classHint": "",
+          "effects": [
+            "scale 300ms ease:inOutQuad scale(1)"
+          ]
+        },
+        {
+          "event": "e-54",
+          "type": "MOUSE_OVER",
+          "typeLabel": "hover → in",
+          "actionList": "a-14",
+          "actionTitle": "Button_primary_hover_IN",
+          "target": "777aaa37-7570-e1f7-4baa-c181ff0f6d2d",
+          "classHint": "",
+          "effects": [
+            "bg color 500ms",
+            "scale 500ms scale(1)",
+            "scale 300ms ease:inOutQuad scale(1.075)"
+          ]
+        },
+        {
+          "event": "e-55",
+          "type": "MOUSE_OUT",
+          "typeLabel": "hover → out",
+          "actionList": "a-15",
+          "actionTitle": "Button_primary_hover_OUT",
+          "target": "777aaa37-7570-e1f7-4baa-c181ff0f6d2d",
+          "classHint": "",
+          "effects": [
+            "scale 300ms ease:inOutQuad scale(1)"
+          ]
+        },
+        {
+          "event": "e-57",
+          "type": "PAGE_START",
+          "typeLabel": "page load",
+          "actionList": "a-21",
+          "actionTitle": "Load video 2",
+          "target": "65cfb22a548897845b7a671f",
+          "classHint": "",
+          "effects": [
+            "scale 500ms scale(0.2)",
+            "move 500ms move(320)",
+            "opacity 500ms",
+            "scale 2000ms ease:0.228,0.389,0.158,0.997 scale(1)",
+            "move 2000ms ease:0.228,0.389,0.158,0.997 move(0)",
+            "opacity 2000ms"
+          ]
+        },
+        {
+          "event": "e-59",
+          "type": "MOUSE_CLICK",
+          "typeLabel": "click",
+          "actionList": "rubberBand",
+          "target": "609b2d4d-94ce-28ce-6392-8b8f7b0c9309",
+          "classHint": "",
+          "effects": [
+            "scale 250ms ease:outQuart scale(1.25)",
+            "scale 1000ms ease:outElastic scale(1)"
+          ]
+        },
+        {
+          "event": "e-63",
+          "type": "PAGE_START",
+          "typeLabel": "page load",
+          "actionList": "a-22",
+          "actionTitle": "Main Text Animation",
+          "target": "65cfb22a548897845b7a671f",
+          "classHint": "",
+          "effects": [
+            "move 500ms move(0)",
+            "move 500ms move(120)",
+            "move 500ms move(0)",
+            "move 500ms move(120)",
+            "move 500ms move(0)",
+            "move 500ms move(120)",
+            "move 500ms move(0)",
+            "move 500ms move(120)",
+            "move 500ms move(0)",
+            "move 500ms move(120)",
+            "move 800ms ease:inOutQuad move(-120)",
+            "move 800ms ease:inOutQuad move(0)",
+            "move 800ms ease:inOutQuad move(-120)",
+            "move 800ms ease:inOutQuad move(0)",
+            "move 800ms ease:inOutQuad move(0)",
+            "move 800ms ease:inOutQuad move(-120)",
+            "move 800ms ease:inOutQuad move(0)",
+            "move 800ms ease:inOutQuad move(-120)",
+            "move 800ms ease:inOutQuad move(0)",
+            "move 800ms ease:inOutQuad move(-120)",
+            "move 800ms ease:inOutQuad move(0)",
+            "move 800ms ease:inOutQuad move(140)",
+            "move 800ms ease:inOutQuad move(140)",
+            "move 800ms ease:inOutQuad move(0)",
+            "move 800ms ease:inOutQuad move(0)",
+            "move 800ms ease:inOutQuad move(140)",
+            "move 800ms ease:inOutQuad move(140)",
+            "move 800ms ease:inOutQuad move(0)",
+            "move 800ms ease:inOutQuad move(0)",
+            "move 800ms ease:inOutQuad move(140)"
+          ]
+        },
+        {
+          "event": "e-87",
+          "type": "MOUSE_OVER",
+          "typeLabel": "hover → in",
+          "actionList": "a-33",
+          "actionTitle": "Logo Hover IN",
+          "target": "609b2d4d-94ce-28ce-6392-8b8f7b0c9309",
+          "classHint": "",
+          "effects": [
+            "scale 300ms ease:inOutQuad scale(1)",
+            "scale 300ms ease:inOutQuad scale(1.05)"
+          ]
+        },
+        {
+          "event": "e-88",
+          "type": "MOUSE_OUT",
+          "typeLabel": "hover → out",
+          "actionList": "a-34",
+          "actionTitle": "Logo Hover OUT",
+          "target": "609b2d4d-94ce-28ce-6392-8b8f7b0c9309",
+          "classHint": "",
+          "effects": [
+            "scale 300ms ease:inOutQuad scale(1)"
+          ]
+        },
+        {
+          "event": "e-89",
+          "type": "MOUSE_OVER",
+          "typeLabel": "hover → in",
+          "actionList": "a-6",
+          "actionTitle": "Button_hover_IN",
+          "target": "el:a6d0abda…",
+          "classHint": "",
+          "effects": [
+            "scale 500ms scale(1)",
+            "scale 300ms ease:inOutQuad scale(1.075)"
+          ]
+        },
+        {
+          "event": "e-90",
+          "type": "MOUSE_OUT",
+          "typeLabel": "hover → out",
+          "actionList": "a-7",
+          "actionTitle": "Button_hover_OUT",
+          "target": "el:a6d0abda…",
+          "classHint": "",
+          "effects": [
+            "scale 300ms ease:inOutQuad scale(1)"
+          ]
+        },
+        {
+          "event": "e-126",
+          "type": "MOUSE_OVER",
+          "typeLabel": "hover → in",
+          "actionList": "a-36",
+          "actionTitle": "Button_ghost_hover_IN",
+          "target": "el:4cc44e7e…",
+          "classHint": "",
+          "effects": [
+            "scale 500ms scale(1)",
+            "scale 300ms ease:inOutQuad scale(1.075)"
+          ]
+        },
+        {
+          "event": "e-127",
+          "type": "MOUSE_OUT",
+          "typeLabel": "hover → out",
+          "actionList": "a-37",
+          "actionTitle": "Button_ghost_hover_OUT",
+          "target": "el:4cc44e7e…",
+          "classHint": "",
+          "effects": [
+            "scale 300ms ease:inOutQuad scale(1)"
+          ]
+        },
+        {
+          "event": "e-128",
+          "type": "SCROLLING_IN_VIEW",
+          "typeLabel": "scroll reveal",
+          "actionList": "a-38",
+          "actionTitle": "Scroll animation",
+          "target": "el:8bbde515…",
+          "classHint": "",
+          "effects": []
+        },
+        {
+          "event": "e-129",
+          "type": "SCROLLING_IN_VIEW",
+          "typeLabel": "scroll reveal",
+          "actionList": "a-38",
+          "actionTitle": "Scroll animation",
+          "target": "el:39989a03…",
+          "classHint": "",
+          "effects": []
+        },
+        {
+          "event": "e-130",
+          "type": "SCROLLING_IN_VIEW",
+          "typeLabel": "scroll reveal",
+          "actionList": "a-38",
+          "actionTitle": "Scroll animation",
+          "target": "el:d9f13d8c…",
+          "classHint": "",
+          "effects": []
+        },
+        {
+          "event": "e-131",
+          "type": "SCROLLING_IN_VIEW",
+          "typeLabel": "scroll reveal",
+          "actionList": "a-38",
+          "actionTitle": "Scroll animation",
+          "target": "el:57fa0699…",
+          "classHint": "",
+          "effects": []
+        },
+        {
+          "event": "e-132",
+          "type": "SCROLLING_IN_VIEW",
+          "typeLabel": "scroll reveal",
+          "actionList": "a-38",
+          "actionTitle": "Scroll animation",
+          "target": "el:466b9973…",
+          "classHint": "",
+          "effects": []
+        },
+        {
+          "event": "e-133",
+          "type": "SCROLLING_IN_VIEW",
+          "typeLabel": "scroll reveal",
+          "actionList": "a-38",
+          "actionTitle": "Scroll animation",
+          "target": "el:39fb4027…",
+          "classHint": "",
+          "effects": []
+        },
+        {
+          "event": "e-134",
+          "type": "SCROLLING_IN_VIEW",
+          "typeLabel": "scroll reveal",
+          "actionList": "a-38",
+          "actionTitle": "Scroll animation",
+          "target": "el:e5cc7b22…",
+          "classHint": "",
+          "effects": []
+        },
+        {
+          "event": "e-135",
+          "type": "SCROLLING_IN_VIEW",
+          "typeLabel": "scroll reveal",
+          "actionList": "a-38",
+          "actionTitle": "Scroll animation",
+          "target": "el:e41e01a8…",
+          "classHint": "",
+          "effects": []
+        },
+        {
+          "event": "e-137",
+          "type": "MOUSE_OUT",
+          "typeLabel": "hover → out",
+          "actionList": "a-24",
+          "actionTitle": "Card Hover OUT White",
+          "target": "el:02246f09…",
+          "classHint": "",
+          "effects": [
+            "scale 300ms ease:inOutQuad scale(1)",
+            "STYLE_TEXT_COLOR 500ms"
+          ]
+        },
+        {
+          "event": "e-139",
+          "type": "MOUSE_OUT",
+          "typeLabel": "hover → out",
+          "actionList": "a-24",
+          "actionTitle": "Card Hover OUT White",
+          "target": "el:a6288675…",
+          "classHint": "",
+          "effects": [
+            "scale 300ms ease:inOutQuad scale(1)",
+            "STYLE_TEXT_COLOR 500ms"
+          ]
+        },
+        {
+          "event": "e-141",
+          "type": "MOUSE_OUT",
+          "typeLabel": "hover → out",
+          "actionList": "a-24",
+          "actionTitle": "Card Hover OUT White",
+          "target": "el:23bd1c4a…",
+          "classHint": "",
+          "effects": [
+            "scale 300ms ease:inOutQuad scale(1)",
+            "STYLE_TEXT_COLOR 500ms"
+          ]
+        },
+        {
+          "event": "e-270",
+          "type": "MOUSE_OVER",
+          "typeLabel": "hover → in",
+          "actionList": "a-36",
+          "actionTitle": "Button_ghost_hover_IN",
+          "target": "el:4cc44e7e…",
+          "classHint": "",
+          "effects": [
+            "scale 500ms scale(1)",
+            "scale 300ms ease:inOutQuad scale(1.075)"
+          ]
+        },
+        {
+          "event": "e-271",
+          "type": "MOUSE_OUT",
+          "typeLabel": "hover → out",
+          "actionList": "a-37",
+          "actionTitle": "Button_ghost_hover_OUT",
+          "target": "el:4cc44e7e…",
+          "classHint": "",
+          "effects": [
+            "scale 300ms ease:inOutQuad scale(1)"
+          ]
+        },
+        {
+          "event": "e-272",
+          "type": "SCROLLING_IN_VIEW",
+          "typeLabel": "scroll reveal",
+          "actionList": "a-38",
+          "actionTitle": "Scroll animation",
+          "target": "el:8bbde515…",
+          "classHint": "",
+          "effects": []
+        },
+        {
+          "event": "e-273",
+          "type": "SCROLLING_IN_VIEW",
+          "typeLabel": "scroll reveal",
+          "actionList": "a-38",
+          "actionTitle": "Scroll animation",
+          "target": "el:39989a03…",
+          "classHint": "",
+          "effects": []
+        },
+        {
+          "event": "e-274",
+          "type": "SCROLLING_IN_VIEW",
+          "typeLabel": "scroll reveal",
+          "actionList": "a-38",
+          "actionTitle": "Scroll animation",
+          "target": "el:d9f13d8c…",
+          "classHint": "",
+          "effects": []
+        },
+        {
+          "event": "e-275",
+          "type": "SCROLLING_IN_VIEW",
+          "typeLabel": "scroll reveal",
+          "actionList": "a-38",
+          "actionTitle": "Scroll animation",
+          "target": "el:57fa0699…",
+          "classHint": "",
+          "effects": []
+        },
+        {
+          "event": "e-276",
+          "type": "SCROLLING_IN_VIEW",
+          "typeLabel": "scroll reveal",
+          "actionList": "a-38",
+          "actionTitle": "Scroll animation",
+          "target": "el:466b9973…",
+          "classHint": "",
+          "effects": []
+        },
+        {
+          "event": "e-277",
+          "type": "SCROLLING_IN_VIEW",
+          "typeLabel": "scroll reveal",
+          "actionList": "a-38",
+          "actionTitle": "Scroll animation",
+          "target": "el:39fb4027…",
+          "classHint": "",
+          "effects": []
+        },
+        {
+          "event": "e-278",
+          "type": "SCROLLING_IN_VIEW",
+          "typeLabel": "scroll reveal",
+          "actionList": "a-38",
+          "actionTitle": "Scroll animation",
+          "target": "el:e5cc7b22…",
+          "classHint": "",
+          "effects": []
+        },
+        {
+          "event": "e-279",
+          "type": "SCROLLING_IN_VIEW",
+          "typeLabel": "scroll reveal",
+          "actionList": "a-38",
+          "actionTitle": "Scroll animation",
+          "target": "el:e41e01a8…",
+          "classHint": "",
+          "effects": []
+        },
+        {
+          "event": "e-281",
+          "type": "MOUSE_OUT",
+          "typeLabel": "hover → out",
+          "actionList": "a-24",
+          "actionTitle": "Card Hover OUT White",
+          "target": "el:02246f09…",
+          "classHint": "",
+          "effects": [
+            "scale 300ms ease:inOutQuad scale(1)",
+            "STYLE_TEXT_COLOR 500ms"
+          ]
+        },
+        {
+          "event": "e-283",
+          "type": "MOUSE_OUT",
+          "typeLabel": "hover → out",
+          "actionList": "a-24",
+          "actionTitle": "Card Hover OUT White",
+          "target": "el:a6288675…",
+          "classHint": "",
+          "effects": [
+            "scale 300ms ease:inOutQuad scale(1)",
+            "STYLE_TEXT_COLOR 500ms"
+          ]
+        },
+        {
+          "event": "e-285",
+          "type": "MOUSE_OUT",
+          "typeLabel": "hover → out",
+          "actionList": "a-24",
+          "actionTitle": "Card Hover OUT White",
+          "target": "el:23bd1c4a…",
+          "classHint": "",
+          "effects": [
+            "scale 300ms ease:inOutQuad scale(1)",
+            "STYLE_TEXT_COLOR 500ms"
+          ]
+        },
+        {
+          "event": "e-286",
+          "type": "MOUSE_OVER",
+          "typeLabel": "hover → in",
+          "actionList": "a-36",
+          "actionTitle": "Button_ghost_hover_IN",
+          "target": "el:4cc44e7e…",
+          "classHint": "",
+          "effects": [
+            "scale 500ms scale(1)",
+            "scale 300ms ease:inOutQuad scale(1.075)"
+          ]
+        },
+        {
+          "event": "e-287",
+          "type": "MOUSE_OUT",
+          "typeLabel": "hover → out",
+          "actionList": "a-37",
+          "actionTitle": "Button_ghost_hover_OUT",
+          "target": "el:4cc44e7e…",
+          "classHint": "",
+          "effects": [
+            "scale 300ms ease:inOutQuad scale(1)"
+          ]
+        },
+        {
+          "event": "e-288",
+          "type": "SCROLLING_IN_VIEW",
+          "typeLabel": "scroll reveal",
+          "actionList": "a-38",
+          "actionTitle": "Scroll animation",
+          "target": "el:8bbde515…",
+          "classHint": "",
+          "effects": []
+        },
+        {
+          "event": "e-289",
+          "type": "SCROLLING_IN_VIEW",
+          "typeLabel": "scroll reveal",
+          "actionList": "a-38",
+          "actionTitle": "Scroll animation",
+          "target": "el:39989a03…",
+          "classHint": "",
+          "effects": []
+        },
+        {
+          "event": "e-290",
+          "type": "SCROLLING_IN_VIEW",
+          "typeLabel": "scroll reveal",
+          "actionList": "a-38",
+          "actionTitle": "Scroll animation",
+          "target": "el:d9f13d8c…",
+          "classHint": "",
+          "effects": []
+        },
+        {
+          "event": "e-291",
+          "type": "SCROLLING_IN_VIEW",
+          "typeLabel": "scroll reveal",
+          "actionList": "a-38",
+          "actionTitle": "Scroll animation",
+          "target": "el:57fa0699…",
+          "classHint": "",
+          "effects": []
+        },
+        {
+          "event": "e-292",
+          "type": "SCROLLING_IN_VIEW",
+          "typeLabel": "scroll reveal",
+          "actionList": "a-38",
+          "actionTitle": "Scroll animation",
+          "target": "el:466b9973…",
+          "classHint": "",
+          "effects": []
+        },
+        {
+          "event": "e-293",
+          "type": "SCROLLING_IN_VIEW",
+          "typeLabel": "scroll reveal",
+          "actionList": "a-38",
+          "actionTitle": "Scroll animation",
+          "target": "el:39fb4027…",
+          "classHint": "",
+          "effects": []
+        },
+        {
+          "event": "e-294",
+          "type": "SCROLLING_IN_VIEW",
+          "typeLabel": "scroll reveal",
+          "actionList": "a-38",
+          "actionTitle": "Scroll animation",
+          "target": "el:e5cc7b22…",
+          "classHint": "",
+          "effects": []
+        },
+        {
+          "event": "e-295",
+          "type": "SCROLLING_IN_VIEW",
+          "typeLabel": "scroll reveal",
+          "actionList": "a-38",
+          "actionTitle": "Scroll animation",
+          "target": "el:e41e01a8…",
+          "classHint": "",
+          "effects": []
+        },
+        {
+          "event": "e-297",
+          "type": "MOUSE_OUT",
+          "typeLabel": "hover → out",
+          "actionList": "a-24",
+          "actionTitle": "Card Hover OUT White",
+          "target": "el:02246f09…",
+          "classHint": "",
+          "effects": [
+            "scale 300ms ease:inOutQuad scale(1)",
+            "STYLE_TEXT_COLOR 500ms"
+          ]
+        },
+        {
+          "event": "e-299",
+          "type": "MOUSE_OUT",
+          "typeLabel": "hover → out",
+          "actionList": "a-24",
+          "actionTitle": "Card Hover OUT White",
+          "target": "el:a6288675…",
+          "classHint": "",
+          "effects": [
+            "scale 300ms ease:inOutQuad scale(1)",
+            "STYLE_TEXT_COLOR 500ms"
+          ]
+        },
+        {
+          "event": "e-301",
+          "type": "MOUSE_OUT",
+          "typeLabel": "hover → out",
+          "actionList": "a-24",
+          "actionTitle": "Card Hover OUT White",
+          "target": "el:23bd1c4a…",
+          "classHint": "",
+          "effects": [
+            "scale 300ms ease:inOutQuad scale(1)",
+            "STYLE_TEXT_COLOR 500ms"
+          ]
+        },
+        {
+          "event": "e-302",
+          "type": "MOUSE_OVER",
+          "typeLabel": "hover → in",
+          "actionList": "a-36",
+          "actionTitle": "Button_ghost_hover_IN",
+          "target": "el:4cc44e7e…",
+          "classHint": "",
+          "effects": [
+            "scale 500ms scale(1)",
+            "scale 300ms ease:inOutQuad scale(1.075)"
+          ]
+        },
+        {
+          "event": "e-303",
+          "type": "MOUSE_OUT",
+          "typeLabel": "hover → out",
+          "actionList": "a-37",
+          "actionTitle": "Button_ghost_hover_OUT",
+          "target": "el:4cc44e7e…",
+          "classHint": "",
+          "effects": [
+            "scale 300ms ease:inOutQuad scale(1)"
+          ]
+        },
+        {
+          "event": "e-304",
+          "type": "SCROLLING_IN_VIEW",
+          "typeLabel": "scroll reveal",
+          "actionList": "a-38",
+          "actionTitle": "Scroll animation",
+          "target": "el:8bbde515…",
+          "classHint": "",
+          "effects": []
+        },
+        {
+          "event": "e-305",
+          "type": "SCROLLING_IN_VIEW",
+          "typeLabel": "scroll reveal",
+          "actionList": "a-38",
+          "actionTitle": "Scroll animation",
+          "target": "el:39989a03…",
+          "classHint": "",
+          "effects": []
+        },
+        {
+          "event": "e-306",
+          "type": "SCROLLING_IN_VIEW",
+          "typeLabel": "scroll reveal",
+          "actionList": "a-38",
+          "actionTitle": "Scroll animation",
+          "target": "el:d9f13d8c…",
+          "classHint": "",
+          "effects": []
+        },
+        {
+          "event": "e-307",
+          "type": "SCROLLING_IN_VIEW",
+          "typeLabel": "scroll reveal",
+          "actionList": "a-38",
+          "actionTitle": "Scroll animation",
+          "target": "el:57fa0699…",
+          "classHint": "",
+          "effects": []
+        },
+        {
+          "event": "e-308",
+          "type": "SCROLLING_IN_VIEW",
+          "typeLabel": "scroll reveal",
+          "actionList": "a-38",
+          "actionTitle": "Scroll animation",
+          "target": "el:466b9973…",
+          "classHint": "",
+          "effects": []
+        },
+        {
+          "event": "e-309",
+          "type": "SCROLLING_IN_VIEW",
+          "typeLabel": "scroll reveal",
+          "actionList": "a-38",
+          "actionTitle": "Scroll animation",
+          "target": "el:39fb4027…",
+          "classHint": "",
+          "effects": []
+        },
+        {
+          "event": "e-310",
+          "type": "SCROLLING_IN_VIEW",
+          "typeLabel": "scroll reveal",
+          "actionList": "a-38",
+          "actionTitle": "Scroll animation",
+          "target": "el:e5cc7b22…",
+          "classHint": "",
+          "effects": []
+        },
+        {
+          "event": "e-311",
+          "type": "SCROLLING_IN_VIEW",
+          "typeLabel": "scroll reveal",
+          "actionList": "a-38",
+          "actionTitle": "Scroll animation",
+          "target": "el:e41e01a8…",
+          "classHint": "",
+          "effects": []
+        },
+        {
+          "event": "e-313",
+          "type": "MOUSE_OUT",
+          "typeLabel": "hover → out",
+          "actionList": "a-24",
+          "actionTitle": "Card Hover OUT White",
+          "target": "el:02246f09…",
+          "classHint": "",
+          "effects": [
+            "scale 300ms ease:inOutQuad scale(1)",
+            "STYLE_TEXT_COLOR 500ms"
+          ]
+        },
+        {
+          "event": "e-315",
+          "type": "MOUSE_OUT",
+          "typeLabel": "hover → out",
+          "actionList": "a-24",
+          "actionTitle": "Card Hover OUT White",
+          "target": "el:a6288675…",
+          "classHint": "",
+          "effects": [
+            "scale 300ms ease:inOutQuad scale(1)",
+            "STYLE_TEXT_COLOR 500ms"
+          ]
+        },
+        {
+          "event": "e-317",
+          "type": "MOUSE_OUT",
+          "typeLabel": "hover → out",
+          "actionList": "a-24",
+          "actionTitle": "Card Hover OUT White",
+          "target": "el:23bd1c4a…",
+          "classHint": "",
+          "effects": [
+            "scale 300ms ease:inOutQuad scale(1)",
+            "STYLE_TEXT_COLOR 500ms"
+          ]
+        },
+        {
+          "event": "e-318",
+          "type": "MOUSE_OVER",
+          "typeLabel": "hover → in",
+          "actionList": "a-36",
+          "actionTitle": "Button_ghost_hover_IN",
+          "target": "el:4cc44e7e…",
+          "classHint": "",
+          "effects": [
+            "scale 500ms scale(1)",
+            "scale 300ms ease:inOutQuad scale(1.075)"
+          ]
+        },
+        {
+          "event": "e-319",
+          "type": "MOUSE_OUT",
+          "typeLabel": "hover → out",
+          "actionList": "a-37",
+          "actionTitle": "Button_ghost_hover_OUT",
+          "target": "el:4cc44e7e…",
+          "classHint": "",
+          "effects": [
+            "scale 300ms ease:inOutQuad scale(1)"
+          ]
+        },
+        {
+          "event": "e-320",
+          "type": "SCROLLING_IN_VIEW",
+          "typeLabel": "scroll reveal",
+          "actionList": "a-38",
+          "actionTitle": "Scroll animation",
+          "target": "el:8bbde515…",
+          "classHint": "",
+          "effects": []
+        },
+        {
+          "event": "e-321",
+          "type": "SCROLLING_IN_VIEW",
+          "typeLabel": "scroll reveal",
+          "actionList": "a-38",
+          "actionTitle": "Scroll animation",
+          "target": "el:39989a03…",
+          "classHint": "",
+          "effects": []
+        },
+        {
+          "event": "e-322",
+          "type": "SCROLLING_IN_VIEW",
+          "typeLabel": "scroll reveal",
+          "actionList": "a-38",
+          "actionTitle": "Scroll animation",
+          "target": "el:d9f13d8c…",
+          "classHint": "",
+          "effects": []
+        },
+        {
+          "event": "e-323",
+          "type": "SCROLLING_IN_VIEW",
+          "typeLabel": "scroll reveal",
+          "actionList": "a-38",
+          "actionTitle": "Scroll animation",
+          "target": "el:57fa0699…",
+          "classHint": "",
+          "effects": []
+        },
+        {
+          "event": "e-324",
+          "type": "SCROLLING_IN_VIEW",
+          "typeLabel": "scroll reveal",
+          "actionList": "a-38",
+          "actionTitle": "Scroll animation",
+          "target": "el:466b9973…",
+          "classHint": "",
+          "effects": []
+        },
+        {
+          "event": "e-325",
+          "type": "SCROLLING_IN_VIEW",
+          "typeLabel": "scroll reveal",
+          "actionList": "a-38",
+          "actionTitle": "Scroll animation",
+          "target": "el:39fb4027…",
+          "classHint": "",
+          "effects": []
+        },
+        {
+          "event": "e-326",
+          "type": "SCROLLING_IN_VIEW",
+          "typeLabel": "scroll reveal",
+          "actionList": "a-38",
+          "actionTitle": "Scroll animation",
+          "target": "el:e5cc7b22…",
+          "classHint": "",
+          "effects": []
+        },
+        {
+          "event": "e-327",
+          "type": "SCROLLING_IN_VIEW",
+          "typeLabel": "scroll reveal",
+          "actionList": "a-38",
+          "actionTitle": "Scroll animation",
+          "target": "el:e41e01a8…",
+          "classHint": "",
+          "effects": []
+        },
+        {
+          "event": "e-329",
+          "type": "MOUSE_OUT",
+          "typeLabel": "hover → out",
+          "actionList": "a-24",
+          "actionTitle": "Card Hover OUT White",
+          "target": "el:02246f09…",
+          "classHint": "",
+          "effects": [
+            "scale 300ms ease:inOutQuad scale(1)",
+            "STYLE_TEXT_COLOR 500ms"
+          ]
+        },
+        {
+          "event": "e-331",
+          "type": "MOUSE_OUT",
+          "typeLabel": "hover → out",
+          "actionList": "a-24",
+          "actionTitle": "Card Hover OUT White",
+          "target": "el:a6288675…",
+          "classHint": "",
+          "effects": [
+            "scale 300ms ease:inOutQuad scale(1)",
+            "STYLE_TEXT_COLOR 500ms"
+          ]
+        },
+        {
+          "event": "e-333",
+          "type": "MOUSE_OUT",
+          "typeLabel": "hover → out",
+          "actionList": "a-24",
+          "actionTitle": "Card Hover OUT White",
+          "target": "el:23bd1c4a…",
+          "classHint": "",
+          "effects": [
+            "scale 300ms ease:inOutQuad scale(1)",
+            "STYLE_TEXT_COLOR 500ms"
+          ]
+        },
+        {
+          "event": "e-334",
+          "type": "MOUSE_OVER",
+          "typeLabel": "hover → in",
+          "actionList": "a-36",
+          "actionTitle": "Button_ghost_hover_IN",
+          "target": "el:4cc44e7e…",
+          "classHint": "",
+          "effects": [
+            "scale 500ms scale(1)",
+            "scale 300ms ease:inOutQuad scale(1.075)"
+          ]
+        },
+        {
+          "event": "e-335",
+          "type": "MOUSE_OUT",
+          "typeLabel": "hover → out",
+          "actionList": "a-37",
+          "actionTitle": "Button_ghost_hover_OUT",
+          "target": "el:4cc44e7e…",
+          "classHint": "",
+          "effects": [
+            "scale 300ms ease:inOutQuad scale(1)"
+          ]
+        },
+        {
+          "event": "e-336",
+          "type": "SCROLLING_IN_VIEW",
+          "typeLabel": "scroll reveal",
+          "actionList": "a-38",
+          "actionTitle": "Scroll animation",
+          "target": "el:8bbde515…",
+          "classHint": "",
+          "effects": []
+        },
+        {
+          "event": "e-337",
+          "type": "SCROLLING_IN_VIEW",
+          "typeLabel": "scroll reveal",
+          "actionList": "a-38",
+          "actionTitle": "Scroll animation",
+          "target": "el:39989a03…",
+          "classHint": "",
+          "effects": []
+        },
+        {
+          "event": "e-338",
+          "type": "SCROLLING_IN_VIEW",
+          "typeLabel": "scroll reveal",
+          "actionList": "a-38",
+          "actionTitle": "Scroll animation",
+          "target": "el:d9f13d8c…",
+          "classHint": "",
+          "effects": []
+        },
+        {
+          "event": "e-339",
+          "type": "SCROLLING_IN_VIEW",
+          "typeLabel": "scroll reveal",
+          "actionList": "a-38",
+          "actionTitle": "Scroll animation",
+          "target": "el:57fa0699…",
+          "classHint": "",
+          "effects": []
+        },
+        {
+          "event": "e-340",
+          "type": "SCROLLING_IN_VIEW",
+          "typeLabel": "scroll reveal",
+          "actionList": "a-38",
+          "actionTitle": "Scroll animation",
+          "target": "el:466b9973…",
+          "classHint": "",
+          "effects": []
+        },
+        {
+          "event": "e-341",
+          "type": "SCROLLING_IN_VIEW",
+          "typeLabel": "scroll reveal",
+          "actionList": "a-38",
+          "actionTitle": "Scroll animation",
+          "target": "el:39fb4027…",
+          "classHint": "",
+          "effects": []
+        },
+        {
+          "event": "e-342",
+          "type": "SCROLLING_IN_VIEW",
+          "typeLabel": "scroll reveal",
+          "actionList": "a-38",
+          "actionTitle": "Scroll animation",
+          "target": "el:e5cc7b22…",
+          "classHint": "",
+          "effects": []
+        },
+        {
+          "event": "e-343",
+          "type": "SCROLLING_IN_VIEW",
+          "typeLabel": "scroll reveal",
+          "actionList": "a-38",
+          "actionTitle": "Scroll animation",
+          "target": "el:e41e01a8…",
+          "classHint": "",
+          "effects": []
+        },
+        {
+          "event": "e-345",
+          "type": "MOUSE_OUT",
+          "typeLabel": "hover → out",
+          "actionList": "a-24",
+          "actionTitle": "Card Hover OUT White",
+          "target": "el:02246f09…",
+          "classHint": "",
+          "effects": [
+            "scale 300ms ease:inOutQuad scale(1)",
+            "STYLE_TEXT_COLOR 500ms"
+          ]
+        },
+        {
+          "event": "e-347",
+          "type": "MOUSE_OUT",
+          "typeLabel": "hover → out",
+          "actionList": "a-24",
+          "actionTitle": "Card Hover OUT White",
+          "target": "el:a6288675…",
+          "classHint": "",
+          "effects": [
+            "scale 300ms ease:inOutQuad scale(1)",
+            "STYLE_TEXT_COLOR 500ms"
+          ]
+        },
+        {
+          "event": "e-349",
+          "type": "MOUSE_OUT",
+          "typeLabel": "hover → out",
+          "actionList": "a-24",
+          "actionTitle": "Card Hover OUT White",
+          "target": "el:23bd1c4a…",
+          "classHint": "",
+          "effects": [
+            "scale 300ms ease:inOutQuad scale(1)",
+            "STYLE_TEXT_COLOR 500ms"
+          ]
+        },
+        {
+          "event": "e-350",
+          "type": "MOUSE_OVER",
+          "typeLabel": "hover → in",
+          "actionList": "a-36",
+          "actionTitle": "Button_ghost_hover_IN",
+          "target": "el:4cc44e7e…",
+          "classHint": "",
+          "effects": [
+            "scale 500ms scale(1)",
+            "scale 300ms ease:inOutQuad scale(1.075)"
+          ]
+        },
+        {
+          "event": "e-351",
+          "type": "MOUSE_OUT",
+          "typeLabel": "hover → out",
+          "actionList": "a-37",
+          "actionTitle": "Button_ghost_hover_OUT",
+          "target": "el:4cc44e7e…",
+          "classHint": "",
+          "effects": [
+            "scale 300ms ease:inOutQuad scale(1)"
+          ]
+        },
+        {
+          "event": "e-352",
+          "type": "SCROLLING_IN_VIEW",
+          "typeLabel": "scroll reveal",
+          "actionList": "a-38",
+          "actionTitle": "Scroll animation",
+          "target": "el:8bbde515…",
+          "classHint": "",
+          "effects": []
+        },
+        {
+          "event": "e-353",
+          "type": "SCROLLING_IN_VIEW",
+          "typeLabel": "scroll reveal",
+          "actionList": "a-38",
+          "actionTitle": "Scroll animation",
+          "target": "el:39989a03…",
+          "classHint": "",
+          "effects": []
+        },
+        {
+          "event": "e-354",
+          "type": "SCROLLING_IN_VIEW",
+          "typeLabel": "scroll reveal",
+          "actionList": "a-38",
+          "actionTitle": "Scroll animation",
+          "target": "el:d9f13d8c…",
+          "classHint": "",
+          "effects": []
+        },
+        {
+          "event": "e-355",
+          "type": "SCROLLING_IN_VIEW",
+          "typeLabel": "scroll reveal",
+          "actionList": "a-38",
+          "actionTitle": "Scroll animation",
+          "target": "el:57fa0699…",
+          "classHint": "",
+          "effects": []
+        },
+        {
+          "event": "e-356",
+          "type": "SCROLLING_IN_VIEW",
+          "typeLabel": "scroll reveal",
+          "actionList": "a-38",
+          "actionTitle": "Scroll animation",
+          "target": "el:466b9973…",
+          "classHint": "",
+          "effects": []
+        },
+        {
+          "event": "e-357",
+          "type": "SCROLLING_IN_VIEW",
+          "typeLabel": "scroll reveal",
+          "actionList": "a-38",
+          "actionTitle": "Scroll animation",
+          "target": "el:39fb4027…",
+          "classHint": "",
+          "effects": []
+        },
+        {
+          "event": "e-358",
+          "type": "SCROLLING_IN_VIEW",
+          "typeLabel": "scroll reveal",
+          "actionList": "a-38",
+          "actionTitle": "Scroll animation",
+          "target": "el:e5cc7b22…",
+          "classHint": "",
+          "effects": []
+        },
+        {
+          "event": "e-359",
+          "type": "SCROLLING_IN_VIEW",
+          "typeLabel": "scroll reveal",
+          "actionList": "a-38",
+          "actionTitle": "Scroll animation",
+          "target": "el:e41e01a8…",
+          "classHint": "",
+          "effects": []
+        },
+        {
+          "event": "e-361",
+          "type": "MOUSE_OUT",
+          "typeLabel": "hover → out",
+          "actionList": "a-24",
+          "actionTitle": "Card Hover OUT White",
+          "target": "el:02246f09…",
+          "classHint": "",
+          "effects": [
+            "scale 300ms ease:inOutQuad scale(1)",
+            "STYLE_TEXT_COLOR 500ms"
+          ]
+        },
+        {
+          "event": "e-363",
+          "type": "MOUSE_OUT",
+          "typeLabel": "hover → out",
+          "actionList": "a-24",
+          "actionTitle": "Card Hover OUT White",
+          "target": "el:a6288675…",
+          "classHint": "",
+          "effects": [
+            "scale 300ms ease:inOutQuad scale(1)",
+            "STYLE_TEXT_COLOR 500ms"
+          ]
+        },
+        {
+          "event": "e-365",
+          "type": "MOUSE_OUT",
+          "typeLabel": "hover → out",
+          "actionList": "a-24",
+          "actionTitle": "Card Hover OUT White",
+          "target": "el:23bd1c4a…",
+          "classHint": "",
+          "effects": [
+            "scale 300ms ease:inOutQuad scale(1)",
+            "STYLE_TEXT_COLOR 500ms"
+          ]
+        },
+        {
+          "event": "e-486",
+          "type": "MOUSE_OVER",
+          "typeLabel": "hover → in",
+          "actionList": "a-22",
+          "actionTitle": "Main Text Animation",
+          "target": "el:ffa5d386…",
+          "classHint": "",
+          "effects": [
+            "move 500ms move(0)",
+            "move 500ms move(120)",
+            "move 500ms move(0)",
+            "move 500ms move(120)",
+            "move 500ms move(0)",
+            "move 500ms move(120)",
+            "move 500ms move(0)",
+            "move 500ms move(120)",
+            "move 500ms move(0)",
+            "move 500ms move(120)",
+            "move 800ms ease:inOutQuad move(-120)",
+            "move 800ms ease:inOutQuad move(0)",
+            "move 800ms ease:inOutQuad move(-120)",
+            "move 800ms ease:inOutQuad move(0)",
+            "move 800ms ease:inOutQuad move(0)",
+            "move 800ms ease:inOutQuad move(-120)",
+            "move 800ms ease:inOutQuad move(0)",
+            "move 800ms ease:inOutQuad move(-120)",
+            "move 800ms ease:inOutQuad move(0)",
+            "move 800ms ease:inOutQuad move(-120)",
+            "move 800ms ease:inOutQuad move(0)",
+            "move 800ms ease:inOutQuad move(140)",
+            "move 800ms ease:inOutQuad move(140)",
+            "move 800ms ease:inOutQuad move(0)",
+            "move 800ms ease:inOutQuad move(0)",
+            "move 800ms ease:inOutQuad move(140)",
+            "move 800ms ease:inOutQuad move(140)",
+            "move 800ms ease:inOutQuad move(0)",
+            "move 800ms ease:inOutQuad move(0)",
+            "move 800ms ease:inOutQuad move(140)"
+          ]
+        },
+        {
+          "event": "e-488",
+          "type": "MOUSE_OVER",
+          "typeLabel": "hover → in",
+          "actionList": "a-14",
+          "actionTitle": "Button_primary_hover_IN",
+          "target": "el:015a3847…",
+          "classHint": "",
+          "effects": [
+            "bg color 500ms",
+            "scale 500ms scale(1)",
+            "scale 300ms ease:inOutQuad scale(1.075)"
+          ]
+        },
+        {
+          "event": "e-489",
+          "type": "MOUSE_OUT",
+          "typeLabel": "hover → out",
+          "actionList": "a-15",
+          "actionTitle": "Button_primary_hover_OUT",
+          "target": "el:015a3847…",
+          "classHint": "",
+          "effects": [
+            "scale 300ms ease:inOutQuad scale(1)"
+          ]
+        },
+        {
+          "event": "e-490",
+          "type": "MOUSE_OVER",
+          "typeLabel": "hover → in",
+          "actionList": "a-6",
+          "actionTitle": "Button_hover_IN",
+          "target": "el:015a3847…",
+          "classHint": "",
+          "effects": [
+            "scale 500ms scale(1)",
+            "scale 300ms ease:inOutQuad scale(1.075)"
+          ]
+        },
+        {
+          "event": "e-491",
+          "type": "MOUSE_OUT",
+          "typeLabel": "hover → out",
+          "actionList": "a-7",
+          "actionTitle": "Button_hover_OUT",
+          "target": "el:015a3847…",
+          "classHint": "",
+          "effects": [
+            "scale 300ms ease:inOutQuad scale(1)"
+          ]
+        },
+        {
+          "event": "e-492",
+          "type": "MOUSE_CLICK",
+          "typeLabel": "click",
+          "actionList": "a-9",
+          "actionTitle": "Image zoom_IN",
+          "target": "el:1b921368…",
+          "classHint": "",
+          "effects": [
+            "scale 500ms scale(1)",
+            "rotate 500ms",
+            "scale 300ms ease:easeInOut scale(2)",
+            "rotate 300ms ease:easeInOut"
+          ]
+        },
+        {
+          "event": "e-493",
+          "type": "MOUSE_SECOND_CLICK",
+          "typeLabel": "MOUSE_SECOND_CLICK",
+          "actionList": "a-10",
+          "actionTitle": "Image zoom_OUT",
+          "target": "el:1b921368…",
+          "classHint": "",
+          "effects": [
+            "rotate 300ms ease:easeInOut",
+            "scale 300ms ease:easeInOut scale(1)"
+          ]
+        },
+        {
+          "event": "e-494",
+          "type": "MOUSE_OVER",
+          "typeLabel": "hover → in",
+          "actionList": "a-9",
+          "actionTitle": "Image zoom_IN",
+          "target": "el:1b921368…",
+          "classHint": "",
+          "effects": [
+            "scale 500ms scale(1)",
+            "rotate 500ms",
+            "scale 300ms ease:easeInOut scale(2)",
+            "rotate 300ms ease:easeInOut"
+          ]
+        },
+        {
+          "event": "e-495",
+          "type": "MOUSE_OUT",
+          "typeLabel": "hover → out",
+          "actionList": "a-10",
+          "actionTitle": "Image zoom_OUT",
+          "target": "el:1b921368…",
+          "classHint": "",
+          "effects": [
+            "rotate 300ms ease:easeInOut",
+            "scale 300ms ease:easeInOut scale(1)"
+          ]
+        },
+        {
+          "event": "e-496",
+          "type": "MOUSE_CLICK",
+          "typeLabel": "click",
+          "actionList": "a-11",
+          "actionTitle": "Image zoom_IN 2",
+          "target": "el:1b921368…",
+          "classHint": "",
+          "effects": [
+            "scale 500ms scale(1)",
+            "rotate 500ms",
+            "scale 300ms ease:easeInOut scale(1.5)",
+            "rotate 300ms ease:easeInOut"
+          ]
+        },
+        {
+          "event": "e-497",
+          "type": "MOUSE_SECOND_CLICK",
+          "typeLabel": "MOUSE_SECOND_CLICK",
+          "actionList": "a-10",
+          "actionTitle": "Image zoom_OUT",
+          "target": "el:1b921368…",
+          "classHint": "",
+          "effects": [
+            "rotate 300ms ease:easeInOut",
+            "scale 300ms ease:easeInOut scale(1)"
+          ]
+        },
+        {
+          "event": "e-498",
+          "type": "MOUSE_OVER",
+          "typeLabel": "hover → in",
+          "actionList": "a-11",
+          "actionTitle": "Image zoom_IN 2",
+          "target": "el:1b921368…",
+          "classHint": "",
+          "effects": [
+            "scale 500ms scale(1)",
+            "rotate 500ms",
+            "scale 300ms ease:easeInOut scale(1.5)",
+            "rotate 300ms ease:easeInOut"
+          ]
+        },
+        {
+          "event": "e-499",
+          "type": "MOUSE_OUT",
+          "typeLabel": "hover → out",
+          "actionList": "a-10",
+          "actionTitle": "Image zoom_OUT",
+          "target": "el:1b921368…",
+          "classHint": "",
+          "effects": [
+            "rotate 300ms ease:easeInOut",
+            "scale 300ms ease:easeInOut scale(1)"
+          ]
+        },
+        {
+          "event": "e-500",
+          "type": "MOUSE_CLICK",
+          "typeLabel": "click",
+          "actionList": "a-9",
+          "actionTitle": "Image zoom_IN",
+          "target": "el:1b921368…",
+          "classHint": "",
+          "effects": [
+            "scale 500ms scale(1)",
+            "rotate 500ms",
+            "scale 300ms ease:easeInOut scale(2)",
+            "rotate 300ms ease:easeInOut"
+          ]
+        },
+        {
+          "event": "e-501",
+          "type": "MOUSE_SECOND_CLICK",
+          "typeLabel": "MOUSE_SECOND_CLICK",
+          "actionList": "a-10",
+          "actionTitle": "Image zoom_OUT",
+          "target": "el:1b921368…",
+          "classHint": "",
+          "effects": [
+            "rotate 300ms ease:easeInOut",
+            "scale 300ms ease:easeInOut scale(1)"
+          ]
+        },
+        {
+          "event": "e-502",
+          "type": "MOUSE_OVER",
+          "typeLabel": "hover → in",
+          "actionList": "a-9",
+          "actionTitle": "Image zoom_IN",
+          "target": "el:1b921368…",
+          "classHint": "",
+          "effects": [
+            "scale 500ms scale(1)",
+            "rotate 500ms",
+            "scale 300ms ease:easeInOut scale(2)",
+            "rotate 300ms ease:easeInOut"
+          ]
+        },
+        {
+          "event": "e-503",
+          "type": "MOUSE_OUT",
+          "typeLabel": "hover → out",
+          "actionList": "a-10",
+          "actionTitle": "Image zoom_OUT",
+          "target": "el:1b921368…",
+          "classHint": "",
+          "effects": [
+            "rotate 300ms ease:easeInOut",
+            "scale 300ms ease:easeInOut scale(1)"
+          ]
+        },
+        {
+          "event": "e-505",
+          "type": "MOUSE_OUT",
+          "typeLabel": "hover → out",
+          "actionList": "a-24",
+          "actionTitle": "Card Hover OUT White",
+          "target": "el:1d97dd4c…",
+          "classHint": "",
+          "effects": [
+            "scale 300ms ease:inOutQuad scale(1)",
+            "STYLE_TEXT_COLOR 500ms"
+          ]
+        },
+        {
+          "event": "e-507",
+          "type": "MOUSE_OUT",
+          "typeLabel": "hover → out",
+          "actionList": "a-24",
+          "actionTitle": "Card Hover OUT White",
+          "target": "el:1d97dd4c…",
+          "classHint": "",
+          "effects": [
+            "scale 300ms ease:inOutQuad scale(1)",
+            "STYLE_TEXT_COLOR 500ms"
+          ]
+        },
+        {
+          "event": "e-509",
+          "type": "MOUSE_OUT",
+          "typeLabel": "hover → out",
+          "actionList": "a-24",
+          "actionTitle": "Card Hover OUT White",
+          "target": "el:1d97dd4c…",
+          "classHint": "",
+          "effects": [
+            "scale 300ms ease:inOutQuad scale(1)",
+            "STYLE_TEXT_COLOR 500ms"
+          ]
+        },
+        {
+          "event": "e-511",
+          "type": "MOUSE_OUT",
+          "typeLabel": "hover → out",
+          "actionList": "a-24",
+          "actionTitle": "Card Hover OUT White",
+          "target": "el:1d97dd4c…",
+          "classHint": "",
+          "effects": [
+            "scale 300ms ease:inOutQuad scale(1)",
+            "STYLE_TEXT_COLOR 500ms"
+          ]
+        },
+        {
+          "event": "e-513",
+          "type": "MOUSE_OUT",
+          "typeLabel": "hover → out",
+          "actionList": "a-24",
+          "actionTitle": "Card Hover OUT White",
+          "target": "el:1d97dd4c…",
+          "classHint": "",
+          "effects": [
+            "scale 300ms ease:inOutQuad scale(1)",
+            "STYLE_TEXT_COLOR 500ms"
+          ]
+        },
+        {
+          "event": "e-515",
+          "type": "MOUSE_OUT",
+          "typeLabel": "hover → out",
+          "actionList": "a-24",
+          "actionTitle": "Card Hover OUT White",
+          "target": "el:1d97dd4c…",
+          "classHint": "",
+          "effects": [
+            "scale 300ms ease:inOutQuad scale(1)",
+            "STYLE_TEXT_COLOR 500ms"
+          ]
+        },
+        {
+          "event": "e-517",
+          "type": "MOUSE_OUT",
+          "typeLabel": "hover → out",
+          "actionList": "a-24",
+          "actionTitle": "Card Hover OUT White",
+          "target": "el:1d97dd4c…",
+          "classHint": "",
+          "effects": [
+            "scale 300ms ease:inOutQuad scale(1)",
+            "STYLE_TEXT_COLOR 500ms"
+          ]
+        },
+        {
+          "event": "e-519",
+          "type": "MOUSE_OUT",
+          "typeLabel": "hover → out",
+          "actionList": "a-24",
+          "actionTitle": "Card Hover OUT White",
+          "target": "el:1d97dd4c…",
+          "classHint": "",
+          "effects": [
+            "scale 300ms ease:inOutQuad scale(1)",
+            "STYLE_TEXT_COLOR 500ms"
+          ]
+        },
+        {
+          "event": "e-521",
+          "type": "MOUSE_OUT",
+          "typeLabel": "hover → out",
+          "actionList": "a-24",
+          "actionTitle": "Card Hover OUT White",
+          "target": "el:1d97dd4c…",
+          "classHint": "",
+          "effects": [
+            "scale 300ms ease:inOutQuad scale(1)",
+            "STYLE_TEXT_COLOR 500ms"
+          ]
+        },
+        {
+          "event": "e-523",
+          "type": "MOUSE_OUT",
+          "typeLabel": "hover → out",
+          "actionList": "a-24",
+          "actionTitle": "Card Hover OUT White",
+          "target": "el:1d97dd4c…",
+          "classHint": "",
+          "effects": [
+            "scale 300ms ease:inOutQuad scale(1)",
+            "STYLE_TEXT_COLOR 500ms"
+          ]
+        },
+        {
+          "event": "e-525",
+          "type": "MOUSE_OUT",
+          "typeLabel": "hover → out",
+          "actionList": "a-24",
+          "actionTitle": "Card Hover OUT White",
+          "target": "el:1d97dd4c…",
+          "classHint": "",
+          "effects": [
+            "scale 300ms ease:inOutQuad scale(1)",
+            "STYLE_TEXT_COLOR 500ms"
+          ]
+        }
+      ],
+      "types": {
+        "MOUSE_OVER": 22,
+        "MOUSE_OUT": 53,
+        "MOUSE_CLICK": 5,
+        "PAGE_START": 2,
+        "SCROLLING_IN_VIEW": 56,
+        "MOUSE_SECOND_CLICK": 3
+      }
+    },
+    "index.html (главная)": {
+      "events": [
+        {
+          "event": "e-61",
+          "type": "MOUSE_OVER",
+          "typeLabel": "hover → in",
+          "actionList": "a-22",
+          "actionTitle": "Main Text Animation",
+          "target": "el:002b6dc2…",
+          "classHint": "",
+          "effects": [
+            "move 500ms move(0)",
+            "move 500ms move(120)",
+            "move 500ms move(0)",
+            "move 500ms move(120)",
+            "move 500ms move(0)",
+            "move 500ms move(120)",
+            "move 500ms move(0)",
+            "move 500ms move(120)",
+            "move 500ms move(0)",
+            "move 500ms move(120)",
+            "move 800ms ease:inOutQuad move(-120)",
+            "move 800ms ease:inOutQuad move(0)",
+            "move 800ms ease:inOutQuad move(-120)",
+            "move 800ms ease:inOutQuad move(0)",
+            "move 800ms ease:inOutQuad move(0)",
+            "move 800ms ease:inOutQuad move(-120)",
+            "move 800ms ease:inOutQuad move(0)",
+            "move 800ms ease:inOutQuad move(-120)",
+            "move 800ms ease:inOutQuad move(0)",
+            "move 800ms ease:inOutQuad move(-120)",
+            "move 800ms ease:inOutQuad move(0)",
+            "move 800ms ease:inOutQuad move(140)",
+            "move 800ms ease:inOutQuad move(140)",
+            "move 800ms ease:inOutQuad move(0)",
+            "move 800ms ease:inOutQuad move(0)",
+            "move 800ms ease:inOutQuad move(140)",
+            "move 800ms ease:inOutQuad move(140)",
+            "move 800ms ease:inOutQuad move(0)",
+            "move 800ms ease:inOutQuad move(0)",
+            "move 800ms ease:inOutQuad move(140)"
+          ]
+        },
+        {
+          "event": "e-588",
+          "type": "MOUSE_OVER",
+          "typeLabel": "hover → in",
+          "actionList": "a-23",
+          "actionTitle": "Card Hover IN White",
+          "target": "el:1c1bcd75…",
+          "classHint": "project_card_bento.coursor---none",
+          "effects": [
+            "scale 500ms scale(1)",
+            "STYLE_TEXT_COLOR 500ms",
+            "scale 300ms ease:inOutQuad scale(1.005)",
+            "STYLE_TEXT_COLOR 300ms"
+          ]
+        },
+        {
+          "event": "e-589",
+          "type": "MOUSE_OUT",
+          "typeLabel": "hover → out",
+          "actionList": "a-24",
+          "actionTitle": "Card Hover OUT White",
+          "target": "el:1c1bcd75…",
+          "classHint": "project_card_bento.coursor---none",
+          "effects": [
+            "scale 300ms ease:inOutQuad scale(1)",
+            "STYLE_TEXT_COLOR 500ms"
+          ]
+        },
+        {
+          "event": "e-590",
+          "type": "MOUSE_OVER",
+          "typeLabel": "hover → in",
+          "actionList": "a-42",
+          "actionTitle": "Card Hover IN Black",
+          "target": "el:1c1bcd75…",
+          "classHint": "project_card_bento.raif",
+          "effects": [
+            "scale 500ms scale(1)",
+            "STYLE_TEXT_COLOR 500ms",
+            "scale 300ms ease:inOutQuad scale(1.005)",
+            "STYLE_TEXT_COLOR 300ms"
+          ]
+        },
+        {
+          "event": "e-591",
+          "type": "MOUSE_OUT",
+          "typeLabel": "hover → out",
+          "actionList": "a-43",
+          "actionTitle": "Card Hover OUT Black",
+          "target": "el:1c1bcd75…",
+          "classHint": "project_card_bento.raif",
+          "effects": [
+            "scale 300ms ease:inOutQuad scale(1)",
+            "STYLE_TEXT_COLOR 500ms"
+          ]
+        },
+        {
+          "event": "e-592",
+          "type": "MOUSE_OVER",
+          "typeLabel": "hover → in",
+          "actionList": "a-42",
+          "actionTitle": "Card Hover IN Black",
+          "target": "el:1c1bcd75…",
+          "classHint": "project_card_bento.raif",
+          "effects": [
+            "scale 500ms scale(1)",
+            "STYLE_TEXT_COLOR 500ms",
+            "scale 300ms ease:inOutQuad scale(1.005)",
+            "STYLE_TEXT_COLOR 300ms"
+          ]
+        },
+        {
+          "event": "e-593",
+          "type": "MOUSE_OUT",
+          "typeLabel": "hover → out",
+          "actionList": "a-43",
+          "actionTitle": "Card Hover OUT Black",
+          "target": "el:1c1bcd75…",
+          "classHint": "project_card_bento.raif",
+          "effects": [
+            "scale 300ms ease:inOutQuad scale(1)",
+            "STYLE_TEXT_COLOR 500ms"
+          ]
+        },
+        {
+          "event": "e-594",
+          "type": "MOUSE_OVER",
+          "typeLabel": "hover → in",
+          "actionList": "a-23",
+          "actionTitle": "Card Hover IN White",
+          "target": "el:1c1bcd75…",
+          "classHint": "",
+          "effects": [
+            "scale 500ms scale(1)",
+            "STYLE_TEXT_COLOR 500ms",
+            "scale 300ms ease:inOutQuad scale(1.005)",
+            "STYLE_TEXT_COLOR 300ms"
+          ]
+        },
+        {
+          "event": "e-595",
+          "type": "MOUSE_OUT",
+          "typeLabel": "hover → out",
+          "actionList": "a-24",
+          "actionTitle": "Card Hover OUT White",
+          "target": "el:1c1bcd75…",
+          "classHint": "",
+          "effects": [
+            "scale 300ms ease:inOutQuad scale(1)",
+            "STYLE_TEXT_COLOR 500ms"
+          ]
+        },
+        {
+          "event": "e-598",
+          "type": "MOUSE_OVER",
+          "typeLabel": "hover → in",
+          "actionList": "a-23",
+          "actionTitle": "Card Hover IN White",
+          "target": "el:1c1bcd75…",
+          "classHint": "project_card_bento.raif",
+          "effects": [
+            "scale 500ms scale(1)",
+            "STYLE_TEXT_COLOR 500ms",
+            "scale 300ms ease:inOutQuad scale(1.005)",
+            "STYLE_TEXT_COLOR 300ms"
+          ]
+        },
+        {
+          "event": "e-599",
+          "type": "MOUSE_OUT",
+          "typeLabel": "hover → out",
+          "actionList": "a-24",
+          "actionTitle": "Card Hover OUT White",
+          "target": "el:1c1bcd75…",
+          "classHint": "project_card_bento.raif",
+          "effects": [
+            "scale 300ms ease:inOutQuad scale(1)",
+            "STYLE_TEXT_COLOR 500ms"
+          ]
+        },
+        {
+          "event": "e-600",
+          "type": "MOUSE_OVER",
+          "typeLabel": "hover → in",
+          "actionList": "a-23",
+          "actionTitle": "Card Hover IN White",
+          "target": "el:a5ebc70a…",
+          "classHint": "",
+          "effects": [
+            "scale 500ms scale(1)",
+            "STYLE_TEXT_COLOR 500ms",
+            "scale 300ms ease:inOutQuad scale(1.005)",
+            "STYLE_TEXT_COLOR 300ms"
+          ]
+        },
+        {
+          "event": "e-601",
+          "type": "MOUSE_OUT",
+          "typeLabel": "hover → out",
+          "actionList": "a-24",
+          "actionTitle": "Card Hover OUT White",
+          "target": "el:a5ebc70a…",
+          "classHint": "",
+          "effects": [
+            "scale 300ms ease:inOutQuad scale(1)",
+            "STYLE_TEXT_COLOR 500ms"
+          ]
+        },
+        {
+          "event": "e-602",
+          "type": "MOUSE_OVER",
+          "typeLabel": "hover → in",
+          "actionList": "a-42",
+          "actionTitle": "Card Hover IN Black",
+          "target": "el:8dd4b1d2…",
+          "classHint": "project_card_bento.raif",
+          "effects": [
+            "scale 500ms scale(1)",
+            "STYLE_TEXT_COLOR 500ms",
+            "scale 300ms ease:inOutQuad scale(1.005)",
+            "STYLE_TEXT_COLOR 300ms"
+          ]
+        },
+        {
+          "event": "e-603",
+          "type": "MOUSE_OUT",
+          "typeLabel": "hover → out",
+          "actionList": "a-43",
+          "actionTitle": "Card Hover OUT Black",
+          "target": "el:8dd4b1d2…",
+          "classHint": "project_card_bento.raif",
+          "effects": [
+            "scale 300ms ease:inOutQuad scale(1)",
+            "STYLE_TEXT_COLOR 500ms"
+          ]
+        },
+        {
+          "event": "e-604",
+          "type": "MOUSE_OVER",
+          "typeLabel": "hover → in",
+          "actionList": "a-42",
+          "actionTitle": "Card Hover IN Black",
+          "target": "el:21cf6dde…",
+          "classHint": "project_card_bento.raif",
+          "effects": [
+            "scale 500ms scale(1)",
+            "STYLE_TEXT_COLOR 500ms",
+            "scale 300ms ease:inOutQuad scale(1.005)",
+            "STYLE_TEXT_COLOR 300ms"
+          ]
+        },
+        {
+          "event": "e-605",
+          "type": "MOUSE_OUT",
+          "typeLabel": "hover → out",
+          "actionList": "a-43",
+          "actionTitle": "Card Hover OUT Black",
+          "target": "el:21cf6dde…",
+          "classHint": "project_card_bento.raif",
+          "effects": [
+            "scale 300ms ease:inOutQuad scale(1)",
+            "STYLE_TEXT_COLOR 500ms"
+          ]
+        },
+        {
+          "event": "e-606",
+          "type": "MOUSE_OVER",
+          "typeLabel": "hover → in",
+          "actionList": "a-42",
+          "actionTitle": "Card Hover IN Black",
+          "target": "el:9f4e1578…",
+          "classHint": "project_card_bento.raif",
+          "effects": [
+            "scale 500ms scale(1)",
+            "STYLE_TEXT_COLOR 500ms",
+            "scale 300ms ease:inOutQuad scale(1.005)",
+            "STYLE_TEXT_COLOR 300ms"
+          ]
+        },
+        {
+          "event": "e-607",
+          "type": "MOUSE_OUT",
+          "typeLabel": "hover → out",
+          "actionList": "a-43",
+          "actionTitle": "Card Hover OUT Black",
+          "target": "el:9f4e1578…",
+          "classHint": "project_card_bento.raif",
+          "effects": [
+            "scale 300ms ease:inOutQuad scale(1)",
+            "STYLE_TEXT_COLOR 500ms"
+          ]
+        },
+        {
+          "event": "e-608",
+          "type": "MOUSE_OVER",
+          "typeLabel": "hover → in",
+          "actionList": "a-42",
+          "actionTitle": "Card Hover IN Black",
+          "target": "el:23b78794…",
+          "classHint": "project_card_bento.raif",
+          "effects": [
+            "scale 500ms scale(1)",
+            "STYLE_TEXT_COLOR 500ms",
+            "scale 300ms ease:inOutQuad scale(1.005)",
+            "STYLE_TEXT_COLOR 300ms"
+          ]
+        },
+        {
+          "event": "e-609",
+          "type": "MOUSE_OUT",
+          "typeLabel": "hover → out",
+          "actionList": "a-43",
+          "actionTitle": "Card Hover OUT Black",
+          "target": "el:23b78794…",
+          "classHint": "project_card_bento.raif",
+          "effects": [
+            "scale 300ms ease:inOutQuad scale(1)",
+            "STYLE_TEXT_COLOR 500ms"
+          ]
+        },
+        {
+          "event": "e-610",
+          "type": "MOUSE_OVER",
+          "typeLabel": "hover → in",
+          "actionList": "a-23",
+          "actionTitle": "Card Hover IN White",
+          "target": "el:1718b283…",
+          "classHint": "project_card_bento.raif",
+          "effects": [
+            "scale 500ms scale(1)",
+            "STYLE_TEXT_COLOR 500ms",
+            "scale 300ms ease:inOutQuad scale(1.005)",
+            "STYLE_TEXT_COLOR 300ms"
+          ]
+        },
+        {
+          "event": "e-611",
+          "type": "MOUSE_OUT",
+          "typeLabel": "hover → out",
+          "actionList": "a-24",
+          "actionTitle": "Card Hover OUT White",
+          "target": "el:1718b283…",
+          "classHint": "project_card_bento.raif",
+          "effects": [
+            "scale 300ms ease:inOutQuad scale(1)",
+            "STYLE_TEXT_COLOR 500ms"
+          ]
+        },
+        {
+          "event": "e-612",
+          "type": "MOUSE_OVER",
+          "typeLabel": "hover → in",
+          "actionList": "a-23",
+          "actionTitle": "Card Hover IN White",
+          "target": "el:3f89422e…",
+          "classHint": "project_card_bento.raif",
+          "effects": [
+            "scale 500ms scale(1)",
+            "STYLE_TEXT_COLOR 500ms",
+            "scale 300ms ease:inOutQuad scale(1.005)",
+            "STYLE_TEXT_COLOR 300ms"
+          ]
+        },
+        {
+          "event": "e-613",
+          "type": "MOUSE_OUT",
+          "typeLabel": "hover → out",
+          "actionList": "a-24",
+          "actionTitle": "Card Hover OUT White",
+          "target": "el:3f89422e…",
+          "classHint": "project_card_bento.raif",
+          "effects": [
+            "scale 300ms ease:inOutQuad scale(1)",
+            "STYLE_TEXT_COLOR 500ms"
+          ]
+        },
+        {
+          "event": "e-614",
+          "type": "MOUSE_OVER",
+          "typeLabel": "hover → in",
+          "actionList": "a-42",
+          "actionTitle": "Card Hover IN Black",
+          "target": "el:d0fca12c…",
+          "classHint": "project_card_bento.raif",
+          "effects": [
+            "scale 500ms scale(1)",
+            "STYLE_TEXT_COLOR 500ms",
+            "scale 300ms ease:inOutQuad scale(1.005)",
+            "STYLE_TEXT_COLOR 300ms"
+          ]
+        },
+        {
+          "event": "e-615",
+          "type": "MOUSE_OUT",
+          "typeLabel": "hover → out",
+          "actionList": "a-43",
+          "actionTitle": "Card Hover OUT Black",
+          "target": "el:d0fca12c…",
+          "classHint": "project_card_bento.raif",
+          "effects": [
+            "scale 300ms ease:inOutQuad scale(1)",
+            "STYLE_TEXT_COLOR 500ms"
+          ]
+        }
+      ],
+      "types": {
+        "MOUSE_OVER": 14,
+        "MOUSE_OUT": 13
+      }
+    },
+    "sberpravo.html": {
+      "events": [
+        {
+          "event": "e-144",
+          "type": "SCROLLING_IN_VIEW",
+          "typeLabel": "scroll reveal",
+          "actionList": "a-41",
+          "actionTitle": "Scroll animation Logo + description",
+          "target": "el:8bbde515…",
+          "classHint": "text_block_main.project",
+          "effects": []
+        },
+        {
+          "event": "e-145",
+          "type": "SCROLLING_IN_VIEW",
+          "typeLabel": "scroll reveal",
+          "actionList": "a-38",
+          "actionTitle": "Scroll animation",
+          "target": "el:39989a03…",
+          "classHint": "content_main-screen.project",
+          "effects": []
+        },
+        {
+          "event": "e-146",
+          "type": "SCROLLING_IN_VIEW",
+          "typeLabel": "scroll reveal",
+          "actionList": "a-38",
+          "actionTitle": "Scroll animation",
+          "target": "el:d9f13d8c…",
+          "classHint": "context.project",
+          "effects": []
+        },
+        {
+          "event": "e-147",
+          "type": "SCROLLING_IN_VIEW",
+          "typeLabel": "scroll reveal",
+          "actionList": "a-38",
+          "actionTitle": "Scroll animation",
+          "target": "el:57fa0699…",
+          "classHint": "my-role.project",
+          "effects": []
+        },
+        {
+          "event": "e-148",
+          "type": "SCROLLING_IN_VIEW",
+          "typeLabel": "scroll reveal",
+          "actionList": "a-38",
+          "actionTitle": "Scroll animation",
+          "target": "el:466b9973…",
+          "classHint": "research.project",
+          "effects": []
+        },
+        {
+          "event": "e-149",
+          "type": "SCROLLING_IN_VIEW",
+          "typeLabel": "scroll reveal",
+          "actionList": "a-38",
+          "actionTitle": "Scroll animation",
+          "target": "el:39fb4027…",
+          "classHint": "presentation.project",
+          "effects": []
+        },
+        {
+          "event": "e-150",
+          "type": "SCROLLING_IN_VIEW",
+          "typeLabel": "scroll reveal",
+          "actionList": "a-38",
+          "actionTitle": "Scroll animation",
+          "target": "el:e5cc7b22…",
+          "classHint": "result.project",
+          "effects": []
+        },
+        {
+          "event": "e-424",
+          "type": "SCROLLING_IN_VIEW",
+          "typeLabel": "scroll reveal",
+          "actionList": "a-38",
+          "actionTitle": "Scroll animation",
+          "target": "el:ceb62452…",
+          "classHint": "more-peojects.project",
+          "effects": []
+        },
+        {
+          "event": "e-854",
+          "type": "MOUSE_OVER",
+          "typeLabel": "hover → in",
+          "actionList": "a-42",
+          "actionTitle": "Card Hover IN Black",
+          "target": "el:0eda18c3…",
+          "classHint": "project_card_bento.raif",
+          "effects": [
+            "scale 500ms scale(1)",
+            "STYLE_TEXT_COLOR 500ms",
+            "scale 300ms ease:inOutQuad scale(1.005)",
+            "STYLE_TEXT_COLOR 300ms"
+          ]
+        },
+        {
+          "event": "e-855",
+          "type": "MOUSE_OUT",
+          "typeLabel": "hover → out",
+          "actionList": "a-43",
+          "actionTitle": "Card Hover OUT Black",
+          "target": "el:0eda18c3…",
+          "classHint": "project_card_bento.raif",
+          "effects": [
+            "scale 300ms ease:inOutQuad scale(1)",
+            "STYLE_TEXT_COLOR 500ms"
+          ]
+        },
+        {
+          "event": "e-856",
+          "type": "MOUSE_OVER",
+          "typeLabel": "hover → in",
+          "actionList": "a-42",
+          "actionTitle": "Card Hover IN Black",
+          "target": "el:0eda18c3…",
+          "classHint": "project_card_bento.raif",
+          "effects": [
+            "scale 500ms scale(1)",
+            "STYLE_TEXT_COLOR 500ms",
+            "scale 300ms ease:inOutQuad scale(1.005)",
+            "STYLE_TEXT_COLOR 300ms"
+          ]
+        },
+        {
+          "event": "e-857",
+          "type": "MOUSE_OUT",
+          "typeLabel": "hover → out",
+          "actionList": "a-43",
+          "actionTitle": "Card Hover OUT Black",
+          "target": "el:0eda18c3…",
+          "classHint": "project_card_bento.raif",
+          "effects": [
+            "scale 300ms ease:inOutQuad scale(1)",
+            "STYLE_TEXT_COLOR 500ms"
+          ]
+        },
+        {
+          "event": "e-858",
+          "type": "MOUSE_OVER",
+          "typeLabel": "hover → in",
+          "actionList": "a-23",
+          "actionTitle": "Card Hover IN White",
+          "target": "el:0eda18c3…",
+          "classHint": "project_card_bento.raif",
+          "effects": [
+            "scale 500ms scale(1)",
+            "STYLE_TEXT_COLOR 500ms",
+            "scale 300ms ease:inOutQuad scale(1.005)",
+            "STYLE_TEXT_COLOR 300ms"
+          ]
+        },
+        {
+          "event": "e-859",
+          "type": "MOUSE_OUT",
+          "typeLabel": "hover → out",
+          "actionList": "a-24",
+          "actionTitle": "Card Hover OUT White",
+          "target": "el:0eda18c3…",
+          "classHint": "project_card_bento.raif",
+          "effects": [
+            "scale 300ms ease:inOutQuad scale(1)",
+            "STYLE_TEXT_COLOR 500ms"
+          ]
+        },
+        {
+          "event": "e-860",
+          "type": "MOUSE_OVER",
+          "typeLabel": "hover → in",
+          "actionList": "a-42",
+          "actionTitle": "Card Hover IN Black",
+          "target": "el:0eda18c3…",
+          "classHint": "",
+          "effects": [
+            "scale 500ms scale(1)",
+            "STYLE_TEXT_COLOR 500ms",
+            "scale 300ms ease:inOutQuad scale(1.005)",
+            "STYLE_TEXT_COLOR 300ms"
+          ]
+        },
+        {
+          "event": "e-861",
+          "type": "MOUSE_OUT",
+          "typeLabel": "hover → out",
+          "actionList": "a-43",
+          "actionTitle": "Card Hover OUT Black",
+          "target": "el:0eda18c3…",
+          "classHint": "",
+          "effects": [
+            "scale 300ms ease:inOutQuad scale(1)",
+            "STYLE_TEXT_COLOR 500ms"
+          ]
+        },
+        {
+          "event": "e-862",
+          "type": "MOUSE_OVER",
+          "typeLabel": "hover → in",
+          "actionList": "a-42",
+          "actionTitle": "Card Hover IN Black",
+          "target": "el:0eda18c3…",
+          "classHint": "",
+          "effects": [
+            "scale 500ms scale(1)",
+            "STYLE_TEXT_COLOR 500ms",
+            "scale 300ms ease:inOutQuad scale(1.005)",
+            "STYLE_TEXT_COLOR 300ms"
+          ]
+        },
+        {
+          "event": "e-863",
+          "type": "MOUSE_OUT",
+          "typeLabel": "hover → out",
+          "actionList": "a-43",
+          "actionTitle": "Card Hover OUT Black",
+          "target": "el:0eda18c3…",
+          "classHint": "",
+          "effects": [
+            "scale 300ms ease:inOutQuad scale(1)",
+            "STYLE_TEXT_COLOR 500ms"
+          ]
+        },
+        {
+          "event": "e-864",
+          "type": "MOUSE_OVER",
+          "typeLabel": "hover → in",
+          "actionList": "a-23",
+          "actionTitle": "Card Hover IN White",
+          "target": "el:0eda18c3…",
+          "classHint": "",
+          "effects": [
+            "scale 500ms scale(1)",
+            "STYLE_TEXT_COLOR 500ms",
+            "scale 300ms ease:inOutQuad scale(1.005)",
+            "STYLE_TEXT_COLOR 300ms"
+          ]
+        },
+        {
+          "event": "e-865",
+          "type": "MOUSE_OUT",
+          "typeLabel": "hover → out",
+          "actionList": "a-24",
+          "actionTitle": "Card Hover OUT White",
+          "target": "el:0eda18c3…",
+          "classHint": "",
+          "effects": [
+            "scale 300ms ease:inOutQuad scale(1)",
+            "STYLE_TEXT_COLOR 500ms"
+          ]
+        },
+        {
+          "event": "e-866",
+          "type": "MOUSE_OVER",
+          "typeLabel": "hover → in",
+          "actionList": "a-23",
+          "actionTitle": "Card Hover IN White",
+          "target": "el:0eda18c3…",
+          "classHint": "",
+          "effects": [
+            "scale 500ms scale(1)",
+            "STYLE_TEXT_COLOR 500ms",
+            "scale 300ms ease:inOutQuad scale(1.005)",
+            "STYLE_TEXT_COLOR 300ms"
+          ]
+        },
+        {
+          "event": "e-867",
+          "type": "MOUSE_OUT",
+          "typeLabel": "hover → out",
+          "actionList": "a-24",
+          "actionTitle": "Card Hover OUT White",
+          "target": "el:0eda18c3…",
+          "classHint": "",
+          "effects": [
+            "scale 300ms ease:inOutQuad scale(1)",
+            "STYLE_TEXT_COLOR 500ms"
+          ]
+        },
+        {
+          "event": "e-868",
+          "type": "MOUSE_OVER",
+          "typeLabel": "hover → in",
+          "actionList": "a-42",
+          "actionTitle": "Card Hover IN Black",
+          "target": "el:0eda18c3…",
+          "classHint": "",
+          "effects": [
+            "scale 500ms scale(1)",
+            "STYLE_TEXT_COLOR 500ms",
+            "scale 300ms ease:inOutQuad scale(1.005)",
+            "STYLE_TEXT_COLOR 300ms"
+          ]
+        },
+        {
+          "event": "e-869",
+          "type": "MOUSE_OUT",
+          "typeLabel": "hover → out",
+          "actionList": "a-43",
+          "actionTitle": "Card Hover OUT Black",
+          "target": "el:0eda18c3…",
+          "classHint": "",
+          "effects": [
+            "scale 300ms ease:inOutQuad scale(1)",
+            "STYLE_TEXT_COLOR 500ms"
+          ]
+        }
+      ],
+      "types": {
+        "SCROLLING_IN_VIEW": 8,
+        "MOUSE_OVER": 8,
+        "MOUSE_OUT": 8
+      }
+    },
+    "legalbpm.html": {
+      "events": [
+        {
+          "event": "e-160",
+          "type": "SCROLLING_IN_VIEW",
+          "typeLabel": "scroll reveal",
+          "actionList": "a-38",
+          "actionTitle": "Scroll animation",
+          "target": "el:8bbde515…",
+          "classHint": "text_block_main.project",
+          "effects": []
+        },
+        {
+          "event": "e-161",
+          "type": "SCROLLING_IN_VIEW",
+          "typeLabel": "scroll reveal",
+          "actionList": "a-38",
+          "actionTitle": "Scroll animation",
+          "target": "el:39989a03…",
+          "classHint": "content_main-screen.project",
+          "effects": []
+        },
+        {
+          "event": "e-162",
+          "type": "SCROLLING_IN_VIEW",
+          "typeLabel": "scroll reveal",
+          "actionList": "a-38",
+          "actionTitle": "Scroll animation",
+          "target": "el:d9f13d8c…",
+          "classHint": "context.project",
+          "effects": []
+        },
+        {
+          "event": "e-163",
+          "type": "SCROLLING_IN_VIEW",
+          "typeLabel": "scroll reveal",
+          "actionList": "a-38",
+          "actionTitle": "Scroll animation",
+          "target": "el:57fa0699…",
+          "classHint": "my-role.project",
+          "effects": []
+        },
+        {
+          "event": "e-164",
+          "type": "SCROLLING_IN_VIEW",
+          "typeLabel": "scroll reveal",
+          "actionList": "a-38",
+          "actionTitle": "Scroll animation",
+          "target": "el:466b9973…",
+          "classHint": "research.project",
+          "effects": []
+        },
+        {
+          "event": "e-165",
+          "type": "SCROLLING_IN_VIEW",
+          "typeLabel": "scroll reveal",
+          "actionList": "a-38",
+          "actionTitle": "Scroll animation",
+          "target": "el:39fb4027…",
+          "classHint": "presentation.project",
+          "effects": []
+        },
+        {
+          "event": "e-166",
+          "type": "SCROLLING_IN_VIEW",
+          "typeLabel": "scroll reveal",
+          "actionList": "a-38",
+          "actionTitle": "Scroll animation",
+          "target": "el:e5cc7b22…",
+          "classHint": "result.project",
+          "effects": []
+        },
+        {
+          "event": "e-167",
+          "type": "SCROLLING_IN_VIEW",
+          "typeLabel": "scroll reveal",
+          "actionList": "a-38",
+          "actionTitle": "Scroll animation",
+          "target": "el:e41e01a8…",
+          "classHint": "more-peojects.project",
+          "effects": []
+        },
+        {
+          "event": "e-830",
+          "type": "MOUSE_OVER",
+          "typeLabel": "hover → in",
+          "actionList": "a-42",
+          "actionTitle": "Card Hover IN Black",
+          "target": "el:052678b3…",
+          "classHint": "project_card_bento.raif.moreprojects",
+          "effects": [
+            "scale 500ms scale(1)",
+            "STYLE_TEXT_COLOR 500ms",
+            "scale 300ms ease:inOutQuad scale(1.005)",
+            "STYLE_TEXT_COLOR 300ms"
+          ]
+        },
+        {
+          "event": "e-831",
+          "type": "MOUSE_OUT",
+          "typeLabel": "hover → out",
+          "actionList": "a-43",
+          "actionTitle": "Card Hover OUT Black",
+          "target": "el:052678b3…",
+          "classHint": "project_card_bento.raif.moreprojects",
+          "effects": [
+            "scale 300ms ease:inOutQuad scale(1)",
+            "STYLE_TEXT_COLOR 500ms"
+          ]
+        },
+        {
+          "event": "e-832",
+          "type": "MOUSE_OVER",
+          "typeLabel": "hover → in",
+          "actionList": "a-42",
+          "actionTitle": "Card Hover IN Black",
+          "target": "el:052678b3…",
+          "classHint": "project_card_bento.raif",
+          "effects": [
+            "scale 500ms scale(1)",
+            "STYLE_TEXT_COLOR 500ms",
+            "scale 300ms ease:inOutQuad scale(1.005)",
+            "STYLE_TEXT_COLOR 300ms"
+          ]
+        },
+        {
+          "event": "e-833",
+          "type": "MOUSE_OUT",
+          "typeLabel": "hover → out",
+          "actionList": "a-43",
+          "actionTitle": "Card Hover OUT Black",
+          "target": "el:052678b3…",
+          "classHint": "project_card_bento.raif",
+          "effects": [
+            "scale 300ms ease:inOutQuad scale(1)",
+            "STYLE_TEXT_COLOR 500ms"
+          ]
+        },
+        {
+          "event": "e-834",
+          "type": "MOUSE_OVER",
+          "typeLabel": "hover → in",
+          "actionList": "a-42",
+          "actionTitle": "Card Hover IN Black",
+          "target": "el:052678b3…",
+          "classHint": "project_card_bento.raif",
+          "effects": [
+            "scale 500ms scale(1)",
+            "STYLE_TEXT_COLOR 500ms",
+            "scale 300ms ease:inOutQuad scale(1.005)",
+            "STYLE_TEXT_COLOR 300ms"
+          ]
+        },
+        {
+          "event": "e-835",
+          "type": "MOUSE_OUT",
+          "typeLabel": "hover → out",
+          "actionList": "a-43",
+          "actionTitle": "Card Hover OUT Black",
+          "target": "el:052678b3…",
+          "classHint": "project_card_bento.raif",
+          "effects": [
+            "scale 300ms ease:inOutQuad scale(1)",
+            "STYLE_TEXT_COLOR 500ms"
+          ]
+        },
+        {
+          "event": "e-836",
+          "type": "MOUSE_OVER",
+          "typeLabel": "hover → in",
+          "actionList": "a-23",
+          "actionTitle": "Card Hover IN White",
+          "target": "el:052678b3…",
+          "classHint": "",
+          "effects": [
+            "scale 500ms scale(1)",
+            "STYLE_TEXT_COLOR 500ms",
+            "scale 300ms ease:inOutQuad scale(1.005)",
+            "STYLE_TEXT_COLOR 300ms"
+          ]
+        },
+        {
+          "event": "e-837",
+          "type": "MOUSE_OUT",
+          "typeLabel": "hover → out",
+          "actionList": "a-24",
+          "actionTitle": "Card Hover OUT White",
+          "target": "el:052678b3…",
+          "classHint": "",
+          "effects": [
+            "scale 300ms ease:inOutQuad scale(1)",
+            "STYLE_TEXT_COLOR 500ms"
+          ]
+        },
+        {
+          "event": "e-838",
+          "type": "MOUSE_OVER",
+          "typeLabel": "hover → in",
+          "actionList": "a-42",
+          "actionTitle": "Card Hover IN Black",
+          "target": "el:052678b3…",
+          "classHint": "",
+          "effects": [
+            "scale 500ms scale(1)",
+            "STYLE_TEXT_COLOR 500ms",
+            "scale 300ms ease:inOutQuad scale(1.005)",
+            "STYLE_TEXT_COLOR 300ms"
+          ]
+        },
+        {
+          "event": "e-839",
+          "type": "MOUSE_OUT",
+          "typeLabel": "hover → out",
+          "actionList": "a-43",
+          "actionTitle": "Card Hover OUT Black",
+          "target": "el:052678b3…",
+          "classHint": "",
+          "effects": [
+            "scale 300ms ease:inOutQuad scale(1)",
+            "STYLE_TEXT_COLOR 500ms"
+          ]
+        },
+        {
+          "event": "e-840",
+          "type": "MOUSE_OVER",
+          "typeLabel": "hover → in",
+          "actionList": "a-42",
+          "actionTitle": "Card Hover IN Black",
+          "target": "el:052678b3…",
+          "classHint": "",
+          "effects": [
+            "scale 500ms scale(1)",
+            "STYLE_TEXT_COLOR 500ms",
+            "scale 300ms ease:inOutQuad scale(1.005)",
+            "STYLE_TEXT_COLOR 300ms"
+          ]
+        },
+        {
+          "event": "e-841",
+          "type": "MOUSE_OUT",
+          "typeLabel": "hover → out",
+          "actionList": "a-43",
+          "actionTitle": "Card Hover OUT Black",
+          "target": "el:052678b3…",
+          "classHint": "",
+          "effects": [
+            "scale 300ms ease:inOutQuad scale(1)",
+            "STYLE_TEXT_COLOR 500ms"
+          ]
+        },
+        {
+          "event": "e-842",
+          "type": "MOUSE_OVER",
+          "typeLabel": "hover → in",
+          "actionList": "a-23",
+          "actionTitle": "Card Hover IN White",
+          "target": "el:052678b3…",
+          "classHint": "",
+          "effects": [
+            "scale 500ms scale(1)",
+            "STYLE_TEXT_COLOR 500ms",
+            "scale 300ms ease:inOutQuad scale(1.005)",
+            "STYLE_TEXT_COLOR 300ms"
+          ]
+        },
+        {
+          "event": "e-843",
+          "type": "MOUSE_OUT",
+          "typeLabel": "hover → out",
+          "actionList": "a-24",
+          "actionTitle": "Card Hover OUT White",
+          "target": "el:052678b3…",
+          "classHint": "",
+          "effects": [
+            "scale 300ms ease:inOutQuad scale(1)",
+            "STYLE_TEXT_COLOR 500ms"
+          ]
+        },
+        {
+          "event": "e-844",
+          "type": "MOUSE_OVER",
+          "typeLabel": "hover → in",
+          "actionList": "a-23",
+          "actionTitle": "Card Hover IN White",
+          "target": "el:052678b3…",
+          "classHint": "",
+          "effects": [
+            "scale 500ms scale(1)",
+            "STYLE_TEXT_COLOR 500ms",
+            "scale 300ms ease:inOutQuad scale(1.005)",
+            "STYLE_TEXT_COLOR 300ms"
+          ]
+        },
+        {
+          "event": "e-845",
+          "type": "MOUSE_OUT",
+          "typeLabel": "hover → out",
+          "actionList": "a-24",
+          "actionTitle": "Card Hover OUT White",
+          "target": "el:052678b3…",
+          "classHint": "",
+          "effects": [
+            "scale 300ms ease:inOutQuad scale(1)",
+            "STYLE_TEXT_COLOR 500ms"
+          ]
+        },
+        {
+          "event": "e-846",
+          "type": "MOUSE_OVER",
+          "typeLabel": "hover → in",
+          "actionList": "a-42",
+          "actionTitle": "Card Hover IN Black",
+          "target": "el:052678b3…",
+          "classHint": "",
+          "effects": [
+            "scale 500ms scale(1)",
+            "STYLE_TEXT_COLOR 500ms",
+            "scale 300ms ease:inOutQuad scale(1.005)",
+            "STYLE_TEXT_COLOR 300ms"
+          ]
+        },
+        {
+          "event": "e-847",
+          "type": "MOUSE_OUT",
+          "typeLabel": "hover → out",
+          "actionList": "a-43",
+          "actionTitle": "Card Hover OUT Black",
+          "target": "el:052678b3…",
+          "classHint": "",
+          "effects": [
+            "scale 300ms ease:inOutQuad scale(1)",
+            "STYLE_TEXT_COLOR 500ms"
+          ]
+        }
+      ],
+      "types": {
+        "SCROLLING_IN_VIEW": 8,
+        "MOUSE_OVER": 9,
+        "MOUSE_OUT": 9
+      }
+    },
+    "csradar.html": {
+      "events": [
+        {
+          "event": "e-176",
+          "type": "SCROLLING_IN_VIEW",
+          "typeLabel": "scroll reveal",
+          "actionList": "a-38",
+          "actionTitle": "Scroll animation",
+          "target": "el:8bbde515…",
+          "classHint": "text_block_main.project",
+          "effects": []
+        },
+        {
+          "event": "e-177",
+          "type": "SCROLLING_IN_VIEW",
+          "typeLabel": "scroll reveal",
+          "actionList": "a-38",
+          "actionTitle": "Scroll animation",
+          "target": "el:39989a03…",
+          "classHint": "content_main-screen.project",
+          "effects": []
+        },
+        {
+          "event": "e-178",
+          "type": "SCROLLING_IN_VIEW",
+          "typeLabel": "scroll reveal",
+          "actionList": "a-38",
+          "actionTitle": "Scroll animation",
+          "target": "el:d9f13d8c…",
+          "classHint": "context.project",
+          "effects": []
+        },
+        {
+          "event": "e-179",
+          "type": "SCROLLING_IN_VIEW",
+          "typeLabel": "scroll reveal",
+          "actionList": "a-38",
+          "actionTitle": "Scroll animation",
+          "target": "el:57fa0699…",
+          "classHint": "my-role.project",
+          "effects": []
+        },
+        {
+          "event": "e-180",
+          "type": "SCROLLING_IN_VIEW",
+          "typeLabel": "scroll reveal",
+          "actionList": "a-38",
+          "actionTitle": "Scroll animation",
+          "target": "el:466b9973…",
+          "classHint": "research.project",
+          "effects": []
+        },
+        {
+          "event": "e-181",
+          "type": "SCROLLING_IN_VIEW",
+          "typeLabel": "scroll reveal",
+          "actionList": "a-38",
+          "actionTitle": "Scroll animation",
+          "target": "el:39fb4027…",
+          "classHint": "presentation.project",
+          "effects": []
+        },
+        {
+          "event": "e-182",
+          "type": "SCROLLING_IN_VIEW",
+          "typeLabel": "scroll reveal",
+          "actionList": "a-38",
+          "actionTitle": "Scroll animation",
+          "target": "el:e5cc7b22…",
+          "classHint": "result.project",
+          "effects": []
+        },
+        {
+          "event": "e-183",
+          "type": "SCROLLING_IN_VIEW",
+          "typeLabel": "scroll reveal",
+          "actionList": "a-38",
+          "actionTitle": "Scroll animation",
+          "target": "el:e41e01a8…",
+          "classHint": "more-peojects.project",
+          "effects": []
+        },
+        {
+          "event": "e-437",
+          "type": "SCROLLING_IN_VIEW",
+          "typeLabel": "scroll reveal",
+          "actionList": "a-38",
+          "actionTitle": "Scroll animation",
+          "target": "el:cf139324…",
+          "classHint": "context.project",
+          "effects": []
+        },
+        {
+          "event": "e-484",
+          "type": "MOUSE_OVER",
+          "typeLabel": "hover → in",
+          "actionList": "a-6",
+          "actionTitle": "Button_hover_IN",
+          "target": "el:7e9e0d7c…",
+          "classHint": "button_secondary_header.linkandroid.w-button",
+          "effects": [
+            "scale 500ms scale(1)",
+            "scale 300ms ease:inOutQuad scale(1.075)"
+          ]
+        },
+        {
+          "event": "e-485",
+          "type": "MOUSE_OUT",
+          "typeLabel": "hover → out",
+          "actionList": "a-7",
+          "actionTitle": "Button_hover_OUT",
+          "target": "el:7e9e0d7c…",
+          "classHint": "button_secondary_header.linkandroid.w-button",
+          "effects": [
+            "scale 300ms ease:inOutQuad scale(1)"
+          ]
+        },
+        {
+          "event": "e-682",
+          "type": "MOUSE_OVER",
+          "typeLabel": "hover → in",
+          "actionList": "a-23",
+          "actionTitle": "Card Hover IN White",
+          "target": "el:3c6ab7d1…",
+          "classHint": "project_card_bento.raif",
+          "effects": [
+            "scale 500ms scale(1)",
+            "STYLE_TEXT_COLOR 500ms",
+            "scale 300ms ease:inOutQuad scale(1.005)",
+            "STYLE_TEXT_COLOR 300ms"
+          ]
+        },
+        {
+          "event": "e-683",
+          "type": "MOUSE_OUT",
+          "typeLabel": "hover → out",
+          "actionList": "a-24",
+          "actionTitle": "Card Hover OUT White",
+          "target": "el:3c6ab7d1…",
+          "classHint": "project_card_bento.raif",
+          "effects": [
+            "scale 300ms ease:inOutQuad scale(1)",
+            "STYLE_TEXT_COLOR 500ms"
+          ]
+        },
+        {
+          "event": "e-684",
+          "type": "MOUSE_OVER",
+          "typeLabel": "hover → in",
+          "actionList": "a-42",
+          "actionTitle": "Card Hover IN Black",
+          "target": "el:3c6ab7d1…",
+          "classHint": "project_card_bento.raif",
+          "effects": [
+            "scale 500ms scale(1)",
+            "STYLE_TEXT_COLOR 500ms",
+            "scale 300ms ease:inOutQuad scale(1.005)",
+            "STYLE_TEXT_COLOR 300ms"
+          ]
+        },
+        {
+          "event": "e-685",
+          "type": "MOUSE_OUT",
+          "typeLabel": "hover → out",
+          "actionList": "a-43",
+          "actionTitle": "Card Hover OUT Black",
+          "target": "el:3c6ab7d1…",
+          "classHint": "project_card_bento.raif",
+          "effects": [
+            "scale 300ms ease:inOutQuad scale(1)",
+            "STYLE_TEXT_COLOR 500ms"
+          ]
+        },
+        {
+          "event": "e-686",
+          "type": "MOUSE_OVER",
+          "typeLabel": "hover → in",
+          "actionList": "a-42",
+          "actionTitle": "Card Hover IN Black",
+          "target": "el:3c6ab7d1…",
+          "classHint": "project_card_bento.raif",
+          "effects": [
+            "scale 500ms scale(1)",
+            "STYLE_TEXT_COLOR 500ms",
+            "scale 300ms ease:inOutQuad scale(1.005)",
+            "STYLE_TEXT_COLOR 300ms"
+          ]
+        },
+        {
+          "event": "e-687",
+          "type": "MOUSE_OUT",
+          "typeLabel": "hover → out",
+          "actionList": "a-43",
+          "actionTitle": "Card Hover OUT Black",
+          "target": "el:3c6ab7d1…",
+          "classHint": "project_card_bento.raif",
+          "effects": [
+            "scale 300ms ease:inOutQuad scale(1)",
+            "STYLE_TEXT_COLOR 500ms"
+          ]
+        },
+        {
+          "event": "e-688",
+          "type": "MOUSE_OVER",
+          "typeLabel": "hover → in",
+          "actionList": "a-23",
+          "actionTitle": "Card Hover IN White",
+          "target": "el:3c6ab7d1…",
+          "classHint": "",
+          "effects": [
+            "scale 500ms scale(1)",
+            "STYLE_TEXT_COLOR 500ms",
+            "scale 300ms ease:inOutQuad scale(1.005)",
+            "STYLE_TEXT_COLOR 300ms"
+          ]
+        },
+        {
+          "event": "e-689",
+          "type": "MOUSE_OUT",
+          "typeLabel": "hover → out",
+          "actionList": "a-24",
+          "actionTitle": "Card Hover OUT White",
+          "target": "el:3c6ab7d1…",
+          "classHint": "",
+          "effects": [
+            "scale 300ms ease:inOutQuad scale(1)",
+            "STYLE_TEXT_COLOR 500ms"
+          ]
+        },
+        {
+          "event": "e-690",
+          "type": "MOUSE_OVER",
+          "typeLabel": "hover → in",
+          "actionList": "a-23",
+          "actionTitle": "Card Hover IN White",
+          "target": "el:3c6ab7d1…",
+          "classHint": "",
+          "effects": [
+            "scale 500ms scale(1)",
+            "STYLE_TEXT_COLOR 500ms",
+            "scale 300ms ease:inOutQuad scale(1.005)",
+            "STYLE_TEXT_COLOR 300ms"
+          ]
+        },
+        {
+          "event": "e-691",
+          "type": "MOUSE_OUT",
+          "typeLabel": "hover → out",
+          "actionList": "a-24",
+          "actionTitle": "Card Hover OUT White",
+          "target": "el:3c6ab7d1…",
+          "classHint": "",
+          "effects": [
+            "scale 300ms ease:inOutQuad scale(1)",
+            "STYLE_TEXT_COLOR 500ms"
+          ]
+        },
+        {
+          "event": "e-692",
+          "type": "MOUSE_OVER",
+          "typeLabel": "hover → in",
+          "actionList": "a-42",
+          "actionTitle": "Card Hover IN Black",
+          "target": "el:3c6ab7d1…",
+          "classHint": "",
+          "effects": [
+            "scale 500ms scale(1)",
+            "STYLE_TEXT_COLOR 500ms",
+            "scale 300ms ease:inOutQuad scale(1.005)",
+            "STYLE_TEXT_COLOR 300ms"
+          ]
+        },
+        {
+          "event": "e-693",
+          "type": "MOUSE_OUT",
+          "typeLabel": "hover → out",
+          "actionList": "a-43",
+          "actionTitle": "Card Hover OUT Black",
+          "target": "el:3c6ab7d1…",
+          "classHint": "",
+          "effects": [
+            "scale 300ms ease:inOutQuad scale(1)",
+            "STYLE_TEXT_COLOR 500ms"
+          ]
+        }
+      ],
+      "types": {
+        "SCROLLING_IN_VIEW": 9,
+        "MOUSE_OVER": 7,
+        "MOUSE_OUT": 7
+      }
+    },
+    "crafter.html": {
+      "events": [
+        {
+          "event": "e-192",
+          "type": "SCROLLING_IN_VIEW",
+          "typeLabel": "scroll reveal",
+          "actionList": "a-38",
+          "actionTitle": "Scroll animation",
+          "target": "el:8bbde515…",
+          "classHint": "text_block_main.project",
+          "effects": []
+        },
+        {
+          "event": "e-193",
+          "type": "SCROLLING_IN_VIEW",
+          "typeLabel": "scroll reveal",
+          "actionList": "a-38",
+          "actionTitle": "Scroll animation",
+          "target": "el:39989a03…",
+          "classHint": "content_main-screen.project",
+          "effects": []
+        },
+        {
+          "event": "e-194",
+          "type": "SCROLLING_IN_VIEW",
+          "typeLabel": "scroll reveal",
+          "actionList": "a-38",
+          "actionTitle": "Scroll animation",
+          "target": "el:d9f13d8c…",
+          "classHint": "context.project",
+          "effects": []
+        },
+        {
+          "event": "e-198",
+          "type": "SCROLLING_IN_VIEW",
+          "typeLabel": "scroll reveal",
+          "actionList": "a-38",
+          "actionTitle": "Scroll animation",
+          "target": "el:e5cc7b22…",
+          "classHint": "result.project",
+          "effects": []
+        },
+        {
+          "event": "e-199",
+          "type": "SCROLLING_IN_VIEW",
+          "typeLabel": "scroll reveal",
+          "actionList": "a-38",
+          "actionTitle": "Scroll animation",
+          "target": "el:e41e01a8…",
+          "classHint": "more-peojects.project",
+          "effects": []
+        },
+        {
+          "event": "e-431",
+          "type": "SCROLLING_IN_VIEW",
+          "typeLabel": "scroll reveal",
+          "actionList": "a-38",
+          "actionTitle": "Scroll animation",
+          "target": "el:732f49a6…",
+          "classHint": "context.project",
+          "effects": []
+        },
+        {
+          "event": "e-432",
+          "type": "SCROLLING_IN_VIEW",
+          "typeLabel": "scroll reveal",
+          "actionList": "a-38",
+          "actionTitle": "Scroll animation",
+          "target": "el:b05549d8…",
+          "classHint": "context.project",
+          "effects": []
+        },
+        {
+          "event": "e-700",
+          "type": "MOUSE_OVER",
+          "typeLabel": "hover → in",
+          "actionList": "a-42",
+          "actionTitle": "Card Hover IN Black",
+          "target": "el:40b71590…",
+          "classHint": "",
+          "effects": [
+            "scale 500ms scale(1)",
+            "STYLE_TEXT_COLOR 500ms",
+            "scale 300ms ease:inOutQuad scale(1.005)",
+            "STYLE_TEXT_COLOR 300ms"
+          ]
+        },
+        {
+          "event": "e-701",
+          "type": "MOUSE_OUT",
+          "typeLabel": "hover → out",
+          "actionList": "a-43",
+          "actionTitle": "Card Hover OUT Black",
+          "target": "el:40b71590…",
+          "classHint": "",
+          "effects": [
+            "scale 300ms ease:inOutQuad scale(1)",
+            "STYLE_TEXT_COLOR 500ms"
+          ]
+        },
+        {
+          "event": "e-702",
+          "type": "MOUSE_OVER",
+          "typeLabel": "hover → in",
+          "actionList": "a-42",
+          "actionTitle": "Card Hover IN Black",
+          "target": "el:40b71590…",
+          "classHint": "",
+          "effects": [
+            "scale 500ms scale(1)",
+            "STYLE_TEXT_COLOR 500ms",
+            "scale 300ms ease:inOutQuad scale(1.005)",
+            "STYLE_TEXT_COLOR 300ms"
+          ]
+        },
+        {
+          "event": "e-703",
+          "type": "MOUSE_OUT",
+          "typeLabel": "hover → out",
+          "actionList": "a-43",
+          "actionTitle": "Card Hover OUT Black",
+          "target": "el:40b71590…",
+          "classHint": "",
+          "effects": [
+            "scale 300ms ease:inOutQuad scale(1)",
+            "STYLE_TEXT_COLOR 500ms"
+          ]
+        },
+        {
+          "event": "e-704",
+          "type": "MOUSE_OVER",
+          "typeLabel": "hover → in",
+          "actionList": "a-23",
+          "actionTitle": "Card Hover IN White",
+          "target": "el:40b71590…",
+          "classHint": "",
+          "effects": [
+            "scale 500ms scale(1)",
+            "STYLE_TEXT_COLOR 500ms",
+            "scale 300ms ease:inOutQuad scale(1.005)",
+            "STYLE_TEXT_COLOR 300ms"
+          ]
+        },
+        {
+          "event": "e-705",
+          "type": "MOUSE_OUT",
+          "typeLabel": "hover → out",
+          "actionList": "a-24",
+          "actionTitle": "Card Hover OUT White",
+          "target": "el:40b71590…",
+          "classHint": "",
+          "effects": [
+            "scale 300ms ease:inOutQuad scale(1)",
+            "STYLE_TEXT_COLOR 500ms"
+          ]
+        },
+        {
+          "event": "e-706",
+          "type": "MOUSE_OVER",
+          "typeLabel": "hover → in",
+          "actionList": "a-42",
+          "actionTitle": "Card Hover IN Black",
+          "target": "el:40b71590…",
+          "classHint": "project_card_bento.raif",
+          "effects": [
+            "scale 500ms scale(1)",
+            "STYLE_TEXT_COLOR 500ms",
+            "scale 300ms ease:inOutQuad scale(1.005)",
+            "STYLE_TEXT_COLOR 300ms"
+          ]
+        },
+        {
+          "event": "e-707",
+          "type": "MOUSE_OUT",
+          "typeLabel": "hover → out",
+          "actionList": "a-43",
+          "actionTitle": "Card Hover OUT Black",
+          "target": "el:40b71590…",
+          "classHint": "project_card_bento.raif",
+          "effects": [
+            "scale 300ms ease:inOutQuad scale(1)",
+            "STYLE_TEXT_COLOR 500ms"
+          ]
+        },
+        {
+          "event": "e-708",
+          "type": "MOUSE_OVER",
+          "typeLabel": "hover → in",
+          "actionList": "a-42",
+          "actionTitle": "Card Hover IN Black",
+          "target": "el:40b71590…",
+          "classHint": "project_card_bento.raif",
+          "effects": [
+            "scale 500ms scale(1)",
+            "STYLE_TEXT_COLOR 500ms",
+            "scale 300ms ease:inOutQuad scale(1.005)",
+            "STYLE_TEXT_COLOR 300ms"
+          ]
+        },
+        {
+          "event": "e-709",
+          "type": "MOUSE_OUT",
+          "typeLabel": "hover → out",
+          "actionList": "a-43",
+          "actionTitle": "Card Hover OUT Black",
+          "target": "el:40b71590…",
+          "classHint": "project_card_bento.raif",
+          "effects": [
+            "scale 300ms ease:inOutQuad scale(1)",
+            "STYLE_TEXT_COLOR 500ms"
+          ]
+        },
+        {
+          "event": "e-710",
+          "type": "MOUSE_OVER",
+          "typeLabel": "hover → in",
+          "actionList": "a-23",
+          "actionTitle": "Card Hover IN White",
+          "target": "el:40b71590…",
+          "classHint": "project_card_bento.raif",
+          "effects": [
+            "scale 500ms scale(1)",
+            "STYLE_TEXT_COLOR 500ms",
+            "scale 300ms ease:inOutQuad scale(1.005)",
+            "STYLE_TEXT_COLOR 300ms"
+          ]
+        },
+        {
+          "event": "e-711",
+          "type": "MOUSE_OUT",
+          "typeLabel": "hover → out",
+          "actionList": "a-24",
+          "actionTitle": "Card Hover OUT White",
+          "target": "el:40b71590…",
+          "classHint": "project_card_bento.raif",
+          "effects": [
+            "scale 300ms ease:inOutQuad scale(1)",
+            "STYLE_TEXT_COLOR 500ms"
+          ]
+        },
+        {
+          "event": "e-712",
+          "type": "MOUSE_OVER",
+          "typeLabel": "hover → in",
+          "actionList": "a-23",
+          "actionTitle": "Card Hover IN White",
+          "target": "el:40b71590…",
+          "classHint": "",
+          "effects": [
+            "scale 500ms scale(1)",
+            "STYLE_TEXT_COLOR 500ms",
+            "scale 300ms ease:inOutQuad scale(1.005)",
+            "STYLE_TEXT_COLOR 300ms"
+          ]
+        },
+        {
+          "event": "e-713",
+          "type": "MOUSE_OUT",
+          "typeLabel": "hover → out",
+          "actionList": "a-24",
+          "actionTitle": "Card Hover OUT White",
+          "target": "el:40b71590…",
+          "classHint": "",
+          "effects": [
+            "scale 300ms ease:inOutQuad scale(1)",
+            "STYLE_TEXT_COLOR 500ms"
+          ]
+        },
+        {
+          "event": "e-714",
+          "type": "MOUSE_OVER",
+          "typeLabel": "hover → in",
+          "actionList": "a-42",
+          "actionTitle": "Card Hover IN Black",
+          "target": "el:40b71590…",
+          "classHint": "",
+          "effects": [
+            "scale 500ms scale(1)",
+            "STYLE_TEXT_COLOR 500ms",
+            "scale 300ms ease:inOutQuad scale(1.005)",
+            "STYLE_TEXT_COLOR 300ms"
+          ]
+        },
+        {
+          "event": "e-715",
+          "type": "MOUSE_OUT",
+          "typeLabel": "hover → out",
+          "actionList": "a-43",
+          "actionTitle": "Card Hover OUT Black",
+          "target": "el:40b71590…",
+          "classHint": "",
+          "effects": [
+            "scale 300ms ease:inOutQuad scale(1)",
+            "STYLE_TEXT_COLOR 500ms"
+          ]
+        }
+      ],
+      "types": {
+        "SCROLLING_IN_VIEW": 7,
+        "MOUSE_OVER": 8,
+        "MOUSE_OUT": 8
+      }
+    },
+    "zesklad.html": {
+      "events": [
+        {
+          "event": "e-208",
+          "type": "SCROLLING_IN_VIEW",
+          "typeLabel": "scroll reveal",
+          "actionList": "a-41",
+          "actionTitle": "Scroll animation Logo + description",
+          "target": "el:8bbde515…",
+          "classHint": "text_block_main.project",
+          "effects": []
+        },
+        {
+          "event": "e-209",
+          "type": "SCROLLING_IN_VIEW",
+          "typeLabel": "scroll reveal",
+          "actionList": "a-38",
+          "actionTitle": "Scroll animation",
+          "target": "el:39989a03…",
+          "classHint": "content_main-screen.project",
+          "effects": []
+        },
+        {
+          "event": "e-210",
+          "type": "SCROLLING_IN_VIEW",
+          "typeLabel": "scroll reveal",
+          "actionList": "a-38",
+          "actionTitle": "Scroll animation",
+          "target": "el:d9f13d8c…",
+          "classHint": "context.project",
+          "effects": []
+        },
+        {
+          "event": "e-212",
+          "type": "SCROLLING_IN_VIEW",
+          "typeLabel": "scroll reveal",
+          "actionList": "a-38",
+          "actionTitle": "Scroll animation",
+          "target": "el:466b9973…",
+          "classHint": "research.project",
+          "effects": []
+        },
+        {
+          "event": "e-213",
+          "type": "SCROLLING_IN_VIEW",
+          "typeLabel": "scroll reveal",
+          "actionList": "a-38",
+          "actionTitle": "Scroll animation",
+          "target": "el:39fb4027…",
+          "classHint": "presentation.project",
+          "effects": []
+        },
+        {
+          "event": "e-214",
+          "type": "SCROLLING_IN_VIEW",
+          "typeLabel": "scroll reveal",
+          "actionList": "a-38",
+          "actionTitle": "Scroll animation",
+          "target": "el:e5cc7b22…",
+          "classHint": "result.project",
+          "effects": []
+        },
+        {
+          "event": "e-215",
+          "type": "SCROLLING_IN_VIEW",
+          "typeLabel": "scroll reveal",
+          "actionList": "a-38",
+          "actionTitle": "Scroll animation",
+          "target": "el:e41e01a8…",
+          "classHint": "more-peojects.project",
+          "effects": []
+        },
+        {
+          "event": "e-398",
+          "type": "SCROLLING_IN_VIEW",
+          "typeLabel": "scroll reveal",
+          "actionList": "a-38",
+          "actionTitle": "Scroll animation",
+          "target": "el:0ffe124f…",
+          "classHint": "research.project",
+          "effects": []
+        },
+        {
+          "event": "e-722",
+          "type": "MOUSE_OVER",
+          "typeLabel": "hover → in",
+          "actionList": "a-42",
+          "actionTitle": "Card Hover IN Black",
+          "target": "el:598ae844…",
+          "classHint": "",
+          "effects": [
+            "scale 500ms scale(1)",
+            "STYLE_TEXT_COLOR 500ms",
+            "scale 300ms ease:inOutQuad scale(1.005)",
+            "STYLE_TEXT_COLOR 300ms"
+          ]
+        },
+        {
+          "event": "e-723",
+          "type": "MOUSE_OUT",
+          "typeLabel": "hover → out",
+          "actionList": "a-43",
+          "actionTitle": "Card Hover OUT Black",
+          "target": "el:598ae844…",
+          "classHint": "",
+          "effects": [
+            "scale 300ms ease:inOutQuad scale(1)",
+            "STYLE_TEXT_COLOR 500ms"
+          ]
+        },
+        {
+          "event": "e-724",
+          "type": "MOUSE_OVER",
+          "typeLabel": "hover → in",
+          "actionList": "a-42",
+          "actionTitle": "Card Hover IN Black",
+          "target": "el:598ae844…",
+          "classHint": "",
+          "effects": [
+            "scale 500ms scale(1)",
+            "STYLE_TEXT_COLOR 500ms",
+            "scale 300ms ease:inOutQuad scale(1.005)",
+            "STYLE_TEXT_COLOR 300ms"
+          ]
+        },
+        {
+          "event": "e-725",
+          "type": "MOUSE_OUT",
+          "typeLabel": "hover → out",
+          "actionList": "a-43",
+          "actionTitle": "Card Hover OUT Black",
+          "target": "el:598ae844…",
+          "classHint": "",
+          "effects": [
+            "scale 300ms ease:inOutQuad scale(1)",
+            "STYLE_TEXT_COLOR 500ms"
+          ]
+        },
+        {
+          "event": "e-726",
+          "type": "MOUSE_OVER",
+          "typeLabel": "hover → in",
+          "actionList": "a-23",
+          "actionTitle": "Card Hover IN White",
+          "target": "el:598ae844…",
+          "classHint": "",
+          "effects": [
+            "scale 500ms scale(1)",
+            "STYLE_TEXT_COLOR 500ms",
+            "scale 300ms ease:inOutQuad scale(1.005)",
+            "STYLE_TEXT_COLOR 300ms"
+          ]
+        },
+        {
+          "event": "e-727",
+          "type": "MOUSE_OUT",
+          "typeLabel": "hover → out",
+          "actionList": "a-24",
+          "actionTitle": "Card Hover OUT White",
+          "target": "el:598ae844…",
+          "classHint": "",
+          "effects": [
+            "scale 300ms ease:inOutQuad scale(1)",
+            "STYLE_TEXT_COLOR 500ms"
+          ]
+        },
+        {
+          "event": "e-728",
+          "type": "MOUSE_OVER",
+          "typeLabel": "hover → in",
+          "actionList": "a-42",
+          "actionTitle": "Card Hover IN Black",
+          "target": "el:598ae844…",
+          "classHint": "",
+          "effects": [
+            "scale 500ms scale(1)",
+            "STYLE_TEXT_COLOR 500ms",
+            "scale 300ms ease:inOutQuad scale(1.005)",
+            "STYLE_TEXT_COLOR 300ms"
+          ]
+        },
+        {
+          "event": "e-729",
+          "type": "MOUSE_OUT",
+          "typeLabel": "hover → out",
+          "actionList": "a-43",
+          "actionTitle": "Card Hover OUT Black",
+          "target": "el:598ae844…",
+          "classHint": "",
+          "effects": [
+            "scale 300ms ease:inOutQuad scale(1)",
+            "STYLE_TEXT_COLOR 500ms"
+          ]
+        },
+        {
+          "event": "e-730",
+          "type": "MOUSE_OVER",
+          "typeLabel": "hover → in",
+          "actionList": "a-42",
+          "actionTitle": "Card Hover IN Black",
+          "target": "el:598ae844…",
+          "classHint": "project_card_bento.raif",
+          "effects": [
+            "scale 500ms scale(1)",
+            "STYLE_TEXT_COLOR 500ms",
+            "scale 300ms ease:inOutQuad scale(1.005)",
+            "STYLE_TEXT_COLOR 300ms"
+          ]
+        },
+        {
+          "event": "e-731",
+          "type": "MOUSE_OUT",
+          "typeLabel": "hover → out",
+          "actionList": "a-43",
+          "actionTitle": "Card Hover OUT Black",
+          "target": "el:598ae844…",
+          "classHint": "project_card_bento.raif",
+          "effects": [
+            "scale 300ms ease:inOutQuad scale(1)",
+            "STYLE_TEXT_COLOR 500ms"
+          ]
+        },
+        {
+          "event": "e-732",
+          "type": "MOUSE_OVER",
+          "typeLabel": "hover → in",
+          "actionList": "a-23",
+          "actionTitle": "Card Hover IN White",
+          "target": "el:598ae844…",
+          "classHint": "project_card_bento.raif",
+          "effects": [
+            "scale 500ms scale(1)",
+            "STYLE_TEXT_COLOR 500ms",
+            "scale 300ms ease:inOutQuad scale(1.005)",
+            "STYLE_TEXT_COLOR 300ms"
+          ]
+        },
+        {
+          "event": "e-733",
+          "type": "MOUSE_OUT",
+          "typeLabel": "hover → out",
+          "actionList": "a-24",
+          "actionTitle": "Card Hover OUT White",
+          "target": "el:598ae844…",
+          "classHint": "project_card_bento.raif",
+          "effects": [
+            "scale 300ms ease:inOutQuad scale(1)",
+            "STYLE_TEXT_COLOR 500ms"
+          ]
+        },
+        {
+          "event": "e-734",
+          "type": "MOUSE_OVER",
+          "typeLabel": "hover → in",
+          "actionList": "a-23",
+          "actionTitle": "Card Hover IN White",
+          "target": "el:598ae844…",
+          "classHint": "project_card_bento.raif",
+          "effects": [
+            "scale 500ms scale(1)",
+            "STYLE_TEXT_COLOR 500ms",
+            "scale 300ms ease:inOutQuad scale(1.005)",
+            "STYLE_TEXT_COLOR 300ms"
+          ]
+        },
+        {
+          "event": "e-735",
+          "type": "MOUSE_OUT",
+          "typeLabel": "hover → out",
+          "actionList": "a-24",
+          "actionTitle": "Card Hover OUT White",
+          "target": "el:598ae844…",
+          "classHint": "project_card_bento.raif",
+          "effects": [
+            "scale 300ms ease:inOutQuad scale(1)",
+            "STYLE_TEXT_COLOR 500ms"
+          ]
+        },
+        {
+          "event": "e-736",
+          "type": "MOUSE_OVER",
+          "typeLabel": "hover → in",
+          "actionList": "a-42",
+          "actionTitle": "Card Hover IN Black",
+          "target": "el:598ae844…",
+          "classHint": "",
+          "effects": [
+            "scale 500ms scale(1)",
+            "STYLE_TEXT_COLOR 500ms",
+            "scale 300ms ease:inOutQuad scale(1.005)",
+            "STYLE_TEXT_COLOR 300ms"
+          ]
+        },
+        {
+          "event": "e-737",
+          "type": "MOUSE_OUT",
+          "typeLabel": "hover → out",
+          "actionList": "a-43",
+          "actionTitle": "Card Hover OUT Black",
+          "target": "el:598ae844…",
+          "classHint": "",
+          "effects": [
+            "scale 300ms ease:inOutQuad scale(1)",
+            "STYLE_TEXT_COLOR 500ms"
+          ]
+        }
+      ],
+      "types": {
+        "SCROLLING_IN_VIEW": 8,
+        "MOUSE_OVER": 8,
+        "MOUSE_OUT": 8
+      }
+    },
+    "sibpromstroy.html": {
+      "events": [
+        {
+          "event": "e-224",
+          "type": "SCROLLING_IN_VIEW",
+          "typeLabel": "scroll reveal",
+          "actionList": "a-41",
+          "actionTitle": "Scroll animation Logo + description",
+          "target": "el:8bbde515…",
+          "classHint": "text_block_main.project",
+          "effects": []
+        },
+        {
+          "event": "e-225",
+          "type": "SCROLLING_IN_VIEW",
+          "typeLabel": "scroll reveal",
+          "actionList": "a-38",
+          "actionTitle": "Scroll animation",
+          "target": "el:39989a03…",
+          "classHint": "content_main-screen.project",
+          "effects": []
+        },
+        {
+          "event": "e-226",
+          "type": "SCROLLING_IN_VIEW",
+          "typeLabel": "scroll reveal",
+          "actionList": "a-38",
+          "actionTitle": "Scroll animation",
+          "target": "el:d9f13d8c…",
+          "classHint": "context.project",
+          "effects": []
+        },
+        {
+          "event": "e-228",
+          "type": "SCROLLING_IN_VIEW",
+          "typeLabel": "scroll reveal",
+          "actionList": "a-38",
+          "actionTitle": "Scroll animation",
+          "target": "el:466b9973…",
+          "classHint": "research.project",
+          "effects": []
+        },
+        {
+          "event": "e-229",
+          "type": "SCROLLING_IN_VIEW",
+          "typeLabel": "scroll reveal",
+          "actionList": "a-38",
+          "actionTitle": "Scroll animation",
+          "target": "el:39fb4027…",
+          "classHint": "presentation.project",
+          "effects": []
+        },
+        {
+          "event": "e-230",
+          "type": "SCROLLING_IN_VIEW",
+          "typeLabel": "scroll reveal",
+          "actionList": "a-38",
+          "actionTitle": "Scroll animation",
+          "target": "el:e5cc7b22…",
+          "classHint": "result.project",
+          "effects": []
+        },
+        {
+          "event": "e-399",
+          "type": "SCROLLING_IN_VIEW",
+          "typeLabel": "scroll reveal",
+          "actionList": "a-38",
+          "actionTitle": "Scroll animation",
+          "target": "el:7bc2624b…",
+          "classHint": "more-peojects.project",
+          "effects": []
+        },
+        {
+          "event": "e-438",
+          "type": "SCROLLING_IN_VIEW",
+          "typeLabel": "scroll reveal",
+          "actionList": "a-38",
+          "actionTitle": "Scroll animation",
+          "target": "el:5f86fb33…",
+          "classHint": "context.project",
+          "effects": []
+        },
+        {
+          "event": "e-744",
+          "type": "MOUSE_OVER",
+          "typeLabel": "hover → in",
+          "actionList": "a-42",
+          "actionTitle": "Card Hover IN Black",
+          "target": "el:ff11a7cc…",
+          "classHint": "",
+          "effects": [
+            "scale 500ms scale(1)",
+            "STYLE_TEXT_COLOR 500ms",
+            "scale 300ms ease:inOutQuad scale(1.005)",
+            "STYLE_TEXT_COLOR 300ms"
+          ]
+        },
+        {
+          "event": "e-745",
+          "type": "MOUSE_OUT",
+          "typeLabel": "hover → out",
+          "actionList": "a-43",
+          "actionTitle": "Card Hover OUT Black",
+          "target": "el:ff11a7cc…",
+          "classHint": "",
+          "effects": [
+            "scale 300ms ease:inOutQuad scale(1)",
+            "STYLE_TEXT_COLOR 500ms"
+          ]
+        },
+        {
+          "event": "e-746",
+          "type": "MOUSE_OVER",
+          "typeLabel": "hover → in",
+          "actionList": "a-42",
+          "actionTitle": "Card Hover IN Black",
+          "target": "el:ff11a7cc…",
+          "classHint": "",
+          "effects": [
+            "scale 500ms scale(1)",
+            "STYLE_TEXT_COLOR 500ms",
+            "scale 300ms ease:inOutQuad scale(1.005)",
+            "STYLE_TEXT_COLOR 300ms"
+          ]
+        },
+        {
+          "event": "e-747",
+          "type": "MOUSE_OUT",
+          "typeLabel": "hover → out",
+          "actionList": "a-43",
+          "actionTitle": "Card Hover OUT Black",
+          "target": "el:ff11a7cc…",
+          "classHint": "",
+          "effects": [
+            "scale 300ms ease:inOutQuad scale(1)",
+            "STYLE_TEXT_COLOR 500ms"
+          ]
+        },
+        {
+          "event": "e-748",
+          "type": "MOUSE_OVER",
+          "typeLabel": "hover → in",
+          "actionList": "a-23",
+          "actionTitle": "Card Hover IN White",
+          "target": "el:ff11a7cc…",
+          "classHint": "",
+          "effects": [
+            "scale 500ms scale(1)",
+            "STYLE_TEXT_COLOR 500ms",
+            "scale 300ms ease:inOutQuad scale(1.005)",
+            "STYLE_TEXT_COLOR 300ms"
+          ]
+        },
+        {
+          "event": "e-749",
+          "type": "MOUSE_OUT",
+          "typeLabel": "hover → out",
+          "actionList": "a-24",
+          "actionTitle": "Card Hover OUT White",
+          "target": "el:ff11a7cc…",
+          "classHint": "",
+          "effects": [
+            "scale 300ms ease:inOutQuad scale(1)",
+            "STYLE_TEXT_COLOR 500ms"
+          ]
+        },
+        {
+          "event": "e-750",
+          "type": "MOUSE_OVER",
+          "typeLabel": "hover → in",
+          "actionList": "a-42",
+          "actionTitle": "Card Hover IN Black",
+          "target": "el:ff11a7cc…",
+          "classHint": "",
+          "effects": [
+            "scale 500ms scale(1)",
+            "STYLE_TEXT_COLOR 500ms",
+            "scale 300ms ease:inOutQuad scale(1.005)",
+            "STYLE_TEXT_COLOR 300ms"
+          ]
+        },
+        {
+          "event": "e-751",
+          "type": "MOUSE_OUT",
+          "typeLabel": "hover → out",
+          "actionList": "a-43",
+          "actionTitle": "Card Hover OUT Black",
+          "target": "el:ff11a7cc…",
+          "classHint": "",
+          "effects": [
+            "scale 300ms ease:inOutQuad scale(1)",
+            "STYLE_TEXT_COLOR 500ms"
+          ]
+        },
+        {
+          "event": "e-752",
+          "type": "MOUSE_OVER",
+          "typeLabel": "hover → in",
+          "actionList": "a-42",
+          "actionTitle": "Card Hover IN Black",
+          "target": "el:ff11a7cc…",
+          "classHint": "",
+          "effects": [
+            "scale 500ms scale(1)",
+            "STYLE_TEXT_COLOR 500ms",
+            "scale 300ms ease:inOutQuad scale(1.005)",
+            "STYLE_TEXT_COLOR 300ms"
+          ]
+        },
+        {
+          "event": "e-753",
+          "type": "MOUSE_OUT",
+          "typeLabel": "hover → out",
+          "actionList": "a-43",
+          "actionTitle": "Card Hover OUT Black",
+          "target": "el:ff11a7cc…",
+          "classHint": "",
+          "effects": [
+            "scale 300ms ease:inOutQuad scale(1)",
+            "STYLE_TEXT_COLOR 500ms"
+          ]
+        },
+        {
+          "event": "e-754",
+          "type": "MOUSE_OVER",
+          "typeLabel": "hover → in",
+          "actionList": "a-23",
+          "actionTitle": "Card Hover IN White",
+          "target": "el:ff11a7cc…",
+          "classHint": "project_card_bento.raif",
+          "effects": [
+            "scale 500ms scale(1)",
+            "STYLE_TEXT_COLOR 500ms",
+            "scale 300ms ease:inOutQuad scale(1.005)",
+            "STYLE_TEXT_COLOR 300ms"
+          ]
+        },
+        {
+          "event": "e-755",
+          "type": "MOUSE_OUT",
+          "typeLabel": "hover → out",
+          "actionList": "a-24",
+          "actionTitle": "Card Hover OUT White",
+          "target": "el:ff11a7cc…",
+          "classHint": "project_card_bento.raif",
+          "effects": [
+            "scale 300ms ease:inOutQuad scale(1)",
+            "STYLE_TEXT_COLOR 500ms"
+          ]
+        },
+        {
+          "event": "e-756",
+          "type": "MOUSE_OVER",
+          "typeLabel": "hover → in",
+          "actionList": "a-23",
+          "actionTitle": "Card Hover IN White",
+          "target": "el:ff11a7cc…",
+          "classHint": "project_card_bento.raif",
+          "effects": [
+            "scale 500ms scale(1)",
+            "STYLE_TEXT_COLOR 500ms",
+            "scale 300ms ease:inOutQuad scale(1.005)",
+            "STYLE_TEXT_COLOR 300ms"
+          ]
+        },
+        {
+          "event": "e-757",
+          "type": "MOUSE_OUT",
+          "typeLabel": "hover → out",
+          "actionList": "a-24",
+          "actionTitle": "Card Hover OUT White",
+          "target": "el:ff11a7cc…",
+          "classHint": "project_card_bento.raif",
+          "effects": [
+            "scale 300ms ease:inOutQuad scale(1)",
+            "STYLE_TEXT_COLOR 500ms"
+          ]
+        },
+        {
+          "event": "e-758",
+          "type": "MOUSE_OVER",
+          "typeLabel": "hover → in",
+          "actionList": "a-42",
+          "actionTitle": "Card Hover IN Black",
+          "target": "el:ff11a7cc…",
+          "classHint": "project_card_bento.raif",
+          "effects": [
+            "scale 500ms scale(1)",
+            "STYLE_TEXT_COLOR 500ms",
+            "scale 300ms ease:inOutQuad scale(1.005)",
+            "STYLE_TEXT_COLOR 300ms"
+          ]
+        },
+        {
+          "event": "e-759",
+          "type": "MOUSE_OUT",
+          "typeLabel": "hover → out",
+          "actionList": "a-43",
+          "actionTitle": "Card Hover OUT Black",
+          "target": "el:ff11a7cc…",
+          "classHint": "project_card_bento.raif",
+          "effects": [
+            "scale 300ms ease:inOutQuad scale(1)",
+            "STYLE_TEXT_COLOR 500ms"
+          ]
+        }
+      ],
+      "types": {
+        "SCROLLING_IN_VIEW": 8,
+        "MOUSE_OVER": 8,
+        "MOUSE_OUT": 8
+      }
+    },
+    "glavpivmag.html": {
+      "events": [
+        {
+          "event": "e-240",
+          "type": "SCROLLING_IN_VIEW",
+          "typeLabel": "scroll reveal",
+          "actionList": "a-41",
+          "actionTitle": "Scroll animation Logo + description",
+          "target": "el:8bbde515…",
+          "classHint": "text_block_main.project",
+          "effects": []
+        },
+        {
+          "event": "e-241",
+          "type": "SCROLLING_IN_VIEW",
+          "typeLabel": "scroll reveal",
+          "actionList": "a-38",
+          "actionTitle": "Scroll animation",
+          "target": "el:39989a03…",
+          "classHint": "content_main-screen.project",
+          "effects": []
+        },
+        {
+          "event": "e-242",
+          "type": "SCROLLING_IN_VIEW",
+          "typeLabel": "scroll reveal",
+          "actionList": "a-38",
+          "actionTitle": "Scroll animation",
+          "target": "el:d9f13d8c…",
+          "classHint": "context.project",
+          "effects": []
+        },
+        {
+          "event": "e-243",
+          "type": "SCROLLING_IN_VIEW",
+          "typeLabel": "scroll reveal",
+          "actionList": "a-38",
+          "actionTitle": "Scroll animation",
+          "target": "el:57fa0699…",
+          "classHint": "my-role.project",
+          "effects": []
+        },
+        {
+          "event": "e-244",
+          "type": "SCROLLING_IN_VIEW",
+          "typeLabel": "scroll reveal",
+          "actionList": "a-38",
+          "actionTitle": "Scroll animation",
+          "target": "el:466b9973…",
+          "classHint": "research.project",
+          "effects": []
+        },
+        {
+          "event": "e-245",
+          "type": "SCROLLING_IN_VIEW",
+          "typeLabel": "scroll reveal",
+          "actionList": "a-38",
+          "actionTitle": "Scroll animation",
+          "target": "el:39fb4027…",
+          "classHint": "presentation.project",
+          "effects": []
+        },
+        {
+          "event": "e-246",
+          "type": "SCROLLING_IN_VIEW",
+          "typeLabel": "scroll reveal",
+          "actionList": "a-38",
+          "actionTitle": "Scroll animation",
+          "target": "el:e5cc7b22…",
+          "classHint": "result.project",
+          "effects": []
+        },
+        {
+          "event": "e-415",
+          "type": "SCROLLING_IN_VIEW",
+          "typeLabel": "scroll reveal",
+          "actionList": "a-38",
+          "actionTitle": "Scroll animation",
+          "target": "el:10c8689b…",
+          "classHint": "more-peojects.project",
+          "effects": []
+        },
+        {
+          "event": "e-782",
+          "type": "MOUSE_OVER",
+          "typeLabel": "hover → in",
+          "actionList": "a-23",
+          "actionTitle": "Card Hover IN White",
+          "target": "el:47016678…",
+          "classHint": "project_card_bento.coursor---none",
+          "effects": [
+            "scale 500ms scale(1)",
+            "STYLE_TEXT_COLOR 500ms",
+            "scale 300ms ease:inOutQuad scale(1.005)",
+            "STYLE_TEXT_COLOR 300ms"
+          ]
+        },
+        {
+          "event": "e-783",
+          "type": "MOUSE_OUT",
+          "typeLabel": "hover → out",
+          "actionList": "a-24",
+          "actionTitle": "Card Hover OUT White",
+          "target": "el:47016678…",
+          "classHint": "project_card_bento.coursor---none",
+          "effects": [
+            "scale 300ms ease:inOutQuad scale(1)",
+            "STYLE_TEXT_COLOR 500ms"
+          ]
+        },
+        {
+          "event": "e-784",
+          "type": "MOUSE_OVER",
+          "typeLabel": "hover → in",
+          "actionList": "a-42",
+          "actionTitle": "Card Hover IN Black",
+          "target": "el:47016678…",
+          "classHint": "project_card_bento.raif",
+          "effects": [
+            "scale 500ms scale(1)",
+            "STYLE_TEXT_COLOR 500ms",
+            "scale 300ms ease:inOutQuad scale(1.005)",
+            "STYLE_TEXT_COLOR 300ms"
+          ]
+        },
+        {
+          "event": "e-785",
+          "type": "MOUSE_OUT",
+          "typeLabel": "hover → out",
+          "actionList": "a-43",
+          "actionTitle": "Card Hover OUT Black",
+          "target": "el:47016678…",
+          "classHint": "project_card_bento.raif",
+          "effects": [
+            "scale 300ms ease:inOutQuad scale(1)",
+            "STYLE_TEXT_COLOR 500ms"
+          ]
+        },
+        {
+          "event": "e-788",
+          "type": "MOUSE_OVER",
+          "typeLabel": "hover → in",
+          "actionList": "a-42",
+          "actionTitle": "Card Hover IN Black",
+          "target": "el:47016678…",
+          "classHint": "",
+          "effects": [
+            "scale 500ms scale(1)",
+            "STYLE_TEXT_COLOR 500ms",
+            "scale 300ms ease:inOutQuad scale(1.005)",
+            "STYLE_TEXT_COLOR 300ms"
+          ]
+        },
+        {
+          "event": "e-789",
+          "type": "MOUSE_OUT",
+          "typeLabel": "hover → out",
+          "actionList": "a-43",
+          "actionTitle": "Card Hover OUT Black",
+          "target": "el:47016678…",
+          "classHint": "",
+          "effects": [
+            "scale 300ms ease:inOutQuad scale(1)",
+            "STYLE_TEXT_COLOR 500ms"
+          ]
+        },
+        {
+          "event": "e-790",
+          "type": "MOUSE_OVER",
+          "typeLabel": "hover → in",
+          "actionList": "a-42",
+          "actionTitle": "Card Hover IN Black",
+          "target": "el:47016678…",
+          "classHint": "",
+          "effects": [
+            "scale 500ms scale(1)",
+            "STYLE_TEXT_COLOR 500ms",
+            "scale 300ms ease:inOutQuad scale(1.005)",
+            "STYLE_TEXT_COLOR 300ms"
+          ]
+        },
+        {
+          "event": "e-791",
+          "type": "MOUSE_OUT",
+          "typeLabel": "hover → out",
+          "actionList": "a-43",
+          "actionTitle": "Card Hover OUT Black",
+          "target": "el:47016678…",
+          "classHint": "",
+          "effects": [
+            "scale 300ms ease:inOutQuad scale(1)",
+            "STYLE_TEXT_COLOR 500ms"
+          ]
+        },
+        {
+          "event": "e-792",
+          "type": "MOUSE_OVER",
+          "typeLabel": "hover → in",
+          "actionList": "a-23",
+          "actionTitle": "Card Hover IN White",
+          "target": "el:47016678…",
+          "classHint": "",
+          "effects": [
+            "scale 500ms scale(1)",
+            "STYLE_TEXT_COLOR 500ms",
+            "scale 300ms ease:inOutQuad scale(1.005)",
+            "STYLE_TEXT_COLOR 300ms"
+          ]
+        },
+        {
+          "event": "e-793",
+          "type": "MOUSE_OUT",
+          "typeLabel": "hover → out",
+          "actionList": "a-24",
+          "actionTitle": "Card Hover OUT White",
+          "target": "el:47016678…",
+          "classHint": "",
+          "effects": [
+            "scale 300ms ease:inOutQuad scale(1)",
+            "STYLE_TEXT_COLOR 500ms"
+          ]
+        },
+        {
+          "event": "e-794",
+          "type": "MOUSE_OVER",
+          "typeLabel": "hover → in",
+          "actionList": "a-42",
+          "actionTitle": "Card Hover IN Black",
+          "target": "el:47016678…",
+          "classHint": "",
+          "effects": [
+            "scale 500ms scale(1)",
+            "STYLE_TEXT_COLOR 500ms",
+            "scale 300ms ease:inOutQuad scale(1.005)",
+            "STYLE_TEXT_COLOR 300ms"
+          ]
+        },
+        {
+          "event": "e-795",
+          "type": "MOUSE_OUT",
+          "typeLabel": "hover → out",
+          "actionList": "a-43",
+          "actionTitle": "Card Hover OUT Black",
+          "target": "el:47016678…",
+          "classHint": "",
+          "effects": [
+            "scale 300ms ease:inOutQuad scale(1)",
+            "STYLE_TEXT_COLOR 500ms"
+          ]
+        },
+        {
+          "event": "e-796",
+          "type": "MOUSE_OVER",
+          "typeLabel": "hover → in",
+          "actionList": "a-42",
+          "actionTitle": "Card Hover IN Black",
+          "target": "el:47016678…",
+          "classHint": "",
+          "effects": [
+            "scale 500ms scale(1)",
+            "STYLE_TEXT_COLOR 500ms",
+            "scale 300ms ease:inOutQuad scale(1.005)",
+            "STYLE_TEXT_COLOR 300ms"
+          ]
+        },
+        {
+          "event": "e-797",
+          "type": "MOUSE_OUT",
+          "typeLabel": "hover → out",
+          "actionList": "a-43",
+          "actionTitle": "Card Hover OUT Black",
+          "target": "el:47016678…",
+          "classHint": "",
+          "effects": [
+            "scale 300ms ease:inOutQuad scale(1)",
+            "STYLE_TEXT_COLOR 500ms"
+          ]
+        },
+        {
+          "event": "e-798",
+          "type": "MOUSE_OVER",
+          "typeLabel": "hover → in",
+          "actionList": "a-23",
+          "actionTitle": "Card Hover IN White",
+          "target": "el:47016678…",
+          "classHint": "",
+          "effects": [
+            "scale 500ms scale(1)",
+            "STYLE_TEXT_COLOR 500ms",
+            "scale 300ms ease:inOutQuad scale(1.005)",
+            "STYLE_TEXT_COLOR 300ms"
+          ]
+        },
+        {
+          "event": "e-799",
+          "type": "MOUSE_OUT",
+          "typeLabel": "hover → out",
+          "actionList": "a-24",
+          "actionTitle": "Card Hover OUT White",
+          "target": "el:47016678…",
+          "classHint": "",
+          "effects": [
+            "scale 300ms ease:inOutQuad scale(1)",
+            "STYLE_TEXT_COLOR 500ms"
+          ]
+        },
+        {
+          "event": "e-800",
+          "type": "MOUSE_OVER",
+          "typeLabel": "hover → in",
+          "actionList": "a-23",
+          "actionTitle": "Card Hover IN White",
+          "target": "el:47016678…",
+          "classHint": "",
+          "effects": [
+            "scale 500ms scale(1)",
+            "STYLE_TEXT_COLOR 500ms",
+            "scale 300ms ease:inOutQuad scale(1.005)",
+            "STYLE_TEXT_COLOR 300ms"
+          ]
+        },
+        {
+          "event": "e-801",
+          "type": "MOUSE_OUT",
+          "typeLabel": "hover → out",
+          "actionList": "a-24",
+          "actionTitle": "Card Hover OUT White",
+          "target": "el:47016678…",
+          "classHint": "",
+          "effects": [
+            "scale 300ms ease:inOutQuad scale(1)",
+            "STYLE_TEXT_COLOR 500ms"
+          ]
+        },
+        {
+          "event": "e-802",
+          "type": "MOUSE_OVER",
+          "typeLabel": "hover → in",
+          "actionList": "a-42",
+          "actionTitle": "Card Hover IN Black",
+          "target": "el:47016678…",
+          "classHint": "project_card_bento.raif",
+          "effects": [
+            "scale 500ms scale(1)",
+            "STYLE_TEXT_COLOR 500ms",
+            "scale 300ms ease:inOutQuad scale(1.005)",
+            "STYLE_TEXT_COLOR 300ms"
+          ]
+        },
+        {
+          "event": "e-803",
+          "type": "MOUSE_OUT",
+          "typeLabel": "hover → out",
+          "actionList": "a-43",
+          "actionTitle": "Card Hover OUT Black",
+          "target": "el:47016678…",
+          "classHint": "project_card_bento.raif",
+          "effects": [
+            "scale 300ms ease:inOutQuad scale(1)",
+            "STYLE_TEXT_COLOR 500ms"
+          ]
+        }
+      ],
+      "types": {
+        "SCROLLING_IN_VIEW": 8,
+        "MOUSE_OVER": 10,
+        "MOUSE_OUT": 10
+      }
+    },
+    "smarthome.html": {
+      "events": [
+        {
+          "event": "e-256",
+          "type": "SCROLLING_IN_VIEW",
+          "typeLabel": "scroll reveal",
+          "actionList": "a-41",
+          "actionTitle": "Scroll animation Logo + description",
+          "target": "el:8bbde515…",
+          "classHint": "text_block_main.project.smarthome",
+          "effects": []
+        },
+        {
+          "event": "e-257",
+          "type": "SCROLLING_IN_VIEW",
+          "typeLabel": "scroll reveal",
+          "actionList": "a-38",
+          "actionTitle": "Scroll animation",
+          "target": "el:39989a03…",
+          "classHint": "content_main-screen.project._100",
+          "effects": []
+        },
+        {
+          "event": "e-258",
+          "type": "SCROLLING_IN_VIEW",
+          "typeLabel": "scroll reveal",
+          "actionList": "a-38",
+          "actionTitle": "Scroll animation",
+          "target": "el:d9f13d8c…",
+          "classHint": "context.project.smarthome",
+          "effects": []
+        },
+        {
+          "event": "e-259",
+          "type": "SCROLLING_IN_VIEW",
+          "typeLabel": "scroll reveal",
+          "actionList": "a-38",
+          "actionTitle": "Scroll animation",
+          "target": "el:57fa0699…",
+          "classHint": "my-role.project.smarthome",
+          "effects": []
+        },
+        {
+          "event": "e-260",
+          "type": "SCROLLING_IN_VIEW",
+          "typeLabel": "scroll reveal",
+          "actionList": "a-38",
+          "actionTitle": "Scroll animation",
+          "target": "el:466b9973…",
+          "classHint": "research.project.smarthome",
+          "effects": []
+        },
+        {
+          "event": "e-261",
+          "type": "SCROLLING_IN_VIEW",
+          "typeLabel": "scroll reveal",
+          "actionList": "a-38",
+          "actionTitle": "Scroll animation",
+          "target": "el:39fb4027…",
+          "classHint": "presentation.project.smarthome",
+          "effects": []
+        },
+        {
+          "event": "e-366",
+          "type": "SCROLLING_IN_VIEW",
+          "typeLabel": "scroll reveal",
+          "actionList": "a-38",
+          "actionTitle": "Scroll animation",
+          "target": "el:26d256d5…",
+          "classHint": "text_block_main.project.smarthome",
+          "effects": []
+        },
+        {
+          "event": "e-374",
+          "type": "SCROLLING_IN_VIEW",
+          "typeLabel": "scroll reveal",
+          "actionList": "a-38",
+          "actionTitle": "Scroll animation",
+          "target": "el:25136fc9…",
+          "classHint": "more-peojects.project",
+          "effects": []
+        },
+        {
+          "event": "e-804",
+          "type": "MOUSE_OVER",
+          "typeLabel": "hover → in",
+          "actionList": "a-23",
+          "actionTitle": "Card Hover IN White",
+          "target": "el:8d605611…",
+          "classHint": "project_card_bento.coursor---none",
+          "effects": [
+            "scale 500ms scale(1)",
+            "STYLE_TEXT_COLOR 500ms",
+            "scale 300ms ease:inOutQuad scale(1.005)",
+            "STYLE_TEXT_COLOR 300ms"
+          ]
+        },
+        {
+          "event": "e-805",
+          "type": "MOUSE_OUT",
+          "typeLabel": "hover → out",
+          "actionList": "a-24",
+          "actionTitle": "Card Hover OUT White",
+          "target": "el:8d605611…",
+          "classHint": "project_card_bento.coursor---none",
+          "effects": [
+            "scale 300ms ease:inOutQuad scale(1)",
+            "STYLE_TEXT_COLOR 500ms"
+          ]
+        },
+        {
+          "event": "e-806",
+          "type": "MOUSE_OVER",
+          "typeLabel": "hover → in",
+          "actionList": "a-42",
+          "actionTitle": "Card Hover IN Black",
+          "target": "el:8d605611…",
+          "classHint": "project_card_bento.raif",
+          "effects": [
+            "scale 500ms scale(1)",
+            "STYLE_TEXT_COLOR 500ms",
+            "scale 300ms ease:inOutQuad scale(1.005)",
+            "STYLE_TEXT_COLOR 300ms"
+          ]
+        },
+        {
+          "event": "e-807",
+          "type": "MOUSE_OUT",
+          "typeLabel": "hover → out",
+          "actionList": "a-43",
+          "actionTitle": "Card Hover OUT Black",
+          "target": "el:8d605611…",
+          "classHint": "project_card_bento.raif",
+          "effects": [
+            "scale 300ms ease:inOutQuad scale(1)",
+            "STYLE_TEXT_COLOR 500ms"
+          ]
+        },
+        {
+          "event": "e-808",
+          "type": "MOUSE_OVER",
+          "typeLabel": "hover → in",
+          "actionList": "a-42",
+          "actionTitle": "Card Hover IN Black",
+          "target": "el:8d605611…",
+          "classHint": "project_card_bento.raif.moreprojects",
+          "effects": [
+            "scale 500ms scale(1)",
+            "STYLE_TEXT_COLOR 500ms",
+            "scale 300ms ease:inOutQuad scale(1.005)",
+            "STYLE_TEXT_COLOR 300ms"
+          ]
+        },
+        {
+          "event": "e-809",
+          "type": "MOUSE_OUT",
+          "typeLabel": "hover → out",
+          "actionList": "a-43",
+          "actionTitle": "Card Hover OUT Black",
+          "target": "el:8d605611…",
+          "classHint": "project_card_bento.raif.moreprojects",
+          "effects": [
+            "scale 300ms ease:inOutQuad scale(1)",
+            "STYLE_TEXT_COLOR 500ms"
+          ]
+        },
+        {
+          "event": "e-810",
+          "type": "MOUSE_OVER",
+          "typeLabel": "hover → in",
+          "actionList": "a-42",
+          "actionTitle": "Card Hover IN Black",
+          "target": "el:8d605611…",
+          "classHint": "",
+          "effects": [
+            "scale 500ms scale(1)",
+            "STYLE_TEXT_COLOR 500ms",
+            "scale 300ms ease:inOutQuad scale(1.005)",
+            "STYLE_TEXT_COLOR 300ms"
+          ]
+        },
+        {
+          "event": "e-811",
+          "type": "MOUSE_OUT",
+          "typeLabel": "hover → out",
+          "actionList": "a-43",
+          "actionTitle": "Card Hover OUT Black",
+          "target": "el:8d605611…",
+          "classHint": "",
+          "effects": [
+            "scale 300ms ease:inOutQuad scale(1)",
+            "STYLE_TEXT_COLOR 500ms"
+          ]
+        },
+        {
+          "event": "e-812",
+          "type": "MOUSE_OVER",
+          "typeLabel": "hover → in",
+          "actionList": "a-42",
+          "actionTitle": "Card Hover IN Black",
+          "target": "el:8d605611…",
+          "classHint": "",
+          "effects": [
+            "scale 500ms scale(1)",
+            "STYLE_TEXT_COLOR 500ms",
+            "scale 300ms ease:inOutQuad scale(1.005)",
+            "STYLE_TEXT_COLOR 300ms"
+          ]
+        },
+        {
+          "event": "e-813",
+          "type": "MOUSE_OUT",
+          "typeLabel": "hover → out",
+          "actionList": "a-43",
+          "actionTitle": "Card Hover OUT Black",
+          "target": "el:8d605611…",
+          "classHint": "",
+          "effects": [
+            "scale 300ms ease:inOutQuad scale(1)",
+            "STYLE_TEXT_COLOR 500ms"
+          ]
+        },
+        {
+          "event": "e-814",
+          "type": "MOUSE_OVER",
+          "typeLabel": "hover → in",
+          "actionList": "a-23",
+          "actionTitle": "Card Hover IN White",
+          "target": "el:8d605611…",
+          "classHint": "",
+          "effects": [
+            "scale 500ms scale(1)",
+            "STYLE_TEXT_COLOR 500ms",
+            "scale 300ms ease:inOutQuad scale(1.005)",
+            "STYLE_TEXT_COLOR 300ms"
+          ]
+        },
+        {
+          "event": "e-815",
+          "type": "MOUSE_OUT",
+          "typeLabel": "hover → out",
+          "actionList": "a-24",
+          "actionTitle": "Card Hover OUT White",
+          "target": "el:8d605611…",
+          "classHint": "",
+          "effects": [
+            "scale 300ms ease:inOutQuad scale(1)",
+            "STYLE_TEXT_COLOR 500ms"
+          ]
+        },
+        {
+          "event": "e-816",
+          "type": "MOUSE_OVER",
+          "typeLabel": "hover → in",
+          "actionList": "a-42",
+          "actionTitle": "Card Hover IN Black",
+          "target": "el:8d605611…",
+          "classHint": "",
+          "effects": [
+            "scale 500ms scale(1)",
+            "STYLE_TEXT_COLOR 500ms",
+            "scale 300ms ease:inOutQuad scale(1.005)",
+            "STYLE_TEXT_COLOR 300ms"
+          ]
+        },
+        {
+          "event": "e-817",
+          "type": "MOUSE_OUT",
+          "typeLabel": "hover → out",
+          "actionList": "a-43",
+          "actionTitle": "Card Hover OUT Black",
+          "target": "el:8d605611…",
+          "classHint": "",
+          "effects": [
+            "scale 300ms ease:inOutQuad scale(1)",
+            "STYLE_TEXT_COLOR 500ms"
+          ]
+        },
+        {
+          "event": "e-818",
+          "type": "MOUSE_OVER",
+          "typeLabel": "hover → in",
+          "actionList": "a-42",
+          "actionTitle": "Card Hover IN Black",
+          "target": "el:8d605611…",
+          "classHint": "",
+          "effects": [
+            "scale 500ms scale(1)",
+            "STYLE_TEXT_COLOR 500ms",
+            "scale 300ms ease:inOutQuad scale(1.005)",
+            "STYLE_TEXT_COLOR 300ms"
+          ]
+        },
+        {
+          "event": "e-819",
+          "type": "MOUSE_OUT",
+          "typeLabel": "hover → out",
+          "actionList": "a-43",
+          "actionTitle": "Card Hover OUT Black",
+          "target": "el:8d605611…",
+          "classHint": "",
+          "effects": [
+            "scale 300ms ease:inOutQuad scale(1)",
+            "STYLE_TEXT_COLOR 500ms"
+          ]
+        },
+        {
+          "event": "e-820",
+          "type": "MOUSE_OVER",
+          "typeLabel": "hover → in",
+          "actionList": "a-23",
+          "actionTitle": "Card Hover IN White",
+          "target": "el:8d605611…",
+          "classHint": "",
+          "effects": [
+            "scale 500ms scale(1)",
+            "STYLE_TEXT_COLOR 500ms",
+            "scale 300ms ease:inOutQuad scale(1.005)",
+            "STYLE_TEXT_COLOR 300ms"
+          ]
+        },
+        {
+          "event": "e-821",
+          "type": "MOUSE_OUT",
+          "typeLabel": "hover → out",
+          "actionList": "a-24",
+          "actionTitle": "Card Hover OUT White",
+          "target": "el:8d605611…",
+          "classHint": "",
+          "effects": [
+            "scale 300ms ease:inOutQuad scale(1)",
+            "STYLE_TEXT_COLOR 500ms"
+          ]
+        },
+        {
+          "event": "e-822",
+          "type": "MOUSE_OVER",
+          "typeLabel": "hover → in",
+          "actionList": "a-23",
+          "actionTitle": "Card Hover IN White",
+          "target": "el:8d605611…",
+          "classHint": "",
+          "effects": [
+            "scale 500ms scale(1)",
+            "STYLE_TEXT_COLOR 500ms",
+            "scale 300ms ease:inOutQuad scale(1.005)",
+            "STYLE_TEXT_COLOR 300ms"
+          ]
+        },
+        {
+          "event": "e-823",
+          "type": "MOUSE_OUT",
+          "typeLabel": "hover → out",
+          "actionList": "a-24",
+          "actionTitle": "Card Hover OUT White",
+          "target": "el:8d605611…",
+          "classHint": "",
+          "effects": [
+            "scale 300ms ease:inOutQuad scale(1)",
+            "STYLE_TEXT_COLOR 500ms"
+          ]
+        },
+        {
+          "event": "e-824",
+          "type": "MOUSE_OVER",
+          "typeLabel": "hover → in",
+          "actionList": "a-42",
+          "actionTitle": "Card Hover IN Black",
+          "target": "el:8d605611…",
+          "classHint": "",
+          "effects": [
+            "scale 500ms scale(1)",
+            "STYLE_TEXT_COLOR 500ms",
+            "scale 300ms ease:inOutQuad scale(1.005)",
+            "STYLE_TEXT_COLOR 300ms"
+          ]
+        },
+        {
+          "event": "e-825",
+          "type": "MOUSE_OUT",
+          "typeLabel": "hover → out",
+          "actionList": "a-43",
+          "actionTitle": "Card Hover OUT Black",
+          "target": "el:8d605611…",
+          "classHint": "",
+          "effects": [
+            "scale 300ms ease:inOutQuad scale(1)",
+            "STYLE_TEXT_COLOR 500ms"
+          ]
+        }
+      ],
+      "types": {
+        "SCROLLING_IN_VIEW": 8,
+        "MOUSE_OVER": 11,
+        "MOUSE_OUT": 11
+      }
+    },
+    "designconference.html": {
+      "events": [
+        {
+          "event": "e-383",
+          "type": "SCROLLING_IN_VIEW",
+          "typeLabel": "scroll reveal",
+          "actionList": "a-41",
+          "actionTitle": "Scroll animation Logo + description",
+          "target": "el:8bbde515…",
+          "classHint": "text_block_main.project",
+          "effects": []
+        },
+        {
+          "event": "e-384",
+          "type": "SCROLLING_IN_VIEW",
+          "typeLabel": "scroll reveal",
+          "actionList": "a-38",
+          "actionTitle": "Scroll animation",
+          "target": "el:39989a03…",
+          "classHint": "content_main-screen.project",
+          "effects": []
+        },
+        {
+          "event": "e-385",
+          "type": "SCROLLING_IN_VIEW",
+          "typeLabel": "scroll reveal",
+          "actionList": "a-38",
+          "actionTitle": "Scroll animation",
+          "target": "el:d9f13d8c…",
+          "classHint": "context.project",
+          "effects": []
+        },
+        {
+          "event": "e-389",
+          "type": "SCROLLING_IN_VIEW",
+          "typeLabel": "scroll reveal",
+          "actionList": "a-38",
+          "actionTitle": "Scroll animation",
+          "target": "el:e5cc7b22…",
+          "classHint": "result.project",
+          "effects": []
+        },
+        {
+          "event": "e-397",
+          "type": "SCROLLING_IN_VIEW",
+          "typeLabel": "scroll reveal",
+          "actionList": "a-38",
+          "actionTitle": "Scroll animation",
+          "target": "el:b5380203…",
+          "classHint": "research.project",
+          "effects": []
+        },
+        {
+          "event": "e-406",
+          "type": "SCROLLING_IN_VIEW",
+          "typeLabel": "scroll reveal",
+          "actionList": "a-38",
+          "actionTitle": "Scroll animation",
+          "target": "el:362513dd…",
+          "classHint": "more-peojects.project",
+          "effects": []
+        },
+        {
+          "event": "e-760",
+          "type": "MOUSE_OVER",
+          "typeLabel": "hover → in",
+          "actionList": "a-23",
+          "actionTitle": "Card Hover IN White",
+          "target": "el:c4664a85…",
+          "classHint": "project_card_bento.coursor---none",
+          "effects": [
+            "scale 500ms scale(1)",
+            "STYLE_TEXT_COLOR 500ms",
+            "scale 300ms ease:inOutQuad scale(1.005)",
+            "STYLE_TEXT_COLOR 300ms"
+          ]
+        },
+        {
+          "event": "e-761",
+          "type": "MOUSE_OUT",
+          "typeLabel": "hover → out",
+          "actionList": "a-24",
+          "actionTitle": "Card Hover OUT White",
+          "target": "el:c4664a85…",
+          "classHint": "project_card_bento.coursor---none",
+          "effects": [
+            "scale 300ms ease:inOutQuad scale(1)",
+            "STYLE_TEXT_COLOR 500ms"
+          ]
+        },
+        {
+          "event": "e-766",
+          "type": "MOUSE_OVER",
+          "typeLabel": "hover → in",
+          "actionList": "a-42",
+          "actionTitle": "Card Hover IN Black",
+          "target": "el:c4664a85…",
+          "classHint": "",
+          "effects": [
+            "scale 500ms scale(1)",
+            "STYLE_TEXT_COLOR 500ms",
+            "scale 300ms ease:inOutQuad scale(1.005)",
+            "STYLE_TEXT_COLOR 300ms"
+          ]
+        },
+        {
+          "event": "e-767",
+          "type": "MOUSE_OUT",
+          "typeLabel": "hover → out",
+          "actionList": "a-43",
+          "actionTitle": "Card Hover OUT Black",
+          "target": "el:c4664a85…",
+          "classHint": "",
+          "effects": [
+            "scale 300ms ease:inOutQuad scale(1)",
+            "STYLE_TEXT_COLOR 500ms"
+          ]
+        },
+        {
+          "event": "e-768",
+          "type": "MOUSE_OVER",
+          "typeLabel": "hover → in",
+          "actionList": "a-42",
+          "actionTitle": "Card Hover IN Black",
+          "target": "el:c4664a85…",
+          "classHint": "",
+          "effects": [
+            "scale 500ms scale(1)",
+            "STYLE_TEXT_COLOR 500ms",
+            "scale 300ms ease:inOutQuad scale(1.005)",
+            "STYLE_TEXT_COLOR 300ms"
+          ]
+        },
+        {
+          "event": "e-769",
+          "type": "MOUSE_OUT",
+          "typeLabel": "hover → out",
+          "actionList": "a-43",
+          "actionTitle": "Card Hover OUT Black",
+          "target": "el:c4664a85…",
+          "classHint": "",
+          "effects": [
+            "scale 300ms ease:inOutQuad scale(1)",
+            "STYLE_TEXT_COLOR 500ms"
+          ]
+        },
+        {
+          "event": "e-770",
+          "type": "MOUSE_OVER",
+          "typeLabel": "hover → in",
+          "actionList": "a-23",
+          "actionTitle": "Card Hover IN White",
+          "target": "el:c4664a85…",
+          "classHint": "",
+          "effects": [
+            "scale 500ms scale(1)",
+            "STYLE_TEXT_COLOR 500ms",
+            "scale 300ms ease:inOutQuad scale(1.005)",
+            "STYLE_TEXT_COLOR 300ms"
+          ]
+        },
+        {
+          "event": "e-771",
+          "type": "MOUSE_OUT",
+          "typeLabel": "hover → out",
+          "actionList": "a-24",
+          "actionTitle": "Card Hover OUT White",
+          "target": "el:c4664a85…",
+          "classHint": "",
+          "effects": [
+            "scale 300ms ease:inOutQuad scale(1)",
+            "STYLE_TEXT_COLOR 500ms"
+          ]
+        },
+        {
+          "event": "e-772",
+          "type": "MOUSE_OVER",
+          "typeLabel": "hover → in",
+          "actionList": "a-42",
+          "actionTitle": "Card Hover IN Black",
+          "target": "el:c4664a85…",
+          "classHint": "",
+          "effects": [
+            "scale 500ms scale(1)",
+            "STYLE_TEXT_COLOR 500ms",
+            "scale 300ms ease:inOutQuad scale(1.005)",
+            "STYLE_TEXT_COLOR 300ms"
+          ]
+        },
+        {
+          "event": "e-773",
+          "type": "MOUSE_OUT",
+          "typeLabel": "hover → out",
+          "actionList": "a-43",
+          "actionTitle": "Card Hover OUT Black",
+          "target": "el:c4664a85…",
+          "classHint": "",
+          "effects": [
+            "scale 300ms ease:inOutQuad scale(1)",
+            "STYLE_TEXT_COLOR 500ms"
+          ]
+        },
+        {
+          "event": "e-774",
+          "type": "MOUSE_OVER",
+          "typeLabel": "hover → in",
+          "actionList": "a-42",
+          "actionTitle": "Card Hover IN Black",
+          "target": "el:c4664a85…",
+          "classHint": "",
+          "effects": [
+            "scale 500ms scale(1)",
+            "STYLE_TEXT_COLOR 500ms",
+            "scale 300ms ease:inOutQuad scale(1.005)",
+            "STYLE_TEXT_COLOR 300ms"
+          ]
+        },
+        {
+          "event": "e-775",
+          "type": "MOUSE_OUT",
+          "typeLabel": "hover → out",
+          "actionList": "a-43",
+          "actionTitle": "Card Hover OUT Black",
+          "target": "el:c4664a85…",
+          "classHint": "",
+          "effects": [
+            "scale 300ms ease:inOutQuad scale(1)",
+            "STYLE_TEXT_COLOR 500ms"
+          ]
+        },
+        {
+          "event": "e-776",
+          "type": "MOUSE_OVER",
+          "typeLabel": "hover → in",
+          "actionList": "a-23",
+          "actionTitle": "Card Hover IN White",
+          "target": "el:c4664a85…",
+          "classHint": "",
+          "effects": [
+            "scale 500ms scale(1)",
+            "STYLE_TEXT_COLOR 500ms",
+            "scale 300ms ease:inOutQuad scale(1.005)",
+            "STYLE_TEXT_COLOR 300ms"
+          ]
+        },
+        {
+          "event": "e-777",
+          "type": "MOUSE_OUT",
+          "typeLabel": "hover → out",
+          "actionList": "a-24",
+          "actionTitle": "Card Hover OUT White",
+          "target": "el:c4664a85…",
+          "classHint": "",
+          "effects": [
+            "scale 300ms ease:inOutQuad scale(1)",
+            "STYLE_TEXT_COLOR 500ms"
+          ]
+        },
+        {
+          "event": "e-778",
+          "type": "MOUSE_OVER",
+          "typeLabel": "hover → in",
+          "actionList": "a-23",
+          "actionTitle": "Card Hover IN White",
+          "target": "el:c4664a85…",
+          "classHint": "project_card_bento.raif",
+          "effects": [
+            "scale 500ms scale(1)",
+            "STYLE_TEXT_COLOR 500ms",
+            "scale 300ms ease:inOutQuad scale(1.005)",
+            "STYLE_TEXT_COLOR 300ms"
+          ]
+        },
+        {
+          "event": "e-779",
+          "type": "MOUSE_OUT",
+          "typeLabel": "hover → out",
+          "actionList": "a-24",
+          "actionTitle": "Card Hover OUT White",
+          "target": "el:c4664a85…",
+          "classHint": "project_card_bento.raif",
+          "effects": [
+            "scale 300ms ease:inOutQuad scale(1)",
+            "STYLE_TEXT_COLOR 500ms"
+          ]
+        },
+        {
+          "event": "e-780",
+          "type": "MOUSE_OVER",
+          "typeLabel": "hover → in",
+          "actionList": "a-42",
+          "actionTitle": "Card Hover IN Black",
+          "target": "el:c4664a85…",
+          "classHint": "project_card_bento.raif",
+          "effects": [
+            "scale 500ms scale(1)",
+            "STYLE_TEXT_COLOR 500ms",
+            "scale 300ms ease:inOutQuad scale(1.005)",
+            "STYLE_TEXT_COLOR 300ms"
+          ]
+        },
+        {
+          "event": "e-781",
+          "type": "MOUSE_OUT",
+          "typeLabel": "hover → out",
+          "actionList": "a-43",
+          "actionTitle": "Card Hover OUT Black",
+          "target": "el:c4664a85…",
+          "classHint": "project_card_bento.raif",
+          "effects": [
+            "scale 300ms ease:inOutQuad scale(1)",
+            "STYLE_TEXT_COLOR 500ms"
+          ]
+        }
+      ],
+      "types": {
+        "SCROLLING_IN_VIEW": 6,
+        "MOUSE_OVER": 9,
+        "MOUSE_OUT": 9
+      }
+    },
+    "csclick.html": {
+      "events": [
+        {
+          "event": "e-457",
+          "type": "SCROLLING_IN_VIEW",
+          "typeLabel": "scroll reveal",
+          "actionList": "a-38",
+          "actionTitle": "Scroll animation",
+          "target": "el:8bbde515…",
+          "classHint": "text_block_main.project",
+          "effects": []
+        },
+        {
+          "event": "e-458",
+          "type": "SCROLLING_IN_VIEW",
+          "typeLabel": "scroll reveal",
+          "actionList": "a-38",
+          "actionTitle": "Scroll animation",
+          "target": "el:39989a03…",
+          "classHint": "content_main-screen.project",
+          "effects": []
+        },
+        {
+          "event": "e-459",
+          "type": "SCROLLING_IN_VIEW",
+          "typeLabel": "scroll reveal",
+          "actionList": "a-38",
+          "actionTitle": "Scroll animation",
+          "target": "el:d9f13d8c…",
+          "classHint": "context.project",
+          "effects": []
+        },
+        {
+          "event": "e-460",
+          "type": "SCROLLING_IN_VIEW",
+          "typeLabel": "scroll reveal",
+          "actionList": "a-38",
+          "actionTitle": "Scroll animation",
+          "target": "el:57fa0699…",
+          "classHint": "my-role.project",
+          "effects": []
+        },
+        {
+          "event": "e-461",
+          "type": "SCROLLING_IN_VIEW",
+          "typeLabel": "scroll reveal",
+          "actionList": "a-38",
+          "actionTitle": "Scroll animation",
+          "target": "el:466b9973…",
+          "classHint": "research.project",
+          "effects": []
+        },
+        {
+          "event": "e-462",
+          "type": "SCROLLING_IN_VIEW",
+          "typeLabel": "scroll reveal",
+          "actionList": "a-38",
+          "actionTitle": "Scroll animation",
+          "target": "el:39fb4027…",
+          "classHint": "presentation.project",
+          "effects": []
+        },
+        {
+          "event": "e-463",
+          "type": "SCROLLING_IN_VIEW",
+          "typeLabel": "scroll reveal",
+          "actionList": "a-38",
+          "actionTitle": "Scroll animation",
+          "target": "el:e5cc7b22…",
+          "classHint": "result.project",
+          "effects": []
+        },
+        {
+          "event": "e-464",
+          "type": "SCROLLING_IN_VIEW",
+          "typeLabel": "scroll reveal",
+          "actionList": "a-38",
+          "actionTitle": "Scroll animation",
+          "target": "el:e41e01a8…",
+          "classHint": "more-peojects.project",
+          "effects": []
+        },
+        {
+          "event": "e-467",
+          "type": "SCROLLING_IN_VIEW",
+          "typeLabel": "scroll reveal",
+          "actionList": "a-38",
+          "actionTitle": "Scroll animation",
+          "target": "el:cf139324…",
+          "classHint": "context.project",
+          "effects": []
+        },
+        {
+          "event": "e-658",
+          "type": "MOUSE_OVER",
+          "typeLabel": "hover → in",
+          "actionList": "a-42",
+          "actionTitle": "Card Hover IN Black",
+          "target": "el:9706a90e…",
+          "classHint": "project_card_bento.raif",
+          "effects": [
+            "scale 500ms scale(1)",
+            "STYLE_TEXT_COLOR 500ms",
+            "scale 300ms ease:inOutQuad scale(1.005)",
+            "STYLE_TEXT_COLOR 300ms"
+          ]
+        },
+        {
+          "event": "e-659",
+          "type": "MOUSE_OUT",
+          "typeLabel": "hover → out",
+          "actionList": "a-43",
+          "actionTitle": "Card Hover OUT Black",
+          "target": "el:9706a90e…",
+          "classHint": "project_card_bento.raif",
+          "effects": [
+            "scale 300ms ease:inOutQuad scale(1)",
+            "STYLE_TEXT_COLOR 500ms"
+          ]
+        },
+        {
+          "event": "e-660",
+          "type": "MOUSE_OVER",
+          "typeLabel": "hover → in",
+          "actionList": "a-23",
+          "actionTitle": "Card Hover IN White",
+          "target": "el:9706a90e…",
+          "classHint": "project_card_bento.raif",
+          "effects": [
+            "scale 500ms scale(1)",
+            "STYLE_TEXT_COLOR 500ms",
+            "scale 300ms ease:inOutQuad scale(1.005)",
+            "STYLE_TEXT_COLOR 300ms"
+          ]
+        },
+        {
+          "event": "e-661",
+          "type": "MOUSE_OUT",
+          "typeLabel": "hover → out",
+          "actionList": "a-24",
+          "actionTitle": "Card Hover OUT White",
+          "target": "el:9706a90e…",
+          "classHint": "project_card_bento.raif",
+          "effects": [
+            "scale 300ms ease:inOutQuad scale(1)",
+            "STYLE_TEXT_COLOR 500ms"
+          ]
+        },
+        {
+          "event": "e-662",
+          "type": "MOUSE_OVER",
+          "typeLabel": "hover → in",
+          "actionList": "a-42",
+          "actionTitle": "Card Hover IN Black",
+          "target": "el:9706a90e…",
+          "classHint": "project_card_bento.raif",
+          "effects": [
+            "scale 500ms scale(1)",
+            "STYLE_TEXT_COLOR 500ms",
+            "scale 300ms ease:inOutQuad scale(1.005)",
+            "STYLE_TEXT_COLOR 300ms"
+          ]
+        },
+        {
+          "event": "e-663",
+          "type": "MOUSE_OUT",
+          "typeLabel": "hover → out",
+          "actionList": "a-43",
+          "actionTitle": "Card Hover OUT Black",
+          "target": "el:9706a90e…",
+          "classHint": "project_card_bento.raif",
+          "effects": [
+            "scale 300ms ease:inOutQuad scale(1)",
+            "STYLE_TEXT_COLOR 500ms"
+          ]
+        },
+        {
+          "event": "e-664",
+          "type": "MOUSE_OVER",
+          "typeLabel": "hover → in",
+          "actionList": "a-42",
+          "actionTitle": "Card Hover IN Black",
+          "target": "el:9706a90e…",
+          "classHint": "",
+          "effects": [
+            "scale 500ms scale(1)",
+            "STYLE_TEXT_COLOR 500ms",
+            "scale 300ms ease:inOutQuad scale(1.005)",
+            "STYLE_TEXT_COLOR 300ms"
+          ]
+        },
+        {
+          "event": "e-665",
+          "type": "MOUSE_OUT",
+          "typeLabel": "hover → out",
+          "actionList": "a-43",
+          "actionTitle": "Card Hover OUT Black",
+          "target": "el:9706a90e…",
+          "classHint": "",
+          "effects": [
+            "scale 300ms ease:inOutQuad scale(1)",
+            "STYLE_TEXT_COLOR 500ms"
+          ]
+        },
+        {
+          "event": "e-666",
+          "type": "MOUSE_OVER",
+          "typeLabel": "hover → in",
+          "actionList": "a-23",
+          "actionTitle": "Card Hover IN White",
+          "target": "el:9706a90e…",
+          "classHint": "",
+          "effects": [
+            "scale 500ms scale(1)",
+            "STYLE_TEXT_COLOR 500ms",
+            "scale 300ms ease:inOutQuad scale(1.005)",
+            "STYLE_TEXT_COLOR 300ms"
+          ]
+        },
+        {
+          "event": "e-667",
+          "type": "MOUSE_OUT",
+          "typeLabel": "hover → out",
+          "actionList": "a-24",
+          "actionTitle": "Card Hover OUT White",
+          "target": "el:9706a90e…",
+          "classHint": "",
+          "effects": [
+            "scale 300ms ease:inOutQuad scale(1)",
+            "STYLE_TEXT_COLOR 500ms"
+          ]
+        },
+        {
+          "event": "e-668",
+          "type": "MOUSE_OVER",
+          "typeLabel": "hover → in",
+          "actionList": "a-23",
+          "actionTitle": "Card Hover IN White",
+          "target": "el:9706a90e…",
+          "classHint": "",
+          "effects": [
+            "scale 500ms scale(1)",
+            "STYLE_TEXT_COLOR 500ms",
+            "scale 300ms ease:inOutQuad scale(1.005)",
+            "STYLE_TEXT_COLOR 300ms"
+          ]
+        },
+        {
+          "event": "e-669",
+          "type": "MOUSE_OUT",
+          "typeLabel": "hover → out",
+          "actionList": "a-24",
+          "actionTitle": "Card Hover OUT White",
+          "target": "el:9706a90e…",
+          "classHint": "",
+          "effects": [
+            "scale 300ms ease:inOutQuad scale(1)",
+            "STYLE_TEXT_COLOR 500ms"
+          ]
+        },
+        {
+          "event": "e-670",
+          "type": "MOUSE_OVER",
+          "typeLabel": "hover → in",
+          "actionList": "a-42",
+          "actionTitle": "Card Hover IN Black",
+          "target": "el:9706a90e…",
+          "classHint": "",
+          "effects": [
+            "scale 500ms scale(1)",
+            "STYLE_TEXT_COLOR 500ms",
+            "scale 300ms ease:inOutQuad scale(1.005)",
+            "STYLE_TEXT_COLOR 300ms"
+          ]
+        },
+        {
+          "event": "e-671",
+          "type": "MOUSE_OUT",
+          "typeLabel": "hover → out",
+          "actionList": "a-43",
+          "actionTitle": "Card Hover OUT Black",
+          "target": "el:9706a90e…",
+          "classHint": "",
+          "effects": [
+            "scale 300ms ease:inOutQuad scale(1)",
+            "STYLE_TEXT_COLOR 500ms"
+          ]
+        }
+      ],
+      "types": {
+        "SCROLLING_IN_VIEW": 9,
+        "MOUSE_OVER": 7,
+        "MOUSE_OUT": 7
+      }
+    }
+  },
+  "reusablePatterns": [
+    {
+      "pattern": "scale 500ms scale(1) | STYLE_TEXT_COLOR 500ms | scale 300ms ease:inOutQuad scale(1.005) | STYLE_TEXT_COLOR 300ms ⇄ scale 300ms ease:inOutQuad scale(1) | STYLE_TEXT_COLOR 500ms",
+      "inTitle": "Card Hover IN White",
+      "outTitle": "Card Hover OUT White",
+      "selector": "project_card_bento.coursor---none",
+      "count": 97,
+      "pages": [
+        "index.html (главная)",
+        "csclick.html",
+        "csradar.html",
+        "crafter.html",
+        "zesklad.html",
+        "sibpromstroy.html",
+        "designconference.html",
+        "glavpivmag.html",
+        "smarthome.html",
+        "legalbpm.html",
+        "sberpravo.html"
+      ]
+    },
+    {
+      "pattern": "scale 500ms scale(1) | scale 300ms ease:inOutQuad scale(1.075) ⇄ scale 300ms ease:inOutQuad scale(1)",
+      "inTitle": "Button_hover_IN",
+      "outTitle": "Button_hover_OUT",
+      "selector": ".button_secondary",
+      "count": 15,
+      "pages": [
+        "shared/global",
+        "csradar.html"
+      ]
+    },
+    {
+      "pattern": "bg color 500ms | scale 500ms scale(1) | scale 300ms ease:inOutQuad scale(1.075) ⇄ scale 300ms ease:inOutQuad scale(1)",
+      "inTitle": "Button_primary_hover_IN",
+      "outTitle": "Button_primary_hover_OUT",
+      "selector": "8ec48309-7ea1-f914-cde0-5e425b62444b",
+      "count": 3,
+      "pages": [
+        "shared/global"
+      ]
+    },
+    {
+      "pattern": "move 500ms move(0) | move 500ms move(120) | move 500ms move(0) | move 500ms move(120) | move 500ms move(0) | move 500ms move(120) | move 500ms move(0) | move 500ms move(120) | move 500ms move(0) | move 500ms move(120) | move 800ms ease:inOutQuad move(-120) | move 800ms ease:inOutQuad move(0) | move 800ms ease:inOutQuad move(-120) | move 800ms ease:inOutQuad move(0) | move 800ms ease:inOutQuad move(0) | move 800ms ease:inOutQuad move(-120) | move 800ms ease:inOutQuad move(0) | move 800ms ease:inOutQuad move(-120) | move 800ms ease:inOutQuad move(0) | move 800ms ease:inOutQuad move(-120) | move 800ms ease:inOutQuad move(0) | move 800ms ease:inOutQuad move(140) | move 800ms ease:inOutQuad move(140) | move 800ms ease:inOutQuad move(0) | move 800ms ease:inOutQuad move(0) | move 800ms ease:inOutQuad move(140) | move 800ms ease:inOutQuad move(140) | move 800ms ease:inOutQuad move(0) | move 800ms ease:inOutQuad move(0) | move 800ms ease:inOutQuad move(140) ⇄ —",
+      "inTitle": "Main Text Animation",
+      "outTitle": null,
+      "selector": "el:002b6dc2…",
+      "count": 2,
+      "pages": [
+        "index.html (главная)",
+        "shared/global"
+      ]
+    },
+    {
+      "pattern": "scale 500ms scale(1) | rotate 500ms | scale 300ms ease:easeInOut scale(2) | rotate 300ms ease:easeInOut ⇄ rotate 300ms ease:easeInOut | scale 300ms ease:easeInOut scale(1)",
+      "inTitle": "Image zoom_IN",
+      "outTitle": "Image zoom_OUT",
+      "selector": "el:1b921368…",
+      "count": 2,
+      "pages": [
+        "shared/global"
+      ]
+    },
+    {
+      "pattern": "scale 300ms ease:inOutQuad scale(1) | scale 300ms ease:inOutQuad scale(1.05) ⇄ scale 300ms ease:inOutQuad scale(1)",
+      "inTitle": "Logo Hover IN",
+      "outTitle": "Logo Hover OUT",
+      "selector": "609b2d4d-94ce-28ce-6392-8b8f7b0c9309",
+      "count": 1,
+      "pages": [
+        "shared/global"
+      ]
+    },
+    {
+      "pattern": "scale 500ms scale(1) | rotate 500ms | scale 300ms ease:easeInOut scale(1.5) | rotate 300ms ease:easeInOut ⇄ rotate 300ms ease:easeInOut | scale 300ms ease:easeInOut scale(1)",
+      "inTitle": "Image zoom_IN 2",
+      "outTitle": "Image zoom_OUT",
+      "selector": "el:1b921368…",
+      "count": 1,
+      "pages": [
+        "shared/global"
+      ]
+    }
+  ],
+  "migration": [
+    {
+      "id": "P1-card-hover",
+      "reuse": "CSS :hover на .project_card_bento img",
+      "replaces": [
+        {
+          "pattern": "scale 500ms scale(1) | STYLE_TEXT_COLOR 500ms | scale 300ms ease:inOutQuad scale(1.005) | STYLE_TEXT_COLOR 300ms ⇄ scale 300ms ease:inOutQuad scale(1) | STYLE_TEXT_COLOR 500ms",
+          "inTitle": "Card Hover IN White",
+          "outTitle": "Card Hover OUT White",
+          "selector": "project_card_bento.coursor---none",
+          "count": 97,
+          "pages": {}
+        }
+      ],
+      "effort": "низкий",
+      "saves": "MOUSE_OVER/OUT на всех карточках"
+    },
+    {
+      "id": "P2-button-hover",
+      "reuse": "CSS :hover на .button_primary, .button_secondary, .w-button",
+      "replaces": [
+        {
+          "pattern": "scale 500ms scale(1) | scale 300ms ease:inOutQuad scale(1.075) ⇄ scale 300ms ease:inOutQuad scale(1)",
+          "inTitle": "Button_hover_IN",
+          "outTitle": "Button_hover_OUT",
+          "selector": ".button_secondary",
+          "count": 15,
+          "pages": {}
+        }
+      ],
+      "effort": "низкий",
+      "saves": "hover кнопок шапки и футера"
+    },
+    {
+      "id": "P3-scroll-reveal",
+      "reuse": "IntersectionObserver + .is-visible (один scripts/reveal.js)",
+      "replaces": "SCROLLING_IN_VIEW на страницах проектов",
+      "effort": "средний",
+      "saves": "появление секций при скролле"
+    },
+    {
+      "id": "P4-spline",
+      "reuse": "@splinetool/runtime вместо Webflow.require(ix2)",
+      "replaces": "PLUGIN_SPLINE / data-spline",
+      "effort": "средний",
+      "saves": "зависимость ix2 для футера"
+    },
+    {
+      "id": "P5-page-start",
+      "reuse": "CSS @keyframes fade-in на герой (опционально)",
+      "replaces": "PAGE_START",
+      "effort": "низкий",
+      "saves": "1 событие на главной"
+    }
+  ]
+}

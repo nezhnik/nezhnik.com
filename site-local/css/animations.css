@@ -1,0 +1,157 @@
+/**
+ * Замена Webflow ix2 hover + scroll reveal.
+ * Easing inOutQuad ≈ Webflow default.
+ */
+:root {
+  --ease-in-out-quad: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+/* --- Карточки проектов (Card Hover IN/OUT White & Black) --- */
+.project_card_bento:not(.coursor---none) {
+  transition: transform 300ms var(--ease-in-out-quad);
+  transform-origin: center center;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .project_card_bento:not(.coursor---none):hover {
+    transform: scale(1.005);
+  }
+}
+
+.project_card_bento:not(.coursor---none) .h3.cell.white {
+  transition: color 300ms var(--ease-in-out-quad);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .project_card_bento:not(.coursor---none):hover .h3.cell.white {
+    color: #bebecc;
+  }
+}
+
+.project_card_bento:not(.coursor---none) .h3.cell.dark {
+  transition: color 300ms var(--ease-in-out-quad);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .project_card_bento:not(.coursor---none):hover .h3.cell.dark {
+    color: #82828f;
+  }
+}
+
+/* --- Кнопки (Button_hover_IN / Button_primary_hover_IN) --- */
+.button_secondary,
+.button_secondary_header,
+.button_secondary_header-left,
+.button_secondary_body,
+.button_primary_header,
+.button_primary_body {
+  transition: transform 300ms var(--ease-in-out-quad);
+  transform-origin: center center;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .button_secondary:hover,
+  .button_secondary_header:hover,
+  .button_secondary_header-left:hover,
+  .button_secondary_body:hover,
+  .button_primary_header:hover,
+  .button_primary_body:hover {
+    transform: scale(1.075);
+  }
+}
+
+@media (hover: none), (pointer: coarse) {
+  .button_secondary:active,
+  .button_secondary_header:active,
+  .button_secondary_header-left:active,
+  .button_secondary_body:active,
+  .button_primary_header:active,
+  .button_primary_body:active {
+    transform: scale(1.075);
+  }
+}
+
+/* --- Лого (Logo Hover IN/OUT) --- */
+.logo-block .link-block {
+  transition: transform 300ms var(--ease-in-out-quad);
+  transform-origin: center center;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .logo-block .link-block:hover {
+    transform: scale(1.05);
+  }
+}
+
+@media (hover: none), (pointer: coarse) {
+  .logo-block .link-block:active {
+    transform: scale(1.05);
+  }
+}
+
+/* --- Scroll reveal (замена SCROLLING_IN_VIEW) --- */
+.reveal {
+  opacity: 0;
+  transform: translateY(20px) scale(0.98);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* --- Футер без Spline --- */
+.footer_cta .footer_card {
+  height: auto;
+  align-items: center;
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+.footer_cta .project_card_name {
+  width: 100%;
+  max-width: 640px;
+  height: auto;
+}
+
+@media screen and (max-width: 991px) {
+  .footer_cta .footer_card {
+    height: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .footer_cta .footer_card {
+    height: auto;
+    padding: 32px 24px;
+  }
+}
+
+/* Шапка без подложки — видны только кнопки и лого */
+.header {
+  background-color: transparent;
+  -webkit-backdrop-filter: none;
+  backdrop-filter: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .project_card_bento:not(.coursor---none),
+  .button_secondary,
+  .button_secondary_header,
+  .button_secondary_header-left,
+  .button_secondary_body,
+  .button_primary_header,
+  .button_primary_body,
+  .logo-block .link-block,
+  .reveal {
+    transition: none;
+  }
+
+  .reveal {
+    opacity: 1;
+    transform: none;
+  }
+}

@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://nezhnik.com/sitemap.xml
+
+# AI-краулеры: https://nezhnik.com/llms.txt

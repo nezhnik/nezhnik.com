@@ -1,0 +1,659 @@
+{
+  "quality": "85-100",
+  "savedBytes": 34703511,
+  "compressed": [
+    {
+      "file": "images/content/029fcae2-снимок-экрана-2023-08-10-в-8.10.06-pm.png",
+      "before": 1222643,
+      "after": 368032,
+      "saved": 854611,
+      "pct": 70
+    },
+    {
+      "file": "images/content/03498c74-are-you-serious_.png",
+      "before": 499877,
+      "after": 143623,
+      "saved": 356254,
+      "pct": 71
+    },
+    {
+      "file": "images/content/073d3a70-ui-kit-sber.png",
+      "before": 327351,
+      "after": 118369,
+      "saved": 208982,
+      "pct": 64
+    },
+    {
+      "file": "images/content/08250888-сибпромстрой.png",
+      "before": 719444,
+      "after": 201369,
+      "saved": 518075,
+      "pct": 72
+    },
+    {
+      "file": "images/content/0ba3fff0-crafter-cover-2.png",
+      "before": 370120,
+      "after": 136758,
+      "saved": 233362,
+      "pct": 63
+    },
+    {
+      "file": "images/content/0c3df3a0-frame-4.png",
+      "before": 274629,
+      "after": 61100,
+      "saved": 213529,
+      "pct": 78
+    },
+    {
+      "file": "images/content/0c3e81b9-frame-3.png",
+      "before": 401673,
+      "after": 104089,
+      "saved": 297584,
+      "pct": 74
+    },
+    {
+      "file": "images/content/116c9396-brain.png",
+      "before": 304063,
+      "after": 204901,
+      "saved": 99162,
+      "pct": 33
+    },
+    {
+      "file": "images/content/132a2f2e-asset.png",
+      "before": 348856,
+      "after": 117789,
+      "saved": 231067,
+      "pct": 66
+    },
+    {
+      "file": "images/content/1412cc7c-logo-design-conference.png",
+      "before": 170856,
+      "after": 38371,
+      "saved": 132485,
+      "pct": 78
+    },
+    {
+      "file": "images/content/14f9cb2a-excel.png",
+      "before": 438909,
+      "after": 172575,
+      "saved": 266334,
+      "pct": 61
+    },
+    {
+      "file": "images/content/15032a00-главная.png",
+      "before": 716656,
+      "after": 205557,
+      "saved": 511099,
+      "pct": 71
+    },
+    {
+      "file": "images/content/15132d1d-frame-1851040471.png",
+      "before": 166329,
+      "after": 64571,
+      "saved": 101758,
+      "pct": 61
+    },
+    {
+      "file": "images/content/2068de02-3d-иллюстрации-2-2-2.png",
+      "before": 639964,
+      "after": 189746,
+      "saved": 450218,
+      "pct": 70
+    },
+    {
+      "file": "images/content/23546cd6-снимок-экрана-2023-08-08-в-08.29.53.png",
+      "before": 437556,
+      "after": 123718,
+      "saved": 313838,
+      "pct": 72
+    },
+    {
+      "file": "images/content/26c659ff-объем.png",
+      "before": 1123272,
+      "after": 362377,
+      "saved": 760895,
+      "pct": 68
+    },
+    {
+      "file": "images/content/26c699ba-ui-kit.png",
+      "before": 1618660,
+      "after": 351438,
+      "saved": 1267222,
+      "pct": 78
+    },
+    {
+      "file": "images/content/2fc1317d-сберправо-стаыи-каталог.png",
+      "before": 207991,
+      "after": 58391,
+      "saved": 149600,
+      "pct": 72
+    },
+    {
+      "file": "images/content/31a66acb-план-работы.png",
+      "before": 278012,
+      "after": 110162,
+      "saved": 167850,
+      "pct": 60
+    },
+    {
+      "file": "images/content/325c1665-каталог-1-уровень-все-1920..png",
+      "before": 591393,
+      "after": 171083,
+      "saved": 420310,
+      "pct": 71
+    },
+    {
+      "file": "images/content/357199bd-accessability.png",
+      "before": 290719,
+      "after": 206554,
+      "saved": 84165,
+      "pct": 29
+    },
+    {
+      "file": "images/content/3a5e9f40-2.png",
+      "before": 533939,
+      "after": 200222,
+      "saved": 333717,
+      "pct": 63
+    },
+    {
+      "file": "images/content/3da549ba-маршруты-на-карте-не-показывать-пути-маршрутов.png",
+      "before": 1205371,
+      "after": 367864,
+      "saved": 837507,
+      "pct": 69
+    },
+    {
+      "file": "images/content/3eef955b-v-chem-sila-brom_.png",
+      "before": 502826,
+      "after": 142592,
+      "saved": 360234,
+      "pct": 72
+    },
+    {
+      "file": "images/content/3fd7a096-снимок-экрана-2023-08-09-в-7.47.07-pm.png",
+      "before": 502713,
+      "after": 195610,
+      "saved": 307103,
+      "pct": 61
+    },
+    {
+      "file": "images/content/41fddc5d-снимок-экрана-2024-05-05-в-8.13.52-pm.png",
+      "before": 1271200,
+      "after": 311834,
+      "saved": 959366,
+      "pct": 75
+    },
+    {
+      "file": "images/content/44b8e220-frame-1851040470.png",
+      "before": 738204,
+      "after": 227212,
+      "saved": 510992,
+      "pct": 69
+    },
+    {
+      "file": "images/content/48fa6e6b-снимок-экрана-2024-05-05-в-7.40.08-pm.png",
+      "before": 371452,
+      "after": 96871,
+      "saved": 274581,
+      "pct": 74
+    },
+    {
+      "file": "images/content/5102c769-результат.png",
+      "before": 221545,
+      "after": 79845,
+      "saved": 141700,
+      "pct": 64
+    },
+    {
+      "file": "images/content/52538052-дизаи-н-конференция-main.png",
+      "before": 729155,
+      "after": 234337,
+      "saved": 494818,
+      "pct": 68
+    },
+    {
+      "file": "images/content/567932d6-снимок-экрана-2023-08-08-в-08.45.42.png",
+      "before": 344825,
+      "after": 110693,
+      "saved": 234132,
+      "pct": 68
+    },
+    {
+      "file": "images/content/56ad4f40-frame-1851040498.png",
+      "before": 1685340,
+      "after": 443598,
+      "saved": 1241742,
+      "pct": 74
+    },
+    {
+      "file": "images/content/58f53e9c-главпивмаг.png",
+      "before": 631151,
+      "after": 165653,
+      "saved": 465498,
+      "pct": 74
+    },
+    {
+      "file": "images/content/68f2a2de-frame-1851040648.png",
+      "before": 279240,
+      "after": 190870,
+      "saved": 88370,
+      "pct": 32
+    },
+    {
+      "file": "images/content/6ec118d0-frame-1851040488.png",
+      "before": 282044,
+      "after": 84193,
+      "saved": 197851,
+      "pct": 70
+    },
+    {
+      "file": "images/content/75632048-снимок-экрана-2024-04-02-в-2.46.12-pm.png",
+      "before": 650476,
+      "after": 160057,
+      "saved": 490419,
+      "pct": 75
+    },
+    {
+      "file": "images/content/79a28a09-снимок-экрана-2024-03-29-в-1.09.53-am.png",
+      "before": 1299299,
+      "after": 338301,
+      "saved": 960998,
+      "pct": 74
+    },
+    {
+      "file": "images/content/7a982653-дизаи-н-конференция-4.png",
+      "before": 351649,
+      "after": 90064,
+      "saved": 261585,
+      "pct": 74
+    },
+    {
+      "file": "images/content/7ea30764-снимок-экрана-2024-05-05-в-8.16.10-pm.png",
+      "before": 592106,
+      "after": 119366,
+      "saved": 472740,
+      "pct": 80
+    },
+    {
+      "file": "images/content/8156d4e8-frame-1.png",
+      "before": 895258,
+      "after": 235949,
+      "saved": 659309,
+      "pct": 74
+    },
+    {
+      "file": "images/content/84007acb-корзина-2.png",
+      "before": 519408,
+      "after": 176523,
+      "saved": 342885,
+      "pct": 66
+    },
+    {
+      "file": "images/content/890f2c7f-frame-1851040470.png",
+      "before": 850877,
+      "after": 262390,
+      "saved": 588487,
+      "pct": 69
+    },
+    {
+      "file": "images/content/8a00eb3d-zeсклад.png",
+      "before": 996487,
+      "after": 265367,
+      "saved": 731120,
+      "pct": 73
+    },
+    {
+      "file": "images/content/8a8b039c-frame-1851040408.png",
+      "before": 592927,
+      "after": 229311,
+      "saved": 363616,
+      "pct": 61
+    },
+    {
+      "file": "images/content/8b21fec1-main.png",
+      "before": 666925,
+      "after": 153971,
+      "saved": 512954,
+      "pct": 77
+    },
+    {
+      "file": "images/content/91d60cf0-cs-radar-приложение-1.png",
+      "before": 501765,
+      "after": 187824,
+      "saved": 313941,
+      "pct": 63
+    },
+    {
+      "file": "images/content/91d7f062-снимок-экрана-2023-08-09-в-7.45.55-pm.png",
+      "before": 362144,
+      "after": 130837,
+      "saved": 231307,
+      "pct": 64
+    },
+    {
+      "file": "images/content/93119d48-i-believe-i-can-change.png",
+      "before": 668079,
+      "after": 159728,
+      "saved": 508351,
+      "pct": 76
+    },
+    {
+      "file": "images/content/94c8db2c-figure.climbing.circle-1.png",
+      "before": 305296,
+      "after": 210160,
+      "saved": 95136,
+      "pct": 31
+    },
+    {
+      "file": "images/content/97779288-frame-1851040649.png",
+      "before": 294568,
+      "after": 204798,
+      "saved": 89770,
+      "pct": 30
+    },
+    {
+      "file": "images/content/99fd9dd2-frame-1851040630.png",
+      "before": 253417,
+      "after": 98060,
+      "saved": 155357,
+      "pct": 61
+    },
+    {
+      "file": "images/content/9bb0097b-было-3.png",
+      "before": 584118,
+      "after": 178082,
+      "saved": 406036,
+      "pct": 70
+    },
+    {
+      "file": "images/content/9e349108-главная-страница-сибпромстрои-3.png",
+      "before": 556030,
+      "after": 147514,
+      "saved": 408516,
+      "pct": 73
+    },
+    {
+      "file": "images/content/a87c8e2e-face.smiling.png",
+      "before": 267052,
+      "after": 184294,
+      "saved": 82758,
+      "pct": 31
+    },
+    {
+      "file": "images/content/b27c1153-снимок-экрана-2023-08-09-в-7.55.39-pm.png",
+      "before": 318838,
+      "after": 88985,
+      "saved": 229853,
+      "pct": 72
+    },
+    {
+      "file": "images/content/b3ccd87a-страница-проекта-сибпромстрои-2.png",
+      "before": 423937,
+      "after": 125698,
+      "saved": 298239,
+      "pct": 70
+    },
+    {
+      "file": "images/content/ba2da62d-снимок-экрана-2024-05-26-в-12.40-1.png",
+      "before": 301792,
+      "after": 91484,
+      "saved": 210308,
+      "pct": 70
+    },
+    {
+      "file": "images/content/bb4278cc-адрес-пункта-самовывоз.png",
+      "before": 1374788,
+      "after": 467401,
+      "saved": 907387,
+      "pct": 66
+    },
+    {
+      "file": "images/content/c5bb9cd5-пример-сценария.png",
+      "before": 482016,
+      "after": 150493,
+      "saved": 331523,
+      "pct": 69
+    },
+    {
+      "file": "images/content/ca158ca6-accessability-1.png",
+      "before": 311562,
+      "after": 235731,
+      "saved": 75831,
+      "pct": 24
+    },
+    {
+      "file": "images/content/cf85d311-каталог-6.0-ночь.png",
+      "before": 999641,
+      "after": 267706,
+      "saved": 731935,
+      "pct": 73
+    },
+    {
+      "file": "images/content/d456b009-дизайн-конференция.png",
+      "before": 778277,
+      "after": 222051,
+      "saved": 556226,
+      "pct": 71
+    },
+    {
+      "file": "images/content/da04a662-снимок-экрана-2024-05-05-в-8.12.11-pm.png",
+      "before": 1247084,
+      "after": 343656,
+      "saved": 903428,
+      "pct": 72
+    },
+    {
+      "file": "images/content/df41a1e1-slice-2.png",
+      "before": 1625031,
+      "after": 429627,
+      "saved": 1195404,
+      "pct": 74
+    },
+    {
+      "file": "images/content/e22871e9-end.png",
+      "before": 1028020,
+      "after": 225814,
+      "saved": 802206,
+      "pct": 78
+    },
+    {
+      "file": "images/content/e341761f-ui-kit-sber2.png",
+      "before": 259718,
+      "after": 90049,
+      "saved": 169669,
+      "pct": 65
+    },
+    {
+      "file": "images/content/e6617b62-статистика.png",
+      "before": 277339,
+      "after": 92961,
+      "saved": 184378,
+      "pct": 66
+    },
+    {
+      "file": "images/content/f08dafb9-плакаты.png",
+      "before": 263990,
+      "after": 73281,
+      "saved": 190709,
+      "pct": 72
+    },
+    {
+      "file": "images/content/f0effb44-главная-страница-3.png",
+      "before": 1383000,
+      "after": 439009,
+      "saved": 943991,
+      "pct": 68
+    },
+    {
+      "file": "images/content/f2805619-прототип.png",
+      "before": 626922,
+      "after": 215747,
+      "saved": 411175,
+      "pct": 66
+    },
+    {
+      "file": "images/content/f385b6fc-оформление-заказа.png",
+      "before": 347584,
+      "after": 119464,
+      "saved": 228120,
+      "pct": 66
+    },
+    {
+      "file": "images/content/fa6e971d-доработка-4.1.png",
+      "before": 946346,
+      "after": 290048,
+      "saved": 656298,
+      "pct": 69
+    },
+    {
+      "file": "images/content/fea7b9fb-снимок-экрана-2024-03-19-в-7.54.42-pm.png",
+      "before": 840390,
+      "after": 225983,
+      "saved": 614407,
+      "pct": 73
+    },
+    {
+      "file": "images/content/fee6fc70-те-мная-тема.png",
+      "before": 200771,
+      "after": 72585,
+      "saved": 128186,
+      "pct": 64
+    },
+    {
+      "file": "images/cards/color.png",
+      "before": 222167,
+      "after": 63839,
+      "saved": 158328,
+      "pct": 71
+    },
+    {
+      "file": "images/cards/csclick.png",
+      "before": 304681,
+      "after": 93247,
+      "saved": 211434,
+      "pct": 69
+    },
+    {
+      "file": "images/cards/glavpivmag.png",
+      "before": 878609,
+      "after": 253550,
+      "saved": 625059,
+      "pct": 71
+    },
+    {
+      "file": "images/cards/omonete.png",
+      "before": 222167,
+      "after": 63839,
+      "saved": 158328,
+      "pct": 71
+    },
+    {
+      "file": "images/cards/plagin.png",
+      "before": 222167,
+      "after": 63839,
+      "saved": 158328,
+      "pct": 71
+    },
+    {
+      "file": "images/cards/raiffeisen-10.png",
+      "before": 270379,
+      "after": 84743,
+      "saved": 185636,
+      "pct": 69
+    },
+    {
+      "file": "images/cards/raiffeisen-11.png",
+      "before": 284810,
+      "after": 86199,
+      "saved": 198611,
+      "pct": 70
+    },
+    {
+      "file": "images/cards/raiffeisen-12.png",
+      "before": 361023,
+      "after": 112186,
+      "saved": 248837,
+      "pct": 69
+    },
+    {
+      "file": "images/cards/raiffeisen-14.png",
+      "before": 210094,
+      "after": 54974,
+      "saved": 155120,
+      "pct": 74
+    },
+    {
+      "file": "images/cards/raiffeisen-15.png",
+      "before": 366582,
+      "after": 366556,
+      "saved": 26,
+      "pct": 0
+    },
+    {
+      "file": "images/cards/raiffeisen-16.png",
+      "before": 344104,
+      "after": 344068,
+      "saved": 36,
+      "pct": 0
+    },
+    {
+      "file": "images/cards/raiffeisen-17.png",
+      "before": 494507,
+      "after": 144581,
+      "saved": 349926,
+      "pct": 71
+    },
+    {
+      "file": "images/cards/raiffeisen-8.png",
+      "before": 350120,
+      "after": 110322,
+      "saved": 239798,
+      "pct": 68
+    },
+    {
+      "file": "images/cards/raiffeisen-9.png",
+      "before": 242342,
+      "after": 75523,
+      "saved": 166819,
+      "pct": 69
+    },
+    {
+      "file": "images/cards/smarthome.png",
+      "before": 222167,
+      "after": 63839,
+      "saved": 158328,
+      "pct": 71
+    },
+    {
+      "file": "images/cards/symbols.png",
+      "before": 222167,
+      "after": 63839,
+      "saved": 158328,
+      "pct": 71
+    }
+  ],
+  "skipped": [
+    {
+      "file": "images/content/178d3b5c-снимок-экрана-2024-04-02-в-2.34.18-pm.png",
+      "reason": "quality floor",
+      "before": 1768795
+    },
+    {
+      "file": "images/content/804a10ff-снимок-экрана-2024-03-20-в-12.55.31-am.png",
+      "reason": "quality floor",
+      "before": 1280823
+    },
+    {
+      "file": "images/content/8b56c79b-colors.png",
+      "reason": "quality floor",
+      "before": 575304
+    },
+    {
+      "file": "images/cards/raiffeisen-13.png",
+      "reason": "quality floor",
+      "before": 265475
+    }
+  ],
+  "failed": []
+}

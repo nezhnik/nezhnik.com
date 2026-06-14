@@ -1,0 +1,14 @@
+# PNG/JPG — бэкапы после конвертации в WebP (HTML использует только .webp)
+images/**/*.png
+images/**/*.jpg
+images/**/*.jpeg
+!images/shared/telegram-logo.png
+
+# Полный набор Montserrat (slim-версия в fonts-local.css)
+fonts-local.full.css
+
+# Node
+node_modules/
+
+# Legacy (не подключается на страницах)
+style2.css

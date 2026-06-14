@@ -1,0 +1,1174 @@
+{
+  "converted": [
+    {
+      "file": "images/CSClick.png",
+      "webp": "images/CSClick.webp",
+      "quality": "88",
+      "before": 111716,
+      "after": 61044,
+      "saved": 50672,
+      "pct": 45
+    },
+    {
+      "file": "images/Glavpivmag.png",
+      "webp": "images/Glavpivmag.webp",
+      "quality": "88",
+      "before": 226864,
+      "after": 81172,
+      "saved": 145692,
+      "pct": 64
+    },
+    {
+      "file": "images/Raiffeisen-10.png",
+      "webp": "images/Raiffeisen-10.webp",
+      "quality": "88",
+      "before": 120260,
+      "after": 87454,
+      "saved": 32806,
+      "pct": 27
+    },
+    {
+      "file": "images/Raiffeisen-11.png",
+      "webp": "images/Raiffeisen-11.webp",
+      "quality": "88",
+      "before": 390138,
+      "after": 49200,
+      "saved": 340938,
+      "pct": 87
+    },
+    {
+      "file": "images/Raiffeisen-12.png",
+      "webp": "images/Raiffeisen-12.webp",
+      "quality": "88",
+      "before": 175940,
+      "after": 78260,
+      "saved": 97680,
+      "pct": 56
+    },
+    {
+      "file": "images/Raiffeisen-13.png",
+      "webp": "images/Raiffeisen-13.webp",
+      "quality": "88",
+      "before": 470891,
+      "after": 231076,
+      "saved": 239815,
+      "pct": 51
+    },
+    {
+      "file": "images/Raiffeisen-14.png",
+      "webp": "images/Raiffeisen-14.webp",
+      "quality": "88",
+      "before": 89830,
+      "after": 50308,
+      "saved": 39522,
+      "pct": 44
+    },
+    {
+      "file": "images/Raiffeisen-15.png",
+      "webp": "images/Raiffeisen-15.webp",
+      "quality": "88",
+      "before": 2584820,
+      "after": 335690,
+      "saved": 2249130,
+      "pct": 87
+    },
+    {
+      "file": "images/Raiffeisen-16.png",
+      "webp": "images/Raiffeisen-16.webp",
+      "quality": "88",
+      "before": 497578,
+      "after": 171512,
+      "saved": 326066,
+      "pct": 66
+    },
+    {
+      "file": "images/Raiffeisen-17.png",
+      "webp": "images/Raiffeisen-17.webp",
+      "quality": "88",
+      "before": 246096,
+      "after": 94148,
+      "saved": 151948,
+      "pct": 62
+    },
+    {
+      "file": "images/Raiffeisen-18.png",
+      "webp": "images/Raiffeisen-18.webp",
+      "quality": "92",
+      "before": 59742,
+      "after": 39288,
+      "saved": 20454,
+      "pct": 34
+    },
+    {
+      "file": "images/Raiffeisen-8.png",
+      "webp": "images/Raiffeisen-8.webp",
+      "quality": "88",
+      "before": 138271,
+      "after": 102054,
+      "saved": 36217,
+      "pct": 26
+    },
+    {
+      "file": "images/Raiffeisen-9.png",
+      "webp": "images/Raiffeisen-9.webp",
+      "quality": "88",
+      "before": 107298,
+      "after": 89592,
+      "saved": 17706,
+      "pct": 17
+    },
+    {
+      "file": "images/Smarthome.png",
+      "webp": "images/Smarthome.webp",
+      "quality": "92",
+      "before": 44374,
+      "after": 47292,
+      "saved": 0,
+      "pct": 0
+    },
+    {
+      "file": "images/avatar.png",
+      "webp": "images/avatar.webp",
+      "quality": "88",
+      "before": 103114,
+      "after": 6126,
+      "saved": 96988,
+      "pct": 94
+    },
+    {
+      "file": "images/cards/color.png",
+      "webp": "images/cards/color.webp",
+      "quality": "92",
+      "before": 33364,
+      "after": 35456,
+      "saved": 0,
+      "pct": 0
+    },
+    {
+      "file": "images/cards/csclick.png",
+      "webp": "images/cards/csclick.webp",
+      "quality": "88",
+      "before": 111716,
+      "after": 61044,
+      "saved": 50672,
+      "pct": 45
+    },
+    {
+      "file": "images/cards/glavpivmag.png",
+      "webp": "images/cards/glavpivmag.webp",
+      "quality": "88",
+      "before": 226864,
+      "after": 81172,
+      "saved": 145692,
+      "pct": 64
+    },
+    {
+      "file": "images/cards/omonete.png",
+      "webp": "images/cards/omonete.webp",
+      "quality": "88",
+      "before": 392627,
+      "after": 208854,
+      "saved": 183773,
+      "pct": 47
+    },
+    {
+      "file": "images/cards/plagin.png",
+      "webp": "images/cards/plagin.webp",
+      "quality": "92",
+      "before": 43895,
+      "after": 35890,
+      "saved": 8005,
+      "pct": 18
+    },
+    {
+      "file": "images/cards/raiffeisen-10.png",
+      "webp": "images/cards/raiffeisen-10.webp",
+      "quality": "88",
+      "before": 120260,
+      "after": 87454,
+      "saved": 32806,
+      "pct": 27
+    },
+    {
+      "file": "images/cards/raiffeisen-11.png",
+      "webp": "images/cards/raiffeisen-11.webp",
+      "quality": "88",
+      "before": 390138,
+      "after": 49200,
+      "saved": 340938,
+      "pct": 87
+    },
+    {
+      "file": "images/cards/raiffeisen-12.png",
+      "webp": "images/cards/raiffeisen-12.webp",
+      "quality": "88",
+      "before": 175940,
+      "after": 78260,
+      "saved": 97680,
+      "pct": 56
+    },
+    {
+      "file": "images/cards/raiffeisen-13.png",
+      "webp": "images/cards/raiffeisen-13.webp",
+      "quality": "88",
+      "before": 470891,
+      "after": 231076,
+      "saved": 239815,
+      "pct": 51
+    },
+    {
+      "file": "images/cards/raiffeisen-14.png",
+      "webp": "images/cards/raiffeisen-14.webp",
+      "quality": "88",
+      "before": 89830,
+      "after": 50308,
+      "saved": 39522,
+      "pct": 44
+    },
+    {
+      "file": "images/cards/raiffeisen-15.png",
+      "webp": "images/cards/raiffeisen-15.webp",
+      "quality": "88",
+      "before": 2584820,
+      "after": 335690,
+      "saved": 2249130,
+      "pct": 87
+    },
+    {
+      "file": "images/cards/raiffeisen-16.png",
+      "webp": "images/cards/raiffeisen-16.webp",
+      "quality": "88",
+      "before": 497578,
+      "after": 171512,
+      "saved": 326066,
+      "pct": 66
+    },
+    {
+      "file": "images/cards/raiffeisen-17.png",
+      "webp": "images/cards/raiffeisen-17.webp",
+      "quality": "88",
+      "before": 246096,
+      "after": 94148,
+      "saved": 151948,
+      "pct": 62
+    },
+    {
+      "file": "images/cards/raiffeisen-18.png",
+      "webp": "images/cards/raiffeisen-18.webp",
+      "quality": "92",
+      "before": 59742,
+      "after": 39288,
+      "saved": 20454,
+      "pct": 34
+    },
+    {
+      "file": "images/cards/raiffeisen-8.png",
+      "webp": "images/cards/raiffeisen-8.webp",
+      "quality": "88",
+      "before": 138271,
+      "after": 102054,
+      "saved": 36217,
+      "pct": 26
+    },
+    {
+      "file": "images/cards/raiffeisen-9.png",
+      "webp": "images/cards/raiffeisen-9.webp",
+      "quality": "88",
+      "before": 107298,
+      "after": 89592,
+      "saved": 17706,
+      "pct": 17
+    },
+    {
+      "file": "images/cards/smarthome.png",
+      "webp": "images/cards/smarthome.webp",
+      "quality": "92",
+      "before": 44374,
+      "after": 47292,
+      "saved": 0,
+      "pct": 0
+    },
+    {
+      "file": "images/cards/symbols.png",
+      "webp": "images/cards/symbols.webp",
+      "quality": "92",
+      "before": 52385,
+      "after": 47090,
+      "saved": 5295,
+      "pct": 10
+    },
+    {
+      "file": "images/color.png",
+      "webp": "images/color.webp",
+      "quality": "92",
+      "before": 33364,
+      "after": 35456,
+      "saved": 0,
+      "pct": 0
+    },
+    {
+      "file": "images/content/01235f6a-roadmap.png",
+      "webp": "images/content/01235f6a-roadmap.webp",
+      "quality": "92",
+      "before": 39463,
+      "after": 42660,
+      "saved": 0,
+      "pct": 0
+    },
+    {
+      "file": "images/content/029fcae2-снимок-экрана-2023-08-10-в-8.10.06-pm.png",
+      "webp": "images/content/029fcae2-снимок-экрана-2023-08-10-в-8.10.06-pm.webp",
+      "quality": "90",
+      "before": 711975,
+      "after": 164098,
+      "saved": 547877,
+      "pct": 77
+    },
+    {
+      "file": "images/content/03498c74-are-you-serious_.png",
+      "webp": "images/content/03498c74-are-you-serious_.webp",
+      "quality": "90",
+      "before": 180057,
+      "after": 147830,
+      "saved": 32227,
+      "pct": 18
+    },
+    {
+      "file": "images/content/073d3a70-ui-kit-sber.png",
+      "webp": "images/content/073d3a70-ui-kit-sber.webp",
+      "quality": "90",
+      "before": 192007,
+      "after": 89760,
+      "saved": 102247,
+      "pct": 53
+    },
+    {
+      "file": "images/content/08250888-сибпромстрой.png",
+      "webp": "images/content/08250888-сибпромстрой.webp",
+      "quality": "90",
+      "before": 363449,
+      "after": 201156,
+      "saved": 162293,
+      "pct": 45
+    },
+    {
+      "file": "images/content/0ba3fff0-crafter-cover-2.png",
+      "webp": "images/content/0ba3fff0-crafter-cover-2.webp",
+      "quality": "92",
+      "before": 36737,
+      "after": 72480,
+      "saved": 0,
+      "pct": 0
+    },
+    {
+      "file": "images/content/0c3df3a0-frame-4.png",
+      "webp": "images/content/0c3df3a0-frame-4.webp",
+      "quality": "90",
+      "before": 83174,
+      "after": 47592,
+      "saved": 35582,
+      "pct": 43
+    },
+    {
+      "file": "images/content/0c3e81b9-frame-3.png",
+      "webp": "images/content/0c3e81b9-frame-3.webp",
+      "quality": "90",
+      "before": 136802,
+      "after": 102324,
+      "saved": 34478,
+      "pct": 25
+    },
+    {
+      "file": "images/content/116c9396-brain.png",
+      "webp": "images/content/116c9396-brain.webp",
+      "quality": "92",
+      "before": 5312,
+      "after": 5788,
+      "saved": 0,
+      "pct": 0
+    },
+    {
+      "file": "images/content/132a2f2e-asset.png",
+      "webp": "images/content/132a2f2e-asset.webp",
+      "quality": "92",
+      "before": 69290,
+      "after": 69788,
+      "saved": 0,
+      "pct": 0
+    },
+    {
+      "file": "images/content/1412cc7c-logo-design-conference.png",
+      "webp": "images/content/1412cc7c-logo-design-conference.webp",
+      "quality": "92",
+      "before": 62738,
+      "after": 18908,
+      "saved": 43830,
+      "pct": 70
+    },
+    {
+      "file": "images/content/14f9cb2a-excel.png",
+      "webp": "images/content/14f9cb2a-excel.webp",
+      "quality": "92",
+      "before": 68588,
+      "after": 150996,
+      "saved": 0,
+      "pct": 0
+    },
+    {
+      "file": "images/content/15032a00-главная.png",
+      "webp": "images/content/15032a00-главная.webp",
+      "quality": "90",
+      "before": 127506,
+      "after": 98150,
+      "saved": 29356,
+      "pct": 23
+    },
+    {
+      "file": "images/content/15132d1d-frame-1851040471.png",
+      "webp": "images/content/15132d1d-frame-1851040471.webp",
+      "quality": "92",
+      "before": 50709,
+      "after": 43964,
+      "saved": 6745,
+      "pct": 13
+    },
+    {
+      "file": "images/content/178d3b5c-снимок-экрана-2024-04-02-в-2.34.18-pm.png",
+      "webp": "images/content/178d3b5c-снимок-экрана-2024-04-02-в-2.34.18-pm.webp",
+      "quality": "90",
+      "before": 3693638,
+      "after": 432784,
+      "saved": 3260854,
+      "pct": 88
+    },
+    {
+      "file": "images/content/2068de02-3d-иллюстрации-2-2-2.png",
+      "webp": "images/content/2068de02-3d-иллюстрации-2-2-2.webp",
+      "quality": "90",
+      "before": 1677957,
+      "after": 607188,
+      "saved": 1070769,
+      "pct": 64
+    },
+    {
+      "file": "images/content/23546cd6-снимок-экрана-2023-08-08-в-08.29.53.png",
+      "webp": "images/content/23546cd6-снимок-экрана-2023-08-08-в-08.29.53.webp",
+      "quality": "90",
+      "before": 772500,
+      "after": 133196,
+      "saved": 639304,
+      "pct": 83
+    },
+    {
+      "file": "images/content/26c659ff-объем.png",
+      "webp": "images/content/26c659ff-объем.webp",
+      "quality": "90",
+      "before": 210761,
+      "after": 109064,
+      "saved": 101697,
+      "pct": 48
+    },
+    {
+      "file": "images/content/26c699ba-ui-kit.png",
+      "webp": "images/content/26c699ba-ui-kit.webp",
+      "quality": "90",
+      "before": 241460,
+      "after": 87884,
+      "saved": 153576,
+      "pct": 64
+    },
+    {
+      "file": "images/content/2fc1317d-сберправо-стаыи-каталог.png",
+      "webp": "images/content/2fc1317d-сберправо-стаыи-каталог.webp",
+      "quality": "90",
+      "before": 95837,
+      "after": 72720,
+      "saved": 23117,
+      "pct": 24
+    },
+    {
+      "file": "images/content/31a66acb-план-работы.png",
+      "webp": "images/content/31a66acb-план-работы.webp",
+      "quality": "92",
+      "before": 45069,
+      "after": 92812,
+      "saved": 0,
+      "pct": 0
+    },
+    {
+      "file": "images/content/325c1665-каталог-1-уровень-все-1920..png",
+      "webp": "images/content/325c1665-каталог-1-уровень-все-1920..webp",
+      "quality": "90",
+      "before": 292857,
+      "after": 176706,
+      "saved": 116151,
+      "pct": 40
+    },
+    {
+      "file": "images/content/357199bd-accessability.png",
+      "webp": "images/content/357199bd-accessability.webp",
+      "quality": "92",
+      "before": 4111,
+      "after": 4352,
+      "saved": 0,
+      "pct": 0
+    },
+    {
+      "file": "images/content/3a5e9f40-2.png",
+      "webp": "images/content/3a5e9f40-2.webp",
+      "quality": "90",
+      "before": 310272,
+      "after": 256840,
+      "saved": 53432,
+      "pct": 17
+    },
+    {
+      "file": "images/content/3da549ba-маршруты-на-карте-не-показывать-пути-маршрутов.png",
+      "webp": "images/content/3da549ba-маршруты-на-карте-не-показывать-пути-маршрутов.webp",
+      "quality": "90",
+      "before": 554412,
+      "after": 417396,
+      "saved": 137016,
+      "pct": 25
+    },
+    {
+      "file": "images/content/3eef955b-v-chem-sila-brom_.png",
+      "webp": "images/content/3eef955b-v-chem-sila-brom_.webp",
+      "quality": "90",
+      "before": 180293,
+      "after": 145448,
+      "saved": 34845,
+      "pct": 19
+    },
+    {
+      "file": "images/content/3f71d270-wirefrrame-2.png",
+      "webp": "images/content/3f71d270-wirefrrame-2.webp",
+      "quality": "92",
+      "before": 77705,
+      "after": 60286,
+      "saved": 17419,
+      "pct": 22
+    },
+    {
+      "file": "images/content/3fd7a096-снимок-экрана-2023-08-09-в-7.47.07-pm.png",
+      "webp": "images/content/3fd7a096-снимок-экрана-2023-08-09-в-7.47.07-pm.webp",
+      "quality": "90",
+      "before": 331394,
+      "after": 149630,
+      "saved": 181764,
+      "pct": 55
+    },
+    {
+      "file": "images/content/41fddc5d-снимок-экрана-2024-05-05-в-8.13.52-pm.png",
+      "webp": "images/content/41fddc5d-снимок-экрана-2024-05-05-в-8.13.52-pm.webp",
+      "quality": "90",
+      "before": 597034,
+      "after": 73538,
+      "saved": 523496,
+      "pct": 88
+    },
+    {
+      "file": "images/content/44b8e220-frame-1851040470.png",
+      "webp": "images/content/44b8e220-frame-1851040470.webp",
+      "quality": "90",
+      "before": 309926,
+      "after": 42746,
+      "saved": 267180,
+      "pct": 86
+    },
+    {
+      "file": "images/content/48fa6e6b-снимок-экрана-2024-05-05-в-7.40.08-pm.png",
+      "webp": "images/content/48fa6e6b-снимок-экрана-2024-05-05-в-7.40.08-pm.webp",
+      "quality": "90",
+      "before": 119046,
+      "after": 71862,
+      "saved": 47184,
+      "pct": 40
+    },
+    {
+      "file": "images/content/5102c769-результат.png",
+      "webp": "images/content/5102c769-результат.webp",
+      "quality": "90",
+      "before": 129902,
+      "after": 56680,
+      "saved": 73222,
+      "pct": 56
+    },
+    {
+      "file": "images/content/52538052-дизаи-н-конференция-main.png",
+      "webp": "images/content/52538052-дизаи-н-конференция-main.webp",
+      "quality": "90",
+      "before": 427707,
+      "after": 150926,
+      "saved": 276781,
+      "pct": 65
+    },
+    {
+      "file": "images/content/567932d6-снимок-экрана-2023-08-08-в-08.45.42.png",
+      "webp": "images/content/567932d6-снимок-экрана-2023-08-08-в-08.45.42.webp",
+      "quality": "90",
+      "before": 173046,
+      "after": 124348,
+      "saved": 48698,
+      "pct": 28
+    },
+    {
+      "file": "images/content/56ad4f40-frame-1851040498.png",
+      "webp": "images/content/56ad4f40-frame-1851040498.webp",
+      "quality": "90",
+      "before": 763407,
+      "after": 292762,
+      "saved": 470645,
+      "pct": 62
+    },
+    {
+      "file": "images/content/58f53e9c-главпивмаг.png",
+      "webp": "images/content/58f53e9c-главпивмаг.webp",
+      "quality": "90",
+      "before": 284077,
+      "after": 177124,
+      "saved": 106953,
+      "pct": 38
+    },
+    {
+      "file": "images/content/68f2a2de-frame-1851040648.png",
+      "webp": "images/content/68f2a2de-frame-1851040648.webp",
+      "quality": "92",
+      "before": 3897,
+      "after": 4082,
+      "saved": 0,
+      "pct": 0
+    },
+    {
+      "file": "images/content/6ec118d0-frame-1851040488.png",
+      "webp": "images/content/6ec118d0-frame-1851040488.webp",
+      "quality": "90",
+      "before": 130232,
+      "after": 71766,
+      "saved": 58466,
+      "pct": 45
+    },
+    {
+      "file": "images/content/75632048-снимок-экрана-2024-04-02-в-2.46.12-pm.png",
+      "webp": "images/content/75632048-снимок-экрана-2024-04-02-в-2.46.12-pm.webp",
+      "quality": "90",
+      "before": 422817,
+      "after": 165442,
+      "saved": 257375,
+      "pct": 61
+    },
+    {
+      "file": "images/content/79a28a09-снимок-экрана-2024-03-29-в-1.09.53-am.png",
+      "webp": "images/content/79a28a09-снимок-экрана-2024-03-29-в-1.09.53-am.webp",
+      "quality": "90",
+      "before": 256560,
+      "after": 141878,
+      "saved": 114682,
+      "pct": 45
+    },
+    {
+      "file": "images/content/7a982653-дизаи-н-конференция-4.png",
+      "webp": "images/content/7a982653-дизаи-н-конференция-4.webp",
+      "quality": "90",
+      "before": 3580897,
+      "after": 2087188,
+      "saved": 1493709,
+      "pct": 42
+    },
+    {
+      "file": "images/content/7ea30764-снимок-экрана-2024-05-05-в-8.16.10-pm.png",
+      "webp": "images/content/7ea30764-снимок-экрана-2024-05-05-в-8.16.10-pm.webp",
+      "quality": "90",
+      "before": 316052,
+      "after": 47694,
+      "saved": 268358,
+      "pct": 85
+    },
+    {
+      "file": "images/content/7faff1de-photo_2024-02-28_15-12-06.jpg",
+      "webp": "images/content/7faff1de-photo_2024-02-28_15-12-06.webp",
+      "quality": "90",
+      "before": 106637,
+      "after": 121720,
+      "saved": 0,
+      "pct": 0
+    },
+    {
+      "file": "images/content/804a10ff-снимок-экрана-2024-03-20-в-12.55.31-am.png",
+      "webp": "images/content/804a10ff-снимок-экрана-2024-03-20-в-12.55.31-am.webp",
+      "quality": "90",
+      "before": 4300109,
+      "after": 479858,
+      "saved": 3820251,
+      "pct": 89
+    },
+    {
+      "file": "images/content/8156d4e8-frame-1.png",
+      "webp": "images/content/8156d4e8-frame-1.webp",
+      "quality": "90",
+      "before": 278474,
+      "after": 194462,
+      "saved": 84012,
+      "pct": 30
+    },
+    {
+      "file": "images/content/84007acb-корзина-2.png",
+      "webp": "images/content/84007acb-корзина-2.webp",
+      "quality": "90",
+      "before": 144284,
+      "after": 153378,
+      "saved": 0,
+      "pct": 0
+    },
+    {
+      "file": "images/content/890f2c7f-frame-1851040470.png",
+      "webp": "images/content/890f2c7f-frame-1851040470.webp",
+      "quality": "90",
+      "before": 308816,
+      "after": 42830,
+      "saved": 265986,
+      "pct": 86
+    },
+    {
+      "file": "images/content/8917c919-frame-1851040472.png",
+      "webp": "images/content/8917c919-frame-1851040472.webp",
+      "quality": "92",
+      "before": 18387,
+      "after": 8522,
+      "saved": 9865,
+      "pct": 54
+    },
+    {
+      "file": "images/content/8a00eb3d-zeсклад.png",
+      "webp": "images/content/8a00eb3d-zeсклад.webp",
+      "quality": "90",
+      "before": 524693,
+      "after": 215910,
+      "saved": 308783,
+      "pct": 59
+    },
+    {
+      "file": "images/content/8a8b039c-frame-1851040408.png",
+      "webp": "images/content/8a8b039c-frame-1851040408.webp",
+      "quality": "90",
+      "before": 274472,
+      "after": 191872,
+      "saved": 82600,
+      "pct": 30
+    },
+    {
+      "file": "images/content/8b21fec1-main.png",
+      "webp": "images/content/8b21fec1-main.webp",
+      "quality": "90",
+      "before": 264370,
+      "after": 156530,
+      "saved": 107840,
+      "pct": 41
+    },
+    {
+      "file": "images/content/8b56c79b-colors.png",
+      "webp": "images/content/8b56c79b-colors.webp",
+      "quality": "90",
+      "before": 753041,
+      "after": 150352,
+      "saved": 602689,
+      "pct": 80
+    },
+    {
+      "file": "images/content/91d60cf0-cs-radar-приложение-1.png",
+      "webp": "images/content/91d60cf0-cs-radar-приложение-1.webp",
+      "quality": "90",
+      "before": 197788,
+      "after": 287582,
+      "saved": 0,
+      "pct": 0
+    },
+    {
+      "file": "images/content/91d7f062-снимок-экрана-2023-08-09-в-7.45.55-pm.png",
+      "webp": "images/content/91d7f062-снимок-экрана-2023-08-09-в-7.45.55-pm.webp",
+      "quality": "90",
+      "before": 236413,
+      "after": 104844,
+      "saved": 131569,
+      "pct": 56
+    },
+    {
+      "file": "images/content/93119d48-i-believe-i-can-change.png",
+      "webp": "images/content/93119d48-i-believe-i-can-change.webp",
+      "quality": "90",
+      "before": 240268,
+      "after": 146938,
+      "saved": 93330,
+      "pct": 39
+    },
+    {
+      "file": "images/content/94c8db2c-figure.climbing.circle-1.png",
+      "webp": "images/content/94c8db2c-figure.climbing.circle-1.webp",
+      "quality": "92",
+      "before": 4203,
+      "after": 4470,
+      "saved": 0,
+      "pct": 0
+    },
+    {
+      "file": "images/content/97779288-frame-1851040649.png",
+      "webp": "images/content/97779288-frame-1851040649.webp",
+      "quality": "92",
+      "before": 4073,
+      "after": 4426,
+      "saved": 0,
+      "pct": 0
+    },
+    {
+      "file": "images/content/99fd9dd2-frame-1851040630.png",
+      "webp": "images/content/99fd9dd2-frame-1851040630.webp",
+      "quality": "90",
+      "before": 168850,
+      "after": 106492,
+      "saved": 62358,
+      "pct": 37
+    },
+    {
+      "file": "images/content/9bb0097b-было-3.png",
+      "webp": "images/content/9bb0097b-было-3.webp",
+      "quality": "90",
+      "before": 321538,
+      "after": 161998,
+      "saved": 159540,
+      "pct": 50
+    },
+    {
+      "file": "images/content/9e349108-главная-страница-сибпромстрои-3.png",
+      "webp": "images/content/9e349108-главная-страница-сибпромстрои-3.webp",
+      "quality": "90",
+      "before": 1046305,
+      "after": 164264,
+      "saved": 882041,
+      "pct": 84
+    },
+    {
+      "file": "images/content/a3634b84-wirefrrame.png",
+      "webp": "images/content/a3634b84-wirefrrame.webp",
+      "quality": "92",
+      "before": 45648,
+      "after": 33624,
+      "saved": 12024,
+      "pct": 26
+    },
+    {
+      "file": "images/content/a87c8e2e-face.smiling.png",
+      "webp": "images/content/a87c8e2e-face.smiling.webp",
+      "quality": "92",
+      "before": 3724,
+      "after": 3972,
+      "saved": 0,
+      "pct": 0
+    },
+    {
+      "file": "images/content/b27c1153-снимок-экрана-2023-08-09-в-7.55.39-pm.png",
+      "webp": "images/content/b27c1153-снимок-экрана-2023-08-09-в-7.55.39-pm.webp",
+      "quality": "90",
+      "before": 356389,
+      "after": 69262,
+      "saved": 287127,
+      "pct": 81
+    },
+    {
+      "file": "images/content/b3ccd87a-страница-проекта-сибпромстрои-2.png",
+      "webp": "images/content/b3ccd87a-страница-проекта-сибпромстрои-2.webp",
+      "quality": "90",
+      "before": 3687091,
+      "after": 2113944,
+      "saved": 1573147,
+      "pct": 43
+    },
+    {
+      "file": "images/content/ba2da62d-снимок-экрана-2024-05-26-в-12.40-1.png",
+      "webp": "images/content/ba2da62d-снимок-экрана-2024-05-26-в-12.40-1.webp",
+      "quality": "90",
+      "before": 179579,
+      "after": 88912,
+      "saved": 90667,
+      "pct": 50
+    },
+    {
+      "file": "images/content/bb4278cc-адрес-пункта-самовывоз.png",
+      "webp": "images/content/bb4278cc-адрес-пункта-самовывоз.webp",
+      "quality": "90",
+      "before": 318555,
+      "after": 317228,
+      "saved": 1327,
+      "pct": 0
+    },
+    {
+      "file": "images/content/c21fe3e4-frame-1851040647.png",
+      "webp": "images/content/c21fe3e4-frame-1851040647.webp",
+      "quality": "92",
+      "before": 1730,
+      "after": 1564,
+      "saved": 166,
+      "pct": 10
+    },
+    {
+      "file": "images/content/c2241429-frame-1851040492.png",
+      "webp": "images/content/c2241429-frame-1851040492.webp",
+      "quality": "92",
+      "before": 17000,
+      "after": 28744,
+      "saved": 0,
+      "pct": 0
+    },
+    {
+      "file": "images/content/c5bb9cd5-пример-сценария.png",
+      "webp": "images/content/c5bb9cd5-пример-сценария.webp",
+      "quality": "90",
+      "before": 274118,
+      "after": 125298,
+      "saved": 148820,
+      "pct": 54
+    },
+    {
+      "file": "images/content/c5e0c0b0-photo_2024-02-28_16-16-06.jpg",
+      "webp": "images/content/c5e0c0b0-photo_2024-02-28_16-16-06.webp",
+      "quality": "90",
+      "before": 107795,
+      "after": 146356,
+      "saved": 0,
+      "pct": 0
+    },
+    {
+      "file": "images/content/ca158ca6-accessability-1.png",
+      "webp": "images/content/ca158ca6-accessability-1.webp",
+      "quality": "92",
+      "before": 4051,
+      "after": 4152,
+      "saved": 0,
+      "pct": 0
+    },
+    {
+      "file": "images/content/ca8beacd-photo_2024-02-28_16-11-50.jpg",
+      "webp": "images/content/ca8beacd-photo_2024-02-28_16-11-50.webp",
+      "quality": "90",
+      "before": 195953,
+      "after": 267028,
+      "saved": 0,
+      "pct": 0
+    },
+    {
+      "file": "images/content/cf85d311-каталог-6.0-ночь.png",
+      "webp": "images/content/cf85d311-каталог-6.0-ночь.webp",
+      "quality": "90",
+      "before": 1751484,
+      "after": 249142,
+      "saved": 1502342,
+      "pct": 86
+    },
+    {
+      "file": "images/content/d456b009-дизайн-конференция.png",
+      "webp": "images/content/d456b009-дизайн-конференция.webp",
+      "quality": "90",
+      "before": 448067,
+      "after": 156760,
+      "saved": 291307,
+      "pct": 65
+    },
+    {
+      "file": "images/content/d4be67ab-каталог-1-уровень-все-1920..jpg",
+      "webp": "images/content/d4be67ab-каталог-1-уровень-все-1920..webp",
+      "quality": "90",
+      "before": 322518,
+      "after": 150842,
+      "saved": 171676,
+      "pct": 53
+    },
+    {
+      "file": "images/content/d554f38e-структура-страницы.jpg",
+      "webp": "images/content/d554f38e-структура-страницы.webp",
+      "quality": "90",
+      "before": 364386,
+      "after": 166238,
+      "saved": 198148,
+      "pct": 54
+    },
+    {
+      "file": "images/content/da04a662-снимок-экрана-2024-05-05-в-8.12.11-pm.png",
+      "webp": "images/content/da04a662-снимок-экрана-2024-05-05-в-8.12.11-pm.webp",
+      "quality": "90",
+      "before": 515852,
+      "after": 111988,
+      "saved": 403864,
+      "pct": 78
+    },
+    {
+      "file": "images/content/df41a1e1-slice-2.png",
+      "webp": "images/content/df41a1e1-slice-2.webp",
+      "quality": "90",
+      "before": 558532,
+      "after": 218056,
+      "saved": 340476,
+      "pct": 61
+    },
+    {
+      "file": "images/content/e22871e9-end.png",
+      "webp": "images/content/e22871e9-end.webp",
+      "quality": "90",
+      "before": 1848840,
+      "after": 207916,
+      "saved": 1640924,
+      "pct": 89
+    },
+    {
+      "file": "images/content/e341761f-ui-kit-sber2.png",
+      "webp": "images/content/e341761f-ui-kit-sber2.webp",
+      "quality": "90",
+      "before": 145081,
+      "after": 69322,
+      "saved": 75759,
+      "pct": 52
+    },
+    {
+      "file": "images/content/e6617b62-статистика.png",
+      "webp": "images/content/e6617b62-статистика.webp",
+      "quality": "92",
+      "before": 66401,
+      "after": 43752,
+      "saved": 22649,
+      "pct": 34
+    },
+    {
+      "file": "images/content/e79cc8cd-photo_2024-02-28_16-16-09.jpg",
+      "webp": "images/content/e79cc8cd-photo_2024-02-28_16-16-09.webp",
+      "quality": "90",
+      "before": 109306,
+      "after": 128410,
+      "saved": 0,
+      "pct": 0
+    },
+    {
+      "file": "images/content/f08dafb9-плакаты.png",
+      "webp": "images/content/f08dafb9-плакаты.webp",
+      "quality": "90",
+      "before": 111592,
+      "after": 83016,
+      "saved": 28576,
+      "pct": 26
+    },
+    {
+      "file": "images/content/f0effb44-главная-страница-3.png",
+      "webp": "images/content/f0effb44-главная-страница-3.webp",
+      "quality": "90",
+      "before": 2632822,
+      "after": 386328,
+      "saved": 2246494,
+      "pct": 85
+    },
+    {
+      "file": "images/content/f2805619-прототип.png",
+      "webp": "images/content/f2805619-прототип.webp",
+      "quality": "90",
+      "before": 334397,
+      "after": 202338,
+      "saved": 132059,
+      "pct": 39
+    },
+    {
+      "file": "images/content/f385b6fc-оформление-заказа.png",
+      "webp": "images/content/f385b6fc-оформление-заказа.webp",
+      "quality": "92",
+      "before": 70781,
+      "after": 66180,
+      "saved": 4601,
+      "pct": 7
+    },
+    {
+      "file": "images/content/fa6e971d-доработка-4.1.png",
+      "webp": "images/content/fa6e971d-доработка-4.1.webp",
+      "quality": "90",
+      "before": 531128,
+      "after": 298074,
+      "saved": 233054,
+      "pct": 44
+    },
+    {
+      "file": "images/content/fea7b9fb-снимок-экрана-2024-03-19-в-7.54.42-pm.png",
+      "webp": "images/content/fea7b9fb-снимок-экрана-2024-03-19-в-7.54.42-pm.webp",
+      "quality": "90",
+      "before": 1750453,
+      "after": 124444,
+      "saved": 1626009,
+      "pct": 93
+    },
+    {
+      "file": "images/content/fee6fc70-те-мная-тема.png",
+      "webp": "images/content/fee6fc70-те-мная-тема.webp",
+      "quality": "90",
+      "before": 138631,
+      "after": 53090,
+      "saved": 85541,
+      "pct": 62
+    },
+    {
+      "file": "images/omonete.png",
+      "webp": "images/omonete.webp",
+      "quality": "88",
+      "before": 392627,
+      "after": 208854,
+      "saved": 183773,
+      "pct": 47
+    },
+    {
+      "file": "images/plagin.png",
+      "webp": "images/plagin.webp",
+      "quality": "92",
+      "before": 43895,
+      "after": 35890,
+      "saved": 8005,
+      "pct": 18
+    },
+    {
+      "file": "images/shared/favicon-256.png",
+      "webp": "images/shared/favicon-256.webp",
+      "quality": "92",
+      "before": 2850,
+      "after": 1754,
+      "saved": 1096,
+      "pct": 38
+    },
+    {
+      "file": "images/shared/favicon-32.png",
+      "webp": "images/shared/favicon-32.webp",
+      "quality": "92",
+      "before": 569,
+      "after": 378,
+      "saved": 191,
+      "pct": 34
+    },
+    {
+      "file": "images/shared/og-cover.jpg",
+      "webp": "images/shared/og-cover.webp",
+      "quality": "88",
+      "before": 106637,
+      "after": 106208,
+      "saved": 429,
+      "pct": 0
+    },
+    {
+      "file": "images/symbols.png",
+      "webp": "images/symbols.webp",
+      "quality": "92",
+      "before": 52385,
+      "after": 47090,
+      "saved": 5295,
+      "pct": 10
+    }
+  ],
+  "skipped": [],
+  "failed": [],
+  "refsPatched": 160,
+  "summary": {
+    "files": 129,
+    "pngJpgBytes": 56000646,
+    "webpBytes": 19927490,
+    "savedBytes": 36073156
+  }
+}
