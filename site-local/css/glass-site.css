@@ -9,7 +9,7 @@
   --glass-scene-gap: 120px;
   grid-column-gap: var(--glass-scene-gap);
   grid-row-gap: var(--glass-scene-gap);
-  padding-bottom: calc(var(--glass-scene-gap) / 2);
+  padding-bottom: calc(var(--glass-scene-gap) / 4);
   justify-content: space-between;
   align-items: center;
 }
