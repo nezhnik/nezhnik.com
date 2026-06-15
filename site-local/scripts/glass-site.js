@@ -31,6 +31,9 @@
   var toneViewportObserver = null;
   var toneState = new WeakMap();
   var TONE_LUM_THRESHOLD = 0.44;
+  var TONE_LUM_TO_WHITE = 0.36;
+  var TONE_LUM_TO_BLACK = 0.52;
+  var TONE_LUM_SMOOTH = 0.12;
   var BACKDROP_FILL_SMOOTH = 0.2;
   var BACKDROP_LIGHTEN_MAX = 0.28;
   var BACKDROP_DARKEN_MAX = 0.24;
@@ -723,6 +726,24 @@
     return lum >= TONE_LUM_THRESHOLD ? 'black' : 'white';
   }
 
+  function resolveButtonTone(smoothedLum, currentTone) {
+    if (currentTone === 'white') {
+      return smoothedLum >= TONE_LUM_TO_BLACK ? 'black' : 'white';
+    }
+    if (currentTone === 'black') {
+      return smoothedLum < TONE_LUM_TO_WHITE ? 'white' : 'black';
+    }
+    return toneFromMedianLuminance(smoothedLum);
+  }
+
+  function smoothToneLuminance(btn, rawLum) {
+    var state = toneState.get(btn);
+    if (!state || state.smoothedLum === null || state.smoothedLum === undefined) {
+      return rawLum;
+    }
+    return state.smoothedLum + (rawLum - state.smoothedLum) * TONE_LUM_SMOOTH;
+  }
+
   function resolveToneLuminance(stats) {
     if (!stats) return TONE_LUM_THRESHOLD;
 
@@ -995,6 +1016,7 @@
     var state = toneState.get(btn);
     if (!state) return;
     state.lum = null;
+    state.smoothedLum = null;
     state.backdropFill = null;
   }
 
@@ -1036,37 +1058,36 @@
     var anchored = isViewportAnchored(btn);
 
     if (anchored) {
-      var padX = Math.max(12, rect.width * 0.35);
-      var band = Math.max(5, rect.height * 0.3);
-      var padY = Math.max(10, rect.height * 0.65);
-      var sideInset = Math.max(2, rect.width * 0.12);
-      var edge = Math.max(3, rect.height * 0.1);
-
-      /* Горизонтальная полоса — контекст по ширине */
-      samples = sampleRectLuminances(
+      var inset = Math.max(2, rect.width * 0.06);
+      var interior = sampleRectLuminances(
         renderer,
-        rect.left - padX,
-        rowY - band,
-        rect.right + padX,
-        rowY + band,
+        rect.left + inset,
+        rect.top + 2,
+        rect.right - inset,
+        rect.bottom - 2,
         btn
       );
 
-      /* Вертикальные полосы над/под кнопкой — тёмная заливка, не белые буквы */
+      /* Вес на области под стеклом — не реагировать на лёгкое касание края */
+      samples = interior.concat(interior).concat(interior);
+
+      var ctxBand = Math.max(4, rect.height * 0.18);
+      var ctxPadX = Math.max(6, rect.width * 0.14);
+
       samples = samples.concat(sampleRectLuminances(
         renderer,
-        rect.left + sideInset,
-        rect.top - padY,
-        rect.right - sideInset,
-        rect.top - edge,
+        rect.left + ctxPadX,
+        rect.bottom,
+        rect.right - ctxPadX,
+        rect.bottom + ctxBand,
         btn
       ));
       samples = samples.concat(sampleRectLuminances(
         renderer,
-        rect.left + sideInset,
-        rect.bottom + edge,
-        rect.right - sideInset,
-        rect.bottom + padY,
+        rect.left + ctxPadX,
+        rect.top - ctxBand,
+        rect.right - ctxPadX,
+        rect.top,
         btn
       ));
     } else {
@@ -1128,18 +1149,21 @@
     }
 
     buttons.forEach(function (btn) {
-      var lum = sampleButtonMedianLuminance(btn, renderer);
-      var isLight = lum >= TONE_LUM_THRESHOLD;
-      var nextTone = toneFromMedianLuminance(lum);
-      var state = toneState.get(btn) || { tone: getButtonTone(btn), lum: null };
+      var rawLum = sampleButtonMedianLuminance(btn, renderer);
+      var currentTone = getButtonTone(btn);
+      var smoothedLum = smoothToneLuminance(btn, rawLum);
+      var isLight = smoothedLum >= TONE_LUM_THRESHOLD;
+      var nextTone = resolveButtonTone(smoothedLum, currentTone);
+      var state = toneState.get(btn) || { tone: currentTone, lum: null, smoothedLum: null };
 
       applyButtonBackdropTone(btn, {
-        fill: lum,
+        fill: smoothedLum,
         isLight: isLight,
         isDark: !isLight
       }, nextTone);
 
-      state.lum = lum;
+      state.lum = rawLum;
+      state.smoothedLum = smoothedLum;
       state.tone = nextTone;
       toneState.set(btn, state);
       applyButtonTextTone(btn, nextTone);
