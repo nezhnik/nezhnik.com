@@ -1109,6 +1109,14 @@ p {
   width: 364px;
 }
 
+.h1.project.designconference {
+  background: linear-gradient(90deg, #e9362b 0%, #f27e1c 20%, #36cb3f 40%, #18d4dd 60%, #292aec 80%, #b30fff 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
 .video-2 {
   border-radius: 16px;
   width: 1120px;

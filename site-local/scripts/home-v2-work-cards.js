@@ -10,16 +10,25 @@
       href: 'https://omonete.ru',
       title: 'О монете',
       accent: '#ffffff',
-      desc: 'Сайт-каталог российских и иностранных монет из благородных металлов с личным кабинетом, историей монетных дворов и графиками стоимости металлов',
+      desc: 'Каталог российских и иностранных монет с личным кабинетом, историей монетных дворов и графиками стоимости металлов',
       descLight: true,
+      mac: true,
       preview: 'images/home-v2/personal-01.png'
     },
     {
       href: 'https://nezhnik.com/color/',
       title: 'Какой цвет отличается?',
+      titleParts: [
+        { text: 'Какой ', color: '#bd47b9' },
+        { text: 'цв', color: '#bd47b9' },
+        { text: 'е', color: '#474fbd' },
+        { text: 'т', color: '#bd47b9' },
+        { text: ' отличается?', color: '#bd47b9' }
+      ],
       accent: '#bd47b9',
       desc: 'Браузерная игра на цветовосприятие с настройками уровня сложности и таблицей лидеров',
       descLight: false,
+      mac: true,
       preview: 'images/home-v2/personal-02.png'
     },
     {
@@ -28,6 +37,7 @@
       accent: '#11111b',
       desc: 'Плагин-игра в Figma с сохранением статистики',
       descLight: false,
+      mac: true,
       preview: 'images/home-v2/personal-03.png'
     },
     {
@@ -36,6 +46,7 @@
       accent: '#ffffff',
       desc: 'Сервис с символами для интерфейсов, презентаций и идей',
       descLight: true,
+      mac: true,
       preview: 'images/home-v2/personal-04.png'
     }
   ];
@@ -45,17 +56,33 @@
     { href: 'legalbpm.html', title: 'Райффайзен банк', accent: '#ffe600', desc: 'Веб-интерфейс и мобильное приложение Рафа — основного ИИ-ассистента для всех сотрудников банка', descLight: false, phone: true, mac: true, preview: 'images/home-v2/work-02.png' },
     { href: 'legalbpm.html', title: 'Райффайзен банк', accent: '#ffe600', desc: 'Редизайн и проектирование единого решения поиска для порталов «Инсайдер» и «Сервис-деск»', descLight: true, mac: true, preview: 'images/home-v2/work-03.png' },
     { href: 'legalbpm.html', title: 'Райффайзен банк', accent: '#ffe600', desc: 'Редизайн портала «Сервис-деск» — сервиса решения рабочих вопросов и проблем всех сотрудников и клиентов банка', descLight: false, mac: true, preview: 'images/home-v2/work-04.png' },
-    { href: 'sberpravo.html', title: 'Сбер Право', accent: '#2c9ce6', desc: 'Редизайн юридического сервиса «LegalBPM» — системы менеджмента бизнес-процессов правовых запросов и судебной работы Сбера', descLight: false, mac: true, preview: 'images/home-v2/work-05.png' },
-    { href: 'sberpravo.html', title: 'Сбер Право', accent: '#2c9ce6', desc: 'Каталог услуг и набор 3D-иллюстраций для юридического сервиса Сбера', descLight: true, phone: true, mac: true, preview: 'images/home-v2/work-06.png' },
+    { href: 'sberpravo.html', title: 'Сбер Право', titleParts: [{ text: 'Сбер ', color: '#2a9f3f' }, { text: 'Право', color: '#2c9ce6' }], accent: '#2c9ce6', desc: 'Редизайн юридического сервиса «LegalBPM» — системы менеджмента бизнес-процессов правовых запросов и судебной работы Сбера', descLight: false, mac: true, preview: 'images/home-v2/work-05.png' },
+    { href: 'sberpravo.html', title: 'Сбер Право', titleParts: [{ text: 'Сбер ', color: '#2a9f3f' }, { text: 'Право', color: '#2c9ce6' }], accent: '#2c9ce6', desc: 'Каталог услуг и набор 3D-иллюстраций для юридического сервиса Сбера', descLight: true, phone: true, mac: true, preview: 'images/home-v2/work-06.png' },
     { href: 'csclick.html', title: 'Сбер', accent: '#2a9f3f', desc: 'Сервис заказа товаров «CS-Клик» для всех сотрудников и партнеров Сбера', descLight: false, phone: true, mac: true, preview: 'images/home-v2/work-07.png' },
     { href: 'csradar.html', title: 'Сбер', accent: '#2a9f3f', desc: 'Личные кабинеты логистов и операторов логистической платформы «CS Radar»', descLight: false, phone: true, mac: true, preview: 'images/home-v2/work-08.png' },
     { href: 'crafter.html', title: 'Crafter', accent: '#fd7350', desc: 'Личные кабинеты логистов и перевозчиков для логистической компании', descLight: true, phone: true, mac: true, preview: 'images/home-v2/work-09.png' },
-    { href: 'zesklad.html', title: 'ZeСклад', accent: '#fd7350', desc: 'Личный кабинет и сайт сервиса хранения вещей', descLight: true, phone: true, mac: true, preview: 'images/home-v2/work-10.png' },
+    { href: 'zesklad.html', title: 'ZeСклад', titleParts: [{ text: 'Ze', color: '#41e6db' }, { text: 'Склад', color: '#292932' }], accent: '#41e6db', desc: 'Личный кабинет и сайт сервиса хранения вещей', descLight: true, phone: true, mac: true, preview: 'images/home-v2/work-10.png' },
     { href: 'smarthome.html', title: 'Smart home', accent: '#2969df', desc: 'Концепция приложения умного дома', descLight: true, phone: true, mac: false, preview: 'images/home-v2/work-11.png' },
     { href: 'sibpromstroy.html', title: 'Сибпромстрой', accent: '#1077e0', desc: 'Редизайн сайта строительной компании', descLight: false, mac: true, preview: 'images/home-v2/work-12.png' },
-    { href: 'designconference.html', title: 'Design Conference', accent: '#ffffff', desc: 'Лендинг дизайн-конференции', descLight: true, mac: true, preview: 'images/home-v2/work-13.png' },
+    { href: 'designconference.html', title: 'Design Conference', titleGradient: true, accent: '#ffffff', desc: 'Лендинг дизайн-конференции', descLight: true, mac: true, preview: 'images/home-v2/work-13.png' },
     { href: 'glavpivmag.html', title: 'ГлавПивМаг', accent: '#f2cb82', desc: 'Главная страница и каталог магазина крафтового пива', descLight: true, mac: true, preview: 'images/home-v2/work-14.png' }
   ];
+
+  function inferCardMobileSrc(src) {
+    if (!src) return null;
+    if (/_desktop\.png$/.test(src)) {
+      return src.replace(/_desktop\.png$/, '_card-mobile.png');
+    }
+    if (/\.png$/.test(src)) {
+      return src.replace(/\.png$/, '_card-mobile.png');
+    }
+    return null;
+  }
+
+  function getCardMobileSrc(box) {
+    if (box && box.srcCardMobile) return box.srcCardMobile;
+    return inferCardMobileSrc(box && box.src);
+  }
 
   function escapeHtml(str) {
     return String(str)
@@ -108,13 +135,61 @@
     return layers.map(renderBgLayer).join('');
   }
 
-  function renderDevice(box) {
-    if (!box || !box.src) return '';
+  function renderDeviceImg(src, mobileSrc) {
+    if (!mobileSrc) {
+      return '<img class="home-v2-project-card__device-img" src="' + escapeHtml(src) + '" alt="" crossorigin="anonymous" loading="lazy"/>';
+    }
     return (
-      '<div class="home-v2-project-card__device" style="' + boxStyle(box) + '">' +
-        '<img class="home-v2-project-card__device-img" src="' + escapeHtml(box.src) + '" alt="" crossorigin="anonymous" loading="lazy"/>' +
+      '<picture>' +
+        '<source media="(max-width: 767px)" srcset="' + escapeHtml(mobileSrc) + '"/>' +
+        '<img class="home-v2-project-card__device-img" src="' + escapeHtml(src) + '" alt="" crossorigin="anonymous" loading="lazy"/>' +
+      '</picture>'
+    );
+  }
+
+  function renderDevice(box, mobileSrc) {
+    if (!box || !box.src) return '';
+    var deviceClass = 'home-v2-project-card__device' + (mobileSrc ? ' home-v2-project-card__device--card-mobile' : '');
+    return (
+      '<div class="' + deviceClass + '" style="' + boxStyle(box) + '">' +
+        renderDeviceImg(box.src, mobileSrc) +
       '</div>'
     );
+  }
+
+  function renderDevices(layer, card) {
+    var html = '';
+    var webOnly = card.mac && !card.phone;
+    var phoneOnly = card.phone && !card.mac;
+    var macMobile = webOnly ? getCardMobileSrc(layer.mac) : null;
+    if (layer.mac) html += renderDevice(layer.mac, macMobile);
+    (layer.phones || []).forEach(function (phone) {
+      var phoneMobile = phoneOnly ? getCardMobileSrc(phone) : null;
+      html += renderDevice(phone, phoneMobile);
+    });
+    if (layer.mac && layer.phones && layer.phones.length) {
+      return '<div class="home-v2-project-card__devices-group">' + html + '</div>';
+    }
+    if (phoneOnly && layer.phones && layer.phones.length) {
+      return '<div class="home-v2-project-card__devices-group">' + html + '</div>';
+    }
+    return html;
+  }
+
+  function renderTitle(card) {
+    if (card.titleParts && card.titleParts.length) {
+      return card.titleParts.map(function (part) {
+        return '<span style="color:' + escapeHtml(part.color) + '">' + escapeHtml(part.text) + '</span>';
+      }).join('');
+    }
+    return escapeHtml(card.title);
+  }
+
+  function titleClassName(card) {
+    var cls = 'home-v2-project-card__title';
+    if (card.titleGradient) cls += ' home-v2-project-card__title--gradient';
+    else if (card.titleParts) cls += ' home-v2-project-card__title--multi';
+    return cls;
   }
 
   function renderWorkCard(card) {
@@ -124,19 +199,14 @@
     var external = /^https?:\/\//.test(card.href);
     var rel = external ? ' rel="noopener noreferrer"' : '';
     var target = external ? ' target="_blank"' : '';
-    var devices = '';
-
-    if (layer.mac) devices += renderDevice(layer.mac);
-    (layer.phones || []).forEach(function (phone) {
-      devices += renderDevice(phone);
-    });
+    var devices = renderDevices(layer, card);
 
     return (
       '<a class="' + cardClasses(card) + '" href="' + escapeHtml(card.href) + '"' + target + rel + ' style="--project-accent:' + escapeHtml(card.accent || '#fff') + '">' +
         '<div class="home-v2-project-card__stage">' +
           '<div class="home-v2-project-card__bg" aria-hidden="true">' + renderBg(layer.bg) + '</div>' +
           '<div class="home-v2-project-card__copy home-v2-project-card__copy--' + tone + '" style="' + boxStyle(text) + '">' +
-            '<h3 class="home-v2-project-card__title">' + escapeHtml(card.title) + '</h3>' +
+            '<h3 class="' + titleClassName(card) + '">' + renderTitle(card) + '</h3>' +
             '<p class="home-v2-project-card__desc">' + escapeHtml(card.desc) + '</p>' +
           '</div>' +
           devices +
