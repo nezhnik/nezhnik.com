@@ -11,10 +11,10 @@
 
   var PARAMS = {
     borderRadius: 300,
-    refraction: 0.003,
+    refraction: 0.0045,
     bevelDepth: 0,
-    bevelWidth: 0.088,
-    magnify: 1.017,
+    bevelWidth: 0.11,
+    magnify: 1.02,
     saturationBoost: 1.15,
     frost: 0.55,
     resolution: 1.35,

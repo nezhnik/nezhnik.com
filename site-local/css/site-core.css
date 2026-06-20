@@ -176,7 +176,7 @@
   border-width: 0 !important;
   border-color: transparent !important;
   --liquidgl-shadow: #F5F5F5;
-  box-shadow: 0 4px 18px var(--liquidgl-shadow);
+  box-shadow: 0 3px 14px var(--liquidgl-shadow);
   transition: box-shadow 0.35s ease;
   transform-origin: center center;
 }
@@ -210,12 +210,12 @@
 .liquidGL-apple.liquidGL--lift,
 .liquidGL:focus-visible,
 .liquidGL.liquidGL--lift {
-  box-shadow: 0 6px 26px var(--liquidgl-shadow);
+  box-shadow: 0 4px 20px var(--liquidgl-shadow);
 }
 
 @media (hover: hover) and (pointer: fine) {
   .liquidGL:hover {
-    box-shadow: 0 5px 22px var(--liquidgl-shadow);
+    box-shadow: 0 3px 16px var(--liquidgl-shadow);
   }
 }
 
@@ -470,7 +470,7 @@
   /* Mobile header — фиксированное стекло (Telegram / Резюме, не зависит от tone фона) */
   .glass-site-page .header .button_primary_header.liquidGL--primary,
   .glass-site-page .header .button_secondary_header-left.liquidGL:has(.liquidGL-label--resume) {
-    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 6px 28px rgba(0, 0, 0, 0.09);
     --glass-tint-lighten: 0;
     --glass-tint-darken: 0;
     --liquidgl-specular-opacity: 0.8;
@@ -637,21 +637,21 @@
 }
 
 .glass-site-page .liquidGL-apple.glass-text-tone--black {
-  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 6px 28px rgba(0, 0, 0, 0.09);
 }
 
 .glass-site-page .liquidGL-apple.glass-text-tone--black.liquidGL--lift,
 .glass-site-page .liquidGL-apple.glass-text-tone--black:focus-visible {
-  box-shadow: 0 10px 44px rgba(0, 0, 0, 0.14);
+  box-shadow: 0 7px 32px rgba(0, 0, 0, 0.11);
 }
 
 .glass-site-page .liquidGL-apple.glass-text-tone--white {
-  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 6px 28px rgba(0, 0, 0, 0.09);
 }
 
 .glass-site-page .liquidGL-apple.glass-text-tone--white.liquidGL--lift,
 .glass-site-page .liquidGL-apple.glass-text-tone--white:focus-visible {
-  box-shadow: 0 10px 44px rgba(0, 0, 0, 0.14);
+  box-shadow: 0 7px 32px rgba(0, 0, 0, 0.11);
 }
 
 .glass-site-page .liquidGL-apple.glass-text-tone--black .liquidGL-tint {
@@ -729,7 +729,7 @@
 @media (hover: hover) and (pointer: fine) {
   .glass-site-page .liquidGL-apple.glass-text-tone--black:hover,
   .glass-site-page .liquidGL-apple.glass-text-tone--white:hover {
-    box-shadow: 0 9px 42px rgba(0, 0, 0, 0.13);
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.10);
   }
 }
 

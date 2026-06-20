@@ -14,7 +14,7 @@
   border-width: 0 !important;
   border-color: transparent !important;
   --liquidgl-shadow: #F5F5F5;
-  box-shadow: 0 4px 18px var(--liquidgl-shadow);
+  box-shadow: 0 3px 14px var(--liquidgl-shadow);
   transition: box-shadow 0.35s ease;
   transform-origin: center center;
 }
@@ -48,12 +48,12 @@
 .liquidGL-apple.liquidGL--lift,
 .liquidGL:focus-visible,
 .liquidGL.liquidGL--lift {
-  box-shadow: 0 6px 26px var(--liquidgl-shadow);
+  box-shadow: 0 4px 20px var(--liquidgl-shadow);
 }
 
 @media (hover: hover) and (pointer: fine) {
   .liquidGL:hover {
-    box-shadow: 0 5px 22px var(--liquidgl-shadow);
+    box-shadow: 0 3px 16px var(--liquidgl-shadow);
   }
 }
 

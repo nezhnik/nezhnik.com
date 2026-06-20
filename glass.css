@@ -1,0 +1,291 @@
+/* Прототип Liquid Glass — только glass-test.html. Оригиналы не трогаем. */
+
+.glass-test-page {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.glass-scroll-hint {
+  position: fixed;
+  top: 16px;
+  left: 50%;
+  z-index: 20;
+  margin: 0;
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-family: Inter, Montserrat, sans-serif;
+  font-size: 13px;
+  color: #11111b;
+  background: rgba(255, 255, 255, 0.82);
+  border: 1px solid rgba(17, 17, 27, 0.08);
+  transform: translateX(-50%);
+  pointer-events: none;
+}
+
+.glass-scroll-hint a {
+  pointer-events: auto;
+  color: #24a1de;
+}
+
+.glass-test-sticky {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 10;
+  width: min(92vw, 720px);
+  padding: 20px 22px;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  background: rgba(255, 255, 255, 0.03);
+  box-shadow: 0 20px 60px rgba(17, 17, 27, 0.14);
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+
+.glass-test-sticky a {
+  pointer-events: auto;
+}
+
+.glass-test-sticky-label {
+  margin: 0 0 16px;
+  font-family: Inter, Montserrat, sans-serif;
+  font-size: 14px;
+  line-height: 1.4;
+  color: #11111b;
+  text-align: center;
+}
+
+.glass-test-sticky-block {
+  margin-bottom: 14px;
+}
+
+.glass-test-sticky-block:last-child {
+  margin-bottom: 0;
+}
+
+.glass-test-sticky-title {
+  display: block;
+  margin-bottom: 8px;
+  font-family: Inter, Montserrat, sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: rgba(17, 17, 27, 0.55);
+}
+
+.glass-test-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+  justify-content: center;
+}
+
+.glass-test-scene {
+  position: relative;
+  z-index: 0;
+}
+
+.glass-zone {
+  min-height: 110vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 120px 32px;
+}
+
+.glass-zone-content {
+  width: min(880px, 100%);
+}
+
+.glass-zone-content h2 {
+  margin: 0 0 8px;
+  font-family: Montserrat, sans-serif;
+  font-size: clamp(28px, 5vw, 44px);
+  font-weight: 600;
+}
+
+.glass-zone-content p {
+  margin: 0 0 28px;
+  font-family: Inter, Montserrat, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.glass-zone--light {
+  background:
+    radial-gradient(circle at 80% 12%, rgba(36, 161, 222, 0.12) 0%, transparent 34%),
+    linear-gradient(180deg, #ffffff 0%, #f6f6f8 100%);
+}
+
+.glass-zone--blue {
+  background:
+    radial-gradient(circle at 20% 80%, rgba(255, 255, 255, 0.2) 0%, transparent 40%),
+    linear-gradient(135deg, #1f8fc8 0%, #24a1de 45%, #5fc0ef 100%);
+  color: #fff;
+}
+
+.glass-zone--blue .glass-zone-content p {
+  color: rgba(255, 255, 255, 0.88);
+}
+
+.glass-zone--projects {
+  background: #f0f0f4;
+}
+
+.glass-zone--dark {
+  background: linear-gradient(180deg, #2a2a36 0%, #11111b 100%);
+  color: #fff;
+}
+
+.glass-zone--dark .glass-zone-content p {
+  color: rgba(255, 255, 255, 0.78);
+}
+
+.glass-zone--image {
+  background:
+    linear-gradient(180deg, rgba(17, 17, 27, 0.15), rgba(17, 17, 27, 0.45)),
+    url("images/symbols.png") center / cover no-repeat;
+  color: #fff;
+}
+
+.glass-zone--image .glass-zone-content p {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.glass-zone--contrast {
+  background:
+    repeating-linear-gradient(
+      45deg,
+      #11111b 0,
+      #11111b 40px,
+      #f6f6f8 40px,
+      #f6f6f8 80px
+    );
+}
+
+.glass-zone-mock--cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.glass-mock-card {
+  height: 120px;
+  border-radius: 16px;
+  border: 1px solid #e7e7e9;
+  background: #fff;
+}
+
+.glass-mock-card--wide {
+  grid-column: 1 / -1;
+  height: 160px;
+  background:
+    linear-gradient(135deg, rgba(36, 161, 222, 0.12), rgba(167, 139, 250, 0.12)),
+    #fff;
+}
+
+.glass-zone-mock--bento {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.glass-mock-bento {
+  height: 140px;
+  border-radius: 16px;
+  border: 1px solid #e7e7e9;
+  background: #fff;
+}
+
+.glass-mock-bento--tall {
+  grid-row: span 2;
+  height: auto;
+  min-height: 296px;
+  background: linear-gradient(160deg, #24a1de 0%, #11111b 100%);
+}
+
+/* --- Glass button: backdrop-filter преломляет ЖИВОЙ фон за кнопкой --- */
+
+[data-glass].glass-ready {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  background: transparent !important;
+  border-color: transparent;
+  box-shadow: 0 8px 24px rgba(17, 17, 27, 0.12);
+}
+
+.glass-backdrop {
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.glass-ready--fallback .glass-backdrop {
+  backdrop-filter: blur(20px) saturate(1.4);
+  -webkit-backdrop-filter: blur(20px) saturate(1.4);
+  background: rgba(255, 255, 255, 0.14);
+}
+
+.glass-tint {
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  opacity: 0.35;
+}
+
+.glass-ready--primary .glass-tint {
+  background: linear-gradient(180deg, rgba(36, 161, 222, 0.55), rgba(36, 161, 222, 0.25));
+}
+
+.glass-ready--secondary-dark .glass-tint {
+  background: linear-gradient(180deg, rgba(17, 17, 27, 0.5), rgba(17, 17, 27, 0.25));
+}
+
+.glass-ready--light .glass-tint {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.15));
+}
+
+.glass-rim {
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  border: 1px solid rgba(255, 255, 255, 0.58);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.72),
+    inset 0 -1px 0 rgba(255, 255, 255, 0.1);
+}
+
+.glass-specular {
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  background:
+    linear-gradient(155deg, rgba(255, 255, 255, 0.65) 0%, rgba(255, 255, 255, 0.12) 30%, transparent 55%);
+  mix-blend-mode: soft-light;
+  opacity: 0.88;
+}
+
+.glass-label {
+  position: relative;
+  z-index: 4;
+}
+
+[data-glass].glass-ready:hover .glass-specular,
+[data-glass].glass-ready:focus-visible .glass-specular {
+  opacity: 1;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  [data-glass].glass-ready .glass-backdrop {
+    backdrop-filter: blur(16px) !important;
+    -webkit-backdrop-filter: blur(16px) !important;
+  }
+}

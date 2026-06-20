@@ -1,3 +1,11 @@
 .DS_Store
+.env
 Варианты/
 Архив.zip
+
+# site-local: dev-зависимости и тесты — не деплоить
+site-local/node_modules/
+site-local/test-tone-*.mjs
+site-local/test-screenshots/
+site-local/package.json
+site-local/package-lock.json

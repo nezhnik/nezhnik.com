@@ -1,0 +1,762 @@
+/* liquidGL прототип — только glass-test-liquidgl.html */
+
+.glass-liquidgl-page {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.glass-liquidgl-page.body {
+  display: block;
+  width: 100%;
+  max-width: none;
+  align-items: stretch;
+}
+
+.glass-scroll-hint {
+  position: fixed;
+  top: 16px;
+  left: 50%;
+  z-index: 20;
+  margin: 0;
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-family: Inter, Montserrat, sans-serif;
+  font-size: 13px;
+  color: #11111b;
+  background: rgba(255, 255, 255, 0.82);
+  border: 1px solid rgba(17, 17, 27, 0.08);
+  transform: translateX(-50%);
+  pointer-events: none;
+}
+
+.glass-scroll-hint a {
+  pointer-events: auto;
+  color: #24a1de;
+}
+
+.glass-test-sticky {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 10;
+  width: min(92vw, 720px);
+  padding: 20px 22px;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  background: rgba(255, 255, 255, 0.03);
+  box-shadow: 0 20px 60px rgba(17, 17, 27, 0.14);
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+
+.glass-test-sticky a {
+  pointer-events: auto;
+}
+
+.glass-test-sticky-label {
+  margin: 0 0 16px;
+  font-family: Inter, Montserrat, sans-serif;
+  font-size: 14px;
+  line-height: 1.4;
+  color: #11111b;
+  text-align: center;
+}
+
+.glass-test-sticky-block {
+  margin-bottom: 14px;
+}
+
+.glass-test-sticky-block:last-child {
+  margin-bottom: 0;
+}
+
+.glass-test-sticky-title {
+  display: block;
+  margin-bottom: 8px;
+  font-family: Inter, Montserrat, sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: rgba(17, 17, 27, 0.55);
+}
+
+.glass-test-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+  justify-content: center;
+}
+
+.glass-test-row--icons {
+  gap: 10px;
+}
+
+.liquidGL--icon {
+  box-sizing: border-box;
+  width: 44px;
+  height: 44px;
+  min-width: 44px;
+  padding: 0;
+  border-radius: 50% !important;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.liquidGL--icon-pill {
+  width: auto;
+  min-width: 148px;
+  height: 44px;
+  padding: 0 18px;
+  border-radius: 999px !important;
+}
+
+.liquidGL-label--icon {
+  font-family: system-ui, -apple-system, sans-serif;
+  font-size: 26px;
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: 0;
+}
+
+.liquidGL-label--icon-text {
+  font-family: Inter, Montserrat, sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: 0.01em;
+}
+
+.glass-test-scene {
+  position: relative;
+  z-index: 0;
+  width: 100%;
+}
+
+.glass-zone {
+  min-height: 110vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  padding: 120px clamp(20px, 4vw, 56px) clamp(80px, 14vh, 180px);
+  box-sizing: border-box;
+}
+
+/* Карточка контента: отступ от края зоны, как Safari */
+.glass-zone-card {
+  margin-top: clamp(32px, 6vh, 96px);
+  margin-bottom: clamp(24px, 5vh, 72px);
+  padding: clamp(16px, 2.5vw, 32px);
+  border-radius: clamp(20px, 2.8vw, 36px);
+}
+
+.glass-zone-card--light {
+  background: rgba(255, 255, 255, 0.55);
+}
+
+.glass-zone-card--surface {
+  background: #fff;
+  border: 1px solid #e7e7e9;
+}
+
+.glass-zone-card--dark {
+  margin-top: clamp(48px, 10vh, 140px);
+  padding: clamp(20px, 3vw, 40px);
+  border-radius: clamp(26px, 3.2vw, 42px);
+  background: linear-gradient(180deg, #2a2a36 0%, #11111b 100%);
+}
+
+.glass-zone-card__hint {
+  margin: 0;
+  font-family: Inter, Montserrat, sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.72);
+}
+
+/* Переход между зонами: следующий фон «приходит» не сразу */
+.glass-zone-seam {
+  height: clamp(80px, 12vh, 150px);
+  width: 100%;
+}
+
+.glass-zone-seam--light-blue {
+  background: linear-gradient(180deg, #f6f6f8 0%, #f6f6f8 58%, #d8eef8 78%, #24a1de 100%);
+}
+
+.glass-zone-seam--blue-projects {
+  background: linear-gradient(180deg, #5fc0ef 0%, #5fc0ef 55%, #d8e8f0 78%, #f0f0f4 100%);
+}
+
+.glass-zone-seam--projects-dark {
+  background: linear-gradient(180deg, #f0f0f4 0%, #f0f0f4 58%, #c8c8d0 78%, #e4e4ea 100%);
+}
+
+.glass-zone-seam--dark-image {
+  background: linear-gradient(180deg, #e4e4ea 0%, #e4e4ea 55%, #c8c8d0 75%, #e4e4ea 100%);
+}
+
+.glass-zone-seam--image-contrast {
+  background: linear-gradient(180deg, #e4e4ea 0%, #e4e4ea 58%, #9494a0 80%, #11111b 100%);
+}
+
+.glass-zone-content {
+  width: 100%;
+  max-width: none;
+}
+
+.glass-zone-media {
+  display: grid;
+  gap: clamp(10px, 1.4vw, 18px);
+  width: 100%;
+  margin-top: 4px;
+}
+
+.glass-zone-media--bleed {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  padding-left: clamp(20px, 4vw, 56px);
+  padding-right: clamp(20px, 4vw, 56px);
+  box-sizing: border-box;
+}
+
+.glass-zone-media--strip {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.glass-zone-media--hero {
+  grid-template-columns: 1fr;
+}
+
+.glass-zone-media--mosaic {
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  grid-auto-rows: minmax(140px, 18vw);
+}
+
+.glass-zone-media__item {
+  overflow: hidden;
+  border-radius: clamp(12px, 1.2vw, 20px);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.glass-zone-media--strip .glass-zone-media__item {
+  aspect-ratio: 16 / 10;
+}
+
+.glass-zone-media--hero .glass-zone-media__item {
+  aspect-ratio: 21 / 9;
+  min-height: 280px;
+}
+
+.glass-zone-media--mosaic .glass-zone-media__item--wide {
+  grid-column: span 3;
+}
+
+.glass-zone-media--mosaic .glass-zone-media__item--tall {
+  grid-row: span 2;
+}
+
+.glass-zone-media__item--color {
+  background-image: url("images/color.png");
+}
+
+.glass-zone-media__item--symbols {
+  background-image: url("images/symbols.png");
+}
+
+.glass-zone-media__item--plagin {
+  background-image: url("images/plagin.png");
+}
+
+.glass-zone-media__item--omonete {
+  background-image: url("images/omonete.png");
+}
+
+.glass-zone-media__item--csc {
+  background-image: url("images/CSClick.png");
+}
+
+.glass-zone-media__item--glav {
+  background-image: url("images/Glavpivmag.png");
+}
+
+.glass-zone-media__item--smart {
+  background-image: url("images/Smarthome.png");
+}
+
+.glass-zone-content h2 {
+  margin: 0 0 8px;
+  font-family: Montserrat, sans-serif;
+  font-size: clamp(28px, 5vw, 44px);
+  font-weight: 600;
+}
+
+.glass-zone-content p {
+  margin: 0 0 28px;
+  font-family: Inter, Montserrat, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.glass-zone--light {
+  background:
+    radial-gradient(circle at 80% 12%, rgba(36, 161, 222, 0.12) 0%, transparent 34%),
+    linear-gradient(180deg, #ffffff 0%, #f6f6f8 100%);
+}
+
+.glass-zone--blue {
+  background:
+    radial-gradient(circle at 20% 80%, rgba(255, 255, 255, 0.2) 0%, transparent 40%),
+    linear-gradient(135deg, #1f8fc8 0%, #24a1de 45%, #5fc0ef 100%);
+  color: #fff;
+}
+
+.glass-zone--blue .glass-zone-content p {
+  color: rgba(255, 255, 255, 0.88);
+}
+
+.glass-zone--projects {
+  background: #f0f0f4;
+}
+
+.glass-zone--dark {
+  background: #e4e4ea;
+  color: #11111b;
+}
+
+.glass-zone--dark .glass-zone-content p {
+  color: rgba(17, 17, 27, 0.72);
+}
+
+.glass-zone--image {
+  background: #e4e4ea;
+  color: #11111b;
+}
+
+.glass-zone--image .glass-zone-content p {
+  color: rgba(17, 17, 27, 0.72);
+}
+
+.glass-zone--image .glass-zone-content h2 {
+  color: #11111b;
+}
+
+.glass-zone--contrast {
+  background:
+    repeating-linear-gradient(
+      45deg,
+      #11111b 0,
+      #11111b 40px,
+      #f6f6f8 40px,
+      #f6f6f8 80px
+    );
+}
+
+.glass-zone-mock--cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(12px, 1.4vw, 20px);
+  width: 100%;
+}
+
+.glass-mock-card {
+  aspect-ratio: 16 / 10;
+  min-height: 160px;
+  border-radius: clamp(12px, 1.2vw, 20px);
+  border: 1px solid #e7e7e9;
+  background: center / cover no-repeat;
+}
+
+.glass-mock-card--wide {
+  grid-column: 1 / -1;
+  aspect-ratio: 21 / 8;
+  min-height: 200px;
+  background:
+    linear-gradient(135deg, rgba(36, 161, 222, 0.12), rgba(167, 139, 250, 0.12)),
+    url("images/Glavpivmag.png") center / cover no-repeat;
+}
+
+.glass-mock-card--color {
+  background-image: url("images/color.png");
+}
+
+.glass-mock-card--symbols {
+  background-image: url("images/symbols.png");
+}
+
+.glass-mock-card--plagin {
+  background-image: url("images/plagin.png");
+}
+
+.glass-zone-mock--bento {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: clamp(12px, 1.4vw, 20px);
+  width: 100%;
+}
+
+.glass-mock-bento {
+  aspect-ratio: 4 / 3;
+  min-height: 160px;
+  border-radius: clamp(12px, 1.2vw, 20px);
+  border: 1px solid #e7e7e9;
+  background: center / cover no-repeat;
+}
+
+.glass-mock-bento--tall {
+  grid-row: span 2;
+  aspect-ratio: auto;
+  min-height: 100%;
+  background-image: url("images/Smarthome.png");
+}
+
+.glass-mock-bento--csc {
+  background-image: url("images/CSClick.png");
+}
+
+.glass-mock-bento--glav {
+  background-image: url("images/Glavpivmag.png");
+}
+
+.glass-mock-bento--omonete {
+  background-image: url("images/omonete.png");
+}
+
+@media screen and (max-width: 991px) {
+  .glass-zone-mock--cards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .glass-zone-media--strip {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .glass-zone-mock--bento {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .glass-zone-media--mosaic {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-auto-rows: minmax(120px, 28vw);
+  }
+
+  .glass-zone-media--mosaic .glass-zone-media__item--wide,
+  .glass-zone-media--mosaic .glass-zone-media__item--tall {
+    grid-column: span 2;
+    grid-row: span 1;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .glass-zone {
+    padding-top: 100px;
+    padding-bottom: 80px;
+  }
+
+  .glass-zone-mock--cards,
+  .glass-zone-media--strip,
+  .glass-zone-mock--bento,
+  .glass-zone-media--mosaic {
+    grid-template-columns: 1fr;
+  }
+
+  .glass-zone-media--mosaic .glass-zone-media__item--wide {
+    grid-column: span 1;
+  }
+}
+
+/* --- liquidGL: кнопки-линзы (все с одним z-index) --- */
+
+.liquidGL {
+  z-index: 1;
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  border-radius: var(--liquidgl-radius, 300px);
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
+  border-width: 0 !important;
+  border-color: transparent !important;
+  box-shadow: 0 8px 24px rgba(17, 17, 27, 0.1);
+  transition: box-shadow 0.35s ease;
+  transform-origin: center center;
+  will-change: transform;
+}
+
+.liquidGL-apple::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  border-radius: inherit;
+  pointer-events: none;
+  opacity: 0;
+  background: rgba(255, 255, 255, 0.16);
+  transition: opacity 0.4s ease;
+}
+
+.liquidGL-apple.liquidGL--lift {
+  box-shadow: 0 14px 36px rgba(17, 17, 27, 0.14);
+}
+
+.liquidGL-apple.liquidGL--lift::before {
+  opacity: 1;
+}
+
+.liquidGL:hover,
+.liquidGL:focus-visible {
+  box-shadow: 0 10px 28px rgba(17, 17, 27, 0.16);
+}
+
+.liquidGL-tint,
+.liquidGL-rim,
+.liquidGL-specular {
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+}
+
+.liquidGL-tint {
+  z-index: 1;
+  opacity: var(--liquidgl-tint-opacity, 0);
+}
+
+.liquidGL--primary .liquidGL-tint {
+  background: linear-gradient(180deg, rgba(36, 161, 222, 0.55), rgba(36, 161, 222, 0.22));
+}
+
+.liquidGL--dark .liquidGL-tint {
+  background: linear-gradient(180deg, rgba(17, 17, 27, 0.48), rgba(17, 17, 27, 0.22));
+}
+
+.liquidGL--light .liquidGL-tint {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.52), rgba(255, 255, 255, 0.14));
+}
+
+.liquidGL-rim {
+  z-index: 2;
+  border: 1px solid transparent;
+  box-shadow: none;
+}
+
+.liquidGL-apple .liquidGL-rim {
+  box-shadow:
+    inset 1px 1px 0 rgba(255, 255, 255, 0.05),
+    inset -1px -1px 0 rgba(255, 255, 255, 0.025);
+  mix-blend-mode: soft-light;
+}
+
+/* Мягкий свет в объёме стекла, не отдельное кольцо */
+.liquidGL-apple .liquidGL-specular {
+  z-index: 3;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.16) 0%,
+    rgba(255, 255, 255, 0.02) 24%,
+    transparent 48%,
+    transparent 52%,
+    rgba(255, 255, 255, 0.02) 76%,
+    rgba(255, 255, 255, 0.12) 100%
+  );
+  mix-blend-mode: soft-light;
+  opacity: var(--liquidgl-specular-opacity, 0.5);
+}
+
+.liquidGL-apple.liquidGL--lift .liquidGL-specular {
+  opacity: min(0.82, calc(var(--liquidgl-specular-opacity, 0.5) + 0.22));
+}
+
+.liquidGL-label {
+  position: relative;
+  z-index: 4;
+  pointer-events: none;
+  color: #11111b;
+  text-shadow: 0 1px 2px rgba(255, 255, 255, 0.55);
+  transition:
+    color 0.55s ease,
+    text-shadow 0.55s ease;
+}
+
+.glass-text-tone--black .liquidGL-label {
+  color: #11111b;
+  text-shadow: 0 1px 2px rgba(255, 255, 255, 0.55);
+}
+
+.glass-text-tone--white .liquidGL-label {
+  color: #fff;
+  text-shadow: 0 1px 3px rgba(17, 17, 27, 0.4);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .liquidGL-label {
+    transition: none;
+  }
+
+  .liquidGL-apple {
+    will-change: auto;
+  }
+
+  .liquidGL-apple::before {
+    transition: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .liquidGL {
+    transition: none;
+  }
+}
+
+/* --- Панель контролов --- */
+
+.glass-controls {
+  position: fixed;
+  top: 56px;
+  right: 16px;
+  z-index: 30;
+  width: min(92vw, 280px);
+  max-height: calc(100vh - 72px);
+  overflow-y: auto;
+  padding: 14px 16px;
+  border-radius: 16px;
+  border: 1px solid rgba(17, 17, 27, 0.1);
+  background: rgba(255, 255, 255, 0.94);
+  box-shadow: 0 12px 40px rgba(17, 17, 27, 0.12);
+  font-family: Inter, Montserrat, sans-serif;
+  font-size: 12px;
+  color: #11111b;
+  -webkit-overflow-scrolling: touch;
+}
+
+.glass-controls__title {
+  margin: 0 0 12px;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.glass-controls__group {
+  margin-bottom: 14px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid rgba(17, 17, 27, 0.08);
+}
+
+.glass-controls__group:last-of-type {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.glass-controls__group-title {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: rgba(17, 17, 27, 0.5);
+}
+
+.glass-controls__row {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 4px 10px;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.glass-controls__row:last-child {
+  margin-bottom: 0;
+}
+
+.glass-controls__row label {
+  font-size: 11px;
+  line-height: 1.3;
+  color: rgba(17, 17, 27, 0.75);
+}
+
+.glass-controls__row output {
+  min-width: 36px;
+  font-size: 11px;
+  font-weight: 500;
+  font-variant-numeric: tabular-nums;
+  text-align: right;
+  color: #11111b;
+}
+
+.glass-controls input[type="range"] {
+  grid-column: 1 / -1;
+  width: 100%;
+  margin: 0;
+  accent-color: #24a1de;
+}
+
+.glass-controls__check {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 6px;
+  font-size: 11px;
+  cursor: pointer;
+}
+
+.glass-controls__check:last-child {
+  margin-bottom: 0;
+}
+
+.glass-controls__check input {
+  accent-color: #24a1de;
+}
+
+.glass-controls__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.glass-controls__btn {
+  flex: 1;
+  min-width: 0;
+  padding: 7px 10px;
+  border: 1px solid rgba(17, 17, 27, 0.12);
+  border-radius: 8px;
+  background: #fff;
+  font-family: inherit;
+  font-size: 11px;
+  font-weight: 500;
+  color: #11111b;
+  cursor: pointer;
+}
+
+.glass-controls__btn:hover {
+  border-color: #24a1de;
+  color: #24a1de;
+}
+
+.glass-controls__btn--primary {
+  background: #24a1de;
+  border-color: #24a1de;
+  color: #fff;
+}
+
+.glass-controls__btn--primary:hover {
+  background: #1f8fc8;
+  border-color: #1f8fc8;
+  color: #fff;
+}
+
+.glass-controls__toast {
+  margin-top: 8px;
+  font-size: 10px;
+  color: #24a1de;
+  min-height: 14px;
+}

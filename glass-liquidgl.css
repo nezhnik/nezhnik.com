@@ -1,0 +1,145 @@
+/* liquidGL — продакшен (кнопки-линзы) */
+
+/* --- liquidGL: кнопки-линзы (все с одним z-index) --- */
+
+.liquidGL {
+  z-index: 1;
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  border-radius: var(--liquidgl-radius, 300px);
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
+  border-width: 0 !important;
+  border-color: transparent !important;
+  box-shadow: 0 4px 18px rgba(17, 17, 27, 0.06);
+  transition: box-shadow 0.35s ease;
+  transform-origin: center center;
+  will-change: transform;
+}
+
+.liquidGL-apple::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  border-radius: inherit;
+  pointer-events: none;
+  opacity: 0;
+  background: rgba(255, 255, 255, 0.16);
+  transition: opacity 0.4s ease;
+}
+
+.liquidGL-apple.liquidGL--lift {
+  box-shadow: 0 6px 26px rgba(17, 17, 27, 0.08);
+}
+
+.liquidGL-apple.liquidGL--lift::before {
+  opacity: 1;
+}
+
+.liquidGL:hover,
+.liquidGL:focus-visible {
+  box-shadow: 0 5px 22px rgba(17, 17, 27, 0.08);
+}
+
+.liquidGL-tint,
+.liquidGL-rim,
+.liquidGL-specular {
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+}
+
+.liquidGL-tint {
+  z-index: 1;
+  opacity: var(--liquidgl-tint-opacity, 0);
+}
+
+.liquidGL--primary .liquidGL-tint {
+  background: linear-gradient(180deg, rgba(36, 161, 222, 0.55), rgba(36, 161, 222, 0.22));
+}
+
+.liquidGL--dark .liquidGL-tint {
+  background: linear-gradient(180deg, rgba(17, 17, 27, 0.48), rgba(17, 17, 27, 0.22));
+}
+
+.liquidGL--light .liquidGL-tint {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.52), rgba(255, 255, 255, 0.14));
+}
+
+.liquidGL-rim {
+  z-index: 2;
+  border: 1px solid transparent;
+  box-shadow: none;
+}
+
+.liquidGL-apple .liquidGL-rim {
+  box-shadow:
+    inset 1px 1px 0 rgba(255, 255, 255, 0.05),
+    inset -1px -1px 0 rgba(255, 255, 255, 0.025);
+  mix-blend-mode: soft-light;
+}
+
+/* Мягкий свет в объёме стекла, не отдельное кольцо */
+.liquidGL-apple .liquidGL-specular {
+  z-index: 3;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.16) 0%,
+    rgba(255, 255, 255, 0.02) 24%,
+    transparent 48%,
+    transparent 52%,
+    rgba(255, 255, 255, 0.02) 76%,
+    rgba(255, 255, 255, 0.12) 100%
+  );
+  mix-blend-mode: soft-light;
+  opacity: var(--liquidgl-specular-opacity, 0.5);
+}
+
+.liquidGL-apple.liquidGL--lift .liquidGL-specular {
+  opacity: min(0.82, calc(var(--liquidgl-specular-opacity, 0.5) + 0.22));
+}
+
+.liquidGL-label {
+  position: relative;
+  z-index: 4;
+  pointer-events: none;
+  color: #11111b;
+  text-shadow: 0 1px 2px rgba(255, 255, 255, 0.55);
+  transition:
+    color 0.55s ease,
+    text-shadow 0.55s ease;
+}
+
+.glass-text-tone--black .liquidGL-label {
+  color: #11111b;
+  text-shadow: 0 1px 2px rgba(255, 255, 255, 0.55);
+}
+
+.glass-text-tone--white .liquidGL-label {
+  color: #fff;
+  text-shadow: 0 1px 3px rgba(17, 17, 27, 0.4);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .liquidGL-label {
+    transition: none;
+  }
+
+  .liquidGL-apple {
+    will-change: auto;
+  }
+
+  .liquidGL-apple::before {
+    transition: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .liquidGL {
+    transition: none;
+  }
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="robots" content="noindex, nofollow"/>
+  <title>Liquid Glass — тест кнопок</title>
+  <link href="style2.css" rel="stylesheet" type="text/css"/>
+  <link href="glass.css" rel="stylesheet" type="text/css"/>
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="anonymous" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+  <script>
+    WebFont.load({
+      google: {
+        families: ["Montserrat:500,600", "Inter:400,500"]
+      }
+    });
+  </script>
+</head>
+<body class="glass-test-page body">
+    <p class="glass-scroll-hint">Скролль ↓ — glass.js · <a href="glass-test-liquidgl.html">liquidGL</a></p>
+
+  <div class="glass-test-sticky" id="glass-sticky-panel">
+    <p class="glass-test-sticky-label">
+      Фон за кнопками: <strong id="glass-zone-label">Светлый (как сайт)</strong>
+    </p>
+
+    <div class="glass-test-sticky-block">
+      <span class="glass-test-sticky-title">Header</span>
+      <div class="glass-test-row">
+        <a class="button_secondary_header-left w-button" data-glass data-glass-mode="scroll" href="#">Обо мне</a>
+        <a class="button_secondary_header-left w-button" data-glass data-glass-mode="scroll" href="#">Проекты</a>
+        <a class="button_secondary_header w-button" data-glass data-glass-mode="scroll" href="#">Резюме 👀</a>
+        <a class="button_primary_header w-button" data-glass data-glass-mode="scroll" href="#">Telegram ✍️</a>
+      </div>
+    </div>
+
+    <div class="glass-test-sticky-block">
+      <span class="glass-test-sticky-title">Footer CTA</span>
+      <div class="glass-test-row">
+        <a class="button_primary_body w-button" data-glass data-glass-mode="scroll" href="#">Telegram ✍️</a>
+        <a class="button_secondary_body w-button" data-glass data-glass-mode="scroll" href="#">Резюме 👀</a>
+      </div>
+    </div>
+
+    <div class="glass-test-sticky-block">
+      <span class="glass-test-sticky-title">Без эффекта (сравнение)</span>
+      <div class="glass-test-row">
+        <a class="button_secondary_header w-button" href="#">Резюме</a>
+        <a class="button_primary_header w-button" href="#">Telegram</a>
+      </div>
+    </div>
+  </div>
+
+  <main class="glass-test-scene">
+    <section class="glass-zone glass-zone--light" data-zone-id="light" data-zone-label="Светлый (как сайт)">
+      <div class="glass-zone-content">
+        <h2>Светлая секция</h2>
+        <p>Как фон портфолио и блок «Обо мне»</p>
+        <div class="glass-zone-mock glass-zone-mock--cards">
+          <div class="glass-mock-card"></div>
+          <div class="glass-mock-card"></div>
+          <div class="glass-mock-card glass-mock-card--wide"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="glass-zone glass-zone--blue" data-zone-id="blue" data-zone-label="Синий акцент">
+      <div class="glass-zone-content">
+        <h2>Синий градиент</h2>
+        <p>Как кнопка Telegram и акценты бренда</p>
+      </div>
+    </section>
+
+    <section class="glass-zone glass-zone--projects" data-zone-id="projects" data-zone-label="Карточки проектов">
+      <div class="glass-zone-content">
+        <h2>Bento-сетка</h2>
+        <p>Имитация раздела «Проекты»</p>
+        <div class="glass-zone-mock glass-zone-mock--bento">
+          <div class="glass-mock-bento"></div>
+          <div class="glass-mock-bento"></div>
+          <div class="glass-mock-bento glass-mock-bento--tall"></div>
+          <div class="glass-mock-bento"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="glass-zone glass-zone--dark" data-zone-id="dark" data-zone-label="Тёмный фон">
+      <div class="glass-zone-content">
+        <h2>Тёмная секция</h2>
+        <p>Как footer CTA и тёмные блоки</p>
+      </div>
+    </section>
+
+    <section class="glass-zone glass-zone--image" data-zone-id="image" data-zone-label="Изображение">
+      <div class="glass-zone-content">
+        <h2>Фото и детали</h2>
+        <p>Проверка стекла на текстурах</p>
+      </div>
+    </section>
+
+    <section class="glass-zone glass-zone--contrast" data-zone-id="contrast" data-zone-label="Контрастные полосы">
+      <div class="glass-zone-content">
+        <h2>Высокий контраст</h2>
+        <p>Хорошо видно преломление и blur</p>
+      </div>
+    </section>
+  </main>
+
+  <script src="glass.js"></script>
+</body>
+</html>

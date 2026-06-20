@@ -1,0 +1,129 @@
+/* glass-site — интеграция liquidGL на дубль главной */
+
+.glass-snapshot-scene {
+  position: relative;
+  z-index: 0;
+  width: 100%;
+}
+
+.glass-site-page .header,
+.glass-site-page .header.out {
+  z-index: 5;
+  transform: none;
+  background-color: transparent;
+  -webkit-backdrop-filter: none;
+  backdrop-filter: none;
+}
+
+.glass-site-page .header .liquidGL,
+.glass-site-page .footer_cta .liquidGL {
+  position: relative;
+  z-index: 1;
+}
+
+.glass-site-page .header .logo-block .liquidGL-logo {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  padding: 8px 18px;
+}
+
+.glass-site-page .liquidGL-label--logo {
+  display: inline-flex;
+  line-height: 0;
+  color: #11111b;
+  text-shadow: none;
+}
+
+.glass-site-page .liquidGL-label--logo svg {
+  display: block;
+  height: 15px;
+  width: auto;
+}
+
+.glass-site-page .liquidGL-logo.glass-text-tone--black .liquidGL-label--logo {
+  color: #11111b;
+}
+
+.glass-site-page .liquidGL-logo.glass-text-tone--white .liquidGL-label--logo {
+  color: #fff;
+}
+
+.glass-site-page .footer_cta .buttons_block_body {
+  position: relative;
+  z-index: 2;
+}
+
+.glass-site-page .liquidGL-apple {
+  pointer-events: none;
+}
+
+.glass-site-page.liquidgl-ready .liquidGL-apple {
+  pointer-events: auto;
+}
+
+.glass-site-page .liquidGL-apple {
+  opacity: 1;
+}
+
+.glass-site-page .liquidGL-label {
+  position: relative;
+  z-index: 4;
+  display: inline-block;
+}
+
+@property --glass-tint-lighten {
+  syntax: '<number>';
+  inherits: true;
+  initial-value: 0;
+}
+
+@property --glass-tint-darken {
+  syntax: '<number>';
+  inherits: true;
+  initial-value: 0;
+}
+
+.glass-site-page .liquidGL-apple {
+  --glass-tint-lighten: 0.18;
+  --glass-tint-darken: 0;
+}
+
+.glass-site-page .liquidGL-apple .liquidGL-tint {
+  background:
+    linear-gradient(
+      180deg,
+      rgba(255, 255, 255, var(--glass-tint-lighten)),
+      rgba(255, 255, 255, calc(var(--glass-tint-lighten) * 0.5))
+    ),
+    linear-gradient(
+      180deg,
+      rgba(17, 17, 27, var(--glass-tint-darken)),
+      rgba(17, 17, 27, calc(var(--glass-tint-darken) * 0.48))
+    );
+  opacity: 1;
+  transition:
+    --glass-tint-lighten 0.85s ease,
+    --glass-tint-darken 0.85s ease;
+}
+
+.glass-site-page .liquidGL-apple.glass-text-tone--black .liquidGL-label {
+  color: #11111b;
+  text-shadow: 0 1px 2px rgba(255, 255, 255, 0.55);
+}
+
+.glass-site-page .liquidGL-apple.glass-text-tone--white .liquidGL-label {
+  color: #fff;
+  text-shadow: 0 1px 3px rgba(17, 17, 27, 0.4);
+}
+
+.glass-site-page .header .button_primary_header.glass-text-tone--black .liquidGL-label,
+.glass-site-page .header .button_secondary_header.glass-text-tone--black .liquidGL-label,
+.glass-site-page .header .button_secondary_header-left.glass-text-tone--black .liquidGL-label {
+  color: #11111b;
+}
+
+.glass-site-page > canvas[data-liquid-ignore] {
+  pointer-events: none;
+}

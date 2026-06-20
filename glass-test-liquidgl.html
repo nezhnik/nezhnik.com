@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="robots" content="noindex, nofollow"/>
+  <title>Liquid Glass — Apple SDF</title>
+  <link href="style2.css" rel="stylesheet" type="text/css"/>
+  <link href="glass-liquidgl.css" rel="stylesheet" type="text/css"/>
+  <link href="site-local/css/glass-liquidgl-test.css" rel="stylesheet" type="text/css"/>
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="anonymous" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+  <script>
+    WebFont.load({
+      google: {
+        families: ["Montserrat:500,600", "Inter:400,500"]
+      }
+    });
+  </script>
+</head>
+<body class="glass-liquidgl-page body">
+  <p class="glass-scroll-hint" data-liquid-ignore>
+    liquidGL — скролль ↓ · <a href="glass-test.html">свой glass.js</a>
+  </p>
+
+  <aside class="glass-controls" id="glass-controls" data-liquid-ignore aria-label="Настройки стекла">
+    <p class="glass-controls__title">Apple SDF</p>
+
+    <div class="glass-controls__group">
+      <span class="glass-controls__group-title">Форма</span>
+      <div class="glass-controls__row">
+        <label for="ctrl-radius">Скругление (px)</label>
+        <output id="out-radius">300</output>
+        <input type="range" id="ctrl-radius" min="12" max="300" step="1" value="300"/>
+      </div>
+    </div>
+
+    <div class="glass-controls__group">
+      <span class="glass-controls__group-title">Преломление</span>
+      <div class="glass-controls__row">
+        <label for="ctrl-refraction">Refraction</label>
+        <output id="out-refraction">0.003</output>
+        <input type="range" id="ctrl-refraction" min="0" max="0.15" step="0.001" value="0.003"/>
+      </div>
+      <div class="glass-controls__row">
+        <label for="ctrl-bevel-depth">Bevel depth</label>
+        <output id="out-bevel-depth">0</output>
+        <input type="range" id="ctrl-bevel-depth" min="0" max="0.25" step="0.001" value="0"/>
+      </div>
+      <div class="glass-controls__row">
+        <label for="ctrl-bevel-width">Bevel width</label>
+        <output id="out-bevel-width">0.088</output>
+        <input type="range" id="ctrl-bevel-width" min="0.05" max="0.45" step="0.001" value="0.088"/>
+      </div>
+      <div class="glass-controls__row">
+        <label for="ctrl-magnify">Magnify</label>
+        <output id="out-magnify">1.017</output>
+        <input type="range" id="ctrl-magnify" min="1" max="1.12" step="0.001" value="1.017"/>
+      </div>
+      <div class="glass-controls__row">
+        <label for="ctrl-saturation">Saturation boost</label>
+        <output id="out-saturation">1.15</output>
+        <input type="range" id="ctrl-saturation" min="1" max="1.5" step="0.01" value="1.15"/>
+      </div>
+    </div>
+
+    <div class="glass-controls__group">
+      <span class="glass-controls__group-title">Blur &amp; качество</span>
+      <div class="glass-controls__row">
+        <label for="ctrl-frost">Frost (blur)</label>
+        <output id="out-frost">0.8</output>
+        <input type="range" id="ctrl-frost" min="0" max="5" step="0.1" value="0.8"/>
+      </div>
+      <div class="glass-controls__row">
+        <label for="ctrl-resolution">Resolution</label>
+        <output id="out-resolution">2.5</output>
+        <input type="range" id="ctrl-resolution" min="0.5" max="2.5" step="0.1" value="2.5"/>
+      </div>
+    </div>
+
+    <div class="glass-controls__group">
+      <span class="glass-controls__group-title">Слои CSS</span>
+      <div class="glass-controls__row">
+        <label for="ctrl-tint">Tint opacity</label>
+        <output id="out-tint">0</output>
+        <input type="range" id="ctrl-tint" min="0" max="0.6" step="0.01" value="0"/>
+      </div>
+      <div class="glass-controls__row">
+        <label for="ctrl-specular-css">Specular opacity</label>
+        <output id="out-specular-css">0.5</output>
+        <input type="range" id="ctrl-specular-css" min="0" max="1" step="0.01" value="0.5"/>
+      </div>
+    </div>
+
+    <div class="glass-controls__group">
+      <span class="glass-controls__group-title">Интерактив</span>
+      <div class="glass-controls__row">
+        <label for="ctrl-tilt-factor">Tilt factor</label>
+        <output id="out-tilt-factor">4</output>
+        <input type="range" id="ctrl-tilt-factor" min="0" max="12" step="0.5" value="4"/>
+      </div>
+      <label class="glass-controls__check">
+        <input type="checkbox" id="ctrl-specular"/>
+        WebGL specular
+      </label>
+      <label class="glass-controls__check">
+        <input type="checkbox" id="ctrl-shadow" checked/>
+        Shadow
+      </label>
+      <label class="glass-controls__check">
+        <input type="checkbox" id="ctrl-tilt"/>
+        Tilt on hover
+      </label>
+    </div>
+
+    <div class="glass-controls__actions">
+      <button type="button" class="glass-controls__btn" id="ctrl-reset">Сброс</button>
+      <button type="button" class="glass-controls__btn glass-controls__btn--primary" id="ctrl-copy">Копировать JSON</button>
+    </div>
+    <p class="glass-controls__toast" id="glass-controls-toast" aria-live="polite"></p>
+  </aside>
+
+  <div class="glass-test-sticky glass-text-tone--black" id="glass-sticky-panel" data-liquid-ignore>
+    <p class="glass-test-sticky-label">
+      Фон за кнопками: <strong id="glass-zone-label">Светлый (как сайт)</strong>
+    </p>
+
+    <div class="glass-test-sticky-block">
+      <span class="glass-test-sticky-title">Header (Apple SDF)</span>
+      <div class="glass-test-row">
+        <a class="button_secondary_header-left w-button liquidGL liquidGL-apple liquidGL--light" href="#"><span class="liquidGL-tint" aria-hidden="true"></span><span class="liquidGL-rim" aria-hidden="true"></span><span class="liquidGL-specular" aria-hidden="true"></span><span class="liquidGL-label">Обо мне</span></a>
+        <a class="button_secondary_header-left w-button liquidGL liquidGL-apple liquidGL--light" href="#"><span class="liquidGL-tint" aria-hidden="true"></span><span class="liquidGL-rim" aria-hidden="true"></span><span class="liquidGL-specular" aria-hidden="true"></span><span class="liquidGL-label">Проекты</span></a>
+        <a class="button_secondary_header w-button liquidGL liquidGL-apple liquidGL--dark" href="#"><span class="liquidGL-tint" aria-hidden="true"></span><span class="liquidGL-rim" aria-hidden="true"></span><span class="liquidGL-specular" aria-hidden="true"></span><span class="liquidGL-label">Резюме 👀</span></a>
+        <a class="button_primary_header w-button liquidGL liquidGL-apple liquidGL--primary" href="#"><span class="liquidGL-tint" aria-hidden="true"></span><span class="liquidGL-rim" aria-hidden="true"></span><span class="liquidGL-specular" aria-hidden="true"></span><span class="liquidGL-label">Telegram ✍️</span></a>
+      </div>
+    </div>
+
+    <div class="glass-test-sticky-block">
+      <span class="glass-test-sticky-title">Круг · иконка (как Safari)</span>
+      <div class="glass-test-row glass-test-row--icons">
+        <a class="liquidGL liquidGL-apple liquidGL--icon liquidGL--dark w-button" href="#" aria-label="Назад"><span class="liquidGL-tint" aria-hidden="true"></span><span class="liquidGL-rim" aria-hidden="true"></span><span class="liquidGL-specular" aria-hidden="true"></span><span class="liquidGL-label liquidGL-label--icon" aria-hidden="true">‹</span></a>
+        <a class="liquidGL liquidGL-apple liquidGL--icon liquidGL--icon-pill liquidGL--dark w-button" href="#" aria-label="Адрес"><span class="liquidGL-tint" aria-hidden="true"></span><span class="liquidGL-rim" aria-hidden="true"></span><span class="liquidGL-specular" aria-hidden="true"></span><span class="liquidGL-label liquidGL-label--icon-text">nezhnik.com</span></a>
+        <a class="liquidGL liquidGL-apple liquidGL--icon liquidGL--dark w-button" href="#" aria-label="Ещё"><span class="liquidGL-tint" aria-hidden="true"></span><span class="liquidGL-rim" aria-hidden="true"></span><span class="liquidGL-specular" aria-hidden="true"></span><span class="liquidGL-label liquidGL-label--icon" aria-hidden="true">···</span></a>
+      </div>
+    </div>
+
+    <div class="glass-test-sticky-block">
+      <span class="glass-test-sticky-title">Footer CTA (Apple SDF)</span>
+      <div class="glass-test-row">
+        <a class="button_primary_body w-button liquidGL liquidGL-apple liquidGL--primary" href="#"><span class="liquidGL-tint" aria-hidden="true"></span><span class="liquidGL-rim" aria-hidden="true"></span><span class="liquidGL-specular" aria-hidden="true"></span><span class="liquidGL-label">Telegram ✍️</span></a>
+        <a class="button_secondary_body w-button liquidGL liquidGL-apple liquidGL--dark" href="#"><span class="liquidGL-tint" aria-hidden="true"></span><span class="liquidGL-rim" aria-hidden="true"></span><span class="liquidGL-specular" aria-hidden="true"></span><span class="liquidGL-label">Резюме 👀</span></a>
+      </div>
+    </div>
+  </div>
+
+  <main class="glass-test-scene">
+    <section class="glass-zone glass-zone--light" data-zone-id="light" data-zone-label="Светлый (как сайт)">
+      <div class="glass-zone-content">
+        <h2>Светлая секция</h2>
+        <p>Как фон портфолио и блок «Обо мне»</p>
+        <div class="glass-zone-card glass-zone-card--light">
+          <div class="glass-zone-mock glass-zone-mock--cards">
+            <div class="glass-mock-card glass-mock-card--color"></div>
+            <div class="glass-mock-card glass-mock-card--symbols"></div>
+            <div class="glass-mock-card glass-mock-card--plagin"></div>
+            <div class="glass-mock-card glass-mock-card--wide"></div>
+          </div>
+          <div class="glass-zone-media glass-zone-media--strip">
+            <div class="glass-zone-media__item glass-zone-media__item--color"></div>
+            <div class="glass-zone-media__item glass-zone-media__item--symbols"></div>
+            <div class="glass-zone-media__item glass-zone-media__item--plagin"></div>
+            <div class="glass-zone-media__item glass-zone-media__item--omonete"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="glass-zone-seam glass-zone-seam--light-blue" aria-hidden="true"></div>
+
+    <section class="glass-zone glass-zone--blue" data-zone-id="blue" data-zone-label="Синий акцент">
+      <div class="glass-zone-content">
+        <h2>Синий градиент</h2>
+        <p>Как кнопка Telegram и акценты бренда</p>
+      </div>
+    </section>
+
+    <div class="glass-zone-seam glass-zone-seam--blue-projects" aria-hidden="true"></div>
+
+    <section class="glass-zone glass-zone--projects" data-zone-id="projects" data-zone-label="Карточки проектов">
+      <div class="glass-zone-content">
+        <h2>Bento-сетка</h2>
+        <p>Имитация раздела «Проекты»</p>
+        <div class="glass-zone-card glass-zone-card--surface">
+          <div class="glass-zone-mock glass-zone-mock--bento">
+            <div class="glass-mock-bento glass-mock-bento--csc"></div>
+            <div class="glass-mock-bento glass-mock-bento--glav"></div>
+            <div class="glass-mock-bento glass-mock-bento--tall"></div>
+            <div class="glass-mock-bento glass-mock-bento--omonete"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="glass-zone-seam glass-zone-seam--projects-dark" aria-hidden="true"></div>
+
+    <section class="glass-zone glass-zone--dark" data-zone-id="dark" data-zone-label="Тёмный фон">
+      <div class="glass-zone-content">
+        <h2>Тёмная секция</h2>
+        <p>Как footer CTA и тёмные блоки</p>
+        <div class="glass-zone-card glass-zone-card--dark">
+          <p class="glass-zone-card__hint">Контент в «карточке» — фон страницы виден по краям, как в Safari</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="glass-zone-seam glass-zone-seam--dark-image" aria-hidden="true"></div>
+
+    <section class="glass-zone glass-zone--image" data-zone-id="image" data-zone-label="Изображение">
+      <div class="glass-zone-content">
+        <h2>Фото и детали</h2>
+        <p>Проверка стекла на текстурах</p>
+        <div class="glass-zone-card glass-zone-card--dark">
+          <div class="glass-zone-media glass-zone-media--hero">
+            <div class="glass-zone-media__item glass-zone-media__item--glav"></div>
+          </div>
+          <div class="glass-zone-media glass-zone-media--mosaic">
+            <div class="glass-zone-media__item glass-zone-media__item--csc glass-zone-media__item--wide"></div>
+            <div class="glass-zone-media__item glass-zone-media__item--smart glass-zone-media__item--tall"></div>
+            <div class="glass-zone-media__item glass-zone-media__item--symbols"></div>
+            <div class="glass-zone-media__item glass-zone-media__item--color"></div>
+            <div class="glass-zone-media__item glass-zone-media__item--plagin"></div>
+            <div class="glass-zone-media__item glass-zone-media__item--omonete"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="glass-zone-seam glass-zone-seam--image-contrast" aria-hidden="true"></div>
+
+    <section class="glass-zone glass-zone--contrast" data-zone-id="contrast" data-zone-label="Контрастные полосы">
+      <div class="glass-zone-content">
+        <h2>Высокий контраст</h2>
+        <p>Хорошо видно преломление и blur</p>
+      </div>
+    </section>
+  </main>
+
+  <script src="scripts/html2canvas.min.js" defer></script>
+  <script src="scripts/liquidGL.js" defer></script>
+  <script src="glass-liquidgl.js" defer></script>
+</body>
+</html>
