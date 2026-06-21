@@ -42,6 +42,7 @@
   var inited = false;
   var snapshotReady = false;
   var resetLiquidHoverOnScroll = null;
+  var recaptureScrollTimer = null;
 
   /* Apple CSS specular — только opacity блика, WebGL-физика из PARAMS */
   var APPLE_GLASS_SPECULAR = {
@@ -225,7 +226,9 @@
       '  filter: none !important;',
       '}',
       '.glass-snapshot-scene .project_card_bento,',
-      '.glass-snapshot-scene .project_card_bento * {',
+      '.glass-snapshot-scene .project_card_bento *,',
+      '.glass-snapshot-scene .home-v2-project-card,',
+      '.glass-snapshot-scene .home-v2-project-card * {',
       '  opacity: 1 !important;',
       '}',
       '.glass-snapshot-scene .reveal {',
@@ -784,15 +787,26 @@
     return false;
   }
 
+  function getPageScrollY() {
+    if (window.visualViewport && typeof window.visualViewport.pageTop === 'number') {
+      return window.visualViewport.pageTop;
+    }
+    return window.scrollY || 0;
+  }
+
+  function getPageScrollX() {
+    if (window.visualViewport && typeof window.visualViewport.pageLeft === 'number') {
+      return window.visualViewport.pageLeft;
+    }
+    return window.scrollX || 0;
+  }
+
   function getSnapshotRoot(renderer) {
     var target = renderer.snapshotTarget;
+    var rect = target.getBoundingClientRect();
     return {
-      top: renderer._snapshotRootDocTop !== undefined
-        ? renderer._snapshotRootDocTop
-        : target.offsetTop || 0,
-      left: renderer._snapshotRootDocLeft !== undefined
-        ? renderer._snapshotRootDocLeft
-        : target.offsetLeft || 0
+      top: rect.top + getPageScrollY(),
+      left: rect.left + getPageScrollX()
     };
   }
 
@@ -827,7 +841,7 @@
 
   function shouldFreezeTone(renderer) {
     var maxScroll = getMaxScrollY();
-    var y = window.scrollY || 0;
+    var y = getPageScrollY();
 
     if (y < -1 || y > maxScroll + 1) {
       return true;
@@ -846,11 +860,15 @@
     if (renderer && maxScroll > 0 && y >= maxScroll - 2) {
       var scene = getScene();
       if (scene) {
-        var root = getSnapshotRoot(renderer);
-        var expectedTop = root.top - y;
-        var actualTop = scene.getBoundingClientRect().top;
-        if (Math.abs(actualTop - expectedTop) > 3) {
-          return true;
+        var snapRect = scene.getBoundingClientRect();
+        var expectedTop = snapRect.top;
+        var headerBtn = document.querySelector('.header .liquidGL-apple');
+        if (headerBtn) {
+          var btnRect = headerBtn.getBoundingClientRect();
+          var docY = btnRect.top - snapRect.top;
+          if (docY > getSnapshotDocSize(renderer).height - 4) {
+            return true;
+          }
         }
       }
     }
@@ -858,21 +876,33 @@
     return false;
   }
 
+  function maybeRecaptureOnScrollMismatch() {
+    var renderer = getRenderer();
+    if (!renderer || !snapshotReady || SNAPSHOT.phase !== 'done') return;
+    if (renderer._recapturePending || renderer._capturing) return;
+
+    var scene = getScene();
+    if (!scene) return;
+
+    var currentH = getSceneHeight();
+    var snapH = renderer._snapshotDocHeight || 0;
+    if (currentH - snapH <= 80) return;
+
+    if (recaptureScrollTimer) return;
+    recaptureScrollTimer = setTimeout(function () {
+      recaptureScrollTimer = null;
+      SNAPSHOT.phase = 'final';
+      SNAPSHOT.finalAttempts = 0;
+      requestFinalCapture();
+    }, 500);
+  }
+
   function mapClientToSnapshotPixel(renderer, clientX, clientY, el) {
     var snapCanvas = renderer.staticSnapshotCanvas;
     var scale = renderer.scaleFactor || 1;
-    var docX;
-    var docY;
-
-    if (el && isViewportAnchored(el)) {
-      var root = getSnapshotRoot(renderer);
-      docX = clientX + window.scrollX - root.left;
-      docY = clientY + window.scrollY - root.top;
-    } else {
-      var snapRect = renderer.snapshotTarget.getBoundingClientRect();
-      docX = clientX - snapRect.left;
-      docY = clientY - snapRect.top;
-    }
+    var snapRect = renderer.snapshotTarget.getBoundingClientRect();
+    var docX = clientX - snapRect.left;
+    var docY = clientY - snapRect.top;
 
     var capped = capSnapshotDocCoords(renderer, docX, docY);
 
@@ -887,17 +917,15 @@
   }
 
   function isAboveSnapshotZone(el, renderer, clientY) {
-    if (!el || !isViewportAnchored(el)) return false;
-    var root = getSnapshotRoot(renderer);
-    return (window.scrollY + clientY - root.top) < 0;
+    if (!el || !renderer) return false;
+    var snapRect = renderer.snapshotTarget.getBoundingClientRect();
+    return (clientY - snapRect.top) < 0;
   }
 
   function isBelowSnapshotZone(el, renderer, clientY) {
     if (!el || !renderer) return false;
-    var root = getSnapshotRoot(renderer);
-    var docY = isViewportAnchored(el)
-      ? (window.scrollY + clientY - root.top)
-      : (clientY - renderer.snapshotTarget.getBoundingClientRect().top);
+    var snapRect = renderer.snapshotTarget.getBoundingClientRect();
+    var docY = clientY - snapRect.top;
     return docY > getSnapshotDocSize(renderer).height - 2;
   }
 
@@ -1205,7 +1233,7 @@
     if (scrollRaf) return;
     scrollRaf = requestAnimationFrame(function () {
       scrollRaf = 0;
-      var scrollY = window.scrollY || 0;
+      var scrollY = getPageScrollY();
       var renderer = getRenderer();
 
       if (resetLiquidHoverOnScroll) resetLiquidHoverOnScroll();
@@ -1227,6 +1255,7 @@
         });
         renderer.render();
       }
+      maybeRecaptureOnScrollMismatch();
       scheduleTextToneUpdate();
     });
   }

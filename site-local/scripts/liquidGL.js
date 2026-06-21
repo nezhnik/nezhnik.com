@@ -815,24 +815,10 @@
       gl.uniform2f(this.u.res, w, h);
 
       const snapRect = this.snapshotTarget.getBoundingClientRect();
-      const rootTop =
-        this._snapshotRootDocTop !== undefined
-          ? this._snapshotRootDocTop
-          : this.snapshotTarget.offsetTop || 0;
-      const rootLeft =
-        this._snapshotRootDocLeft !== undefined
-          ? this._snapshotRootDocLeft
-          : this.snapshotTarget.offsetLeft || 0;
 
-      let docX;
-      let docY;
-      if (isViewportAnchored) {
-        docX = rect.left + window.scrollX - rootLeft;
-        docY = rect.top + window.scrollY - rootTop;
-      } else {
-        docX = rect.left - snapRect.left;
-        docY = rect.top - snapRect.top;
-      }
+      /* Координаты в текстуре — относительно .glass-snapshot-scene (устойчиво на iOS visualViewport) */
+      const docX = rect.left - snapRect.left;
+      const docY = rect.top - snapRect.top;
 
       const leftUV = (docX * this.scaleFactor) / this.textureWidth;
       const topUV = (docY * this.scaleFactor) / this.textureHeight;

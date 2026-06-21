@@ -115,6 +115,10 @@
     }).join(' ');
   }
 
+  function imgUrl(path) {
+    return (window.homeV2ImageUrl || function (p) { return p; })(path);
+  }
+
   function renderBgLayer(layer) {
     if (layer.type === 'solid') {
       return '<span class="home-v2-project-card__bg-layer" style="background:' + escapeHtml(layer.color) + '"></span>';
@@ -122,7 +126,7 @@
 
     var flipX = parseFloat(layer.size) < 0;
     var style =
-      'background-image:url(' + escapeHtml(layer.src) + ');' +
+      'background-image:url(' + escapeHtml(imgUrl(layer.src)) + ');' +
       'background-size:' + normalizeBgSize(layer.size) + ';' +
       'background-position:' + layer.position + ';' +
       (flipX ? 'transform:scaleX(-1);' : '');
@@ -136,13 +140,15 @@
   }
 
   function renderDeviceImg(src, mobileSrc) {
-    if (!mobileSrc) {
-      return '<img class="home-v2-project-card__device-img" src="' + escapeHtml(src) + '" alt="" crossorigin="anonymous" loading="lazy"/>';
+    var desktop = imgUrl(src);
+    var mobile = mobileSrc ? imgUrl(mobileSrc) : null;
+    if (!mobile) {
+      return '<img class="home-v2-project-card__device-img" src="' + escapeHtml(desktop) + '" alt="" crossorigin="anonymous" loading="lazy"/>';
     }
     return (
       '<picture>' +
-        '<source media="(max-width: 991px)" srcset="' + escapeHtml(mobileSrc) + '"/>' +
-        '<img class="home-v2-project-card__device-img" src="' + escapeHtml(src) + '" alt="" crossorigin="anonymous" loading="lazy"/>' +
+        '<source media="(max-width: 991px)" srcset="' + escapeHtml(mobile) + '"/>' +
+        '<img class="home-v2-project-card__device-img" src="' + escapeHtml(desktop) + '" alt="" crossorigin="anonymous" loading="lazy"/>' +
       '</picture>'
     );
   }
@@ -192,46 +198,86 @@
     return cls;
   }
 
-  function renderWorkCard(card) {
+  function renderWorkCard(card, options) {
     var layer = card.layer;
+    if (!layer) return '';
     var tone = card.descLight ? 'light' : 'dark';
     var text = layer.text;
-    var external = /^https?:\/\//.test(card.href);
+    var disabled = options && options.disabled;
+    var external = !disabled && /^https?:\/\//.test(card.href);
     var rel = external ? ' rel="noopener noreferrer"' : '';
     var target = external ? ' target="_blank"' : '';
     var devices = renderDevices(layer, card);
+    var cls = cardClasses(card) + (disabled ? ' home-v2-project-card--disabled' : '');
+    var stage =
+      '<div class="home-v2-project-card__stage">' +
+        '<div class="home-v2-project-card__bg" aria-hidden="true">' + renderBg(layer.bg) + '</div>' +
+        '<div class="home-v2-project-card__copy home-v2-project-card__copy--' + tone + '" style="' + boxStyle(text) + '">' +
+          '<h3 class="' + titleClassName(card) + '">' + renderTitle(card) + '</h3>' +
+          '<p class="home-v2-project-card__desc">' + escapeHtml(card.desc) + '</p>' +
+        '</div>' +
+        devices +
+      '</div>';
+
+    if (disabled) {
+      return (
+        '<div class="' + cls + '" aria-disabled="true" style="--project-accent:' + escapeHtml(card.accent || '#fff') + '">' +
+          stage +
+        '</div>'
+      );
+    }
 
     return (
-      '<a class="' + cardClasses(card) + '" href="' + escapeHtml(card.href) + '"' + target + rel + ' style="--project-accent:' + escapeHtml(card.accent || '#fff') + '">' +
-        '<div class="home-v2-project-card__stage">' +
-          '<div class="home-v2-project-card__bg" aria-hidden="true">' + renderBg(layer.bg) + '</div>' +
-          '<div class="home-v2-project-card__copy home-v2-project-card__copy--' + tone + '" style="' + boxStyle(text) + '">' +
-            '<h3 class="' + titleClassName(card) + '">' + renderTitle(card) + '</h3>' +
-            '<p class="home-v2-project-card__desc">' + escapeHtml(card.desc) + '</p>' +
-          '</div>' +
-          devices +
-        '</div>' +
+      '<a class="' + cls + '" href="' + escapeHtml(card.href) + '"' + target + rel + ' style="--project-accent:' + escapeHtml(card.accent || '#fff') + '">' +
+        stage +
       '</a>'
     );
   }
 
   function attachLayers(cards, layers) {
     return cards.map(function (card, i) {
-      return Object.assign({}, card, { layer: layers[i] });
+      return Object.assign({}, card, { layer: layers[i], slug: layers[i].slug });
     });
+  }
+
+  var workCardsWithLayers = null;
+
+  function getWorkCardsWithLayers() {
+    var layers = window.HOME_V2_CARD_LAYERS;
+    if (!layers) return [];
+    if (!workCardsWithLayers) {
+      workCardsWithLayers = attachLayers(WORK_CARDS, layers.work);
+    }
+    return workCardsWithLayers;
+  }
+
+  function getWorkCardBySlug(slug) {
+    var cards = getWorkCardsWithLayers();
+    for (var i = 0; i < cards.length; i++) {
+      if (cards[i].slug === slug) return cards[i];
+    }
+    return null;
+  }
+
+  function markProjectCardsPanel(root) {
+    root.classList.add('home-v2-project-cards');
   }
 
   function mountCards(rootId, cards) {
     var root = document.getElementById(rootId);
     if (!root) return;
+    markProjectCardsPanel(root);
     root.innerHTML = cards.map(renderWorkCard).join('');
   }
 
   function mountWorkCards() {
+    if (!document.getElementById('home-v2-work-list') && !document.getElementById('home-v2-personal-list')) {
+      return;
+    }
     var layers = window.HOME_V2_CARD_LAYERS;
     if (!layers) return;
 
-    mountCards('home-v2-work-list', attachLayers(WORK_CARDS, layers.work));
+    mountCards('home-v2-work-list', getWorkCardsWithLayers());
     mountCards('home-v2-personal-list', attachLayers(PERSONAL_CARDS, layers.personal));
   }
 
@@ -243,4 +289,10 @@
 
   window.HOME_V2_WORK_CARDS = WORK_CARDS;
   window.HOME_V2_PERSONAL_CARDS = PERSONAL_CARDS;
+  window.HOME_V2_CARDS = {
+    renderWorkCard: renderWorkCard,
+    getWorkCardBySlug: getWorkCardBySlug,
+    getWorkCardsWithLayers: getWorkCardsWithLayers,
+    markProjectCardsPanel: markProjectCardsPanel
+  };
 })();

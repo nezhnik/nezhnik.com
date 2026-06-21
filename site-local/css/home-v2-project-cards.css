@@ -1,0 +1,32 @@
+/* «Ещё проекты» — обёртка панели. Карточки = тот же компонент, что на главной:
+   renderWorkCard (home-v2-work-cards.js) + все стили/брейкпoинты из css/pages/home-v2.css (.home-v2-project-card*) */
+
+.more-peojects.project {
+  /* Как main.home-v2: один слой боковых отступов, те же переменные */
+  --v2-pad: clamp(16px, 1.5625vw, 32px);
+  --v2-cards-gap: clamp(16px, 2.2vw + 8px, 48px);
+  --v2-radius: clamp(32px, 2.34vw, 48px);
+  --v2-max: 1984px;
+  padding-left: var(--v2-pad) !important;
+  padding-right: var(--v2-pad) !important;
+  box-sizing: border-box;
+}
+
+.more-peojects .home-v2-works__panel {
+  display: flex;
+  flex-direction: column;
+  gap: var(--v2-cards-gap);
+  align-self: stretch;
+  width: 100%;
+  max-width: var(--v2-max);
+  margin-inline: auto;
+  padding-left: 0;
+  padding-right: 0;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 767px) {
+  .more-peojects.project {
+    --v2-radius: 24px;
+  }
+}
