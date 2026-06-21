@@ -1,11 +1,12 @@
 /**
- * Hero-видео: чёрный фон → пауза 300 мс → появление 300 мс → анимация → исчезновение 300 мс → loop.
+ * Hero-видео: чёрный фон → пауза 300 мс → появление 500 мс → анимация → исчезновение 500 мс → loop.
  */
 (function () {
   'use strict';
 
   var HOLD_SEC = 0.3;
-  var FADE_SEC = 0.3;
+  var FADE_SEC = 0.5;
+  var PLAYBACK_RATE = 0.9;
 
   function clamp01(n) {
     return Math.min(1, Math.max(0, n));
@@ -65,6 +66,7 @@
     }
 
     video.style.opacity = '0';
+    video.playbackRate = PLAYBACK_RATE;
     video.removeAttribute('poster');
     video.addEventListener('ended', restart);
 

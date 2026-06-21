@@ -37,7 +37,7 @@ main.glass-snapshot-scene.home-v2 {
   --v2-tabs-gap: clamp(16px, 2.2vw + 8px, 48px);
   --v2-radius: clamp(32px, 2.34vw, 48px);
   --v2-head-size: clamp(32px, calc(32px + (100vw - 320px) * 16 / 1664), 48px);
-  --v2-icon-size: clamp(28px, calc(28px + (100vw - 320px) * 20 / 1664), 48px);
+  --v2-icon-size: clamp(28px, calc(28px + (100vw - 320px) * 16 / 1664), 44px);
   --v2-head-gap: clamp(10px, 0.8vw, 14px);
   --v2-muted: #837f7f;
   --v2-text: #11111b;
@@ -242,6 +242,10 @@ main.glass-snapshot-scene.home-v2 {
   white-space: nowrap;
 }
 
+.home-v2-articles .home-v2-row__context {
+  display: none;
+}
+
 /* Works */
 .home-v2-works__tabs {
   display: flex;
@@ -382,6 +386,11 @@ main.glass-snapshot-scene.home-v2 {
   z-index: 1;
   overflow: hidden;
   pointer-events: none;
+  top: auto !important;
+  bottom: 0 !important;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
 }
 
 .home-v2-project-card__devices-group {
@@ -391,12 +400,20 @@ main.glass-snapshot-scene.home-v2 {
   pointer-events: none;
 }
 
+.home-v2-project-card__device picture {
+  display: flex;
+  align-items: flex-end;
+  width: 100%;
+  height: 100%;
+  line-height: 0;
+}
+
 .home-v2-project-card__device-img {
   width: 100%;
   height: 100%;
   display: block;
   object-fit: contain;
-  object-position: center top;
+  object-position: center bottom;
 }
 
 .home-v2-works__empty {
@@ -419,11 +436,6 @@ main.glass-snapshot-scene.home-v2 {
     height: var(--v2-hero-max-h, 90vh);
     max-height: var(--v2-hero-max-h, 90vh);
     aspect-ratio: auto;
-  }
-
-  .home-v2-row {
-    grid-template-columns: 1fr;
-    align-items: start;
   }
 
   .home-v2-experience .home-v2-row {
@@ -461,16 +473,12 @@ main.glass-snapshot-scene.home-v2 {
     gap: 16px;
   }
 
-  .home-v2-row__meta {
-    text-align: left;
-    padding-left: calc(clamp(56px, 4.1vw, 80px) + clamp(16px, 1.56vw, 24px));
-  }
-
   .home-v2-experience .home-v2-row__meta {
     grid-column: 2;
     grid-row: 3;
     margin-top: 4px;
     padding-left: 0;
+    text-align: left;
     line-height: 1.35;
   }
 
@@ -489,27 +497,9 @@ main.glass-snapshot-scene.home-v2 {
     content: ',\00a0';
   }
 
-  .home-v2-project-card__device {
-    top: auto !important;
-    bottom: 0 !important;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-  }
-
-  .home-v2-project-card__device picture {
-    display: flex;
-    align-items: flex-end;
-    width: 100%;
-    height: 100%;
-    line-height: 0;
-  }
-
-  .home-v2-project-card__device-img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    object-position: center bottom;
+  .home-v2-project-card__device--card-mobile .home-v2-project-card__device-img {
+    transform: translateY(2%);
+    transform-origin: center bottom;
   }
 }
 
@@ -541,6 +531,66 @@ main.glass-snapshot-scene.home-v2 {
     gap: 24px;
   }
 
+  /* Articles — mobile: заголовок / источник+тип / статистика */
+  .home-v2-articles .home-v2-row {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    column-gap: 12px;
+    row-gap: 0;
+    align-items: start;
+    min-height: auto;
+  }
+
+  .home-v2-articles .home-v2-row__main,
+  .home-v2-articles .home-v2-row__text {
+    display: contents;
+  }
+
+  .home-v2-articles .home-v2-row__logo {
+    grid-column: 1;
+    grid-row: 1 / span 3;
+    align-self: start;
+  }
+
+  .home-v2-articles .home-v2-row__title {
+    grid-column: 2;
+    grid-row: 1;
+    margin: 0 0 4px;
+  }
+
+  .home-v2-articles .home-v2-row__subtitle,
+  .home-v2-articles .home-v2-row__date {
+    display: none;
+  }
+
+  .home-v2-articles .home-v2-row__meta {
+    display: contents;
+  }
+
+  .home-v2-articles .home-v2-row__context {
+    display: block;
+    grid-column: 2;
+    grid-row: 2;
+    margin: 0;
+    font-family: Montserrat, sans-serif;
+    font-weight: 500;
+    font-size: clamp(16px, 1.13vw, 22px);
+    line-height: 1.35;
+    color: var(--v2-muted);
+  }
+
+  .home-v2-articles .home-v2-row__duration {
+    grid-column: 2;
+    grid-row: 3;
+    margin: 4px 0 0;
+    text-align: left;
+    white-space: normal;
+  }
+
+  .home-v2-articles .home-v2-rows {
+    gap: 24px;
+  }
+
   .home-v2-row__date,
   .home-v2-row__duration {
     white-space: normal;
@@ -550,26 +600,25 @@ main.glass-snapshot-scene.home-v2 {
     gap: 20px;
   }
 
-  /* тест: карточка ≈ 40% высоты экрана вместо aspect-ratio */
   .home-v2-project-card__stage {
     aspect-ratio: auto;
-    height: 40vh;
-    height: 40svh;
+    height: 42vh;
+    height: 42svh;
   }
 
   .home-v2-project-card__copy {
-    left: 4% !important;
-    width: 92% !important;
+    left: 2.5% !important;
+    width: 95% !important;
   }
 
   .home-v2-project-card__title {
-    font-size: clamp(25px, 1.95cqw, 40px);
+    font-size: clamp(23px, calc(1.95cqw - 2px), 38px);
   }
 
   .home-v2-hero__intro {
     bottom: clamp(16px, calc(5vw - 4px), 24px);
     width: 92%;
-    font-size: clamp(18px, calc(18px + (100vw - 320px) * 6 / 448), 24px);
+    font-size: clamp(17px, calc(17px + (100vw - 320px) * 6 / 448), 23px);
     line-height: 1.45;
     white-space: normal;
     transform: translateX(-50%);
@@ -580,10 +629,22 @@ main.glass-snapshot-scene.home-v2 {
     transform-origin: center bottom;
   }
 
-  /* card-mobile: scale как у всех web-only; лёгкий сдвиг вниз — убрать просвет под PNG */
-  .home-v2-project-card__device--card-mobile .home-v2-project-card__device-img {
-    transform: translateY(2%);
+  /* Smart home: 3 телефона */
+  .home-v2-project-card--phone-only .home-v2-project-card__devices-group {
+    transform: scale(1.58);
     transform-origin: center bottom;
+  }
+
+  .home-v2-project-card--phone-only .home-v2-project-card__device {
+    transform: none;
+  }
+
+  .home-v2-project-card--phone-only .home-v2-project-card__devices-group .home-v2-project-card__device:nth-child(1) {
+    left: 19.7% !important;
+  }
+
+  .home-v2-project-card--phone-only .home-v2-project-card__devices-group .home-v2-project-card__device:nth-child(3) {
+    left: 61.8% !important;
   }
 
   /* Mac + iPhone: ~2.1% слева (Mac) и справа — как web-only; origin подогнан под scale */
@@ -603,23 +664,5 @@ main.glass-snapshot-scene.home-v2 {
   .home-v2-project-card--has-phone:not(.home-v2-project-card--phone-only) .home-v2-project-card__devices-group .home-v2-project-card__device:last-child {
     left: 66% !important;
     z-index: 2;
-  }
-
-  /* Smart home: scale 1.58 + позиции под ~2% поля по краям */
-  .home-v2-project-card--phone-only .home-v2-project-card__devices-group {
-    transform: scale(1.58);
-    transform-origin: center bottom;
-  }
-
-  .home-v2-project-card--phone-only .home-v2-project-card__device {
-    transform: none;
-  }
-
-  .home-v2-project-card--phone-only .home-v2-project-card__devices-group .home-v2-project-card__device:nth-child(1) {
-    left: 19.7% !important;
-  }
-
-  .home-v2-project-card--phone-only .home-v2-project-card__devices-group .home-v2-project-card__device:nth-child(3) {
-    left: 61.8% !important;
   }
 }

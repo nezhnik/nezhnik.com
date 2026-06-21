@@ -10,7 +10,7 @@
       href: 'https://omonete.ru',
       title: 'О монете',
       accent: '#ffffff',
-      desc: 'Каталог российских и иностранных монет с личным кабинетом, историей монетных дворов и графиками стоимости металлов',
+      desc: 'Каталог российских и иностранных монет с личным кабинетом, историей монетных дворов и графиками стоимости металлов',
       descLight: true,
       mac: true,
       preview: 'images/home-v2/personal-01.png'
@@ -26,7 +26,7 @@
         { text: ' отличается?', color: '#bd47b9' }
       ],
       accent: '#bd47b9',
-      desc: 'Браузерная игра на цветовосприятие с настройками уровня сложности и таблицей лидеров',
+      desc: 'Браузерная игра на цветовосприятие с настройками уровня сложности и таблицей лидеров',
       descLight: false,
       mac: true,
       preview: 'images/home-v2/personal-02.png'
@@ -35,7 +35,7 @@
       href: 'https://www.figma.com/community/plugin/1518640289187057362',
       title: 'Basketball Game!',
       accent: '#11111b',
-      desc: 'Плагин-игра в Figma с сохранением статистики',
+      desc: 'Figma плагин-игра в баскетбол с подсчетом очков и сохранением статистики',
       descLight: false,
       mac: true,
       preview: 'images/home-v2/personal-03.png'
@@ -44,7 +44,7 @@
       href: 'https://nezhnik.com/symbols/',
       title: 'Символы',
       accent: '#ffffff',
-      desc: 'Сервис с символами для интерфейсов, презентаций и идей',
+      desc: 'Сервис с символами для интерфейсов, презентаций и идей',
       descLight: true,
       mac: true,
       preview: 'images/home-v2/personal-04.png'
@@ -52,20 +52,20 @@
   ];
 
   var WORK_CARDS = [
-    { href: 'legalbpm.html', title: 'Райффайзен банк', accent: '#ffe600', desc: 'Айдентика, визуальный стиль и коммуникационная стратегия Рафа — основного ИИ-ассистента для всех сотрудников', descLight: true, mac: true, preview: 'images/home-v2/work-01.png' },
-    { href: 'legalbpm.html', title: 'Райффайзен банк', accent: '#ffe600', desc: 'Веб-интерфейс и мобильное приложение Рафа — основного ИИ-ассистента для всех сотрудников банка', descLight: false, phone: true, mac: true, preview: 'images/home-v2/work-02.png' },
-    { href: 'legalbpm.html', title: 'Райффайзен банк', accent: '#ffe600', desc: 'Редизайн и проектирование единого решения поиска для порталов «Инсайдер» и «Сервис-деск»', descLight: true, mac: true, preview: 'images/home-v2/work-03.png' },
-    { href: 'legalbpm.html', title: 'Райффайзен банк', accent: '#ffe600', desc: 'Редизайн портала «Сервис-деск» — сервиса решения рабочих вопросов и проблем всех сотрудников и клиентов банка', descLight: false, mac: true, preview: 'images/home-v2/work-04.png' },
-    { href: 'sberpravo.html', title: 'Сбер Право', titleParts: [{ text: 'Сбер ', color: '#2a9f3f' }, { text: 'Право', color: '#2c9ce6' }], accent: '#2c9ce6', desc: 'Редизайн юридического сервиса «LegalBPM» — системы менеджмента бизнес-процессов правовых запросов и судебной работы Сбера', descLight: false, mac: true, preview: 'images/home-v2/work-05.png' },
-    { href: 'sberpravo.html', title: 'Сбер Право', titleParts: [{ text: 'Сбер ', color: '#2a9f3f' }, { text: 'Право', color: '#2c9ce6' }], accent: '#2c9ce6', desc: 'Каталог услуг и набор 3D-иллюстраций для юридического сервиса Сбера', descLight: true, phone: true, mac: true, preview: 'images/home-v2/work-06.png' },
-    { href: 'csclick.html', title: 'Сбер', accent: '#2a9f3f', desc: 'Сервис заказа товаров «CS-Клик» для всех сотрудников и партнеров Сбера', descLight: false, phone: true, mac: true, preview: 'images/home-v2/work-07.png' },
-    { href: 'csradar.html', title: 'Сбер', accent: '#2a9f3f', desc: 'Личные кабинеты логистов и операторов логистической платформы «CS Radar»', descLight: false, phone: true, mac: true, preview: 'images/home-v2/work-08.png' },
-    { href: 'crafter.html', title: 'Crafter', accent: '#fd7350', desc: 'Личные кабинеты логистов и перевозчиков для логистической компании', descLight: true, phone: true, mac: true, preview: 'images/home-v2/work-09.png' },
-    { href: 'zesklad.html', title: 'ZeСклад', titleParts: [{ text: 'Ze', color: '#41e6db' }, { text: 'Склад', color: '#292932' }], accent: '#41e6db', desc: 'Личный кабинет и сайт сервиса хранения вещей', descLight: true, phone: true, mac: true, preview: 'images/home-v2/work-10.png' },
+    { href: 'legalbpm.html', title: 'Райффайзен банк', accent: '#ffe600', desc: 'Айдентика, визуальный стиль и стратегия коммуникации Рафа — основного ИИ-ассистента для всех сотрудников', descLight: true, mac: true, preview: 'images/home-v2/work-01.png' },
+    { href: 'legalbpm.html', title: 'Райффайзен банк', accent: '#ffe600', desc: 'Веб-интерфейс и мобильное приложение Рафа — основного ИИ-ассистента для всех сотрудников', descLight: false, phone: true, mac: true, preview: 'images/home-v2/work-02.png' },
+    { href: 'legalbpm.html', title: 'Райффайзен банк', accent: '#ffe600', desc: 'Редизайн и проектирование единого решения поиска для основных порталов банка — «Инсайдер» и «Сервис-деск»', descLight: true, mac: true, preview: 'images/home-v2/work-03.png' },
+    { href: 'legalbpm.html', title: 'Райффайзен банк', accent: '#ffe600', desc: 'Редизайн портала «Сервис-деск» — сервиса решения рабочих вопросов всех сотрудников и обращений клиентов банка', descLight: true, mac: true, preview: 'images/home-v2/work-04.png' },
+    { href: 'sberpravo.html', title: 'Сбер Право', titleParts: [{ text: 'Сбер ', color: '#2a9f3f' }, { text: 'Право', color: '#2c9ce6' }], accent: '#2c9ce6', desc: 'Редизайн юридического сервиса «LegalBPM» — системы менеджмента бизнес-процессов правовых запросов и судебной работы Сбера', descLight: false, mac: true, preview: 'images/home-v2/work-05.png' },
+    { href: 'sberpravo.html', title: 'Сбер Право', titleParts: [{ text: 'Сбер ', color: '#2a9f3f' }, { text: 'Право', color: '#2c9ce6' }], accent: '#2c9ce6', desc: 'Каталог услуг и набор 3D-иллюстраций для юридического сервиса Сбера', descLight: true, phone: true, mac: true, preview: 'images/home-v2/work-06.png' },
+    { href: 'csclick.html', title: 'Сбер', accent: '#2a9f3f', desc: 'Сервис заказа товаров «CS-Клик» для всех сотрудников и партнеров Сбера', descLight: false, phone: true, mac: true, preview: 'images/home-v2/work-07.png' },
+    { href: 'csradar.html', title: 'Сбер', accent: '#2a9f3f', desc: 'Личные кабинеты логистов и операторов для логистической платформы «CS Radar»', descLight: false, phone: true, mac: true, preview: 'images/home-v2/work-08.png' },
+    { href: 'crafter.html', title: 'Crafter', accent: '#fd7350', desc: 'Личные кабинеты логистов и перевозчиков для логистической компании', descLight: true, phone: true, mac: true, preview: 'images/home-v2/work-09.png' },
+    { href: 'zesklad.html', title: 'ZeСклад', titleParts: [{ text: 'Ze', color: '#41e6db' }, { text: 'Склад', color: '#292932' }], accent: '#41e6db', desc: 'Личный кабинет и сайт для сервиса хранения вещей', descLight: true, phone: true, mac: true, preview: 'images/home-v2/work-10.png' },
     { href: 'smarthome.html', title: 'Smart home', accent: '#2969df', desc: 'Концепция приложения умного дома', descLight: true, phone: true, mac: false, preview: 'images/home-v2/work-11.png' },
-    { href: 'sibpromstroy.html', title: 'Сибпромстрой', accent: '#1077e0', desc: 'Редизайн сайта строительной компании', descLight: false, mac: true, preview: 'images/home-v2/work-12.png' },
-    { href: 'designconference.html', title: 'Design Conference', titleGradient: true, accent: '#ffffff', desc: 'Лендинг дизайн-конференции', descLight: true, mac: true, preview: 'images/home-v2/work-13.png' },
-    { href: 'glavpivmag.html', title: 'ГлавПивМаг', accent: '#f2cb82', desc: 'Главная страница и каталог магазина крафтового пива', descLight: true, mac: true, preview: 'images/home-v2/work-14.png' }
+    { href: 'sibpromstroy.html', title: 'Сибпромстрой', accent: '#1077e0', desc: 'Редизайн сайта для строительной компании', descLight: false, mac: true, preview: 'images/home-v2/work-12.png' },
+    { href: 'designconference.html', title: 'Design Conference', titleGradient: true, accent: '#ffffff', desc: 'Лендинг для дизайн-конференции', descLight: true, mac: true, preview: 'images/home-v2/work-13.png' },
+    { href: 'glavpivmag.html', title: 'ГлавПивМаг', accent: '#f2cb82', desc: 'Главная страница и каталог для магазина крафтового пива', descLight: true, mac: true, preview: 'images/home-v2/work-14.png' }
   ];
 
   function inferCardMobileSrc(src) {
@@ -141,7 +141,7 @@
     }
     return (
       '<picture>' +
-        '<source media="(max-width: 767px)" srcset="' + escapeHtml(mobileSrc) + '"/>' +
+        '<source media="(max-width: 991px)" srcset="' + escapeHtml(mobileSrc) + '"/>' +
         '<img class="home-v2-project-card__device-img" src="' + escapeHtml(src) + '" alt="" crossorigin="anonymous" loading="lazy"/>' +
       '</picture>'
     );
