@@ -606,6 +606,13 @@
 
   function isMobileHeaderGlassButton(btn) {
     if (!btn) return false;
+    if (
+      btn.closest('.home-v2-cta') &&
+      btn.classList.contains('liquidGL--primary') &&
+      btn.querySelector('.liquidGL-label--telegram')
+    ) {
+      return true;
+    }
     var w = window.innerWidth || document.documentElement.clientWidth || 1280;
     if (w > 991) return false;
     if (!btn.closest('.glass-site-page .header')) return false;

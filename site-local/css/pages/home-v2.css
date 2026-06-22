@@ -888,3 +888,124 @@ main.glass-snapshot-scene.home-v2 {
     z-index: 2;
   }
 }
+
+/* CTA — после «Статьи и упоминания» */
+.home-v2-cta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: clamp(12px, 1.25vw, 20px);
+  width: 100%;
+}
+
+.home-v2-cta__question {
+  margin: 0;
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  font-size: clamp(22px, calc(22px + (100vw - 320px) * 10 / 1664), 32px);
+  line-height: 1.2;
+  color: var(--v2-muted);
+}
+
+.home-v2-cta__title {
+  margin: 0;
+  font-family: Montserrat, sans-serif;
+  font-weight: 600;
+  font-size: var(--v2-head-size);
+  line-height: 1.1;
+  letter-spacing: 0;
+  color: #000;
+}
+
+.home-v2-cta__actions {
+  margin-top: clamp(8px, 1vw, 16px);
+}
+
+.home-v2-cta .button_primary_header.liquidGL:has(.liquidGL-label--telegram) {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  min-height: 40px;
+  padding: 9px 16px 10px;
+  box-sizing: border-box;
+}
+
+.home-v2-cta .button_primary_header .telegram-label-text {
+  display: inline;
+}
+
+.home-v2-cta .button_primary_header .liquidGL-label--telegram {
+  gap: 8px;
+}
+
+.home-v2-cta .button_primary_header.liquidGL--primary {
+  box-shadow: 0 6px 28px rgba(0, 0, 0, 0.09);
+  --glass-tint-lighten: 0;
+  --glass-tint-darken: 0;
+  --liquidgl-specular-opacity: 0.8;
+}
+
+/* Синее стекло как в мобильном хедере — перебивает glass-text-tone из glass-site.js */
+.glass-site-page .home-v2-cta .button_primary_header.liquidGL.liquidGL-apple.liquidGL--primary .liquidGL-tint,
+.glass-site-page .home-v2-cta .button_primary_header.liquidGL.liquidGL-apple.liquidGL--primary.glass-text-tone--black .liquidGL-tint,
+.glass-site-page .home-v2-cta .button_primary_header.liquidGL.liquidGL-apple.liquidGL--primary.glass-text-tone--white .liquidGL-tint {
+  opacity: 1;
+  background:
+    linear-gradient(180deg, rgba(0, 145, 255, 0.9), rgba(0, 145, 255, 0.9)),
+    linear-gradient(180deg, rgba(153, 153, 153, 0.9), rgba(153, 153, 153, 0.9)),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75));
+  background-blend-mode: plus-darker, overlay, saturation, normal;
+}
+
+.glass-site-page .home-v2-cta .button_primary_header.liquidGL.liquidGL-apple.liquidGL--primary .liquidGL-tint::before,
+.glass-site-page .home-v2-cta .button_primary_header.liquidGL.liquidGL-apple.liquidGL--primary .liquidGL-tint::after,
+.glass-site-page .home-v2-cta .button_primary_header.liquidGL.liquidGL-apple.liquidGL--primary.glass-text-tone--black .liquidGL-tint::before,
+.glass-site-page .home-v2-cta .button_primary_header.liquidGL.liquidGL-apple.liquidGL--primary.glass-text-tone--black .liquidGL-tint::after,
+.glass-site-page .home-v2-cta .button_primary_header.liquidGL.liquidGL-apple.liquidGL--primary.glass-text-tone--white .liquidGL-tint::before,
+.glass-site-page .home-v2-cta .button_primary_header.liquidGL.liquidGL-apple.liquidGL--primary.glass-text-tone--white .liquidGL-tint::after {
+  content: none;
+  display: none;
+}
+
+.glass-site-page .home-v2-cta .button_primary_header.liquidGL.liquidGL-apple.liquidGL--primary .liquidGL-specular,
+.glass-site-page .home-v2-cta .button_primary_header.liquidGL.liquidGL-apple.liquidGL--primary.glass-text-tone--black .liquidGL-specular,
+.glass-site-page .home-v2-cta .button_primary_header.liquidGL.liquidGL-apple.liquidGL--primary.glass-text-tone--white .liquidGL-specular {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.44) 0%,
+    rgba(255, 255, 255, 0.14) 22%,
+    transparent 46%,
+    transparent 54%,
+    rgba(255, 255, 255, 0.06) 78%,
+    rgba(255, 255, 255, 0.3) 100%
+  );
+}
+
+.glass-site-page .home-v2-cta .button_primary_header.liquidGL.liquidGL-apple.liquidGL--primary .liquidGL-rim,
+.glass-site-page .home-v2-cta .button_primary_header.liquidGL.liquidGL-apple.liquidGL--primary.glass-text-tone--black .liquidGL-rim,
+.glass-site-page .home-v2-cta .button_primary_header.liquidGL.liquidGL-apple.liquidGL--primary.glass-text-tone--white .liquidGL-rim {
+  box-shadow:
+    inset 1px 1px 0 rgba(255, 255, 255, 0.38),
+    inset -1px -1px 0 rgba(255, 255, 255, 0.14);
+}
+
+.home-v2-cta .button_primary_header.liquidGL--primary .liquidGL-label,
+.glass-site-page .home-v2-cta .button_primary_header.liquidGL--primary.glass-text-tone--black .liquidGL-label,
+.glass-site-page .home-v2-cta .button_primary_header.liquidGL--primary.glass-text-tone--white .liquidGL-label {
+  color: #fff;
+  text-shadow: none;
+}
+
+.home-v2-cta .button_primary_header.liquidGL--primary .telegram-icon {
+  filter: brightness(0) invert(1);
+}
+
+@media screen and (min-width: 1440px) {
+  .home-v2-cta .button_primary_header.liquidGL:has(.liquidGL-label--telegram) {
+    padding-top: 11px;
+    padding-bottom: 11px;
+  }
+}
