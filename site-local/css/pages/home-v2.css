@@ -357,6 +357,9 @@ main.glass-snapshot-scene.home-v2 {
 }
 
 .home-v2-project-card__title--gradient {
+  display: inline-block;
+  width: auto;
+  max-width: 100%;
   background: linear-gradient(90deg, #e9362b 0%, #f27e1c 20%, #36cb3f 40%, #18d4dd 60%, #292aec 80%, #b30fff 100%);
   -webkit-background-clip: text;
   background-clip: text;
