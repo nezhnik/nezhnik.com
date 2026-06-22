@@ -245,11 +245,57 @@
 }
 
 @media screen and (min-width: 992px) {
-  .glass-site-page .header {
+  .glass-site-page {
+    --site-h-pad: clamp(16px, 1.5625vw, 32px);
+    --site-max: 1984px;
+  }
+
+  .glass-site-page > .header {
     display: grid;
     grid-template-columns: 1fr auto 1fr;
     align-items: center;
     column-gap: 16px;
+    max-width: var(--site-max);
+    width: 100%;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: var(--site-h-pad);
+    padding-right: var(--site-h-pad);
+    box-sizing: border-box;
+  }
+
+  .glass-site-page main.glass-snapshot-scene:not(.home-v2) {
+    max-width: var(--site-max);
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: var(--site-h-pad);
+    padding-right: var(--site-h-pad);
+    box-sizing: border-box;
+    align-items: stretch;
+  }
+
+  /* Сброс legacy горизонтальных отступов — единый слой на main */
+  .glass-site-page main.glass-snapshot-scene:not(.home-v2) > section {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .glass-site-page main.glass-snapshot-scene:not(.home-v2) .text_block_main.project,
+  .glass-site-page main.glass-snapshot-scene:not(.home-v2) .content_main-screen,
+  .glass-site-page main.glass-snapshot-scene:not(.home-v2) .content_block_1000px.project,
+  .glass-site-page main.glass-snapshot-scene:not(.home-v2) .summary,
+  .glass-site-page main.glass-snapshot-scene:not(.home-v2) .works,
+  .glass-site-page main.glass-snapshot-scene:not(.home-v2) .footer_cta {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .glass-site-page main.glass-snapshot-scene:not(.home-v2) .more-peojects.project {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
   }
 
   .glass-site-page .header .header-buttons-block-1 {
