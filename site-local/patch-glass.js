@@ -33,10 +33,10 @@ const GLASS_SCRIPTS = `
 <script src="scripts/glass-site.js" defer></script>`;
 
 const FOOTER_BTNS_OLD =
-  '<a class="button_primary_body w-button" href="http://t.me/nezhnik" target="_blank">Telegram ✍️</a>\n<a class="button_secondary_body w-button" download="" href="/Резюме.pdf" target="_blank">Резюме 👀</a>';
+  '<a class="button_primary_body w-button" href="http://t.me/nezhnik" target="_blank">Telegram ✍️</a>\n<a class="button_secondary_body w-button" download="" href="/Резюме — Михаил Нежник, продуктовый дизайнер.pdf" target="_blank">Резюме 👀</a>';
 
 const FOOTER_BTNS_GLASS =
-  '<a class="button_primary_body w-button liquidGL liquidGL-apple liquidGL--primary" href="http://t.me/nezhnik" target="_blank" aria-label="Телеграм"><span class="liquidGL-tint" aria-hidden="true"></span><span class="liquidGL-rim" aria-hidden="true"></span><span class="liquidGL-specular" aria-hidden="true"></span><span class="liquidGL-label liquidGL-label--telegram"><span class="telegram-label-text">Телеграм</span><img class="telegram-icon" src="images/shared/telegram-logo.svg" width="20" height="20" alt="" aria-hidden="true"/></span></a>\n<a class="button_secondary_body w-button liquidGL liquidGL-apple liquidGL--dark" download="" href="/Резюме.pdf" target="_blank"><span class="liquidGL-tint" aria-hidden="true"></span><span class="liquidGL-rim" aria-hidden="true"></span><span class="liquidGL-specular" aria-hidden="true"></span><span class="liquidGL-label">Резюме 👀</span></a>';
+  '<a class="button_primary_body w-button liquidGL liquidGL-apple liquidGL--primary" href="http://t.me/nezhnik" target="_blank" aria-label="Телеграм"><span class="liquidGL-tint" aria-hidden="true"></span><span class="liquidGL-rim" aria-hidden="true"></span><span class="liquidGL-specular" aria-hidden="true"></span><span class="liquidGL-label liquidGL-label--telegram"><span class="telegram-label-text">Телеграм</span><img class="telegram-icon" src="images/shared/telegram-logo.svg" width="20" height="20" alt="" aria-hidden="true"/></span></a>\n<a class="button_secondary_body w-button liquidGL liquidGL-apple liquidGL--dark" download="" href="/Резюме — Михаил Нежник, продуктовый дизайнер.pdf" target="_blank"><span class="liquidGL-tint" aria-hidden="true"></span><span class="liquidGL-rim" aria-hidden="true"></span><span class="liquidGL-specular" aria-hidden="true"></span><span class="liquidGL-label">Резюме 👀</span></a>';
 
 function patch(fileName) {
   const filePath = path.join(ROOT, fileName);

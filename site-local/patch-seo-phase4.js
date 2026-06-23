@@ -18,7 +18,7 @@ const PROJECTS = {
   'smarthome.html': { slug: 'smarthome', name: 'Умный дом', breadcrumb: 'Приложение умного дома', cover: 'images/content/8b21fec1-main.webp' },
   'zesklad.html': { slug: 'zesklad', name: 'ZeСклад', breadcrumb: 'ZeСклад', cover: 'images/content/48fa6e6b-снимок-экрана-2024-05-05-в-7.40.08-pm.webp' },
   'crafter.html': { slug: 'crafter', name: 'Crafter', breadcrumb: 'Crafter', cover: 'images/content/0ba3fff0-crafter-cover-2.webp' },
-  'csclick.html': { slug: 'csclick', name: 'CS-Клик', breadcrumb: 'CS-Клик', cover: 'images/cards/raiffeisen-11.webp' },
+  'csclick.html': { slug: 'csclick', name: 'CS-Клик', breadcrumb: 'CS-Клик', cover: 'images/cards/csclick-cover.webp' },
   'csradar.html': { slug: 'csradar', name: 'CS Radar', breadcrumb: 'CS Radar', cover: 'images/content/3da549ba-маршруты-на-карте-не-показывать-пути-маршрутов.webp' },
   'sibpromstroy.html': { slug: 'sibpromstroy', name: 'Сибпромстрой', breadcrumb: 'Сибпромстрой', cover: 'images/content/f0effb44-главная-страница-3.webp' },
   'designconference.html': { slug: 'designconference', name: 'Design Conference', breadcrumb: 'Design Conference', cover: 'images/content/52538052-дизаи-н-конференция-main.webp' },
