@@ -89,18 +89,6 @@
   }
 }
 
-/* --- Scroll reveal (замена SCROLLING_IN_VIEW) --- */
-.reveal {
-  opacity: 0;
-  transform: translateY(20px) scale(0.98);
-  transition: opacity 0.5s ease, transform 0.5s ease;
-}
-
-.reveal.is-visible {
-  opacity: 1;
-  transform: none;
-}
-
 /* --- Футер без Spline --- */
 .footer_cta .footer_card {
   height: auto;
@@ -145,13 +133,7 @@
   .button_secondary_body,
   .button_primary_header,
   .button_primary_body,
-  .logo-block .link-block,
-  .reveal {
+  .logo-block .link-block {
     transition: none;
-  }
-
-  .reveal {
-    opacity: 1;
-    transform: none;
   }
 }

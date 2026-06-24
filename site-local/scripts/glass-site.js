@@ -231,10 +231,6 @@
       '.glass-snapshot-scene .home-v2-project-card * {',
       '  opacity: 1 !important;',
       '}',
-      '.glass-snapshot-scene .reveal {',
-      '  opacity: 1 !important;',
-      '  transform: none !important;',
-      '}',
       '.glass-snapshot-scene img {',
       '  visibility: visible !important;',
       '}'

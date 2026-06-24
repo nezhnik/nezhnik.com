@@ -68,26 +68,12 @@ function patch(fileName) {
   }
 
   if (html.includes('<main class="glass-snapshot-scene">') && !html.includes('</main>')) {
-    if (html.includes('<script defer src="scripts/reveal.js"></script>')) {
-      html = html.replace(
-        '<script defer src="scripts/reveal.js"></script>',
-        '</main>\n<script defer src="scripts/reveal.js"></script>'
-      );
-    } else {
-      html = html.replace('</body>', '</main>\n</body>');
-    }
+    html = html.replace('</body>', '</main>\n</body>');
     changed = true;
   }
 
   if (!html.includes('<script src="scripts/glass-site.js"')) {
-    if (html.includes('<script defer src="scripts/reveal.js"></script>')) {
-      html = html.replace(
-        '<script defer src="scripts/reveal.js"></script>',
-        GLASS_SCRIPTS + '\n<script defer src="scripts/reveal.js"></script>'
-      );
-    } else {
-      html = html.replace('</body>', GLASS_SCRIPTS + '\n</body>');
-    }
+    html = html.replace('</body>', GLASS_SCRIPTS + '\n</body>');
     changed = true;
   }
 

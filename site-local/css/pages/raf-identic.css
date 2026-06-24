@@ -1,0 +1,25 @@
+/* Рафа — айдентика. База: legalbpm.css + акценты Raiffeisen */
+.h1.project.raf-identic {
+  color: #ffe600;
+}
+
+.p-icon.project.raif {
+  color: #ffe600;
+}
+
+.p.raif {
+  color: var(--black);
+}
+
+.project-media-placeholder {
+  display: block;
+  width: 100%;
+  min-height: clamp(240px, 42vw, 520px);
+  background: #ebebeb;
+  border-radius: 16px;
+}
+
+.project-media-placeholder--video {
+  aspect-ratio: 16 / 9;
+  min-height: auto;
+}

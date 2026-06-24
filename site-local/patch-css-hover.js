@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * Миграция hover/scroll с ix2 на CSS + reveal.js.
+ * Миграция hover с ix2 на CSS.
  * Запуск: node patch-css-hover.js
  */
 'use strict';
@@ -28,11 +28,6 @@ function patchHtml(file) {
     changed = true;
   }
 
-  if (isProject && !html.includes('scripts/reveal.js')) {
-    html = html.replace(/<\/body>/, '<script defer src="scripts/reveal.js"></script>\n</body>');
-    changed = true;
-  }
-
   // Убрать FOUC-блоки ix2 для карточек (desktop-only inline styles)
   const foucBlock =
     /<style>\s*@media \(min-width: 992px\) \{[\s\S]*?html\.w-mod-js:\s*not\(\.w-mod-ix\)[\s\S]*?\}\s*<\/style>/g;
@@ -56,17 +51,13 @@ function patchHtml(file) {
     '$1'
   );
 
-  // Scroll-секции на страницах проектов
+  // Scroll-секции на страницах проектов: снять data-w-id
   if (isProject) {
     html = html.replace(/<([a-z]+) ([^>]*?)data-w-id="([^"]+)"([^>]*?)>/gi, function (match, tag, before, wid, after) {
       const attrs = before + after;
       if (!REVEAL_SECTION_RE.test(attrs)) return match;
       changed = true;
-      let newAttrs = before + after;
-      if (!/\breveal\b/.test(newAttrs)) {
-        newAttrs = newAttrs.replace(/class="/, 'class="reveal ');
-      }
-      newAttrs = newAttrs.replace(/\s{2,}/g, ' ').trim();
+      const newAttrs = (before + after).replace(/\s{2,}/g, ' ').trim();
       return '<' + tag + ' ' + newAttrs + '>';
     });
   }

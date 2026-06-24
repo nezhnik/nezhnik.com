@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * Доводит страницы проектов: reveal.js, чистка img.
+ * Доводит страницы проектов: чистка img.
  */
 'use strict';
 
@@ -18,10 +18,6 @@ function patchProjectPages() {
     var p = path.join(ROOT, file);
     var html = fs.readFileSync(p, 'utf8');
     var next = html;
-
-    if (next.indexOf('scripts/reveal.js') === -1) {
-      next = next.replace(/<\/body>/, '<script defer src="scripts/reveal.js"></script>\n</body>');
-    }
 
     if (next !== html) {
       fs.writeFileSync(p, next);

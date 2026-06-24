@@ -52,7 +52,7 @@
   ];
 
   var WORK_CARDS = [
-    { href: 'legalbpm.html', title: 'Райффайзен банк', accent: '#ffe600', desc: 'Айдентика, визуальный стиль и стратегия коммуникации Рафа — основного ИИ-ассистента для всех сотрудников', descLight: true, mac: true, preview: 'images/home-v2/work-01.png' },
+    { href: 'raf-identic.html', title: 'Райффайзен банк', accent: '#ffe600', desc: 'Айдентика, визуальный стиль и стратегия коммуникации Рафа — основного ИИ-ассистента для всех сотрудников', descLight: true, mac: true, preview: 'images/home-v2/work-01.png' },
     { href: 'legalbpm.html', title: 'Райффайзен банк', accent: '#ffe600', desc: 'Веб-интерфейс и мобильное приложение Рафа — основного ИИ-ассистента для всех сотрудников', descLight: false, phone: true, mac: true, preview: 'images/home-v2/work-02.png' },
     { href: 'legalbpm.html', title: 'Райффайзен банк', accent: '#ffe600', desc: 'Редизайн и проектирование единого решения поиска для основных порталов банка — «Инсайдер» и «Сервис-деск»', descLight: true, mac: true, preview: 'images/home-v2/work-03.png' },
     { href: 'legalbpm.html', title: 'Райффайзен банк', accent: '#ffe600', desc: 'Редизайн портала «Сервис-деск» — сервиса решения рабочих вопросов всех сотрудников и обращений клиентов банка', descLight: true, mac: true, preview: 'images/home-v2/work-04.png' },
@@ -296,3 +296,5 @@
     markProjectCardsPanel: markProjectCardsPanel
   };
 })();
+
+
