@@ -316,6 +316,26 @@ main.glass-snapshot-scene.home-v2 {
   container-type: inline-size;
 }
 
+@media screen and (min-width: 768px) and (hover: hover) {
+  .home-v2-project-card:not(.home-v2-project-card--disabled) {
+    position: relative;
+  }
+
+  .home-v2-project-card:not(.home-v2-project-card--disabled) .home-v2-project-card__stage {
+    transition: transform 350ms ease;
+  }
+
+  .home-v2-project-card:not(.home-v2-project-card--disabled):hover,
+  .home-v2-project-card:not(.home-v2-project-card--disabled):focus-visible {
+    z-index: 1;
+  }
+
+  .home-v2-project-card:not(.home-v2-project-card--disabled):hover .home-v2-project-card__stage,
+  .home-v2-project-card:not(.home-v2-project-card--disabled):focus-visible .home-v2-project-card__stage {
+    transform: scale(1.0075);
+  }
+}
+
 .home-v2-project-card__bg {
   position: absolute;
   inset: 0;
@@ -432,7 +452,7 @@ main.glass-snapshot-scene.home-v2 {
 @media screen and (min-width: 768px) {
   /* Smart home: 3 телефона — scale + сжатие как у Mac+iPhone */
   .home-v2-project-card--phone-only .home-v2-project-card__devices-group {
-    transform: scale(1.3);
+    transform: scale(1.365);
     transform-origin: center bottom;
   }
 
@@ -648,6 +668,55 @@ main.glass-snapshot-scene.home-v2 {
 
   .home-v2-articles .home-v2-row__date::after {
     content: none;
+  }
+}
+
+@media screen and (min-width: 768px) and (hover: hover) {
+  /* Статьи: chevron внутри meta — блок расширяется и уезжает влево */
+  .home-v2-articles .home-v2-row--link .home-v2-row__meta {
+    display: grid;
+    grid-template-columns: max-content 0fr;
+    grid-template-rows: auto auto;
+    column-gap: 0;
+    align-items: center;
+    text-align: right;
+    transition: column-gap 350ms ease, grid-template-columns 350ms ease;
+  }
+
+  .home-v2-articles .home-v2-row--link .home-v2-row__date {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .home-v2-articles .home-v2-row--link .home-v2-row__duration {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .home-v2-articles .home-v2-row--link .home-v2-row__meta::after {
+    content: "";
+    grid-column: 2;
+    grid-row: 1 / span 2;
+    align-self: center;
+    width: 24px;
+    height: 24px;
+    min-width: 0;
+    opacity: 0;
+    overflow: hidden;
+    background: url(../../images/shared/chevron-right.svg) center / contain no-repeat;
+    transition: opacity 350ms ease;
+    pointer-events: none;
+  }
+
+  .home-v2-articles .home-v2-row--link:hover .home-v2-row__meta,
+  .home-v2-articles .home-v2-row--link:focus-visible .home-v2-row__meta {
+    grid-template-columns: max-content 24px;
+    column-gap: 24px;
+  }
+
+  .home-v2-articles .home-v2-row--link:hover .home-v2-row__meta::after,
+  .home-v2-articles .home-v2-row--link:focus-visible .home-v2-row__meta::after {
+    opacity: 1;
   }
 }
 
