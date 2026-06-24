@@ -1,7 +1,7 @@
 /**
  * Hero-видео: чёрный фон → пауза 300 мс → появление 500 мс → анимация → исчезновение 500 мс → loop.
  *
- * Первый цикл: canplaythrough → пауза 1 с (догрузка) → старт. duration фиксируется один раз.
+ * Первый цикл: canplaythrough → пауза 1 с (догрузка) → старт. После конца — пауза 1 с → loop.
  */
 (function () {
   'use strict';
@@ -10,6 +10,7 @@
   var FADE_SEC = 0.5;
   var PLAYBACK_RATE = 0.9;
   var START_DELAY_MS = 1000;
+  var END_HOLD_MS = 1000;
 
   function clamp01(n) {
     return Math.min(1, Math.max(0, n));
@@ -31,6 +32,7 @@
     var begun = false;
     var scheduled = false;
     var startTimer = 0;
+    var endTimer = 0;
     var cycleDuration = 0;
 
     function playVideo() {
@@ -84,10 +86,16 @@
       rafId = requestAnimationFrame(tick);
     }
 
+    function stopTick() {
+      ticking = false;
+      cancelAnimationFrame(rafId);
+    }
+
     function restart() {
       video.currentTime = 0;
       video.style.opacity = '0';
       playVideo();
+      startTick();
     }
 
     function begin() {
@@ -115,7 +123,14 @@
       if (video.currentTime > 0) {
         cycleDuration = video.currentTime;
       }
-      restart();
+      stopTick();
+      video.pause();
+      video.style.opacity = '0';
+      if (endTimer) window.clearTimeout(endTimer);
+      endTimer = window.setTimeout(function () {
+        endTimer = 0;
+        restart();
+      }, END_HOLD_MS);
     }
 
     video.style.opacity = '0';
@@ -133,6 +148,7 @@
     window.addEventListener('pagehide', function () {
       cancelAnimationFrame(rafId);
       if (startTimer) window.clearTimeout(startTimer);
+      if (endTimer) window.clearTimeout(endTimer);
     });
   }
 
