@@ -288,6 +288,88 @@ main.glass-snapshot-scene.home-v2 {
   filter: none;
 }
 
+.home-v2-works__panels {
+  position: relative;
+}
+
+.home-v2-works__panels .home-v2-works__panel {
+  display: none;
+  flex-direction: column;
+  gap: var(--v2-cards-gap);
+}
+
+.home-v2-works__panels .home-v2-works__panel.is-active {
+  display: flex;
+}
+
+.home-v2-works__panels.is-crossfading {
+  transition: min-height 480ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.home-v2-works__panels.is-crossfading .home-v2-works__panel {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: opacity 480ms cubic-bezier(0.16, 1, 0.3, 1);
+  pointer-events: none;
+}
+
+.home-v2-works__panels.is-crossfading .home-v2-works__panel.is-tab-fade-from {
+  opacity: 1;
+  z-index: 1;
+}
+
+.home-v2-works__panels.is-crossfading .home-v2-works__panel.is-tab-fade-to {
+  opacity: 0;
+  z-index: 2;
+}
+
+.home-v2-works__panels.is-crossfading .home-v2-works__panel.is-tab-fade-to.is-tab-fade-show {
+  opacity: 1;
+}
+
+.home-v2-works__panels.is-crossfading .home-v2-works__panel.is-tab-fade-from.is-tab-fade-hide {
+  opacity: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .home-v2-works__panels.is-crossfading {
+    transition: none;
+  }
+
+  .home-v2-works__panels.is-crossfading .home-v2-works__panel {
+    transition: none;
+  }
+}
+
+/* sessionStorage: «Личные» до гидрации — без мигания «Рабочие» */
+html.home-v2-works-tab--personal .home-v2-works__tab[data-tab="work"] {
+  color: var(--v2-muted);
+}
+
+html.home-v2-works-tab--personal .home-v2-works__tab[data-tab="work"] .home-v2-works__tab-icon {
+  filter: saturate(0.45);
+}
+
+html.home-v2-works-tab--personal .home-v2-works__tab[data-tab="personal"] {
+  color: #000;
+}
+
+html.home-v2-works-tab--personal .home-v2-works__tab[data-tab="personal"] .home-v2-works__tab-icon {
+  filter: none;
+}
+
+html.home-v2-works-tab--personal .home-v2-works__panels #home-v2-work-list {
+  display: none !important;
+}
+
+html.home-v2-works-tab--personal .home-v2-works__panels #home-v2-personal-list {
+  display: flex !important;
+}
+
 .home-v2-works__panel {
   display: none;
   flex-direction: column;

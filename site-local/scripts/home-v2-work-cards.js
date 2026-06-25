@@ -52,8 +52,8 @@
   ];
 
   var WORK_CARDS = [
-    { href: 'raf-identic.html', title: 'Райффайзен банк', accent: '#ffe600', desc: 'Айдентика, визуальный стиль и стратегия коммуникации Рафа — основного ИИ-ассистента для всех сотрудников', descLight: true, mac: true, preview: 'images/home-v2/work-01.png' },
-    { href: 'legalbpm.html', title: 'Райффайзен банк', accent: '#ffe600', desc: 'Веб-интерфейс и мобильное приложение Рафа — основного ИИ-ассистента для всех сотрудников', descLight: false, phone: true, mac: true, preview: 'images/home-v2/work-02.png' },
+    { href: 'raf-identic.html', title: 'Райффайзен банк', accent: '#ffe600', desc: 'Айдентика, визуальный стиль и стратегия коммуникации Рафа — основного ИИ‑ассистента для всех сотрудников', descLight: true, mac: true, preview: 'images/home-v2/work-01.png' },
+    { href: 'legalbpm.html', title: 'Райффайзен банк', accent: '#ffe600', desc: 'Веб-интерфейс и мобильное приложение Рафа — основного ИИ‑ассистента для всех сотрудников', descLight: false, phone: true, mac: true, preview: 'images/home-v2/work-02.png' },
     { href: 'legalbpm.html', title: 'Райффайзен банк', accent: '#ffe600', desc: 'Редизайн и проектирование единого решения поиска для основных порталов банка — «Инсайдер» и «Сервис-деск»', descLight: true, mac: true, preview: 'images/home-v2/work-03.png' },
     { href: 'legalbpm.html', title: 'Райффайзен банк', accent: '#ffe600', desc: 'Редизайн портала «Сервис-деск» — сервиса решения рабочих вопросов всех сотрудников и обращений клиентов банка', descLight: true, mac: true, preview: 'images/home-v2/work-04.png' },
     { href: 'sberpravo.html', title: 'Сбер Право', titleParts: [{ text: 'Сбер ', color: '#2a9f3f' }, { text: 'Право', color: '#2c9ce6' }], accent: '#2c9ce6', desc: 'Редизайн юридического сервиса «LegalBPM» — системы менеджмента бизнес-процессов правовых запросов и судебной работы Сбера', descLight: false, mac: true, preview: 'images/home-v2/work-05.png' },
@@ -281,10 +281,130 @@
     mountCards('home-v2-personal-list', attachLayers(PERSONAL_CARDS, layers.personal));
   }
 
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', mountWorkCards);
-  } else {
+  var WORKS_TAB_KEY = 'home-v2-works-tab';
+
+  function saveWorksTab(id) {
+    try {
+      sessionStorage.setItem(WORKS_TAB_KEY, id);
+    } catch (e) {}
+  }
+
+  function getSavedWorksTab() {
+    try {
+      var saved = sessionStorage.getItem(WORKS_TAB_KEY);
+      if (saved === 'work' || saved === 'personal') return saved;
+    } catch (e) {}
+    return null;
+  }
+
+  function initWorksTabs() {
+    var tabs = document.querySelectorAll('.home-v2-works__tab');
+    var panelsRoot = document.querySelector('.home-v2-works__panels');
+    if (!tabs.length || !panelsRoot) return;
+
+    var FADE_MS = 480;
+    var transitioning = false;
+    var reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    function setActiveTab(tab) {
+      var id = tab.getAttribute('data-tab');
+
+      tabs.forEach(function (t) {
+        var active = t === tab;
+        t.classList.toggle('is-active', active);
+        t.setAttribute('aria-selected', active ? 'true' : 'false');
+      });
+
+      panelsRoot.querySelectorAll('.home-v2-works__panel').forEach(function (panel) {
+        var active = panel.getAttribute('data-panel') === id;
+        panel.classList.toggle('is-active', active);
+        panel.hidden = !active;
+      });
+    }
+
+    function restoreSavedTab() {
+      var saved = getSavedWorksTab();
+      document.documentElement.classList.remove('home-v2-works-tab--personal');
+      if (!saved || saved === 'work') return;
+
+      var tab = document.querySelector('.home-v2-works__tab[data-tab="' + saved + '"]');
+      if (tab) setActiveTab(tab);
+    }
+
+    restoreSavedTab();
+
+    function finishCrossfade(fromPanel, toPanel) {
+      panelsRoot.classList.remove('is-crossfading');
+      panelsRoot.style.minHeight = '';
+
+      fromPanel.classList.remove('is-tab-fade-from', 'is-tab-fade-hide', 'is-active');
+      fromPanel.hidden = true;
+
+      toPanel.classList.remove('is-tab-fade-to', 'is-tab-fade-show');
+      toPanel.classList.add('is-active');
+      toPanel.hidden = false;
+
+      transitioning = false;
+    }
+
+    tabs.forEach(function (tab) {
+      tab.addEventListener('click', function () {
+        if (tab.classList.contains('is-active') || transitioning) return;
+
+        var id = tab.getAttribute('data-tab');
+        var fromPanel = panelsRoot.querySelector('.home-v2-works__panel.is-active');
+        var toPanel = panelsRoot.querySelector('.home-v2-works__panel[data-panel="' + id + '"]');
+        if (!fromPanel || !toPanel || fromPanel === toPanel) return;
+
+        saveWorksTab(id);
+
+        tabs.forEach(function (t) {
+          var active = t === tab;
+          t.classList.toggle('is-active', active);
+          t.setAttribute('aria-selected', active ? 'true' : 'false');
+        });
+
+        if (reducedMotion) {
+          setActiveTab(tab);
+          return;
+        }
+
+        transitioning = true;
+        fromPanel.hidden = false;
+        toPanel.hidden = false;
+
+        var fromH = fromPanel.offsetHeight;
+        panelsRoot.style.minHeight = fromH + 'px';
+        panelsRoot.classList.add('is-crossfading');
+
+        fromPanel.classList.add('is-tab-fade-from');
+        toPanel.classList.add('is-tab-fade-to', 'is-active');
+        fromPanel.classList.remove('is-active');
+
+        var toH = toPanel.offsetHeight;
+
+        window.requestAnimationFrame(function () {
+          panelsRoot.style.minHeight = toH + 'px';
+          fromPanel.classList.add('is-tab-fade-hide');
+          toPanel.classList.add('is-tab-fade-show');
+        });
+
+        window.setTimeout(function () {
+          finishCrossfade(fromPanel, toPanel);
+        }, FADE_MS);
+      });
+    });
+  }
+
+  function init() {
     mountWorkCards();
+    initWorksTabs();
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
   }
 
   window.HOME_V2_WORK_CARDS = WORK_CARDS;

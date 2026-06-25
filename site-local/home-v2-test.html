@@ -2,6 +2,15 @@
 <html lang="ru">
 <head>
 <meta charset="utf-8"/>
+<script>
+(function () {
+  try {
+    if (sessionStorage.getItem('home-v2-works-tab') === 'personal') {
+      document.documentElement.classList.add('home-v2-works-tab--personal');
+    }
+  } catch (e) {}
+})();
+</script>
 <title>Главная v2 — тест · Михаил Нежник</title>
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
 <link href="fonts-local.css" rel="stylesheet" type="text/css"/>
@@ -130,8 +139,10 @@ document.addEventListener('DOMContentLoaded', function () {
 <!--
   Карточка: __stage > __bg + __copy (HTML) + __device(s). Слои: home-v2-cards-layers.js
 -->
+<div class="home-v2-works__panels">
 <div class="home-v2-works__panel is-active" role="tabpanel" data-panel="work" id="home-v2-work-list"></div>
 <div class="home-v2-works__panel" role="tabpanel" data-panel="personal" id="home-v2-personal-list" hidden></div>
+</div>
 </section>
 
 <section class="home-v2-articles">
@@ -225,26 +236,5 @@ document.addEventListener('DOMContentLoaded', function () {
 <script src="scripts/html2canvas.min.js" defer></script>
 <script src="scripts/liquidGL.js" defer></script>
 <script src="scripts/glass-site.js" defer></script>
-<script defer>
-document.addEventListener('DOMContentLoaded', function () {
-  var tabs = document.querySelectorAll('.home-v2-works__tab');
-  var panels = document.querySelectorAll('.home-v2-works__panel');
-  tabs.forEach(function (tab) {
-    tab.addEventListener('click', function () {
-      var id = tab.getAttribute('data-tab');
-      tabs.forEach(function (t) {
-        var active = t === tab;
-        t.classList.toggle('is-active', active);
-        t.setAttribute('aria-selected', active ? 'true' : 'false');
-      });
-      panels.forEach(function (panel) {
-        var active = panel.getAttribute('data-panel') === id;
-        panel.classList.toggle('is-active', active);
-        panel.hidden = !active;
-      });
-    });
-  });
-});
-</script>
 </body>
 </html>
