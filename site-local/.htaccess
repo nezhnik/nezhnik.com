@@ -12,6 +12,9 @@ RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
 RewriteCond %{HTTP_HOST} ^www\.nezhnik\.com$ [NC]
 RewriteRule ^ https://nezhnik.com%{REQUEST_URI} [R=301,L]
 
+RewriteRule ^raf-servicedesk\.html$ /servicedesk [R=301,L]
+RewriteRule ^raf-servicedesk/?$ /servicedesk [R=301,L]
+
 # index.html → /
 RewriteRule ^index\.html$ / [R=301,L]
 RewriteRule ^index$ / [R=301,L]
