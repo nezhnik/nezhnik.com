@@ -8,6 +8,9 @@
   /** slug страницы → slug карточек work-XX (строка или { slug, disabled }) */
   var MORE_BY_PAGE = {
     'raf-identic': ['work-02', 'work-03', 'work-04'],
+    raf: ['work-01', 'work-03', 'work-04'],
+    onesearch: ['work-01', 'work-02', 'work-04'],
+    'raf-servicedesk': ['work-01', 'work-02', 'work-03'],
     legalbpm: ['work-06', 'work-07', 'work-08'],
     sberpravo: ['work-07', 'work-08', 'work-09'],
     csclick: ['work-08', 'work-09', 'work-10'],

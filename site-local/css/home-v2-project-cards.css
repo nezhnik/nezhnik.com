@@ -1,6 +1,37 @@
 /* «Ещё проекты» — обёртка панели. Карточки = тот же компонент, что на главной:
    renderWorkCard (home-v2-work-cards.js) + все стили/брейкпoинты из css/pages/home-v2.css (.home-v2-project-card*) */
 
+/* Hero cover на страницах кейсов — те же скругления, что у карточек на главной */
+.glass-snapshot-scene {
+  --v2-radius: clamp(32px, 2.34vw, 48px);
+}
+
+/* Hero — заголовок и метаданные по центру на всех страницах проектов */
+.main-screen.project .text_block_main.project,
+.main-screen.project .logo-or-project-name.project,
+.main-screen.project .div-block-11.project {
+  align-items: center;
+  text-align: center;
+}
+
+.main-screen.project .h1.project {
+  text-align: center;
+}
+
+.main-screen.project .p_card_timeandcompany.project {
+  text-align: center;
+}
+
+.glass-snapshot-scene .image-main.project:not(._100) {
+  border-radius: var(--v2-radius);
+}
+
+@media screen and (max-width: 767px) {
+  .glass-snapshot-scene {
+    --v2-radius: 24px;
+  }
+}
+
 .more-peojects.project {
   /* Как main.home-v2: один слой боковых отступов, те же переменные */
   --v2-pad: clamp(16px, 1.5625vw, 32px);

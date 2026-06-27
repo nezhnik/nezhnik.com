@@ -1,6 +1,12 @@
 /* Рафа — айдентика. База: legalbpm.css + акценты Raiffeisen */
-.h1.project.raf-identic {
-  color: #ffe600;
+.h1.project.raf-identic,
+.h1.project.raf {
+  color: #cb9099;
+}
+
+.h1.project.raf-servicedesk,
+.h1.project.onesearch {
+  color: #11111b;
 }
 
 .p-icon.project.raif {
