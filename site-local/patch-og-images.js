@@ -16,7 +16,7 @@ const HOME_DESC =
   'Привет, я — продуктовый дизайнер с 6-летним опытом: FinTech, LegalTech и Логистика. ' +
   'Проектирую сложные B2C- и B2B-сервисы, внедряю дизайн-процессы, пишу статьи и гайды, нанимаю и управляю командой.';
 
-const HOME_TITLE = 'Михаил Нежник — Продуктовый дизайнер';
+const HOME_TITLE = 'Михаил Нежник, продуктовый дизайнер';
 
 /** file → { image, desc, title?, url? } */
 const META = {
@@ -35,25 +35,25 @@ const META = {
   'raf-identic.html': {
     image: 'images/shared/og/raf-identic.webp',
     desc: 'Айдентика и визуальный стиль Рафа — основного ИИ‑ассистента для всех сотрудников',
-    title: 'Райффайзен банк — Айдентика Рафа — Михаил Нежник',
+    title: 'Раф, айдентика ИИ-ассистента',
     url: SITE + '/raf-identic'
   },
   'raf.html': {
     image: 'images/shared/og/raf.webp',
     desc: 'Веб-интерфейс и мобильное приложение Рафа — основного ИИ‑ассистента для всех сотрудников',
-    title: 'Райффайзен банк — Рафа — Михаил Нежник',
+    title: 'Раф, ИИ-ассистент',
     url: SITE + '/raf'
   },
   'onesearch.html': {
     image: 'images/shared/og/onesearch.webp',
     desc: 'Редизайн и проектирование единого решения поиска для основных порталов банка — «Инсайдер» и «Сервис-деск»',
-    title: 'Райффайзен банк — Единый поиск — Михаил Нежник',
+    title: 'Поиск внутренних порталов',
     url: SITE + '/onesearch'
   },
   'servicedesk.html': {
     image: 'images/shared/og/servicedesk.webp',
     desc: 'Редизайн портала «Сервис-деск» — сервиса решения рабочих вопросов всех сотрудников и обращений клиентов банка',
-    title: 'Райффайзен банк — Service-desk — Михаил Нежник',
+    title: 'Портал Сервис-деск',
     url: SITE + '/servicedesk'
   },
   'legalbpm.html': {
@@ -65,7 +65,7 @@ const META = {
   'sberpravo.html': {
     image: 'images/shared/og/sberpravo.webp',
     desc: 'Каталог услуг и набор 3D-иллюстраций для юридического сервиса Сбера',
-    title: 'Сбер Право — Каталог — Михаил Нежник',
+    title: 'Сбер Право',
     url: SITE + '/sberpravo'
   },
   'csclick.html': {
