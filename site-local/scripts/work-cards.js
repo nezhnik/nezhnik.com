@@ -1,6 +1,6 @@
 /**
- * Карточки home-v2 — слои как в Figma: фон · текст · экран(ы).
- * Слои: scripts/home-v2-cards-layers.js (генерируется build-home-v2-card-layers.mjs)
+ * Карточки главной — слои как в Figma: фон · текст · экран(ы).
+ * Слои: scripts/cards-layers.js (генерируется build-card-layers.mjs)
  */
 (function () {
   'use strict';
@@ -117,7 +117,7 @@
   }
 
   function imgUrl(path) {
-    return (window.homeV2ImageUrl || function (p) { return p; })(path);
+    return (window.siteImageUrl || function (p) { return p; })(path);
   }
 
   function renderBgLayer(layer) {
@@ -140,8 +140,13 @@
     return layers.map(renderBgLayer).join('');
   }
 
+  function posterFromVideo(videoSrc) {
+    return videoSrc.replace(/\.mp4$/i, '-poster.webp');
+  }
+
   function renderScreenVideoStack(frameSrc, videoSrc, videoScreen, variant) {
     var frame = imgUrl(frameSrc);
+    var poster = imgUrl(posterFromVideo(videoSrc));
     var radius = videoScreen.radiusTop != null ? videoScreen.radiusTop : 1.5;
     var aspect = videoScreen.aspect != null ? videoScreen.aspect : 2.1551;
     var screenStyle =
@@ -152,7 +157,8 @@
     return (
       '<div class="home-v2-project-card__device-media-fit' + variantClass + '" style="' + fitStyle + '">' +
         '<div class="home-v2-project-card__device-screen" style="' + screenStyle + '">' +
-          '<video class="home-v2-project-card__device-screen-video" muted playsinline autoplay loop preload="auto">' +
+          '<img class="home-v2-project-card__device-screen-poster" data-liquid-poster src="' + escapeHtml(poster) + '" alt="" crossorigin="anonymous" loading="eager"/>' +
+          '<video class="home-v2-project-card__device-screen-video" data-liquid-ignore muted playsinline autoplay loop preload="auto">' +
             '<source src="' + escapeHtml(videoSrc) + '" type="video/mp4"/>' +
           '</video>' +
         '</div>' +
@@ -174,9 +180,10 @@
       return '<div class="' + mediaClass + '">' + stacks + '</div>';
     }
     if (videoSrc) {
-      var poster = imgUrl(src);
+      var poster = imgUrl(posterFromVideo(videoSrc));
       return (
-        '<video class="home-v2-project-card__device-img home-v2-project-card__device-video" muted playsinline autoplay loop preload="metadata" poster="' + escapeHtml(poster) + '">' +
+        '<img class="home-v2-project-card__device-poster" data-liquid-poster src="' + escapeHtml(poster) + '" alt="" crossorigin="anonymous" loading="eager"/>' +
+        '<video class="home-v2-project-card__device-img home-v2-project-card__device-video" data-liquid-ignore muted playsinline autoplay loop preload="metadata">' +
           '<source src="' + escapeHtml(videoSrc) + '" type="video/mp4"/>' +
         '</video>'
       );
@@ -299,7 +306,7 @@
   var workCardsWithLayers = null;
 
   function getWorkCardsWithLayers() {
-    var layers = window.HOME_V2_CARD_LAYERS;
+    var layers = window.SITE_CARD_LAYERS;
     if (!layers) return [];
     if (!workCardsWithLayers) {
       workCardsWithLayers = attachLayers(WORK_CARDS, layers.work);
@@ -349,7 +356,7 @@
     if (!document.getElementById('home-v2-work-list') && !document.getElementById('home-v2-personal-list')) {
       return;
     }
-    var layers = window.HOME_V2_CARD_LAYERS;
+    var layers = window.SITE_CARD_LAYERS;
     if (!layers) return;
 
     mountCards('home-v2-work-list', getWorkCardsWithLayers());
@@ -489,9 +496,9 @@
     init();
   }
 
-  window.HOME_V2_WORK_CARDS = WORK_CARDS;
-  window.HOME_V2_PERSONAL_CARDS = PERSONAL_CARDS;
-  window.HOME_V2_CARDS = {
+  window.SITE_WORK_CARDS = WORK_CARDS;
+  window.SITE_PERSONAL_CARDS = PERSONAL_CARDS;
+  window.SITE_CARDS = {
     renderWorkCard: renderWorkCard,
     getWorkCardBySlug: getWorkCardBySlug,
     getWorkCardsWithLayers: getWorkCardsWithLayers,

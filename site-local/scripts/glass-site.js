@@ -225,6 +225,14 @@
       '}',
       '.glass-snapshot-scene img {',
       '  visibility: visible !important;',
+      '}',
+      '.glass-snapshot-scene video[data-liquid-ignore] {',
+      '  visibility: hidden !important;',
+      '  opacity: 0 !important;',
+      '}',
+      '.glass-snapshot-scene [data-liquid-poster] {',
+      '  visibility: visible !important;',
+      '  opacity: 1 !important;',
       '}'
     ].join('\n');
     document.head.appendChild(captureStyleEl);

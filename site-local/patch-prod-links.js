@@ -30,10 +30,10 @@ const PROJECT_SLUGS = new Set([
   'smarthome'
 ]);
 
-const HOME_PAGES = new Set(['index.html', 'home-v2-test.html']);
+const HOME_PAGES = new Set(['index.html']);
 
 function patchWorkCardsJs() {
-  const filePath = path.join(ROOT, 'scripts/home-v2-work-cards.js');
+  const filePath = path.join(ROOT, 'scripts/work-cards.js');
   if (!fs.existsSync(filePath)) return false;
   let js = fs.readFileSync(filePath, 'utf8');
   const before = js;
@@ -43,7 +43,7 @@ function patchWorkCardsJs() {
   });
   if (js !== before) {
     fs.writeFileSync(filePath, js);
-    console.log('patched scripts/home-v2-work-cards.js');
+    console.log('patched scripts/work-cards.js');
     return true;
   }
   return false;
@@ -60,15 +60,12 @@ function patchHtml(file, name) {
 
   // Лого и главная
   html = html.replace(/href="index\.html"/gi, 'href="' + SITE + '/"');
-  html = html.replace(/href="home-v2-test\.html"/gi, 'href="' + SITE + '/"');
 
   // Якоря на главной
   if (HOME_PAGES.has(name)) {
     html = html.replace(/href="index\.html(#[^"]+)"/gi, 'href="$1"');
-    html = html.replace(/href="home-v2-test\.html(#[^"]+)"/gi, 'href="$1"');
   } else {
     html = html.replace(/href="index\.html(#[^"]+)"/gi, 'href="' + SITE + '/$1"');
-    html = html.replace(/href="home-v2-test\.html(#[^"]+)"/gi, 'href="' + SITE + '/$1"');
   }
 
   // Относительные страницы проектов → clean URL

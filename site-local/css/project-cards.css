@@ -1,5 +1,5 @@
 /* «Ещё проекты» — обёртка панели. Карточки = тот же компонент, что на главной:
-   renderWorkCard (home-v2-work-cards.js) + все стили/брейкпoинты из css/pages/home-v2.css (.home-v2-project-card*) */
+   renderWorkCard (work-cards.js) + все стили/брейкпoинты из css/pages/home.css (.home-v2-project-card*) */
 
 /* Hero cover на страницах кейсов — те же скругления, что у карточек на главной */
 .glass-snapshot-scene {

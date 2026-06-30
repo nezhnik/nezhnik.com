@@ -61,7 +61,12 @@ fi
   -c:v libx264 -crf "$CRF" -preset slow -pix_fmt yuv420p -movflags +faststart -an \
   "$DEVICES/${SLUG}_desktop.mp4" 2>/dev/null
 
-ls -lh "$DEVICES/${SLUG}_desktop."{png,webp,mp4}
+"$FFMPEG" -y -loglevel error -ss 0.1 -i "$DEVICES/${SLUG}_desktop.mp4" -frames:v 1 \
+  "$DEVICES/${SLUG}_desktop-poster.jpg" 2>/dev/null
+cwebp -q 90 "$DEVICES/${SLUG}_desktop-poster.jpg" -o "$DEVICES/${SLUG}_desktop-poster.webp" -quiet
+rm -f "$DEVICES/${SLUG}_desktop-poster.jpg"
+
+ls -lh "$DEVICES/${SLUG}_desktop."{png,webp,mp4} "$DEVICES/${SLUG}_desktop-poster.webp"
 if [[ -n "$FRAME_MOBILE" ]]; then
   ls -lh "$DEVICES/${SLUG}_card-mobile."{png,webp}
 fi

@@ -1,6 +1,6 @@
 /**
  * Собирает метаданные слоёв карточек из Figma JSON + скачивает bg и device PNG.
- * Запуск: node scripts/build-home-v2-card-layers.mjs
+ * Запуск: node scripts/build-card-layers.mjs
  */
 import { readFileSync, writeFileSync, mkdirSync, existsSync } from 'fs';
 import { join, dirname } from 'path';
@@ -239,9 +239,9 @@ for (let i = 0; i < deviceIds.length; i += 3) {
 }
 
 const output = { work: workLayers, personal: personalLayers };
-writeFileSync(join(ROOT, 'scripts/home-v2-cards-layers.json'), JSON.stringify(output, null, 2));
+writeFileSync(join(ROOT, 'scripts/cards-layers.json'), JSON.stringify(output, null, 2));
 writeFileSync(
-  join(ROOT, 'scripts/home-v2-cards-layers.js'),
-  'window.HOME_V2_CARD_LAYERS=' + JSON.stringify(output) + ';\n'
+  join(ROOT, 'scripts/cards-layers.js'),
+  'window.SITE_CARD_LAYERS=' + JSON.stringify(output) + ';\n'
 );
-console.log('Wrote scripts/home-v2-cards-layers.json + .js');
+console.log('Wrote scripts/cards-layers.json + .js');

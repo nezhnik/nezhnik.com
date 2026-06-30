@@ -26,12 +26,6 @@ const META = {
     title: HOME_TITLE,
     url: SITE + '/'
   },
-  'home-v2-test.html': {
-    image: 'images/shared/og-home.webp',
-    desc: HOME_DESC,
-    title: HOME_TITLE,
-    url: SITE + '/'
-  },
   'raf-identic.html': {
     image: 'images/shared/og/raf-identic.webp',
     desc: 'Айдентика и визуальный стиль Рафа — основного ИИ‑ассистента для всех сотрудников',
@@ -185,7 +179,7 @@ function patchHtml(fileName, meta) {
     }
   });
 
-  if (meta.title && fileName !== 'index.html' && fileName !== 'home-v2-test.html') {
+  if (meta.title && fileName !== 'index.html') {
     html = html.replace(/<title>[^<]*<\/title>/, '<title>' + escAttr(meta.title) + '</title>');
   }
 

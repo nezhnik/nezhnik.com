@@ -34,7 +34,7 @@
 
     var page = root.getAttribute('data-page');
     var slugs = MORE_BY_PAGE[page];
-    var api = window.HOME_V2_CARDS;
+    var api = window.SITE_CARDS;
     if (!slugs || !api) return;
 
     api.markProjectCardsPanel(root);
@@ -55,5 +55,5 @@
     mountMoreProjects();
   }
 
-  window.HOME_V2_MORE_BY_PAGE = MORE_BY_PAGE;
+  window.SITE_MORE_BY_PAGE = MORE_BY_PAGE;
 })();

@@ -114,6 +114,7 @@ main.glass-snapshot-scene.home-v2 {
   z-index: 1;
 }
 
+.home-v2-hero__poster,
 .home-v2-hero__video {
   position: absolute;
   inset: 0;
@@ -121,6 +122,16 @@ main.glass-snapshot-scene.home-v2 {
   height: 100%;
   object-fit: cover;
   object-position: center top;
+}
+
+.home-v2-hero__poster {
+  visibility: hidden;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.home-v2-hero__video {
+  z-index: 1;
   opacity: 0;
 }
 
@@ -381,7 +392,7 @@ html.home-v2-works-tab--personal .home-v2-works__panels #home-v2-personal-list {
 }
 
 /* Project card — один компонент: главная (.home-v2-works__panel) и «Ещё проекты» (.more-peojects).
-   Рендер: scripts/home-v2-work-cards.js → renderWorkCard. Стили и брейкпоинты — только через .home-v2-project-card* */
+   Рендер: scripts/work-cards.js → renderWorkCard. Стили и брейкпоинты — только через .home-v2-project-card* */
 .home-v2-project-card {
   display: block;
   width: 100%;
@@ -608,12 +619,43 @@ html.home-v2-works-tab--personal .home-v2-works__panels #home-v2-personal-list {
   border-top-right-radius: var(--v2-screen-radius, 1.5%);
 }
 
+.home-v2-project-card__device-screen-poster,
 .home-v2-project-card__device-screen-video {
   width: 100%;
   height: 100%;
   display: block;
   object-fit: cover;
   object-position: center top;
+}
+
+.home-v2-project-card__device-screen-poster {
+  position: absolute;
+  inset: 0;
+  visibility: hidden;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.home-v2-project-card__device-screen-video {
+  position: relative;
+  z-index: 1;
+}
+
+.home-v2-project-card__device-poster {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  pointer-events: none;
+  object-fit: contain;
+  object-position: center bottom;
+  z-index: 0;
+}
+
+.home-v2-project-card__device-video {
+  position: relative;
+  z-index: 1;
 }
 
 .home-v2-project-card__device-frame {

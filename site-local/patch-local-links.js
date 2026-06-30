@@ -24,8 +24,7 @@ const PROJECT_PAGES = new Set([
   'designconference.html',
   'glavpivmag.html',
   'smarthome.html',
-  'index.html',
-  'home-v2-test.html'
+  'index.html'
 ]);
 
 const PROJECT_SLUGS = [
@@ -46,7 +45,7 @@ const PROJECT_SLUGS = [
 ];
 
 function patchWorkCardsJs() {
-  const filePath = path.join(ROOT, 'scripts/home-v2-work-cards.js');
+  const filePath = path.join(ROOT, 'scripts/work-cards.js');
   if (!fs.existsSync(filePath)) return false;
   let js = fs.readFileSync(filePath, 'utf8');
   const before = js;
@@ -56,7 +55,7 @@ function patchWorkCardsJs() {
   });
   if (js !== before) {
     fs.writeFileSync(filePath, js);
-    console.log('patched scripts/home-v2-work-cards.js');
+    console.log('patched scripts/work-cards.js');
     return true;
   }
   return false;
@@ -69,11 +68,6 @@ function patchHtml(file, name) {
   // Лого и главная → index.html
   html = html.replace(/href="https?:\/\/(?:www\.)?nezhnik\.com\/"/gi, 'href="index.html"');
   html = html.replace(/href="\/"/g, 'href="index.html"');
-
-  // home-v2-test как локальная главная v2
-  if (name === 'home-v2-test.html') {
-    html = html.replace(/href="https?:\/\/(?:www\.)?nezhnik\.com\/"/gi, 'href="home-v2-test.html"');
-  }
 
   // Прод clean URL → page.html
   PROJECT_SLUGS.forEach(function (slug) {
@@ -88,7 +82,7 @@ function patchHtml(file, name) {
   html = html.replace(/href="\/([a-z0-9-]+\.html)"/gi, 'href="$1"');
 
   // Якоря шапки: на главной — локально, на проектах — index.html#...
-  if (name === 'index.html' || name === 'home-v2-test.html') {
+  if (name === 'index.html') {
     html = html.replace(/href="https?:\/\/(?:www\.)?nezhnik\.com\/(#[^"]+)"/gi, 'href="$1"');
   } else {
     html = html.replace(/href="https?:\/\/(?:www\.)?nezhnik\.com\/(#[^"]+)"/gi, 'href="index.html$1"');
