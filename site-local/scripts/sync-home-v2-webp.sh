@@ -22,12 +22,12 @@ copy() {
 }
 
 echo "→ devices (из Cards/Screens/Webp)"
-copy "$WEBP_SRC/Rafnewidentic_web.webp"                    "$DEVICES/raif-rafa-brand_desktop.webp"
-copy "$WEBP_SRC/mobile/Rafnewidentic_web_mobile.webp"      "$DEVICES/raif-rafa-brand_card-mobile.webp"
+copy "$WEBP_SRC/Macbook_web view.webp"                       "$DEVICES/raif-rafa-brand_desktop.webp"
+copy "$WEBP_SRC/Macbook_mobile view.webp"                    "$DEVICES/raif-rafa-brand_card-mobile.webp"
 copy "$WEBP_SRC/Raf_web.webp"                              "$DEVICES/raif-rafa-app_desktop.webp"
 copy "$WEBP_SRC/Raf_mobile.webp"                           "$DEVICES/raif-rafa-app_mobile.webp"
-copy "$WEBP_SRC/Search_web.webp"                           "$DEVICES/raif-search_desktop.webp"
-copy "$WEBP_SRC/mobile/Search_web_mobile.webp"             "$DEVICES/raif-search_card-mobile.webp"
+copy "$WEBP_SRC/Macbook_web view.webp"                       "$DEVICES/raif-search_desktop.webp"
+copy "$WEBP_SRC/Macbook_mobile view.webp"                    "$DEVICES/raif-search_card-mobile.webp"
 copy "$WEBP_SRC/Servicedesk_web.webp"                      "$DEVICES/raif-servicedesk_desktop.webp"
 copy "$WEBP_SRC/mobile/Servicedesk_web_mobile.webp"      "$DEVICES/raif-servicedesk_card-mobile.webp"
 copy "$WEBP_SRC/LegalBPM_web.webp"                         "$DEVICES/sberpravo-redesign_desktop.webp"

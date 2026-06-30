@@ -389,6 +389,35 @@ html.home-v2-works-tab--personal .home-v2-works__panels #home-v2-personal-list {
   color: inherit;
 }
 
+.home-v2-project-card--disabled {
+  cursor: not-allowed;
+}
+
+.home-v2-project-card__heading {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: clamp(6px, 0.5cqw, 10px);
+  max-width: 100%;
+}
+
+.home-v2-project-card__heading .home-v2-project-card__title {
+  width: auto;
+}
+
+.home-v2-project-card__chip {
+  flex-shrink: 0;
+  margin: 0;
+  padding: clamp(3px, 0.25cqw, 5px) clamp(8px, 0.65cqw, 12px);
+  border-radius: 80px;
+  background-color: #f6f6f8;
+  color: #11111b;
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  font-size: clamp(10px, 0.78cqw, 14px);
+  line-height: 1.3;
+  white-space: nowrap;
+}
+
 .home-v2-project-card__stage {
   position: relative;
   width: 100%;
@@ -520,6 +549,82 @@ html.home-v2-works-tab--personal .home-v2-works__panels #home-v2-personal-list {
   display: block;
   object-fit: contain;
   object-position: center bottom;
+}
+
+/* MacBook + видео в «зелёном» экране: рамка поверх, видео под ней */
+.home-v2-project-card__device--screen-video {
+  container-type: size;
+}
+
+.home-v2-project-card__device-media {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.home-v2-project-card__device-media--screen-video {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.home-v2-project-card__device-media-fit {
+  position: relative;
+  aspect-ratio: var(--v2-device-aspect, 2.1551);
+  width: 100%;
+  max-height: 100%;
+  height: auto;
+  flex-shrink: 0;
+}
+
+@supports (width: 1cqw) {
+  .home-v2-project-card__device--screen-video .home-v2-project-card__device-media-fit {
+    width: min(100cqw, calc(100cqh * var(--v2-device-aspect, 2.1551)));
+    height: min(100cqh, calc(100cqw / var(--v2-device-aspect, 2.1551)));
+    max-height: none;
+  }
+}
+
+.home-v2-project-card__device-media-fit--mobile {
+  display: none;
+}
+
+@media screen and (max-width: 991px) {
+  .home-v2-project-card__device-media--screen-video-responsive .home-v2-project-card__device-media-fit--web {
+    display: none;
+  }
+
+  .home-v2-project-card__device-media--screen-video-responsive .home-v2-project-card__device-media-fit--mobile {
+    display: block;
+  }
+}
+
+.home-v2-project-card__device-screen {
+  position: absolute;
+  z-index: 0;
+  overflow: hidden;
+  border-top-left-radius: var(--v2-screen-radius, 1.5%);
+  border-top-right-radius: var(--v2-screen-radius, 1.5%);
+}
+
+.home-v2-project-card__device-screen-video {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center top;
+}
+
+.home-v2-project-card__device-frame {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: fill;
+  pointer-events: none;
 }
 
 .home-v2-works__empty {
@@ -819,6 +924,17 @@ html.home-v2-works-tab--personal .home-v2-works__panels #home-v2-personal-list {
     transform: translateY(2%);
     transform-origin: center bottom;
   }
+
+  .home-v2-project-card__device--card-mobile.home-v2-project-card__device--screen-video .home-v2-project-card__device-media {
+    transform: translateY(2%);
+    transform-origin: center bottom;
+  }
+
+  .home-v2-project-card__device--screen-video .home-v2-project-card__device-media-fit {
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -991,7 +1107,7 @@ html.home-v2-works-tab--personal .home-v2-works__panels #home-v2-personal-list {
   .home-v2-hero__intro {
     bottom: clamp(16px, calc(5vw - 4px), 24px);
     width: 92%;
-    font-size: clamp(17px, calc(17px + (100vw - 320px) * 6 / 448), 23px);
+    font-size: clamp(16px, calc(16px + (100vw - 320px) * 6 / 448), 22px);
     line-height: 1.45;
     white-space: normal;
     transform: translateX(-50%);

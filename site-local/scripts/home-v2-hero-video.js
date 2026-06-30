@@ -1,7 +1,7 @@
 /**
  * Hero-видео: чёрный фон → пауза 300 мс → появление 500 мс → анимация → исчезновение 500 мс → loop.
  *
- * Первый цикл: canplaythrough → пауза 1 с (догрузка) → старт. После конца — пауза 1 с → loop.
+ * Первый цикл: готовность видео → пауза 1 с → старт. После конца — пауза 1 с → loop.
  */
 (function () {
   'use strict';
@@ -100,7 +100,10 @@
 
     function begin() {
       if (begun) return;
-      if (lockDuration() <= 0) return;
+      if (lockDuration() <= 0) {
+        video.addEventListener('durationchange', begin, { once: true });
+        return;
+      }
 
       begun = true;
       video.playbackRate = PLAYBACK_RATE;
@@ -113,10 +116,13 @@
 
     function scheduleStart() {
       if (scheduled || begun) return;
-      if (lockDuration() <= 0) return;
-
       scheduled = true;
       startTimer = window.setTimeout(begin, START_DELAY_MS);
+    }
+
+    function onReady() {
+      if (scheduled || begun) return;
+      scheduleStart();
     }
 
     function onEnded() {
@@ -137,18 +143,40 @@
     video.playbackRate = PLAYBACK_RATE;
     video.removeAttribute('loop');
     video.addEventListener('ended', onEnded);
-    video.addEventListener('canplaythrough', scheduleStart, { once: true });
 
-    if (video.readyState >= 4) scheduleStart();
+    ['loadedmetadata', 'loadeddata', 'canplay', 'canplaythrough'].forEach(function (eventName) {
+      video.addEventListener(eventName, onReady, { once: true });
+    });
+
+    if (video.readyState >= 2) onReady();
+
+    // iOS Safari часто не шлёт canplaythrough — страховка по таймеру.
+    window.setTimeout(function () {
+      if (!begun) onReady();
+    }, 2500);
 
     document.addEventListener('visibilitychange', function () {
       if (!document.hidden && video.paused && begun) playVideo();
     });
 
+    function retryAfterGesture() {
+      if (begun) return;
+      begin();
+      if (begun) {
+        document.removeEventListener('pointerdown', retryAfterGesture, true);
+        document.removeEventListener('touchstart', retryAfterGesture, true);
+      }
+    }
+
+    document.addEventListener('pointerdown', retryAfterGesture, true);
+    document.addEventListener('touchstart', retryAfterGesture, true);
+
     window.addEventListener('pagehide', function () {
       cancelAnimationFrame(rafId);
       if (startTimer) window.clearTimeout(startTimer);
       if (endTimer) window.clearTimeout(endTimer);
+      document.removeEventListener('pointerdown', retryAfterGesture, true);
+      document.removeEventListener('touchstart', retryAfterGesture, true);
     });
   }
 

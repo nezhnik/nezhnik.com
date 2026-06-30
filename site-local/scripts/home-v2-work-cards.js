@@ -52,10 +52,10 @@
   ];
 
   var WORK_CARDS = [
-    { href: 'raf-identic.html', title: 'Райффайзен банк', accent: '#ffe600', desc: 'Айдентика и визуальный стиль Рафа — основного ИИ‑ассистента для всех сотрудников', descLight: true, mac: true, preview: 'images/home-v2/work-01.png' },
-    { href: 'raf.html', title: 'Райффайзен банк', accent: '#ffe600', desc: 'Веб-интерфейс и мобильное приложение Рафа — основного ИИ‑ассистента для всех сотрудников', descLight: false, phone: true, mac: true, preview: 'images/home-v2/work-02.png' },
-    { href: 'onesearch.html', title: 'Райффайзен банк', accent: '#ffe600', desc: 'Редизайн и проектирование единого решения поиска для основных порталов банка — «Инсайдер» и «Сервис-деск»', descLight: true, mac: true, preview: 'images/home-v2/work-03.png' },
-    { href: 'servicedesk.html', title: 'Райффайзен банк', accent: '#ffe600', desc: 'Редизайн портала «Сервис-деск» — сервиса решения рабочих вопросов всех сотрудников и обращений клиентов банка', descLight: true, mac: true, preview: 'images/home-v2/work-04.png' },
+    { href: 'raf-identic.html', title: 'Райффайзен банк', accent: '#ffe600', desc: 'Айдентика и визуальный стиль Рафа — основного ИИ‑ассистента для всех сотрудников', descLight: true, mac: true, preview: 'images/home-v2/work-01.png', comingSoon: true },
+    { href: 'raf.html', title: 'Райффайзен банк', accent: '#ffe600', desc: 'Веб-интерфейс и мобильное приложение Рафа — основного ИИ‑ассистента для всех сотрудников', descLight: false, phone: true, mac: true, preview: 'images/home-v2/work-02.png', comingSoon: true },
+    { href: 'onesearch.html', title: 'Райффайзен банк', accent: '#ffe600', desc: 'Редизайн и проектирование единого решения поиска для основных порталов банка — «Инсайдер» и «Сервис-деск»', descLight: true, mac: true, preview: 'images/home-v2/work-03.png', comingSoon: true },
+    { href: 'servicedesk.html', title: 'Райффайзен банк', accent: '#ffe600', desc: 'Редизайн портала «Сервис-деск» — сервиса решения рабочих вопросов всех сотрудников и обращений клиентов банка', descLight: true, mac: true, preview: 'images/home-v2/work-04.png', comingSoon: true },
     { href: 'sberpravo.html', title: 'Сбер Право', titleParts: [{ text: 'Сбер ', color: '#2a9f3f' }, { text: 'Право', color: '#2c9ce6' }], accent: '#2c9ce6', desc: 'Редизайн юридического сервиса «LegalBPM» — системы менеджмента бизнес-процессов правовых запросов и судебной работы Сбера', descLight: false, mac: true, preview: 'images/home-v2/work-05.png' },
     { href: 'sberpravo.html', title: 'Сбер Право', titleParts: [{ text: 'Сбер ', color: '#2a9f3f' }, { text: 'Право', color: '#2c9ce6' }], accent: '#2c9ce6', desc: 'Каталог услуг и набор 3D-иллюстраций для юридического сервиса Сбера', descLight: true, phone: true, mac: true, preview: 'images/home-v2/work-06.png' },
     { href: 'csclick.html', title: 'Сбер', accent: '#2a9f3f', desc: 'Сервис заказа товаров «CS-Клик» для всех сотрудников и партнеров Сбера', descLight: false, phone: true, mac: true, preview: 'images/home-v2/work-07.png' },
@@ -80,6 +80,7 @@
   }
 
   function getCardMobileSrc(box) {
+    if (box && box.srcMobile) return box.srcMobile;
     if (box && box.srcCardMobile) return box.srcCardMobile;
     return inferCardMobileSrc(box && box.src);
   }
@@ -139,7 +140,47 @@
     return layers.map(renderBgLayer).join('');
   }
 
-  function renderDeviceImg(src, mobileSrc) {
+  function renderScreenVideoStack(frameSrc, videoSrc, videoScreen, variant) {
+    var frame = imgUrl(frameSrc);
+    var radius = videoScreen.radiusTop != null ? videoScreen.radiusTop : 1.5;
+    var aspect = videoScreen.aspect != null ? videoScreen.aspect : 2.1551;
+    var screenStyle =
+      boxStyle(videoScreen) +
+      '--v2-screen-radius:' + radius + '%;';
+    var fitStyle = '--v2-device-aspect:' + aspect + ';';
+    var variantClass = variant ? ' home-v2-project-card__device-media-fit--' + variant : '';
+    return (
+      '<div class="home-v2-project-card__device-media-fit' + variantClass + '" style="' + fitStyle + '">' +
+        '<div class="home-v2-project-card__device-screen" style="' + screenStyle + '">' +
+          '<video class="home-v2-project-card__device-screen-video" muted playsinline autoplay loop preload="auto">' +
+            '<source src="' + escapeHtml(videoSrc) + '" type="video/mp4"/>' +
+          '</video>' +
+        '</div>' +
+        '<img class="home-v2-project-card__device-frame" src="' + escapeHtml(frame) + '" alt="" crossorigin="anonymous" loading="lazy"/>' +
+      '</div>'
+    );
+  }
+
+  function renderDeviceImg(src, mobileSrc, videoSrc, videoScreen, videoScreenMobile) {
+    if (videoSrc && videoScreen) {
+      var hasMobileVideo = mobileSrc && videoScreenMobile;
+      var mediaClass =
+        'home-v2-project-card__device-media home-v2-project-card__device-media--screen-video' +
+        (hasMobileVideo ? ' home-v2-project-card__device-media--screen-video-responsive' : '');
+      var stacks = renderScreenVideoStack(src, videoSrc, videoScreen, hasMobileVideo ? 'web' : '');
+      if (hasMobileVideo) {
+        stacks += renderScreenVideoStack(mobileSrc, videoSrc, videoScreenMobile, 'mobile');
+      }
+      return '<div class="' + mediaClass + '">' + stacks + '</div>';
+    }
+    if (videoSrc) {
+      var poster = imgUrl(src);
+      return (
+        '<video class="home-v2-project-card__device-img home-v2-project-card__device-video" muted playsinline autoplay loop preload="metadata" poster="' + escapeHtml(poster) + '">' +
+          '<source src="' + escapeHtml(videoSrc) + '" type="video/mp4"/>' +
+        '</video>'
+      );
+    }
     var desktop = imgUrl(src);
     var mobile = mobileSrc ? imgUrl(mobileSrc) : null;
     if (!mobile) {
@@ -156,9 +197,12 @@
   function renderDevice(box, mobileSrc) {
     if (!box || !box.src) return '';
     var deviceClass = 'home-v2-project-card__device' + (mobileSrc ? ' home-v2-project-card__device--card-mobile' : '');
+    if (box.video && box.videoScreen) {
+      deviceClass += ' home-v2-project-card__device--screen-video';
+    }
     return (
       '<div class="' + deviceClass + '" style="' + boxStyle(box) + '">' +
-        renderDeviceImg(box.src, mobileSrc) +
+        renderDeviceImg(box.src, mobileSrc, box.video || null, box.videoScreen || null, box.videoScreenMobile || null) +
       '</div>'
     );
   }
@@ -198,22 +242,34 @@
     return cls;
   }
 
+  function renderCardHeading(card, comingSoon) {
+    var title = '<h3 class="' + titleClassName(card) + '">' + renderTitle(card) + '</h3>';
+    if (!comingSoon) return title;
+    return (
+      '<div class="home-v2-project-card__heading">' +
+        title +
+        '<span class="home-v2-project-card__chip">Будет позже</span>' +
+      '</div>'
+    );
+  }
+
   function renderWorkCard(card, options) {
     var layer = card.layer;
     if (!layer) return '';
     var tone = card.descLight ? 'light' : 'dark';
     var text = layer.text;
-    var disabled = options && options.disabled;
+    var comingSoon = !!card.comingSoon;
+    var disabled = comingSoon || (options && options.disabled);
     var external = !disabled && /^https?:\/\//.test(card.href);
     var rel = external ? ' rel="noopener noreferrer"' : '';
     var target = external ? ' target="_blank"' : '';
     var devices = renderDevices(layer, card);
-    var cls = cardClasses(card) + (disabled ? ' home-v2-project-card--disabled' : '');
+    var cls = cardClasses(card) + (disabled ? ' home-v2-project-card--disabled' : '') + (comingSoon ? ' home-v2-project-card--coming-soon' : '');
     var stage =
       '<div class="home-v2-project-card__stage">' +
         '<div class="home-v2-project-card__bg" aria-hidden="true">' + renderBg(layer.bg) + '</div>' +
         '<div class="home-v2-project-card__copy home-v2-project-card__copy--' + tone + '" style="' + boxStyle(text) + '">' +
-          '<h3 class="' + titleClassName(card) + '">' + renderTitle(card) + '</h3>' +
+          renderCardHeading(card, comingSoon) +
           '<p class="home-v2-project-card__desc">' + escapeHtml(card.desc) + '</p>' +
         '</div>' +
         devices +
@@ -221,7 +277,7 @@
 
     if (disabled) {
       return (
-        '<div class="' + cls + '" aria-disabled="true" style="--project-accent:' + escapeHtml(card.accent || '#fff') + '">' +
+        '<div class="' + cls + '" aria-disabled="true" role="group" aria-label="' + escapeHtml(card.desc) + ' — будет позже" style="--project-accent:' + escapeHtml(card.accent || '#fff') + '">' +
           stage +
         '</div>'
       );
@@ -263,11 +319,30 @@
     root.classList.add('home-v2-project-cards');
   }
 
+  function syncResponsiveScreenVideos(root) {
+    var mobile = window.matchMedia('(max-width: 991px)').matches;
+    root.querySelectorAll('.home-v2-project-card__device-media--screen-video-responsive').forEach(function (media) {
+      var webVideo = media.querySelector('.home-v2-project-card__device-media-fit--web .home-v2-project-card__device-screen-video');
+      var mobileVideo = media.querySelector('.home-v2-project-card__device-media-fit--mobile .home-v2-project-card__device-screen-video');
+      if (!webVideo || !mobileVideo) return;
+      var active = mobile ? mobileVideo : webVideo;
+      var idle = mobile ? webVideo : mobileVideo;
+      idle.pause();
+      var p = active.play();
+      if (p && p.catch) p.catch(function () {});
+    });
+  }
+
   function mountCards(rootId, cards) {
     var root = document.getElementById(rootId);
     if (!root) return;
     markProjectCardsPanel(root);
     root.innerHTML = cards.map(renderWorkCard).join('');
+    root.querySelectorAll('.home-v2-project-card__device-video, .home-v2-project-card__device-screen-video').forEach(function (video) {
+      var p = video.play();
+      if (p && p.catch) p.catch(function () {});
+    });
+    syncResponsiveScreenVideos(root);
   }
 
   function mountWorkCards() {
@@ -399,6 +474,13 @@
   function init() {
     mountWorkCards();
     initWorksTabs();
+    var syncAllScreenVideos = function () {
+      ['home-v2-work-list', 'home-v2-personal-list'].forEach(function (id) {
+        var root = document.getElementById(id);
+        if (root) syncResponsiveScreenVideos(root);
+      });
+    };
+    window.addEventListener('resize', syncAllScreenVideos);
   }
 
   if (document.readyState === 'loading') {

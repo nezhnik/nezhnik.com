@@ -17,6 +17,24 @@
       },
       "mac": {
         "src": "images/home-v2/devices/raif-rafa-brand_desktop.png",
+        "srcMobile": "images/home-v2/devices/raif-rafa-brand_card-mobile.png",
+        "video": "images/home-v2/devices/raif-rafa-brand_desktop.mp4",
+        "videoScreen": {
+          "left": 1.2626,
+          "top": 2.957,
+          "width": 97.4747,
+          "height": 97.043,
+          "radiusTop": 1.55,
+          "aspect": 2.129
+        },
+        "videoScreenMobile": {
+          "left": 1.2626,
+          "top": 2.6699,
+          "width": 97.4747,
+          "height": 96.966,
+          "radiusTop": 1.55,
+          "aspect": 1.9214
+        },
         "left": 10.0806,
         "top": 21.8085,
         "width": 79.8387,
@@ -73,6 +91,24 @@
       },
       "mac": {
         "src": "images/home-v2/devices/raif-search_desktop.png",
+        "srcMobile": "images/home-v2/devices/raif-search_card-mobile.png",
+        "video": "images/home-v2/devices/raif-search_desktop.mp4",
+        "videoScreen": {
+          "left": 1.2626,
+          "top": 2.957,
+          "width": 97.4747,
+          "height": 97.043,
+          "radiusTop": 1.55,
+          "aspect": 2.129
+        },
+        "videoScreenMobile": {
+          "left": 1.2626,
+          "top": 2.6699,
+          "width": 97.4747,
+          "height": 96.966,
+          "radiusTop": 1.55,
+          "aspect": 1.9214
+        },
         "left": 10.0806,
         "top": 21.8085,
         "width": 79.8387,
