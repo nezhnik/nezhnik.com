@@ -10,6 +10,10 @@ const path = require('path');
 
 const ROOT = __dirname;
 const PROJECT_PAGES = new Set([
+  'raf-identic.html',
+  'raf.html',
+  'onesearch.html',
+  'servicedesk.html',
   'legalbpm.html',
   'sberpravo.html',
   'csclick.html',
@@ -20,29 +24,56 @@ const PROJECT_PAGES = new Set([
   'designconference.html',
   'glavpivmag.html',
   'smarthome.html',
-  'index.html'
+  'index.html',
+  'home-v2-test.html'
 ]);
+
+const PROJECT_SLUGS = [
+  'raf-identic',
+  'raf',
+  'onesearch',
+  'servicedesk',
+  'legalbpm',
+  'sberpravo',
+  'csclick',
+  'csradar',
+  'crafter',
+  'zesklad',
+  'sibpromstroy',
+  'designconference',
+  'glavpivmag',
+  'smarthome'
+];
+
+function patchWorkCardsJs() {
+  const filePath = path.join(ROOT, 'scripts/home-v2-work-cards.js');
+  if (!fs.existsSync(filePath)) return false;
+  let js = fs.readFileSync(filePath, 'utf8');
+  const before = js;
+  PROJECT_SLUGS.forEach(function (slug) {
+    const re = new RegExp("href: 'https?:\\/\\/(?:www\\.)?nezhnik\\.com\\/" + slug + "\\/?'", 'g');
+    js = js.replace(re, "href: '" + slug + ".html'");
+  });
+  if (js !== before) {
+    fs.writeFileSync(filePath, js);
+    console.log('patched scripts/home-v2-work-cards.js');
+    return true;
+  }
+  return false;
+}
 
 function patchHtml(file, name) {
   let html = fs.readFileSync(path.join(ROOT, file), 'utf8');
   const before = html;
 
-  const PROJECT_SLUGS = [
-    'legalbpm',
-    'sberpravo',
-    'csclick',
-    'csradar',
-    'crafter',
-    'zesklad',
-    'sibpromstroy',
-    'designconference',
-    'glavpivmag',
-    'smarthome'
-  ];
-
   // Лого и главная → index.html
   html = html.replace(/href="https?:\/\/(?:www\.)?nezhnik\.com\/"/gi, 'href="index.html"');
   html = html.replace(/href="\/"/g, 'href="index.html"');
+
+  // home-v2-test как локальная главная v2
+  if (name === 'home-v2-test.html') {
+    html = html.replace(/href="https?:\/\/(?:www\.)?nezhnik\.com\/"/gi, 'href="home-v2-test.html"');
+  }
 
   // Прод clean URL → page.html
   PROJECT_SLUGS.forEach(function (slug) {
@@ -57,7 +88,7 @@ function patchHtml(file, name) {
   html = html.replace(/href="\/([a-z0-9-]+\.html)"/gi, 'href="$1"');
 
   // Якоря шапки: на главной — локально, на проектах — index.html#...
-  if (name === 'index.html') {
+  if (name === 'index.html' || name === 'home-v2-test.html') {
     html = html.replace(/href="https?:\/\/(?:www\.)?nezhnik\.com\/(#[^"]+)"/gi, 'href="$1"');
   } else {
     html = html.replace(/href="https?:\/\/(?:www\.)?nezhnik\.com\/(#[^"]+)"/gi, 'href="index.html$1"');
@@ -97,4 +128,5 @@ files.forEach(function (f) {
     n++;
   }
 });
-console.log('Done:', n, 'files');
+patchWorkCardsJs();
+console.log('Done:', n, 'html files');

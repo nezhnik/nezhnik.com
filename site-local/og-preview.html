@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8"/>
+<title>OG preview — nezhnik.com</title>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<style>
+  body { font-family: system-ui, sans-serif; margin: 24px; background: #111; color: #eee; }
+  h1 { font-size: 20px; font-weight: 600; }
+  p.note { color: #aaa; font-size: 14px; max-width: 720px; line-height: 1.5; }
+  .grid { display: grid; gap: 24px; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); margin-top: 24px; }
+  article { background: #1c1c1c; border-radius: 12px; overflow: hidden; }
+  img { display: block; width: 100%; aspect-ratio: 1200 / 630; object-fit: cover; background: #000; }
+  h2 { font-size: 14px; margin: 12px 14px 6px; }
+  .desc { margin: 0 14px 10px; font-size: 13px; color: #ccc; line-height: 1.45; }
+  .path { margin: 0 14px 14px; font-size: 11px; color: #888; word-break: break-all; }
+  code { background: #2a2a2a; padding: 2px 6px; border-radius: 4px; }
+</style>
+</head>
+<body>
+<h1>OG-превью для шаринга</h1>
+<p class="note">
+  Локально: картинки ниже. После заливки на nezhnik.com проверь превью в
+  <a href="https://developers.facebook.com/tools/debug/" rel="noopener noreferrer" target="_blank">Facebook Sharing Debugger</a>,
+  <a href="https://cards-dev.twitter.com/validator" rel="noopener noreferrer" target="_blank">Twitter Card Validator</a> или
+  <a href="https://www.opengraph.xyz/" rel="noopener noreferrer" target="_blank">opengraph.xyz</a>
+  — вставь URL страницы (например <code>https://nezhnik.com/onesearch</code>).
+</p>
+<div class="grid" id="list"></div>
+<script>
+var items = [
+  { title: 'Главная', desc: 'Текст из hero-блока', path: 'images/shared/og-home.webp', page: 'https://nezhnik.com/' },
+  { title: 'Рафа — айдентика', desc: 'Айдентика и визуальный стиль Рафа…', path: 'images/shared/og/raf-identic.webp', page: 'https://nezhnik.com/raf-identic' },
+  { title: 'Рафа — веб и app', desc: 'Веб-интерфейс и мобильное приложение Рафа…', path: 'images/shared/og/raf.webp', page: 'https://nezhnik.com/raf' },
+  { title: 'OneSearch', desc: 'Редизайн единого поиска…', path: 'images/shared/og/onesearch.webp', page: 'https://nezhnik.com/onesearch' },
+  { title: 'Service-desk', desc: 'Редизайн портала «Сервис-деск»…', path: 'images/shared/og/servicedesk.webp', page: 'https://nezhnik.com/servicedesk' },
+  { title: 'LegalBPM', desc: 'Редизайн юридического сервиса LegalBPM…', path: 'images/shared/og/legalbpm.webp', page: 'https://nezhnik.com/legalbpm' },
+  { title: 'SberPravo каталог', desc: 'Каталог услуг и 3D-иллюстрации…', path: 'images/shared/og/sberpravo.webp', page: 'https://nezhnik.com/sberpravo' },
+  { title: 'CS-Клик', desc: 'Сервис заказа товаров CS-Клик…', path: 'images/shared/og/csclick.webp', page: 'https://nezhnik.com/csclick' },
+  { title: 'CS Radar', desc: 'Личные кабинеты логистов…', path: 'images/shared/og/csradar.webp', page: 'https://nezhnik.com/csradar' },
+  { title: 'Crafter', desc: 'Личные кабинеты логистов и перевозчиков…', path: 'images/shared/og/crafter.webp', page: 'https://nezhnik.com/crafter' },
+  { title: 'ZeСклад', desc: 'Личный кабинет и сайт…', path: 'images/shared/og/zesklad.webp', page: 'https://nezhnik.com/zesklad' },
+  { title: 'Smart home', desc: 'Концепция приложения умного дома', path: 'images/shared/og/smarthome.webp', page: 'https://nezhnik.com/smarthome' },
+  { title: 'Сибпромстрой', desc: 'Редизайн сайта…', path: 'images/shared/og/sibpromstroy.webp', page: 'https://nezhnik.com/sibpromstroy' },
+  { title: 'Design Conference', desc: 'Лендинг для дизайн-конференции', path: 'images/shared/og/designconference.webp', page: 'https://nezhnik.com/designconference' },
+  { title: 'ГлавПивМаг', desc: 'Главная и каталог магазина пива', path: 'images/shared/og/glavpivmag.webp', page: 'https://nezhnik.com/glavpivmag' }
+];
+document.getElementById('list').innerHTML = items.map(function (item) {
+  return '<article><img src="' + item.path + '" alt=""/><h2>' + item.title + '</h2><p class="desc">' + item.desc + '</p><p class="path">' + item.page + '<br/>' + item.path + '</p></article>';
+}).join('');
+</script>
+</body>
+</html>

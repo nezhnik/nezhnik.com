@@ -14,6 +14,10 @@ const ROOT = __dirname;
 const SITE = 'https://nezhnik.com';
 
 const PROJECT_SLUGS = new Set([
+  'raf-identic',
+  'raf',
+  'onesearch',
+  'servicedesk',
   'legalbpm',
   'sberpravo',
   'csclick',
@@ -26,6 +30,25 @@ const PROJECT_SLUGS = new Set([
   'smarthome'
 ]);
 
+const HOME_PAGES = new Set(['index.html', 'home-v2-test.html']);
+
+function patchWorkCardsJs() {
+  const filePath = path.join(ROOT, 'scripts/home-v2-work-cards.js');
+  if (!fs.existsSync(filePath)) return false;
+  let js = fs.readFileSync(filePath, 'utf8');
+  const before = js;
+  js = js.replace(/href: '([a-z0-9-]+)\.html'/g, function (m, slug) {
+    if (PROJECT_SLUGS.has(slug)) return "href: '" + SITE + '/' + slug + "'";
+    return m;
+  });
+  if (js !== before) {
+    fs.writeFileSync(filePath, js);
+    console.log('patched scripts/home-v2-work-cards.js');
+    return true;
+  }
+  return false;
+}
+
 function slugFromHref(href) {
   const m = href.match(/^([a-z0-9-]+)\.html$/i);
   return m ? m[1] : null;
@@ -37,12 +60,15 @@ function patchHtml(file, name) {
 
   // Лого и главная
   html = html.replace(/href="index\.html"/gi, 'href="' + SITE + '/"');
+  html = html.replace(/href="home-v2-test\.html"/gi, 'href="' + SITE + '/"');
 
   // Якоря на главной
-  if (name === 'index.html') {
+  if (HOME_PAGES.has(name)) {
     html = html.replace(/href="index\.html(#[^"]+)"/gi, 'href="$1"');
+    html = html.replace(/href="home-v2-test\.html(#[^"]+)"/gi, 'href="$1"');
   } else {
     html = html.replace(/href="index\.html(#[^"]+)"/gi, 'href="' + SITE + '/$1"');
+    html = html.replace(/href="home-v2-test\.html(#[^"]+)"/gi, 'href="' + SITE + '/$1"');
   }
 
   // Относительные страницы проектов → clean URL
@@ -73,4 +99,5 @@ files.forEach(function (f) {
     n++;
   }
 });
-console.log('Done:', n, 'files');
+patchWorkCardsJs();
+console.log('Done:', n, 'html files');
