@@ -50,14 +50,6 @@
     dark: 0.6
   };
 
-  /* Mobile header — Telegram / Резюме (Figma Glass: Refraction 100, Depth 16, Frost 7, Splay 6, Light 80%) */
-  var MOBILE_HEADER_GLASS = {
-    frost: 0.07,
-    refraction: 0.01,
-    bevelDepth: 0.16,
-    bevelWidth: 0.06,
-    specularOpacity: 0.8
-  };
   var MAX_FINAL_RECAPTURES = 10;
 
   var SNAPSHOT = {
@@ -592,23 +584,9 @@
     return 'black';
   }
 
-  function shouldUseAppleGlassPreset(btn, tone) {
-    if (!btn) return null;
-    if (isMobileHeaderGlassButton(btn)) return null;
-    if (tone === 'white') return 'dark';
-    if (tone === 'black') return 'light';
-    return null;
-  }
-
-  function isMobileHeaderGlassButton(btn) {
+  function isSolidGlassButton(btn) {
     if (!btn) return false;
-    if (
-      btn.closest('.home-v2-cta') &&
-      btn.classList.contains('liquidGL--primary') &&
-      btn.querySelector('.liquidGL-label--telegram')
-    ) {
-      return true;
-    }
+    if (btn.closest('.home-v2-cta, .footer_cta')) return true;
     var w = window.innerWidth || document.documentElement.clientWidth || 1280;
     if (w > 991) return false;
     if (!btn.closest('.glass-site-page .header')) return false;
@@ -618,27 +596,33 @@
     return !!btn.querySelector('.liquidGL-label--resume');
   }
 
+  function markSolidGlassButtons() {
+    document.querySelectorAll('.liquidGL-apple').forEach(function (btn) {
+      if (isSolidGlassButton(btn)) {
+        btn.classList.add('liquidGL--css-only');
+      } else {
+        btn.classList.remove('liquidGL--css-only');
+      }
+    });
+  }
+
+  function shouldUseAppleGlassPreset(btn, tone) {
+    if (!btn) return null;
+    if (btn.classList.contains('liquidGL--css-only')) return null;
+    if (isSolidGlassButton(btn)) return null;
+    if (tone === 'white') return 'dark';
+    if (tone === 'black') return 'light';
+    return null;
+  }
+
   function applyLensGlassForButton(btn, tone) {
     var renderer = getRenderer();
-    if (!renderer || !btn) return;
+    if (!renderer || !btn || btn.classList.contains('liquidGL--css-only')) return;
 
     var preset = shouldUseAppleGlassPreset(btn, tone);
-    var mobileHeader = isMobileHeaderGlassButton(btn);
 
     renderer.lenses.forEach(function (lens) {
       if (lens.el !== btn) return;
-
-      if (mobileHeader) {
-        lens.options.frost = MOBILE_HEADER_GLASS.frost;
-        lens.options.refraction = MOBILE_HEADER_GLASS.refraction;
-        lens.options.bevelDepth = MOBILE_HEADER_GLASS.bevelDepth;
-        lens.options.bevelWidth = MOBILE_HEADER_GLASS.bevelWidth;
-        lens.options.magnify = PARAMS.magnify;
-        lens.options.saturationBoost = PARAMS.saturationBoost;
-        lens.options.specular = PARAMS.specular;
-        btn.style.setProperty('--liquidgl-specular-opacity', String(MOBILE_HEADER_GLASS.specularOpacity));
-        return;
-      }
 
       lens.options.frost = PARAMS.frost;
       lens.options.refraction = PARAMS.refraction;
@@ -662,6 +646,10 @@
 
   function applyButtonShadow(btn) {
     if (!btn) return;
+    if (btn.classList.contains('liquidGL--css-only')) {
+      btn.style.setProperty('--liquidgl-shadow', 'rgba(0, 0, 0, 0.09)');
+      return;
+    }
     if (shouldUseAppleGlassPreset(btn, getButtonTone(btn))) {
       btn.style.removeProperty('--liquidgl-shadow');
       return;
@@ -676,6 +664,15 @@
 
   function applyButtonTextTone(btn, tone) {
     if (!btn || (tone !== 'black' && tone !== 'white')) return;
+    if (btn.classList.contains('liquidGL--css-only')) {
+      if (btn.querySelector('.liquidGL-label--telegram') || btn.querySelector('.liquidGL-label--resume')) {
+        tone = 'white';
+      }
+      btn.classList.remove('glass-text-tone--black', 'glass-text-tone--white');
+      btn.classList.add('glass-text-tone--' + tone);
+      applyButtonShadow(btn);
+      return;
+    }
     var next = 'glass-text-tone--' + tone;
     if (btn.classList.contains(next)) {
       applyButtonShadow(btn);
@@ -1180,6 +1177,7 @@
     }
 
     buttons.forEach(function (btn) {
+      if (btn.classList.contains('liquidGL--css-only')) return;
       var rawLum = sampleButtonMedianLuminance(btn, renderer);
       var currentTone = getButtonTone(btn);
       var smoothedLum = smoothToneLuminance(btn, rawLum);
@@ -1227,7 +1225,7 @@
       if (needsUpdate) scheduleTextToneUpdate();
     }, { threshold: [0, 0.2, 0.6] });
 
-    document.querySelectorAll('.liquidGL-apple').forEach(function (btn) {
+    document.querySelectorAll('.liquidGL-apple:not(.liquidGL--css-only)').forEach(function (btn) {
       toneViewportObserver.observe(btn);
     });
   }
@@ -1283,6 +1281,7 @@
     }
 
     buttons.forEach(function (btn) {
+      if (btn.classList.contains('liquidGL--css-only')) return;
       var state = { tx: 0, ty: 0, targetX: 0, targetY: 0, active: false, raf: 0 };
       hoverStates.set(btn, state);
 
@@ -1392,6 +1391,14 @@
       el.style.pointerEvents = 'auto';
     });
     document.querySelectorAll('.liquidGL-apple').forEach(function (el) {
+      if (el.classList.contains('liquidGL--css-only')) {
+        el.style.setProperty('--glass-tint-lighten', '0');
+        el.style.setProperty('--glass-tint-darken', '0');
+        applyButtonTextTone(el, 'white');
+        toneState.set(el, { tone: 'white', lum: null });
+        applyButtonShadow(el);
+        return;
+      }
       el.classList.add('glass-text-tone--black');
       el.style.setProperty('--glass-tint-lighten', '0.18');
       el.style.setProperty('--glass-tint-darken', '0');
@@ -1423,10 +1430,11 @@
     }
 
     applyCssLayers();
+    markSolidGlassButtons();
 
     liquidGL({
       snapshot: '.glass-snapshot-scene',
-      target: '.liquidGL-apple',
+      target: '.liquidGL-apple:not(.liquidGL--css-only)',
       autoRecapture: false,
       deferSnapshot: true,
       resolution: PARAMS.resolution,

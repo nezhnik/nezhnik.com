@@ -233,6 +233,14 @@
   box-shadow: none;
 }
 
+.liquidGL-apple.liquidGL--css-only .liquidGL-specular {
+  opacity: 0;
+}
+
+.liquidGL-apple.liquidGL--css-only::before {
+  display: none;
+}
+
 .liquidGL-apple .liquidGL-rim {
   box-shadow:
     inset 1px 1px 0 rgba(255, 255, 255, 0.05),
